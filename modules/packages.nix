@@ -7,42 +7,56 @@
   with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
     inputs.home-manager.packages.${pkgs.system}.home-manager
 
+    # Shell #
+    fish
+    starship
+
+    # Essentials #
+    bat
+    coreutils
+    curl
+    gcc
+    git
+    git-lfs
+    gnupg
+    wget
+
+    # Nix #
     alejandra
     statix
 
+    # Catppuccin #
     whiskers
     catwalk
 
-    yazi
-    bun
+    # Image & Video #
+    ffmpeg
+    imagemagick
     libwebp
-    atuin
-    bat
-    bottom
-    coreutils
-    cowsay
-    curl
+
+    # Language Tools & Runtimes #
+    bun
     deno
+    fnm
+    fortls
+    fprettify
+    ruff
+    taplo
+
+    # Tools and TUIs #
+    atuin
+    bottom
+    cowsay
     yq
     xh
     doggo
     du-dust
     eza
     fd
-    gcc
-    ffmpeg
-    fish
-    fnm
-    fortls
-    fprettify
     fzf
     gh
-    git
-    git-lfs
-    gnupg
     gum
     hyperfine
-    imagemagick
     jnv
     jq
     just
@@ -53,17 +67,14 @@
     nrr
     pastel
     ripgrep
-    ruff
     sd
     silicon
     spicetify-cli
-    starship
-    taplo
     terminal-notifier
     typos
     vhs
-    wget
     xdg-ninja
     tokei
+    yazi
   ];
 }
