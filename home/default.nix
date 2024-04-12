@@ -20,7 +20,8 @@
     ./programs/fd.nix
     ./programs/fish.nix
     ./programs/git.nix
-    ./programs/newsboat.nix
+    ./programs/glamour.nix
+    ./programs/izrss.nix
     ./programs/rust.nix
     ./programs/starship.nix
     ./programs/yazi.nix

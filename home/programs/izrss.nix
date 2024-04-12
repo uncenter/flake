@@ -1,9 +1,14 @@
 {
-  programs.newsboat = {
+  lib,
+  inputs,
+  ...
+}: {
+  imports = [inputs.izrss.homeManagerModules.default];
+
+  config.programs.izrss = {
     enable = true;
 
-    browser = "\"open %u\"";
-    urls = builtins.map (x: {"url" = x;}) [
+    urls = [
       "https://uncenter.dev/feed.xml"
       "https://ryanccn.dev/feed/rss.xml"
       "https://shivjm.blog/feed.xml"
@@ -34,13 +39,8 @@
       "https://isabelroses.com/rss.xml"
       "https://boehs.org/in/blog.xml"
       "https://huonw.github.io/blog/atom.xml"
+      "https://nixpkgs.news/rss.xml"
+      "https://maia.crimew.gay/feed.xml"
     ];
-
-    extraConfig =
-      builtins.readFile
-      (builtins.fetchurl {
-        url = "https://raw.githubusercontent.com/catppuccin/newsboat/main/themes/dark";
-        sha256 = "09x50g74mld8zv8r6a873j52zx3w86qv3mc7g4fhzr85911cz799";
-      });
   };
 }

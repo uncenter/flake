@@ -30,6 +30,11 @@
     darwin-custom-icons = {
       url = "github:ryanccn/nix-darwin-custom-icons";
     };
+
+    izrss = {
+      url = "github:isabelroses/izrss";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

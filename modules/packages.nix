@@ -58,7 +58,6 @@
     lazygit
     lolcat
     neovim
-    newsboat
     nrr
     pastel
     ripgrep

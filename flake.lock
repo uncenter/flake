@@ -86,6 +86,26 @@
         "type": "github"
       }
     },
+    "izrss": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1712958127,
+        "narHash": "sha256-RDobhvaEg/sUGV+T1aBlVNea5uCBMBwf+xZKbTbHOd0=",
+        "owner": "isabelroses",
+        "repo": "izrss",
+        "rev": "535908ad804295b4feb0a02a1ec629353f2fdee7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "isabelroses",
+        "repo": "izrss",
+        "type": "github"
+      }
+    },
     "nix-darwin": {
       "inputs": {
         "nixpkgs": [
@@ -144,6 +164,7 @@
         "catppuccin-toolbox": "catppuccin-toolbox",
         "darwin-custom-icons": "darwin-custom-icons",
         "home-manager": "home-manager",
+        "izrss": "izrss",
         "nix-darwin": "nix-darwin",
         "nixpkgs": "nixpkgs_2",
         "rust-overlay": "rust-overlay"
