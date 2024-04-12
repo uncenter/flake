@@ -37,6 +37,7 @@
     "hyoban.tailwindcss-classname-highlight"
     "jnoortheen.nix-ide"
     "johnnymorganz.stylua"
+    "kamadorueda.alejandra"
     "leonardssh.vscord"
     "mechatroner.rainbow-csv"
     "meganrogge.template-string-converter"
