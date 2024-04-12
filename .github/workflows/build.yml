@@ -1,0 +1,30 @@
+name: Build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        label:
+          - Katara
+        include:
+          - label: Katara
+            path: darwinConfigurations.Katara.config.system.build.toplevel
+            runner: macos-14
+
+    runs-on: ${{ matrix.runner }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Nix
+        uses: DeterminateSystems/nix-installer-action@v7
+
+      - name: Build
+        run: nix build -L --show-trace .#${{ matrix.path }}

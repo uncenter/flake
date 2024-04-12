@@ -1,0 +1,68 @@
+{
+  pkgs,
+  inputs,
+  ...
+}: {
+  environment.systemPackages = with pkgs; with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
+    inputs.home-manager.packages.${pkgs.system}.home-manager
+
+    alejandra
+    statix
+
+    whiskers
+    catwalk
+
+    yazi
+    bun
+    libwebp
+    atuin
+    bat
+    bottom
+    coreutils
+    cowsay
+    curl
+    deno
+    yq
+    xh
+    doggo
+    du-dust
+    eza
+    fd
+    gcc
+    ffmpeg
+    ffmpegthumbnailer-unstable
+    fish
+    fnm
+    fortls
+    fprettify
+    fzf
+    gh
+    git
+    git-lfs
+    gnupg
+    gum
+    hyperfine
+    imagemagick
+    jq
+    just
+    lazygit
+    lolcat
+    neovim
+    newsboat
+    nrr
+    pastel
+    ripgrep
+    ruff
+    sd
+    silicon
+    spicetify-cli
+    starship
+    taplo
+    terminal-notifier
+    typos
+    vhs
+    wget
+    xdg-ninja
+    tokei
+  ];
+}
