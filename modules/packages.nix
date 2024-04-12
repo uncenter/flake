@@ -34,6 +34,7 @@
     fnm
     fortls
     fprettify
+    nil
     ruff
     taplo
 

@@ -93,6 +93,7 @@ in {
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
       "workbench.preferredLightColorTheme" = "Catppuccin Latte";
       "workbench.productIconTheme" = "Tabler";
+
       "workbench.fontAliasing" = "antialiased";
       "workbench.sideBar.location" = "left";
       "workbench.startupEditor" = "none";
@@ -145,6 +146,8 @@ in {
         "editor.defaultFormatter" = "rust-lang.rust-analyzer";
         "editor.formatOnSave" = true;
       };
+      "nix.enableLanguageServer" = true;
+      "nix.serverPath" = "nil";
 
       "git.autofetch" = true;
       "git.confirmSync" = false;
@@ -159,6 +162,8 @@ in {
       "explorer.sortOrder" = "type";
       "explorer.fileNesting.enabled" = true;
       "explorer.fileNesting.expand" = false;
+
+      "extensions.ignoreRecommendations" = true;
     };
   };
 
