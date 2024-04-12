@@ -81,21 +81,6 @@
           cwebp -lossless $file -o $output
         end
       '';
-
-      __newlinefix = {
-        body = ''
-          if test -z "$NEW_LINE_BEFORE_PROMPT"
-            set -gx NEW_LINE_BEFORE_PROMPT 1
-          else if test "$NEW_LINE_BEFORE_PROMPT" -eq 1
-            echo
-          end
-        '';
-        onEvent = "fish_prompt";
-      };
-      clear = ''
-        set -gx NEW_LINE_BEFORE_PROMPT
-        command clear
-      '';
     };
   };
 
