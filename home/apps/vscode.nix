@@ -87,8 +87,8 @@ in {
     mutableExtensionsDir = true;
 
     userSettings = {
-      "workbench.iconTheme" = "catppuccin-latte";
-      "workbench.colorTheme" = "Catppuccin Latte";
+      "workbench.iconTheme" = "catppuccin-frappe";
+      "workbench.colorTheme" = "Catppuccin Frappé";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
       "workbench.preferredLightColorTheme" = "Catppuccin Latte";
       "workbench.productIconTheme" = "Tabler";
@@ -111,10 +111,10 @@ in {
       "editor.stickyScroll.enabled" = false;
       "editor.linkedEditing" = true;
       "workbench.editor.closeOnFileDelete" = true;
-      "terminal.integrated.defaultProfile.osx" = "fish";
       "terminal.integrated.fontSize" = 14;
       "terminal.integrated.lineHeight" = 1.3;
       "terminal.integrated.cursorBlinking" = true;
+      "terminal.integrated.defaultProfile.osx" = "/run/current-system/sw/bin/fish";
       "editor.cursorSmoothCaretAnimation" = "off";
 
       "editor.formatOnSave" = true;
