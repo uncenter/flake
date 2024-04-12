@@ -24,6 +24,8 @@
     ./programs/rust.nix
     ./programs/starship.nix
     ./programs/yazi.nix
+
+    ./scripts.nix
   ];
 
   xdg.enable = true;

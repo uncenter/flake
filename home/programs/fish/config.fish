@@ -6,7 +6,6 @@ fish_add_path -Pm /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin
 fish_add_path $GOPATH/bin
 fish_add_path $CARGO_HOME/bin
 fish_add_path $PNPM_HOME
-fish_add_path $HOME/.local/bin
 
 function newlinefix --on-event fish_prompt
     if test -z "$NEW_LINE_BEFORE_PROMPT"

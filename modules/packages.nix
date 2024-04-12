@@ -36,6 +36,7 @@
     fprettify
     nil
     ruff
+    shellcheck
     taplo
 
     # Tools and TUIs #
