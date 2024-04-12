@@ -39,7 +39,7 @@ _: {
         $status\
         $os\
         $character'';
-      
+
       fill.symbol = " ";
 
       character = {
@@ -47,6 +47,7 @@ _: {
         error_symbol = "[](red)";
         vimcmd_symbol = "[](green)";
       };
+
       cmd_duration = {
         min_time = 0;
         show_milliseconds = true;
@@ -92,7 +93,7 @@ _: {
         symbol = "";
         style = "peach";
         format = "[is $symbol $version]($style) ";
-        version_format = "v${raw}";
+        version_format = "v\${raw}";
         display_private = true;
       };
 
@@ -101,7 +102,7 @@ _: {
         style = "green";
         not_capable_style = "red";
         format = "[via $symbol $version]($style) ";
-        version_format = "v${raw}";
+        version_format = "v\${raw}";
       };
 
       golang = {
@@ -109,15 +110,15 @@ _: {
         style = "sky";
         not_capable_style = "red";
         format = "[via $symbol $version]($style) ";
-        version_format = "v${raw}";
+        version_format = "v\${raw}";
       };
 
       python = {
         symbol = "󱔎";
         style = "yellow";
         format = "[via $symbol $version]($style) ";
-        version_format = "v${raw}";
-      }
+        version_format = "v\${raw}";
+      };
     };
   };
 }

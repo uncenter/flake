@@ -18,7 +18,7 @@ _: {
       };
       preview = {
         tab_size = 4;
-      }
+      };
     };
 
     keymap = {

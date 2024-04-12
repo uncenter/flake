@@ -124,7 +124,7 @@ in {
 
       "[python]" = {
         "editor.formatOnType" = true;
-        "editor.defaultFormatter" = "ms-python.black-formatter"
+        "editor.defaultFormatter" = "ms-python.black-formatter";
       };
       "yaml.format.enable" = true;
       "[yaml]" = {

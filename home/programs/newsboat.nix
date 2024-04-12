@@ -35,6 +35,6 @@ _: {
       "https://isabelroses.com/rss.xml"
       "https://boehs.org/in/blog.xml"
       "https://huonw.github.io/blog/atom.xml"
-    ]
+    ];
   };
 }
