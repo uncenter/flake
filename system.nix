@@ -10,13 +10,6 @@
   ];
 
   system = {
-    activationScripts.extraActivation = {
-      text = ''
-        set -eo pipefail
-        HOME="/var/root" ${pkgs.lib.getExe pkgs.nvd} --nix-bin-dir=${pkgs.nix}/bin diff /run/current-system "$systemConfig"
-      '';
-    };
-
     defaults = {
       dock = {
         autohide = true;
@@ -87,9 +80,7 @@
     ];
   };
 
-  programs.bash.enable = true;
   programs.fish.enable = true;
-  programs.zsh.enable = true;
 
   home-manager = {
     useGlobalPkgs = true;
@@ -104,6 +95,7 @@
 
   users.users.uncenter = {
     home = "/Users/uncenter";
+    shell = pkgs.fish;
   };
 
   system.stateVersion = 4;

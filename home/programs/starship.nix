@@ -3,42 +3,41 @@ _: {
     enable = true;
     catppuccin.enable = true;
 
-    enableBashIntegration = true;
-    enableZshIntegration = true;
     enableFishIntegration = true;
 
     settings = {
       add_newline = false;
       continuation_prompt = "[](yellow) ";
       right_format = "$cmd_duration";
-      format = ''
-        $username\
-        $hostname\
-        $directory\
-        $git_branch\
-        $git_commit\
-        $git_state\
-        $git_metrics\
-        $git_status\
-        $docker_context\
-        $package\
-        $c\
-        $cmake\
-        $deno\
-        $elixir\
-        $golang\
-        $haskell\
-        $nodejs\
-        $php\
-        $python\
-        $rust\
-        $sudo\
-        $fill\
-        $shell\
-        $line_break\
-        $status\
-        $os\
-        $character'';
+      format = builtins.concatStringsSep "" [
+        "$username"
+        "$hostname"
+        "$directory"
+        "$git_branch"
+        "$git_commit"
+        "$git_state"
+        "$git_metrics"
+        "$git_status"
+        "$docker_context"
+        "$package"
+        "$c"
+        "$cmake"
+        "$deno"
+        "$elixir"
+        "$golang"
+        "$haskell"
+        "$nodejs"
+        "$php"
+        "$python"
+        "$rust"
+        "$sudo"
+        "$fill"
+        "$shell"
+        "$line_break"
+        "$status"
+        "$os"
+        "$character"
+      ];
 
       fill.symbol = " ";
 
