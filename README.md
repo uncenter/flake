@@ -5,7 +5,7 @@
 
 ## Credits
 
-Many thanks to [ryanccn/flake](https://github.com/ryanccn/flake), [isabelroses/dotfiles](https://github.com/isabelroses/dotfiles), and [nix-darwin-kickstarter](https://github.com/ryan4yin/nix-darwin-kickstarter) for inspiring and serving as the inspiration for this configuration.
+Many thanks to [ryanccn/flake](https://github.com/ryanccn/flake), [isabelroses/dotfiles](https://github.com/isabelroses/dotfiles), and [nix-darwin-kickstarter](https://github.com/ryan4yin/nix-darwin-kickstarter) for inspiring and serving as the foundation for this configuration.
 
 ## License
 
