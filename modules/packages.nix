@@ -42,6 +42,7 @@
     gum
     hyperfine
     imagemagick
+    jnv
     jq
     just
     lazygit

@@ -19,12 +19,9 @@ _: {
       "homebrew/bundle"
 
       "1password/tap"
-      "ynqa/tap"
     ];
 
-    brews = [
-      "ynqa/tap/jnv"
-    ];
+    brews = [ ];
 
     casks = [
       "1password"
