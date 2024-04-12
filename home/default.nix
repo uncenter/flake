@@ -17,6 +17,7 @@
     ./programs/atuin.nix
     ./programs/bat.nix
     ./programs/eza.nix
+    ./programs/fd.nix
     ./programs/fish.nix
     ./programs/git.nix
     ./programs/newsboat.nix
