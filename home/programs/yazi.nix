@@ -18,11 +18,11 @@ _: {
       };
       preview = {
         tab_size = 4;
-      }
+      };
     };
 
     keymap = {
-      manager.keymap = [
+      manager.append_keymap = [
         { on = ["<Space>"]; run = ["select --state=none"]; desc = "Toggle the current selection state"; }
       ];
     };

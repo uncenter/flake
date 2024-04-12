@@ -87,11 +87,8 @@ in {
     mutableExtensionsDir = true;
 
     userSettings = {
-      "workbench.settings.editor" = "json";
-
-      /* UI */
-      "workbench.iconTheme" = "catppuccin-latte";
-      "workbench.colorTheme" = "Catppuccin Latte";
+      "workbench.iconTheme" = "catppuccin-frappe";
+      "workbench.colorTheme" = "Catppuccin Frappé";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
       "workbench.preferredLightColorTheme" = "Catppuccin Latte";
       "workbench.productIconTheme" = "Tabler";
@@ -103,7 +100,6 @@ in {
       "window.nativeTabs" = true;
       "editor.minimap.enabled" = false;
 
-      /* Editor */
       "editor.fontFamily" = "CommitMono Nerd Font";
       "editor.fontLigatures" = true;
       "editor.fontWeight" = "normal";
@@ -115,13 +111,12 @@ in {
       "editor.stickyScroll.enabled" = false;
       "editor.linkedEditing" = true;
       "workbench.editor.closeOnFileDelete" = true;
-      "terminal.integrated.defaultProfile.osx" = "fish";
       "terminal.integrated.fontSize" = 14;
       "terminal.integrated.lineHeight" = 1.3;
       "terminal.integrated.cursorBlinking" = true;
+      "terminal.integrated.defaultProfile.osx" = "/run/current-system/sw/bin/fish";
       "editor.cursorSmoothCaretAnimation" = "off";
 
-      /* Formatting */
       "editor.formatOnSave" = true;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "editor.tabSize" = 4;
@@ -129,7 +124,7 @@ in {
 
       "[python]" = {
         "editor.formatOnType" = true;
-        "editor.defaultFormatter" = "ms-python.black-formatter"
+        "editor.defaultFormatter" = "ms-python.black-formatter";
       };
       "yaml.format.enable" = true;
       "[yaml]" = {
@@ -150,17 +145,11 @@ in {
         "editor.formatOnSave" = true;
       };
 
-      /* Git */
       "git.autofetch" = true;
       "git.confirmSync" = false;
       "git.suggestSmartCommit" = false;
       "git.openRepositoryInParentFolders" = "never";
 
-      /* Linting */
-      "css.lint.validProperties" = ["view-transition-name"];
-      "css.lint.unknownProperties" = "error";
-
-      /* Explorer/Files */
       "files.associations" = {
         "*.njk" = "nunjucks";
       };

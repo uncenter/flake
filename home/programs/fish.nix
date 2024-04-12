@@ -1,6 +1,7 @@
-{lib, ...}: {
+{lib, pkgs, config, ...}: {
   programs.fish = {
     enable = true;
+    catppuccin.enable = true;
 
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";
@@ -13,11 +14,11 @@
       "ls" = "eza";
       "ll" = "ls -la";
 
-      "cat" = "bat";;
+      "cat" = "bat";
       "dig" = "doggo";
 
       "cx" = "chmod +x";
-    }
+    };
 
 
     plugins = [
@@ -37,7 +38,7 @@
           repo = "done";
           rev = "d47f4d6551cccb0e46edfb14213ca0097ee22f9a";
           sha256 = "sha256-VSCYsGjNPSFIZSdLrkc7TU7qyPVm8UupOoav5UqXPMk=";
-        }
+        };
       }
     ];
 
@@ -82,16 +83,16 @@
         command clear
       '';
     };
+  };
 
-    xdg.configFile = let
-      symlink = fileName: {recursive ? false}: {
-        source = config.lib.file.mkOutOfStoreSymlink ${fileName}";
-        inherit recursive;
-      };
-    in {
-      "fish/completions" = symlink ${./fish/completions} {
-        recursive = true;
-      };
+  xdg.configFile = let
+    symlink = fileName: {recursive ? false}: {
+      source = config.lib.file.mkOutOfStoreSymlink "${fileName}";
+      inherit recursive;
+    };
+  in {
+    "fish/completions" = symlink "${./fish/completions}" {
+      recursive = true;
     };
   };
 }

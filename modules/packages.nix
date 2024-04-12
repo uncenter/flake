@@ -30,7 +30,6 @@
     fd
     gcc
     ffmpeg
-    ffmpegthumbnailer-unstable
     fish
     fnm
     fortls

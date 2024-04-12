@@ -14,15 +14,15 @@
     ./apps/vscode.nix
     ./apps/ghostty.nix
 
-    ./programs/fish.nix
-    ./programs/zsh.nix
-    ./programs/starship.nix
     ./programs/atuin.nix
-
-    ./programs/git.nix
     ./programs/bat.nix
     ./programs/eza.nix
+    ./programs/fish.nix
+    ./programs/git.nix
+    ./programs/newsboat.nix
     ./programs/rust.nix
+    ./programs/starship.nix
+    ./programs/yazi.nix
   ];
 
   xdg.enable = true;

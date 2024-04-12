@@ -17,7 +17,7 @@ _: {
       "gnew" = "checkout -b";
       "gs" = "checkout";
       "ga" = "add";
-      "undo" = "reset --soft HEAD~1"
+      "undo" = "reset --soft HEAD~1";
     };
 
     userName = "uncenter";

@@ -50,7 +50,5 @@
         inherit self inputs;
       };
     };
-
-    overlays = import ./overlays;
   };
 }

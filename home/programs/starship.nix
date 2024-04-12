@@ -1,93 +1,122 @@
 _: {
   programs.starship = {
     enable = true;
+    catppuccin.enable = true;
 
-    enableBashIntegration = true;
-    enableZshIntegration = true;
     enableFishIntegration = true;
 
     settings = {
-      command_timeout = 1000;
+      add_newline = false;
+      continuation_prompt = "[](yellow) ";
+      right_format = "$cmd_duration";
+      format = builtins.concatStringsSep "" [
+        "$username"
+        "$hostname"
+        "$directory"
+        "$git_branch"
+        "$git_commit"
+        "$git_state"
+        "$git_metrics"
+        "$git_status"
+        "$docker_context"
+        "$package"
+        "$c"
+        "$cmake"
+        "$deno"
+        "$elixir"
+        "$golang"
+        "$haskell"
+        "$nodejs"
+        "$php"
+        "$python"
+        "$rust"
+        "$sudo"
+        "$fill"
+        "$shell"
+        "$line_break"
+        "$status"
+        "$os"
+        "$character"
+      ];
+
+      fill.symbol = " ";
 
       character = {
-        success_symbol = "[➜](bold green)";
-        error_symbol = "[➜](bold red)";
+        success_symbol = "[](green)";
+        error_symbol = "[](red)";
+        vimcmd_symbol = "[](green)";
       };
 
-      gcloud.disabled = true;
+      cmd_duration = {
+        min_time = 0;
+        show_milliseconds = true;
+        style = "subtext0";
+        format = "[$duration]($style)";
+      };
 
-      bun.format = "[$symbol($version )]($style)";
-      cmd_duration.format = "[$duration]($style) ";
-      deno.format = "[$symbol($version )]($style)";
-      docker_context.format = "[$symbol$context]($style) ";
-      git_branch.format = "[$symbol$branch(:$remote_branch)]($style) ";
-      golang.format = "[$symbol($version )]($style)";
-      nix_shell.format = "[$symbol$state( \($name\))]($style) ";
-      nodejs.format = "[$symbol($version )]($style)";
-      package.format = "[$symbol$version]($style) ";
-      python.format = "[\${symbol}\${pyenv_prefix}(\${version} )(\($virtualenv\) )]($style)";
-      rust.format = "[$symbol($version )]($style)";
+      username = {
+        show_always = true;
+        format = "[$user]($style)@";
+      };
 
-      aws.symbol = " ";
-      bun.symbol = "󰳮 ";
-      c.symbol = " ";
-      conda.symbol = " ";
-      directory.read_only = " 󰌾";
-      docker_context.symbol = " ";
-      git_branch.symbol = " ";
-      golang.symbol = " ";
-      haskell.symbol = " ";
-      hg_branch.symbol = " ";
-      hostname.ssh_symbol = " ";
-      java.symbol = " ";
-      memory_usage.symbol = "󰍛 ";
-      nim.symbol = "󰆥 ";
-      nix_shell.symbol = " ";
-      nodejs.symbol = " ";
-      package.symbol = "󰏗 ";
-      python.symbol = " ";
-      rust.symbol = " ";
+      hostname.ssh_only = false;
 
-      os.symbols = {
-        Alpaquita = " ";
-        Alpine = " ";
-        Amazon = " ";
-        Android = " ";
-        Arch = " ";
-        Artix = " ";
-        CentOS = " ";
-        Debian = " ";
-        DragonFly = " ";
-        Emscripten = " ";
-        EndeavourOS = " ";
-        Fedora = " ";
-        FreeBSD = " ";
-        Garuda = "󰛓 ";
-        Gentoo = " ";
-        HardenedBSD = "󰞌 ";
-        Illumos = "󰈸 ";
-        Linux = " ";
-        Mabox = " ";
-        Macos = " ";
-        Manjaro = " ";
-        Mariner = " ";
-        MidnightBSD = " ";
-        Mint = " ";
-        NetBSD = " ";
-        NixOS = " ";
-        OpenBSD = "󰈺 ";
-        openSUSE = " ";
-        OracleLinux = "󰌷 ";
-        Pop = " ";
-        Raspbian = " ";
-        Redhat = " ";
-        RedHatEnterprise = " ";
-        Redox = " ";
-        Solus = "󰠳 ";
-        SUSE = " ";
-        Ubuntu = " ";
-        Unknown = " ";
-        Windows = "󰍲 ";
+      directory = {
+        truncation_length = 5;
+        truncate_to_repo = false;
+        style = "blue";
+        read_only = " ";
+        read_only_style = "red";
+      };
+
+      git_branch = {
+        symbol = "";
+        style = "mauve";
+        format = "[on $symbol $branch]($style) ";
+      };
+
+      git_status = {
+        conflicted = "";
+        ahead = ">";
+        behind = "<";
+        diverged = "#";
+        untracked = "?";
+        stashed = "≡";
+        modified = "!";
+        staged = "+";
+        renamed = "%";
+        deleted = "X";
+      };
+
+      package = {
+        symbol = "";
+        style = "peach";
+        format = "[is $symbol $version]($style) ";
+        version_format = "v\${raw}";
+        display_private = true;
+      };
+
+      nodejs = {
+        symbol = "";
+        style = "green";
+        not_capable_style = "red";
+        format = "[via $symbol $version]($style) ";
+        version_format = "v\${raw}";
+      };
+
+      golang = {
+        symbol = "󰟓";
+        style = "sky";
+        not_capable_style = "red";
+        format = "[via $symbol $version]($style) ";
+        version_format = "v\${raw}";
+      };
+
+      python = {
+        symbol = "󱔎";
+        style = "yellow";
+        format = "[via $symbol $version]($style) ";
+        version_format = "v\${raw}";
       };
     };
   };
