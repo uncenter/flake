@@ -87,9 +87,6 @@ in {
     mutableExtensionsDir = true;
 
     userSettings = {
-      "workbench.settings.editor" = "json";
-
-      /* UI */
       "workbench.iconTheme" = "catppuccin-latte";
       "workbench.colorTheme" = "Catppuccin Latte";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
@@ -103,7 +100,6 @@ in {
       "window.nativeTabs" = true;
       "editor.minimap.enabled" = false;
 
-      /* Editor */
       "editor.fontFamily" = "CommitMono Nerd Font";
       "editor.fontLigatures" = true;
       "editor.fontWeight" = "normal";
@@ -121,7 +117,6 @@ in {
       "terminal.integrated.cursorBlinking" = true;
       "editor.cursorSmoothCaretAnimation" = "off";
 
-      /* Formatting */
       "editor.formatOnSave" = true;
       "editor.defaultFormatter" = "esbenp.prettier-vscode";
       "editor.tabSize" = 4;
@@ -150,17 +145,11 @@ in {
         "editor.formatOnSave" = true;
       };
 
-      /* Git */
       "git.autofetch" = true;
       "git.confirmSync" = false;
       "git.suggestSmartCommit" = false;
       "git.openRepositoryInParentFolders" = "never";
 
-      /* Linting */
-      "css.lint.validProperties" = ["view-transition-name"];
-      "css.lint.unknownProperties" = "error";
-
-      /* Explorer/Files */
       "files.associations" = {
         "*.njk" = "nunjucks";
       };
