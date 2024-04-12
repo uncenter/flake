@@ -28,6 +28,7 @@
   xdg.enable = true;
 
   catppuccin.flavour = "frappe";
+  catppuccin.accent = "mauve";
 
   home.stateVersion = "23.05";
 }
