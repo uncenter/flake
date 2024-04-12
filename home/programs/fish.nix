@@ -5,6 +5,16 @@
 
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";
+
+      "gp" = "git push origin";
+      "gpm" = "git push origin main";
+      "gl" = "git pull origin";
+      "glm" = "git pull origin main";
+      "gc" = "git commit -m";
+      "glog" = "git log";
+      "gnew" = "git checkout -b";
+      "gs" = "git checkout";
+      "ga" = "git add";
     };
 
     shellAliases = {

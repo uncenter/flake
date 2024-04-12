@@ -8,15 +8,6 @@ _: {
     ];
     
     aliases = {
-      "gp" = "push origin";
-      "gpm" = "push origin main";
-      "gl" = "pull origin";
-      "glm" = "pull origin main";
-      "gc" = "commit -m";
-      "glog" = "log";
-      "gnew" = "checkout -b";
-      "gs" = "checkout";
-      "ga" = "add";
       "undo" = "reset --soft HEAD~1";
     };
 
