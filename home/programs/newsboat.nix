@@ -2,7 +2,7 @@ _: {
   programs.newsboat = {
     enable = true;
 
-    browser = "open %u";
+    browser = "\"open %u\"";
     urls = builtins.map (x: {"url" = x;}) [
       "https://uncenter.dev/feed.xml"
       "https://ryanccn.dev/feed/rss.xml"
@@ -35,5 +35,12 @@ _: {
       "https://boehs.org/in/blog.xml"
       "https://huonw.github.io/blog/atom.xml"
     ];
+
+    extraConfig =
+      builtins.readFile
+      (builtins.fetchurl {
+        url = "https://raw.githubusercontent.com/catppuccin/newsboat/main/themes/dark";
+        sha256 = "09x50g74mld8zv8r6a873j52zx3w86qv3mc7g4fhzr85911cz799";
+      });
   };
 }
