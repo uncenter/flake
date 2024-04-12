@@ -9,6 +9,8 @@
     ./modules/homebrew.nix
   ];
 
+  # https://daiderd.com/nix-darwin/manual/index.html#sec-options
+
   system = {
     defaults = {
       dock = {
@@ -30,6 +32,7 @@
 
   security.pam.enableSudoTouchIdAuth = true;
 
+  # https://github.com/ryanccn/nix-darwin-custom-icons
   environment.customIcons = {
     enable = true;
     icons = [

@@ -1,5 +1,6 @@
 {config, ...}: {
   home.sessionVariables = {
+    # https://github.com/b3nj5m1n/xdg-ninja
     ZDOTDIR = "${config.xdg.configHome}/zsh";
     GIT_CONFIG_GLOBAL = "${config.xdg.configHome}/git/config";
     PYTHONSTARTUP = "${config.xdg.configHome}/python/pythonrc.py";
