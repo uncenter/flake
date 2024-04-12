@@ -25,7 +25,7 @@ function reset
 end
 
 starship init fish | source
-fnm env | source
+fnm env --use-on-cd | source
 atuin init fish | source
 
 # https://fishshell.com/docs/current/cmds/fish_greeting.html
