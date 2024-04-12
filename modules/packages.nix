@@ -7,16 +7,10 @@
   with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
     inputs.home-manager.packages.${pkgs.system}.home-manager
 
-    # Shell #
-    fish
-    starship
-
     # Essentials #
-    bat
     coreutils
     curl
     gcc
-    git
     git-lfs
     gnupg
     wget
@@ -44,7 +38,6 @@
     taplo
 
     # Tools and TUIs #
-    atuin
     bottom
     cowsay
     yq
@@ -75,6 +68,5 @@
     vhs
     xdg-ninja
     tokei
-    yazi
   ];
 }
