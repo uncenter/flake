@@ -1,4 +1,9 @@
-{lib, pkgs, config, ...}: {
+{
+  lib,
+  pkgs,
+  config,
+  ...
+}: {
   programs.fish = {
     enable = true;
     catppuccin.enable = true;
@@ -29,7 +34,6 @@
 
       "cx" = "chmod +x";
     };
-
 
     plugins = [
       {

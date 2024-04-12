@@ -13,7 +13,7 @@ in {
 
   home.packages = with pkgs; [
     rust-bin.stable.latest.default
-    
+
     cargo-sort
     cargo-bump
     cargo-bloat

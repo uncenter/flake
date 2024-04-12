@@ -21,7 +21,7 @@ _: {
       "1password/tap"
     ];
 
-    brews = [ ];
+    brews = [];
 
     casks = [
       "1password"

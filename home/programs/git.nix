@@ -6,7 +6,7 @@ _: {
     ignores = [
       ".DS_Store"
     ];
-    
+
     aliases = {
       "undo" = "reset --soft HEAD~1";
     };

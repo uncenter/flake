@@ -23,7 +23,11 @@ _: {
 
     keymap = {
       manager.append_keymap = [
-        { on = ["<Space>"]; run = ["select --state=none"]; desc = "Toggle the current selection state"; }
+        {
+          on = ["<Space>"];
+          run = ["select --state=none"];
+          desc = "Toggle the current selection state";
+        }
       ];
     };
   };

@@ -1,7 +1,6 @@
 _: {
   programs.newsboat = {
     enable = true;
-    # catppuccin.enable = true;
 
     browser = "open %u";
     urls = builtins.map (x: {"url" = x;}) [

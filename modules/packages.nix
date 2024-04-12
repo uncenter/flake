@@ -3,7 +3,8 @@
   inputs,
   ...
 }: {
-  environment.systemPackages = with pkgs; with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
+  environment.systemPackages = with pkgs;
+  with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
     inputs.home-manager.packages.${pkgs.system}.home-manager
 
     alejandra
