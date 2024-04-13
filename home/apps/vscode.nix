@@ -21,11 +21,9 @@
     "charliermarsh.ruff"
     "dbaeumer.vscode-eslint"
     "denoland.vscode-deno"
-    "dprint.dprint"
     "eamodio.gitlens"
     "editorconfig.editorconfig"
     "esbenp.prettier-vscode"
-    "fabiospampinato.vscode-github-notifications-bell"
     "fabiospampinato.vscode-open-in-finder"
     "fabiospampinato.vscode-open-in-github"
     "fabiospampinato.vscode-open-in-npm"
@@ -42,18 +40,13 @@
     "mechatroner.rainbow-csv"
     "meganrogge.template-string-converter"
     "mrmlnc.vscode-scss"
-    "ms-python.black-formatter"
     "ms-python.debugpy"
-    "ms-python.isort"
     "ms-python.python"
-    "ms-python.vscode-pylance"
     "ms-vscode-remote.remote-wsl"
     "ms-vscode.cpptools"
     "njpwerner.autodocstring"
-    "ocamllabs.ocaml-platform"
     "oscarotero.vento-syntax"
     "oven.bun-vscode"
-    "pkief.material-icon-theme"
     "redhat.vscode-yaml"
     "rust-lang.rust-analyzer"
     "sclu1034.justfile"
@@ -78,7 +71,7 @@ in {
     enable = true;
     package = pkgs.stdenv.mkDerivation {
       pname = "vscode";
-      version = "1.87.2";
+      version = "1.88.1";
       dontUnpack = true;
       installPhase = ''
         mkdir -p $out
@@ -89,6 +82,7 @@ in {
     mutableExtensionsDir = true;
 
     userSettings = {
+      "catppuccin.accentColor" = "mauve";
       "workbench.iconTheme" = "catppuccin-frappe";
       "workbench.colorTheme" = "Catppuccin Frappé";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
