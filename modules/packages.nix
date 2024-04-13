@@ -40,7 +40,6 @@
     taplo
 
     # Tools and TUIs #
-    bottom
     cowsay
     yq
     xh
@@ -48,14 +47,12 @@
     du-dust
     eza
     fd
-    fzf
     gh
     gum
     hyperfine
     jnv
     jq
     just
-    lazygit
     lolcat
     neovim
     nrr
