@@ -168,6 +168,7 @@ in {
     };
   };
 
+  # Originally from https://github.com/ryanccn/flake/blob/3861c0442b808dc44694ce783e77f4abdcbd087b/home/apps/vscode.nix#L207-L241.
   home.activation = {
     vscodeExtensions = lib.hm.dag.entryAfter ["writeBoundary"] ''
       code_bin="/usr/local/bin/code"
