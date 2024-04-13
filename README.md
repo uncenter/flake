@@ -9,4 +9,4 @@ Many thanks to [ryanccn/flake](https://github.com/ryanccn/flake), [isabelroses/d
 
 ## License
 
-[APACHE-2.0](LICENSE)
+[Apache 2.0](LICENSE)
