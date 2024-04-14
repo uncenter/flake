@@ -9,6 +9,7 @@
     inputs.catppuccin.homeManagerModules.catppuccin
 
     ./variables.nix
+    ./fonts.nix
 
     ./apps/vscode.nix
     ./apps/ghostty.nix
@@ -33,6 +34,8 @@
   ];
 
   xdg.enable = true;
+
+  fonts.fontconfig.enable = true;
 
   catppuccin.flavour = "frappe";
   catppuccin.accent = "mauve";

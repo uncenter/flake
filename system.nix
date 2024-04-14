@@ -7,7 +7,6 @@
     ./modules/nix.nix
     ./modules/packages.nix
     ./modules/homebrew.nix
-    ./modules/fonts.nix
   ];
 
   # https://daiderd.com/nix-darwin/manual/index.html#sec-options
