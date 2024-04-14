@@ -1,6 +1,7 @@
 {
   pkgs,
   lib,
+  config,
   ...
 }: let
   extensions = [
@@ -82,8 +83,8 @@ in {
     mutableExtensionsDir = true;
 
     userSettings = {
-      "catppuccin.accentColor" = "mauve";
-      "workbench.iconTheme" = "catppuccin-frappe";
+      "catppuccin.accentColor" = config.catppuccin.accent;
+      "workbench.iconTheme" = "catppuccin-${config.catppuccin.flavour}";
       "workbench.colorTheme" = "Catppuccin Frappé";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
       "workbench.preferredLightColorTheme" = "Catppuccin Latte";
