@@ -11,8 +11,9 @@
     ./variables.nix
     ./fonts.nix
 
-    ./apps/vscode.nix
     ./apps/ghostty.nix
+    ./apps/inkscape.nix
+    ./apps/vscode.nix
 
     ./programs/atuin.nix
     ./programs/bat.nix
