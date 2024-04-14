@@ -96,7 +96,7 @@ with lib; {
 
     optionsAlias = {silicon = "silicon ${args}";};
   in
-    mkIf (cfg.enable && config.programs.bat.enable) {
+    mkIf cfg.enable {
       home.packages = [cfg.package];
 
       programs.bash.shellAliases = optionsAlias;
@@ -117,5 +117,12 @@ with lib; {
           run ${lib.getExe pkgs.silicon} --build-cache
         )
       '';
+
+      assertions = [
+        {
+          assertion = config.programs.bat.enable;
+          message = "Option programs.bat.enable must be enabled to build Silicon theme cache";
+        }
+      ];
     };
 }
