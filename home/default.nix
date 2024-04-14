@@ -9,7 +9,6 @@
     inputs.catppuccin.homeManagerModules.catppuccin
 
     ./variables.nix
-    ./fonts.nix
 
     ./apps/vscode.nix
     ./apps/ghostty.nix
@@ -26,6 +25,7 @@
     ./programs/izrss.nix
     ./programs/lazygit.nix
     ./programs/rust.nix
+    ./programs/silicon.nix
     ./programs/starship.nix
     ./programs/yazi.nix
 
