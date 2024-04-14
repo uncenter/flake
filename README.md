@@ -1,6 +1,7 @@
 <div align="center">
-    <img src="assets/nix.svg" width="100">
+    <img src=".github/assets/nix.svg" width="100">
     <h1>flake</h1>
+    <img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/palette/macchiato.png" />
 </div>
 
 ## Credits
