@@ -34,6 +34,7 @@
     fnm
     fortls
     fprettify
+    jdk17
     nil
     ruff
     shellcheck
