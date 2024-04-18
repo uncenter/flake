@@ -41,6 +41,7 @@
       "https://huonw.github.io/blog/atom.xml"
       "https://nixpkgs.news/rss.xml"
       "https://maia.crimew.gay/feed.xml"
+      "https://rbluethl.com/rss"
     ];
   };
 }
