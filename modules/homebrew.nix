@@ -34,6 +34,7 @@ _: {
       "calibre"
       "cleanshot"
       "codeedit"
+      "confectionery"
       "discord"
       "docker"
       "firefox"
