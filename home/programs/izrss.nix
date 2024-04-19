@@ -42,6 +42,7 @@
       "https://nixpkgs.news/rss.xml"
       "https://maia.crimew.gay/feed.xml"
       "https://rbluethl.com/rss"
+      "https://lucumr.pocoo.org/feed.atom"
     ];
   };
 }
