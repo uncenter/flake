@@ -8,32 +8,6 @@ with lib; {
   options.programs.silicon = {
     enable = mkEnableOption "Silicon - create beautiful images of your source code";
 
-    enableBashIntegration =
-      mkEnableOption "Bash integration"
-      // {
-        default = true;
-      };
-
-    enableZshIntegration =
-      mkEnableOption "Zsh integration"
-      // {
-        default = true;
-      };
-
-    enableFishIntegration =
-      mkEnableOption "Fish integration"
-      // {
-        default = true;
-      };
-
-    enableIonIntegration =
-      mkEnableOption "Ion integration"
-      // {
-        default = true;
-      };
-
-    enableNushellIntegration = mkEnableOption "Nushell integration";
-
     font = mkOption {
       type = types.nullOr types.str;
       default = null;
