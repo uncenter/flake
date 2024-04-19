@@ -158,6 +158,7 @@ in {
       "explorer.sortOrder" = "type";
       "explorer.fileNesting.enabled" = true;
       "explorer.fileNesting.expand" = false;
+      "typescript.updateImportsOnFileMove.enabled" = "always";
 
       "extensions.ignoreRecommendations" = true;
     };
