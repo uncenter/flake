@@ -1,0 +1,28 @@
+name: Update flake inputs
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Nix
+        uses: DeterminateSystems/nix-installer-action@v10
+
+      - name: Update lockfile
+        uses: DeterminateSystems/update-flake-lock@v21
+        id: update
+        with:
+          pr-title: "chore(deps): update flake inputs"
+          commit-msg: "chore(deps): update flake inputs"
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Merge changes
+        run: gh pr merge ${{ steps.update.outputs.pull-request-number }} --squash --delete-branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
