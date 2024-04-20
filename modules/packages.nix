@@ -53,6 +53,7 @@
     jnv
     jq
     just
+    kittysay
     lolcat
     neovim
     nrr
@@ -62,9 +63,9 @@
     silicon
     spicetify-cli
     terminal-notifier
+    tokei
     typos
     vhs
     xdg-ninja
-    tokei
   ];
 }
