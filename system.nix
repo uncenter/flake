@@ -50,7 +50,7 @@
       }
       {
         path = "/Applications/Discord.app";
-        icon = ./icons/discord.icns;
+        icon = ./icons/discord/plain.icns;
       }
       {
         path = "/Applications/DevFolderIcon.app";
@@ -82,7 +82,7 @@
       }
       {
         path = "/Applications/Zed.app";
-        icon = ./icons/zed/blue.icns;
+        icon = ./icons/zed-blue.icns;
       }
     ];
   };
