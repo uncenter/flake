@@ -50,7 +50,7 @@
       }
       {
         path = "/Applications/Discord.app";
-        icon = ./icons/discord/plain.icns;
+        icon = ./icons/discord.icns;
       }
       {
         path = "/Applications/DevFolderIcon.app";
