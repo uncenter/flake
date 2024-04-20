@@ -81,6 +81,10 @@
           cwebp -lossless $file -o $output
         end
       '';
+
+      "," = ''
+        nix run "nixpkgs#$argv[1]" -- $argv[2..-1]
+      '';
     };
   };
 
