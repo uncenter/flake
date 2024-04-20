@@ -80,6 +80,10 @@
         path = "/Applications/Zoom.app";
         icon = ./icons/zoom.icns;
       }
+      {
+        path = "/Applications/Zed.app";
+        icon = ./icons/zed/blue.icns;
+      }
     ];
   };
 
