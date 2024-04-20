@@ -10,7 +10,6 @@
     # Essentials #
     coreutils
     curl
-    gcc
     git-lfs
     gnupg
     wget
