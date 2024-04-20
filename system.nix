@@ -37,6 +37,10 @@
     enable = true;
     icons = [
       {
+        path = "/Applications/1Password.app";
+        icon = ./icons/1password.icns;
+      }
+      {
         path = "/Applications/Arc.app";
         icon = ./icons/arc.icns;
       }
