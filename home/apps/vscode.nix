@@ -122,7 +122,7 @@ in {
 
       "[python]" = {
         "editor.formatOnType" = true;
-        "editor.defaultFormatter" = "ms-python.black-formatter";
+        "editor.defaultFormatter" = "charliermarsh.ruff";
       };
       "yaml.format.enable" = true;
       "[yaml]" = {
