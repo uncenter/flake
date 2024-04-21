@@ -15,7 +15,6 @@ in {
     rust-bin.stable.latest.default
 
     cargo-sort
-    cargo-bump
     cargo-bloat
   ];
 }
