@@ -1,8 +1,6 @@
 {
   inputs = {
-    nixpkgs = {
-      url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    };
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     nix-darwin = {
       url = "github:LnL7/nix-darwin";
@@ -14,22 +12,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin = {
-      url = "github:catppuccin/nix";
-    };
-
-    catppuccin-toolbox = {
-      url = "github:catppuccin/toolbox";
-    };
+    catppuccin.url = "github:catppuccin/nix";
+    catppuccin-toolbox.url = "github:catppuccin/toolbox";
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    darwin-custom-icons = {
-      url = "github:ryanccn/nix-darwin-custom-icons";
-    };
+    darwin-custom-icons.url = "github:ryanccn/nix-darwin-custom-icons";
 
     izrss = {
       url = "github:isabelroses/izrss";
