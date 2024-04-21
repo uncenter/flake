@@ -22,14 +22,15 @@
       "1password/tap"
     ];
 
-    brews = [];
+    brews = [
+      "coreutils"
+    ];
 
     casks = [
       "1password"
       "affinity-designer"
       "affinity-photo"
       "affinity-publisher"
-      "alt-tab"
       "arc"
       "calibre"
       "cleanshot"

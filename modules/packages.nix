@@ -8,7 +8,6 @@
     inputs.home-manager.packages.${pkgs.system}.home-manager
 
     # Essentials #
-    coreutils
     curl
     git-lfs
     gnupg
