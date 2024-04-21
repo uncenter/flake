@@ -63,9 +63,9 @@
     devShells = forAllSystems (system: {
       default = pkgsForEach.${system}.mkShellNoCC {
         packages = with pkgsForEach.${system}; [
-          statix # lints and suggestions for nix code
-          deadnix # clean up unused nix code
-          alejandra # the formatter the flake provides
+          statix
+          deadnix
+          alejandra
         ];
       };
     });
