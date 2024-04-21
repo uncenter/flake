@@ -1,4 +1,5 @@
 {
+  self,
   pkgs,
   inputs,
   ...
@@ -98,7 +99,7 @@
     useUserPackages = true;
 
     extraSpecialArgs = {
-      inherit inputs;
+      inherit self inputs;
     };
 
     users.uncenter = import ./home;
