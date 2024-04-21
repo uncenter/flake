@@ -62,8 +62,16 @@
         icon = ./icons/devfolder.icns;
       }
       {
+        path = "/Applications/Ghostty.app";
+        icon = ./icons/term.icns;
+      }
+      {
         path = "/Applications/Gramps.app";
         icon = ./icons/gramps.icns;
+      }
+      {
+        path = "/Applications/Inkscape.app";
+        icon = ./icons/inkscape.icns;
       }
       {
         path = "/Applications/Obsidian.app";
@@ -78,8 +86,12 @@
         icon = ./icons/screenshotsfolder.icns;
       }
       {
-        path = "/Applications/Ghostty.app";
-        icon = ./icons/term.icns;
+        path = "/Applications/Spotify.app";
+        icon = ./icons/spotify.icns;
+      }
+      {
+        path = "/Applications/Visual Studio Code.app";
+        icon = ./icons/vscode.icns;
       }
       {
         path = "/Applications/Zoom.app";
