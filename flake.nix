@@ -30,11 +30,16 @@
 
   outputs = {
     self,
+    nixpkgs,
     nix-darwin,
     home-manager,
     darwin-custom-icons,
     ...
-  } @ inputs: {
+  } @ inputs: let
+    systems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
+    forAllSystems = nixpkgs.lib.genAttrs systems;
+    pkgsForEach = nixpkgs.legacyPackages;
+  in {
     darwinConfigurations.Katara = nix-darwin.lib.darwinSystem {
       modules = [
         home-manager.darwinModules.home-manager
@@ -46,5 +51,17 @@
         inherit self inputs;
       };
     };
+
+    formatter = forAllSystems (system: pkgsForEach.${system}.alejandra);
+
+    devShells = forAllSystems (system: {
+      default = pkgsForEach.${system}.mkShellNoCC {
+        packages = with pkgsForEach.${system}; [
+          statix # lints and suggestions for nix code
+          deadnix # clean up unused nix code
+          alejandra # the formatter the flake provides
+        ];
+      };
+    });
   };
 }
