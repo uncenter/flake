@@ -1,5 +1,5 @@
-{
-  imports = [../../modules/extra/home-manager/silicon.nix];
+{self, ...}: {
+  imports = [self.homeManagerModules.silicon];
   config.programs.silicon = {
     enable = true;
 
