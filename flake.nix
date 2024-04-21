@@ -52,6 +52,12 @@
       };
     };
 
+    homeManagerModules = {
+      silicon = ./modules/extra/home-manager/silicon.nix;
+
+      default = builtins.throw "No default module is provided by this flake";
+    };
+
     formatter = forAllSystems (system: pkgsForEach.${system}.alejandra);
 
     devShells = forAllSystems (system: {
