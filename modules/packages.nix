@@ -58,6 +58,7 @@
     nrr
     pastel
     ripgrep
+    scc
     sd
     silicon
     spicetify-cli
