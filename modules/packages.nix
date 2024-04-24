@@ -60,6 +60,7 @@
     ripgrep
     scc
     sd
+    sttr
     silicon
     spicetify-cli
     terminal-notifier
