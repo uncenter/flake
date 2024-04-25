@@ -1,5 +1,7 @@
 {config, ...}: {
   home.sessionVariables = {
+    EDITOR = "code";
+
     # https://github.com/b3nj5m1n/xdg-ninja
     NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc";
     NODE_REPL_HISTORY = "${config.xdg.dataHome}/nodejs/history";
