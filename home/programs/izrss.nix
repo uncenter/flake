@@ -44,6 +44,7 @@
       "https://rbluethl.com/rss"
       "https://lucumr.pocoo.org/feed.atom"
       "https://yorickpeterse.com/feed.xml"
+      "https://ardislu.dev/atom.xml"
     ];
   };
 }
