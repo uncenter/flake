@@ -48,7 +48,6 @@
       "jordanbaird-ice"
       "knockknock"
       "loungy"
-      "maccy"
       "obsidian"
       "orion"
       "oversight"
