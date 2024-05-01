@@ -48,6 +48,7 @@
     fd
     gh
     gum
+    hexyl
     hyperfine
     jnv
     jq
