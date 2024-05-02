@@ -6,7 +6,7 @@
   ...
 }: {
   services.nix-daemon.enable = true;
-  nix.package = pkgs.nixVersions.unstable;
+  nix.package = pkgs.nixVersions.latest;
 
   nix.registry = {
     n.flake = inputs.nixpkgs;
