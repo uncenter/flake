@@ -54,6 +54,7 @@
     jq
     just
     kittysay
+    license-go
     lolcat
     neovim
     nrr
