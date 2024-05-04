@@ -45,6 +45,7 @@
       "https://lucumr.pocoo.org/feed.atom"
       "https://yorickpeterse.com/feed.xml"
       "https://ardislu.dev/atom.xml"
+      "https://kettanaito.com/blog/rss.xml"
     ];
   };
 }
