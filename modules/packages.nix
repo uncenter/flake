@@ -16,6 +16,10 @@
     # Nix #
     alejandra
     statix
+    nixpkgs-review
+    nix-init
+    nix-update
+    nurl
 
     # Catppuccin #
     whiskers
