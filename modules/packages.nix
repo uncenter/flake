@@ -17,7 +17,6 @@
     alejandra
     statix
     nixpkgs-review
-    nix-init
     nix-update
     nurl
 
@@ -68,7 +67,6 @@
     scc
     sd
     sttr
-    silicon
     spicetify-cli
     terminal-notifier
     tokei

@@ -54,6 +54,7 @@
 
     homeManagerModules = {
       silicon = ./modules/extra/home-manager/silicon.nix;
+      nix-init = ./modules/extra/home-manager/nix-init.nix;
 
       default = builtins.throw "No default module is provided by this flake";
     };
