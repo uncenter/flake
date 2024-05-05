@@ -62,6 +62,7 @@
     lolcat
     neovim
     nrr
+    ouch
     pastel
     ripgrep
     scc
