@@ -16,5 +16,6 @@ in {
 
     cargo-sort
     cargo-bloat
+    cargo-shear
   ];
 }
