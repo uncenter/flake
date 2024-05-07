@@ -42,6 +42,7 @@
     taplo
 
     # Tools and TUIs #
+    cmatrix
     cowsay
     yq
     xh
