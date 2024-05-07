@@ -48,6 +48,7 @@
     doggo
     du-dust
     eza
+    fastfetch
     fd
     gh
     gum
