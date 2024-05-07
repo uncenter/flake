@@ -47,6 +47,7 @@
       "https://ardislu.dev/atom.xml"
       "https://kettanaito.com/blog/rss.xml"
       "https://kilo.bytesize.xyz/feed/"
+      "https://piccalil.li/feed.xml"
     ];
   };
 }
