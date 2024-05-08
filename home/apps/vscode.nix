@@ -161,6 +161,7 @@ in {
       "typescript.updateImportsOnFileMove.enabled" = "always";
 
       "extensions.ignoreRecommendations" = true;
+      "vscord.status.idle.disconnectOnIdle" = true;
     };
   };
 
