@@ -3,7 +3,11 @@
   config.programs.silicon = {
     enable = true;
 
-    font = "CommitMono Nerd Font";
-    theme = "Catppuccin Frappe";
+    settings = {
+      font = "CommitMono Nerd Font";
+      theme = "Catppuccin Frappe";
+      line-number = false;
+      window-controls = true;
+    };
   };
 }

@@ -8,46 +8,17 @@ with lib; {
   options.programs.silicon = {
     enable = mkEnableOption "Silicon - create beautiful images of your source code";
 
-    font = mkOption {
-      type = types.nullOr types.str;
-      default = null;
-      example = "Hack; SimSun=31";
-      description = ''
-        The fallback font list ({option}`--font` argument).
-      '';
-    };
-
-    theme = mkOption {
-      type = types.nullOr types.str;
-      default = null;
-      example = "Dracula";
-      description = ''
-        The syntax highlighting theme. It can be a theme name or path to a .tmTheme file ({option}`--theme` argument).
-      '';
-    };
-
-    tab-width = mkOption {
-      type = types.int;
-      default = 4;
-      example = 2;
-      description = ''
-        Tab width ({option}`--tab-width` argument).
-      '';
-    };
-
-    line-number = mkOption {
-      type = types.bool;
-      default = true;
-      description = ''
-        Hide/show line numbers ({option}`--no-line-number` argument).
-      '';
-    };
-
-    window-controls = mkOption {
-      type = types.bool;
-      default = true;
-      description = ''
-        Hide/show window controls ({option}`--no-window-controls` argument).
+    settings = mkOption {
+      type = with types; attrsOf (oneOf [bool int str]);
+      default = {};
+      example = literalExpression ''
+        {
+          font = "Hack; SimSun=31";
+          theme = "Dracula";
+          tab-width = 2;
+          line-number = false;
+          window-controls = false;
+        };
       '';
     };
 
@@ -65,23 +36,23 @@ with lib; {
 
   config = let
     cfg = config.programs.silicon;
-
-    args = escapeShellArgs (optionals (cfg.font != null) ["--font" cfg.font] ++ optionals (cfg.theme != null) ["--theme" cfg.theme] ++ optional (!cfg.line-number) "--no-line-number" ++ optional (!cfg.window-controls) "--no-window-controls" ++ cfg.extraOptions);
-
-    optionsAlias = {silicon = "silicon ${args}";};
   in
     mkIf cfg.enable {
       home.packages = [cfg.package];
 
-      programs.bash.shellAliases = optionsAlias;
-
-      programs.zsh.shellAliases = optionsAlias;
-
-      programs.fish.shellAliases = optionsAlias;
-
-      programs.ion.shellAliases = optionsAlias;
-
-      programs.nushell.shellAliases = optionsAlias;
+      xdg.configFile."silicon/config" = mkIf (cfg.settings != {}) {
+        text = builtins.concatStringsSep "\n" ((builtins.attrValues (builtins.mapAttrs (name: value:
+            if value == true
+            then ""
+            else
+              (
+                if value == false
+                then "--no-${name}"
+                else "--${name} " + escapeShellArgs [value]
+              ))
+          cfg.settings))
+          ++ cfg.extraOptions);
+      };
 
       home.activation.siliconCache = hm.dag.entryAfter ["linkGeneration"] ''
         (
