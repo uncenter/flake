@@ -41,17 +41,19 @@ with lib; {
       home.packages = [cfg.package];
 
       xdg.configFile."silicon/config" = mkIf (cfg.settings != {}) {
-        text = builtins.concatStringsSep "\n" ((builtins.attrValues (builtins.mapAttrs (name: value:
-            if value == true
-            then ""
-            else
-              (
-                if value == false
-                then "--no-${name}"
-                else "--${name} " + escapeShellArgs [value]
-              ))
+        text = builtins.concatStringsSep "\n" ((builtins.attrValues (builtins.mapAttrs (
+            name: value:
+              if builtins.isBool value
+              then
+                (
+                  if value == true
+                  then ""
+                  else "--no-${name}"
+                )
+              else "--${name} " + escapeShellArgs [value]
+          )
           cfg.settings))
-          ++ cfg.extraOptions);
+        ++ cfg.extraOptions);
       };
 
       home.activation.siliconCache = hm.dag.entryAfter ["linkGeneration"] ''
