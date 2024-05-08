@@ -50,6 +50,7 @@
       "https://piccalil.li/feed.xml"
       "https://zed.dev/blog.rss"
       "https://www.sophiajt.com/atom.xml"
+      "https://robinmalfait.com/feed.xml"
     ];
   };
 }
