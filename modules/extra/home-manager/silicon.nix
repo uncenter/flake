@@ -41,7 +41,7 @@ with lib; {
       home.packages = [cfg.package];
 
       xdg.configFile."silicon/config" = mkIf (cfg.settings != {}) {
-        text = builtins.concatStringsSep "\n" ((builtins.attrValues (builtins.mapAttrs (
+        text = lib.concatLines ((lib.mapAttrsToList (
             name: value:
               if builtins.isBool value
               then
@@ -52,7 +52,7 @@ with lib; {
                 )
               else "--${name} " + escapeShellArgs [value]
           )
-          cfg.settings))
+          cfg.settings)
         ++ cfg.extraOptions);
       };
 
