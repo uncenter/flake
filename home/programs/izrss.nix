@@ -49,6 +49,7 @@
       "https://kilo.bytesize.xyz/feed/"
       "https://piccalil.li/feed.xml"
       "https://zed.dev/blog.rss"
+      "https://www.sophiajt.com/atom.xml"
     ];
   };
 }
