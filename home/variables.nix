@@ -1,5 +1,7 @@
 {config, ...}: {
   home.sessionVariables = {
+    FLAKE = "/Users/uncenter/.config/flake";
+
     EDITOR = "code";
 
     # https://github.com/b3nj5m1n/xdg-ninja
