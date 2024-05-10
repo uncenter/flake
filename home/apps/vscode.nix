@@ -32,6 +32,7 @@
     "ginfuru.better-nunjucks"
     "github.vscode-github-actions"
     "golang.go"
+    "graphql.vscode-graphql-syntax"
     "griimick.vhs"
     "hyoban.tailwindcss-classname-highlight"
     "jnoortheen.nix-ide"
