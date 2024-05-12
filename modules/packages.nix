@@ -17,6 +17,7 @@
     alejandra
     statix
     nixpkgs-review
+    inputs.nixpkgs-using.packages.${pkgs.system}.default
     nix-update
     nurl
 

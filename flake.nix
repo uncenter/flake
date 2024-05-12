@@ -26,6 +26,11 @@
       url = "github:isabelroses/izrss";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nixpkgs-using = {
+      url = "github:uncenter/nixpkgs-using";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {

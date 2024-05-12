@@ -142,6 +142,26 @@
         "type": "github"
       }
     },
+    "nixpkgs-using": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1715487155,
+        "narHash": "sha256-C3jSXckOaCyqVRsMKyWQPQDZVsTPXH6pODYzc+8uiks=",
+        "owner": "uncenter",
+        "repo": "nixpkgs-using",
+        "rev": "f548ed7f491cd862b0d5bbb0f4942127f6b662ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uncenter",
+        "repo": "nixpkgs-using",
+        "type": "github"
+      }
+    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1715413075,
@@ -167,6 +187,7 @@
         "izrss": "izrss",
         "nix-darwin": "nix-darwin",
         "nixpkgs": "nixpkgs_2",
+        "nixpkgs-using": "nixpkgs-using",
         "rust-overlay": "rust-overlay"
       }
     },
