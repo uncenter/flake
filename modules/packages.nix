@@ -26,6 +26,7 @@
 
     # Image & Video #
     ffmpeg
+    icnsify
     imagemagick
     libwebp
 
