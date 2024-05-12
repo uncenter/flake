@@ -49,6 +49,7 @@
     xh
     doggo
     du-dust
+    entr
     eza
     fastfetch
     fd
