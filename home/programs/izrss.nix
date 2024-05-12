@@ -51,6 +51,7 @@
       "https://zed.dev/blog.rss"
       "https://www.sophiajt.com/atom.xml"
       "https://robinmalfait.com/feed.xml"
+      "https://this-week-in-rust.org/atom.xml"
     ];
   };
 }
