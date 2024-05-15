@@ -39,6 +39,8 @@
     fprettify
     jdk17
     nil
+    poetry
+    python3
     ruff
     shellcheck
     taplo
