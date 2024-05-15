@@ -51,6 +51,7 @@
     "oven.bun-vscode"
     "redhat.vscode-yaml"
     "rust-lang.rust-analyzer"
+    "samuelcolvin.jinjahtml"
     "sclu1034.justfile"
     "svelte.svelte-vscode"
     "tamasfe.even-better-toml"
@@ -153,6 +154,7 @@ in {
 
       "files.associations" = {
         "*.njk" = "nunjucks";
+        "*.tera" = "jinja-html";
       };
       "explorer.confirmDelete" = false;
       "explorer.confirmDragAndDrop" = false;
