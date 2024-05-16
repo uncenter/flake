@@ -70,6 +70,7 @@
     nrr
     ouch
     pastel
+    poppler_utils
     ripgrep
     scc
     sd
