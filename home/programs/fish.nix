@@ -32,6 +32,8 @@
       "dig" = "doggo";
 
       "cx" = "chmod +x";
+
+      "rustlocal" = "open \"$(rustc --print sysroot)/share/doc/rust/html/index.html\"";
     };
 
     plugins = [
