@@ -53,5 +53,9 @@
       "https://robinmalfait.com/feed.xml"
       "https://this-week-in-rust.org/atom.xml"
     ];
+
+    settings = {
+      dateformat = "2006/01/02";
+    };
   };
 }
