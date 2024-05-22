@@ -86,7 +86,7 @@ in {
 
     userSettings = {
       "catppuccin.accentColor" = config.catppuccin.accent;
-      "workbench.iconTheme" = "catppuccin-${config.catppuccin.flavour}";
+      "workbench.iconTheme" = "catppuccin-${config.catppuccin.flavor}";
       "workbench.colorTheme" = "Catppuccin Frappé";
       "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
       "workbench.preferredLightColorTheme" = "Catppuccin Latte";

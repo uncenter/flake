@@ -35,7 +35,7 @@
 
   fonts.fontconfig.enable = true;
 
-  catppuccin.flavour = "frappe";
+  catppuccin.flavor = "frappe";
   catppuccin.accent = "mauve";
 
   home.stateVersion = "23.05";
