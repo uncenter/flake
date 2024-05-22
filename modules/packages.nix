@@ -30,6 +30,7 @@
     icnsify
     imagemagick
     libwebp
+    poppler_utils
 
     # Language Tools & Runtimes #
     bun
@@ -53,6 +54,7 @@
     doggo
     du-dust
     entr
+    exiftool
     eza
     fastfetch
     fd
@@ -70,7 +72,6 @@
     nrr
     ouch
     pastel
-    poppler_utils
     ripgrep
     scc
     sd
