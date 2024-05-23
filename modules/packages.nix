@@ -82,5 +82,6 @@
     typos
     vhs
     xdg-ninja
+    xsv
   ];
 }
