@@ -49,6 +49,7 @@
     "njpwerner.autodocstring"
     "oscarotero.vento-syntax"
     "oven.bun-vscode"
+    "ph0enixkm.amber-language"
     "redhat.vscode-yaml"
     "rust-lang.rust-analyzer"
     "samuelcolvin.jinjahtml"
