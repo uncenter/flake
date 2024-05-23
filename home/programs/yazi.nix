@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.yazi = {
     enable = true;
     catppuccin.enable = true;
@@ -29,6 +29,18 @@
           desc = "Toggle the current selection state";
         }
       ];
+    };
+  };
+
+  xdg.configFile = {
+    "yazi/init.lua".text = ''
+      require("starship"):setup()
+    '';
+    "yazi/plugins/starship.yazi".source = pkgs.fetchFromGitHub {
+      owner = "Rolv-Apneseth";
+      repo = "starship.yazi";
+      rev = "6197e4cca4caed0121654079151632f6abcdcae9";
+      sha256 = "sha256-oHoBq7BESjGeKsaBnDt0TXV78ggGCdYndLpcwwQ8Zts=";
     };
   };
 }
