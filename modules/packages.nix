@@ -18,6 +18,7 @@
     statix
     nixpkgs-review
     inputs.nixpkgs-using.packages.${pkgs.system}.default
+    inputs.purr.packages.${pkgs.system}.default
     nix-update
     nurl
 

@@ -31,6 +31,11 @@
       url = "github:uncenter/nixpkgs-using";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    purr = {
+      url = "github:uncenter/purr";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
