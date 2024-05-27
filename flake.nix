@@ -22,18 +22,8 @@
 
     darwin-custom-icons.url = "github:ryanccn/nix-darwin-custom-icons";
 
-    izrss = {
-      url = "github:isabelroses/izrss";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    nixpkgs-using = {
-      url = "github:uncenter/nixpkgs-using";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    purr = {
-      url = "github:uncenter/purr";
+    beapkgs = {
+      url = "github:isabelroses/beapkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

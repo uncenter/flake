@@ -1,5 +1,26 @@
 {
   "nodes": {
+    "beapkgs": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1716844431,
+        "narHash": "sha256-6ni9SzsnJlfbExWmbxxqMEKdoeDHEU5prhx0+1BgBNU=",
+        "owner": "isabelroses",
+        "repo": "beapkgs",
+        "rev": "4139a8a5f847408ba831a1168bdcbe9f4b26ed73",
+        "type": "github"
+      },
+      "original": {
+        "owner": "isabelroses",
+        "repo": "beapkgs",
+        "type": "github"
+      }
+    },
     "catppuccin": {
       "locked": {
         "lastModified": 1716337435,
@@ -48,6 +69,22 @@
         "type": "github"
       }
     },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696426674,
+        "narHash": "sha256-kvjfFW7WAETZlt09AgDn1MrtKzP7t90Vf7vypd3OL1U=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "0f9255e01c2351cc7d116c072cb317785dd33b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -83,26 +120,6 @@
       "original": {
         "owner": "nix-community",
         "repo": "home-manager",
-        "type": "github"
-      }
-    },
-    "izrss": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1715977329,
-        "narHash": "sha256-eUQrerbK9hChj83wtYOaUKJxnp2yNDwHHWFxCQrlB7A=",
-        "owner": "isabelroses",
-        "repo": "izrss",
-        "rev": "a8d8aee127848a19c67275ee68164293ee7fb51a",
-        "type": "github"
-      },
-      "original": {
-        "owner": "isabelroses",
-        "repo": "izrss",
         "type": "github"
       }
     },
@@ -142,26 +159,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-using": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1716334516,
-        "narHash": "sha256-1c3VvHI1Hxxj1b90V38xSlyUNxyqeh/J353RxN+np8E=",
-        "owner": "uncenter",
-        "repo": "nixpkgs-using",
-        "rev": "6f79dd4b9408fd2cfc8f2ffc4de3be31e4b989cb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "uncenter",
-        "repo": "nixpkgs-using",
-        "type": "github"
-      }
-    },
     "nixpkgs_2": {
       "locked": {
         "lastModified": 1716715802,
@@ -178,37 +175,15 @@
         "type": "github"
       }
     },
-    "purr": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1716669239,
-        "narHash": "sha256-ptJe80lIt6ROHlVGo8tdORsN7g18nkK9fEyArx0odVs=",
-        "owner": "uncenter",
-        "repo": "purr",
-        "rev": "f55e17501a2f174ef7f8d730d01dd55fde5f0d46",
-        "type": "github"
-      },
-      "original": {
-        "owner": "uncenter",
-        "repo": "purr",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
+        "beapkgs": "beapkgs",
         "catppuccin": "catppuccin",
         "catppuccin-toolbox": "catppuccin-toolbox",
         "darwin-custom-icons": "darwin-custom-icons",
         "home-manager": "home-manager",
-        "izrss": "izrss",
         "nix-darwin": "nix-darwin",
         "nixpkgs": "nixpkgs_2",
-        "nixpkgs-using": "nixpkgs-using",
-        "purr": "purr",
         "rust-overlay": "rust-overlay"
       }
     },
@@ -220,11 +195,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716689906,
-        "narHash": "sha256-tQYQM9zT4P1fFf739/AIZuTIGPxtEIpV7K7VieU60Io=",
+        "lastModified": 1716841420,
+        "narHash": "sha256-42U9a/bnKKDmlzWfsxdBjkCjV17WmGVcdlalolX3g30=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "3b6e1e221b04965427f3eee11fd6b6ea7b5f579b",
+        "rev": "a183bd311a828d51b49b040fb70bfbb98c5447ee",
         "type": "github"
       },
       "original": {

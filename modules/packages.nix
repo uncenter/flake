@@ -17,14 +17,14 @@
     alejandra
     statix
     nixpkgs-review
-    inputs.nixpkgs-using.packages.${pkgs.system}.default
-    inputs.purr.packages.${pkgs.system}.default
+    inputs.beapkgs.packages.${pkgs.system}.nixpkgs-using
     nix-update
     nurl
 
     # Catppuccin #
     whiskers
     catwalk
+    inputs.beapkgs.packages.${pkgs.system}.purr
 
     # Image & Video #
     ffmpeg
@@ -69,6 +69,7 @@
     kittysay
     license-go
     lolcat
+    inputs.beapkgs.packages.${pkgs.system}.meower
     neovim
     nrr
     ouch
