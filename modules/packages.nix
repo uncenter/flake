@@ -63,6 +63,7 @@
     gum
     hexyl
     hyperfine
+    inputs.beapkgs.packages.${pkgs.system}.ito
     jnv
     jq
     just
