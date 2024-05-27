@@ -78,7 +78,6 @@
     ripgrep
     scc
     sd
-    sttr
     spicetify-cli
     terminal-notifier
     tokei
