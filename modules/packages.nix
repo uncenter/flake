@@ -18,6 +18,9 @@
     statix
     nixpkgs-review
     inputs.beapkgs.packages.${pkgs.system}.nixpkgs-using
+    nix-inspect
+    nix-melt
+    nix-output-monitor
     nix-update
     nurl
 
