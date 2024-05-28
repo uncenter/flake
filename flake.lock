@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716844431,
-        "narHash": "sha256-6ni9SzsnJlfbExWmbxxqMEKdoeDHEU5prhx0+1BgBNU=",
+        "lastModified": 1716856330,
+        "narHash": "sha256-khQvoqMYJSZ7dTGTuhYo3j3UTttIG7BNtARhnnXeEc4=",
         "owner": "isabelroses",
         "repo": "beapkgs",
-        "rev": "4139a8a5f847408ba831a1168bdcbe9f4b26ed73",
+        "rev": "a47ab7af55a7efbc0627b2deecbdc755c02102e6",
         "type": "github"
       },
       "original": {
@@ -110,11 +110,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1716736760,
-        "narHash": "sha256-h3RmnNknKYtVA+EvUSra6QAwfZjC2q1G8YA7W0gat8Y=",
+        "lastModified": 1716847642,
+        "narHash": "sha256-rjEswRV0o23eBBils8lJXyIGha+l/VjV73IPg+ztxgk=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5d151429e1e79107acf6d06dcc5ace4e642ec239",
+        "rev": "10c7c219b7dae5795fb67f465a0d86cbe29f25fa",
         "type": "github"
       },
       "original": {
