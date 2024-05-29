@@ -1,7 +1,4 @@
-{
-  inputs,
-  ...
-}: {
+{inputs, ...}: {
   imports = [inputs.beapkgs.homeManagerModules.default];
 
   config.programs.izrss = {
@@ -51,6 +48,7 @@
       "https://www.sophiajt.com/atom.xml"
       "https://robinmalfait.com/feed.xml"
       "https://this-week-in-rust.org/atom.xml"
+      "https://twobithistory.org/feed.xml"
     ];
 
     settings = {
