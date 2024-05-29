@@ -15,6 +15,7 @@
 
     # Nix #
     alejandra
+    deadnix
     statix
     nixpkgs-review
     inputs.beapkgs.packages.${pkgs.system}.nixpkgs-using
