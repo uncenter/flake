@@ -1,7 +1,7 @@
 name: Update flake inputs
 
 on:
-  workflow_call:
+  workflow_dispatch:
   schedule:
     - cron: "0 0 * * *"
 
