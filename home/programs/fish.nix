@@ -22,18 +22,22 @@
     };
 
     shellAliases = {
-      "vi" = "nvim";
-      "vim" = "nvim";
-
       "ls" = "eza";
       "ll" = "ls -la";
 
       "cat" = "bat";
       "dig" = "doggo";
 
+      # Yes, I really am this lazy.
       "cx" = "chmod +x";
 
-      "rustlocal" = "open \"$(rustc --print sysroot)/share/doc/rust/html/index.html\"";
+      # Open the Rust Documentation locally (standard library reference, the book, Rust By Example, etc).
+      "rustdocs" = "open \"$(rustc --print sysroot)/share/doc/rust/html/index.html\"";
+
+      # Create a new branch for a pull request with a random name.
+      # 'There are only two hard things in Computer Science: cache invalidation and **naming things**.'
+      # - (supposedly) Phil Karlton
+      "gpr" = "git checkout -b \"pr-$(openssl rand -hex 4)\"";
     };
 
     plugins = [
@@ -62,6 +66,7 @@
     '';
 
     functions = {
+      # Recursively create and enter a directory path.
       take = ''
         set dir $argv[1]
         if test -z "$dir"
@@ -72,10 +77,12 @@
         cd "$dir"
       '';
 
+      # Check if a command is present in PATH.
       have = ''
         command -v $argv > /dev/null
       '';
 
+      # Convert all PNG files in the CWD to WebP.
       pngtowebp = ''
         for file in *.png
           set output (basename $file .png).webp
@@ -83,6 +90,7 @@
         end
       '';
 
+      # Like https://github.com/nix-community/comma, but who needs a whole CLI tool for it.
       "," = ''
         nix run "nixpkgs#$argv[1]" -- $argv[2..-1]
       '';
