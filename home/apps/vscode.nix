@@ -163,6 +163,7 @@ in {
       "explorer.fileNesting.enabled" = true;
       "explorer.fileNesting.expand" = false;
       "typescript.updateImportsOnFileMove.enabled" = "always";
+      "security.promptForLocalFileProtocolHandling" = false;
 
       "extensions.ignoreRecommendations" = true;
       "vscord.status.idle.disconnectOnIdle" = true;
