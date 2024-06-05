@@ -40,6 +40,7 @@
       "docker"
       "firefox"
       "firefox-developer-edition"
+      "fontforge"
       "gimp"
       "google-chrome"
       "gramps"
