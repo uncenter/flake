@@ -4,8 +4,11 @@
   ...
 }: {
   environment.systemPackages = with pkgs;
-  with inputs.catppuccin-toolbox.packages.${pkgs.system}; [
-    inputs.home-manager.packages.${pkgs.system}.home-manager
+  with inputs.home-manager.packages.${pkgs.system};
+  with inputs.catppuccin-toolbox.packages.${pkgs.system};
+  with inputs.catppuccin-whiskers.packages.${pkgs.system};
+  with inputs.beapkgs.packages.${pkgs.system}; [
+    home-manager
 
     # Essentials #
     curl
@@ -18,7 +21,7 @@
     deadnix
     statix
     nixpkgs-review
-    inputs.beapkgs.packages.${pkgs.system}.nixpkgs-using
+    nixpkgs-using
     nix-inspect
     nix-melt
     nix-output-monitor
@@ -28,7 +31,7 @@
     # Catppuccin #
     whiskers
     catwalk
-    inputs.beapkgs.packages.${pkgs.system}.purr
+    purr
 
     # Image & Video #
     ffmpeg
@@ -67,14 +70,14 @@
     gum
     hexyl
     hyperfine
-    inputs.beapkgs.packages.${pkgs.system}.ito
+    ito
     jnv
     jq
     just
     kittysay
     license-go
     lolcat
-    inputs.beapkgs.packages.${pkgs.system}.meower
+    meower
     neovim
     nrr
     ouch

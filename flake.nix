@@ -14,6 +14,7 @@
 
     catppuccin.url = "github:catppuccin/nix";
     catppuccin-toolbox.url = "github:catppuccin/toolbox";
+    catppuccin-whiskers.url = "github:catppuccin/whiskers";
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
