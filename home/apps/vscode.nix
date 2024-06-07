@@ -152,6 +152,7 @@ in {
       "git.confirmSync" = false;
       "git.suggestSmartCommit" = false;
       "git.openRepositoryInParentFolders" = "never";
+      "diffEditor.ignoreTrimWhitespace" = false;
 
       "files.associations" = {
         "*.njk" = "nunjucks";
