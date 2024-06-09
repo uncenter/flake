@@ -56,6 +56,7 @@
 
     # Tools and TUIs #
     cmatrix
+    cmd-wrapped
     cowsay
     yq
     xh
