@@ -5,7 +5,7 @@
 }: {
   environment.systemPackages = with pkgs;
   with inputs.home-manager.packages.${pkgs.system};
-  with inputs.catppuccin-toolbox.packages.${pkgs.system};
+  with inputs.catppuccin-catwalk.packages.${pkgs.system};
   with inputs.catppuccin-whiskers.packages.${pkgs.system};
   with inputs.beapkgs.packages.${pkgs.system}; [
     home-manager

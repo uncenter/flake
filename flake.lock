@@ -36,21 +36,21 @@
         "type": "github"
       }
     },
-    "catppuccin-toolbox": {
+    "catppuccin-catwalk": {
       "inputs": {
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1717975905,
-        "narHash": "sha256-/0K0YS0p3XLJ4jIPz6rvCRZG53qutpNilMJy3/qELeM=",
+        "lastModified": 1717946606,
+        "narHash": "sha256-B04cIWbt/9otYAcIhIpz1C28RhRFZZDUdeLTvWiWBHY=",
         "owner": "catppuccin",
-        "repo": "toolbox",
-        "rev": "21381966172cfaafa8063c2c973e2126535ac730",
+        "repo": "catwalk",
+        "rev": "6746a3374380c30bf722c216cf3f3ee87f117d57",
         "type": "github"
       },
       "original": {
         "owner": "catppuccin",
-        "repo": "toolbox",
+        "repo": "catwalk",
         "type": "github"
       }
     },
@@ -182,16 +182,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1708118438,
-        "narHash": "sha256-kk9/0nuVgA220FcqH/D2xaN6uGyHp/zoxPNUmPCMmEE=",
+        "lastModified": 1717681334,
+        "narHash": "sha256-HlvsMH8BNgdmQCwbBDmWp5/DfkEQYhXZHagJQCgbJU0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "5863c27340ba4de8f83e7e3c023b9599c3cb3c80",
+        "rev": "31f40991012489e858517ec20102f033e4653afb",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -232,7 +232,7 @@
       "inputs": {
         "beapkgs": "beapkgs",
         "catppuccin": "catppuccin",
-        "catppuccin-toolbox": "catppuccin-toolbox",
+        "catppuccin-catwalk": "catppuccin-catwalk",
         "catppuccin-whiskers": "catppuccin-whiskers",
         "darwin-custom-icons": "darwin-custom-icons",
         "home-manager": "home-manager",

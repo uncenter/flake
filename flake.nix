@@ -13,7 +13,7 @@
     };
 
     catppuccin.url = "github:catppuccin/nix";
-    catppuccin-toolbox.url = "github:catppuccin/toolbox";
+    catppuccin-catwalk.url = "github:catppuccin/catwalk";
     catppuccin-whiskers.url = "github:catppuccin/whiskers";
 
     rust-overlay = {
