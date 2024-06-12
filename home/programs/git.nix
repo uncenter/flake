@@ -32,11 +32,6 @@
       diff.algorithm = "histogram";
 
       push.autoSetupRemote = true;
-
-      url = {
-        "git@github.com:catppuccin/".insteadOf = "ctp:";
-        "https://github.com/".insteadOf = "github:";
-      };
     };
   };
 
