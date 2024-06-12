@@ -16,7 +16,6 @@
 
     taps = [
       "homebrew/services"
-      "homebrew/cask-versions"
       "homebrew/bundle"
 
       "1password/tap"
@@ -39,7 +38,7 @@
       "discord"
       "docker"
       "firefox"
-      "firefox-developer-edition"
+      "firefox@developer-edition"
       "fontforge"
       "gimp"
       "google-chrome"
@@ -48,7 +47,6 @@
       "jordanbaird-ice"
       "loungy"
       "obsidian"
-      "orion"
       "raycast"
       "sf-symbols"
       "spotify"
