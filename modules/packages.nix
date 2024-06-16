@@ -47,6 +47,8 @@
     fortls
     fprettify
     jdk17
+    lua
+    luajitPackages.luarocks
     nil
     poetry
     python3
