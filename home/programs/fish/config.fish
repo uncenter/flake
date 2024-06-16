@@ -33,6 +33,7 @@ end
 starship init fish | source
 fnm env --use-on-cd | source
 atuin init fish | source
+luarocks path --bin | source
 
 # https://fishshell.com/docs/current/cmds/fish_greeting.html
 set fish_greeting
