@@ -20,6 +20,7 @@
     alejandra
     deadnix
     statix
+    nixfmt-rfc-style
     nixpkgs-review
     nixpkgs-using
     nix-inspect
