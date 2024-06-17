@@ -23,6 +23,7 @@
     ./programs/glamour.nix
     ./programs/izrss.nix
     ./programs/lazygit.nix
+    ./programs/neovim.nix
     ./programs/nix-init.nix
     ./programs/rust.nix
     ./programs/starship.nix
