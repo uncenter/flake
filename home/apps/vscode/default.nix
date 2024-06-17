@@ -60,7 +60,6 @@ in {
       sclu1034.justfile
       svelte.svelte-vscode
       tamasfe.even-better-toml
-      tauri-apps.tauri-vscode
       timonwong.shellcheck
       unifiedjs.vscode-mdx
       usernamehw.errorlens
