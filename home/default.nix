@@ -10,7 +10,7 @@
     ./apps/ghostty/default.nix
     ./apps/vencord/default.nix
     ./apps/inkscape.nix
-    ./apps/vscode.nix
+    ./apps/vscode/default.nix
 
     ./programs/atuin.nix
     ./programs/bat.nix

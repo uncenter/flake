@@ -70,6 +70,10 @@
     "yzhang.markdown-all-in-one"
     "zguolee.tabler-icons"
   ];
+
+  mkLink = config.lib.file.mkOutOfStoreSymlink;
+
+  settingsFile = mkLink "/Users/uncenter/.config/flake/home/apps/vscode/settings.json";
 in {
   programs.vscode = {
     enable = true;
@@ -84,91 +88,6 @@ in {
 
     extensions = [];
     mutableExtensionsDir = true;
-
-    userSettings = {
-      "catppuccin.accentColor" = config.catppuccin.accent;
-      "workbench.iconTheme" = "catppuccin-${config.catppuccin.flavor}";
-      "workbench.colorTheme" = "Catppuccin Frappé";
-      "workbench.preferredDarkColorTheme" = "Catppuccin Frappé";
-      "workbench.preferredLightColorTheme" = "Catppuccin Latte";
-      "workbench.productIconTheme" = "Tabler";
-
-      "workbench.fontAliasing" = "antialiased";
-      "workbench.sideBar.location" = "left";
-      "workbench.startupEditor" = "none";
-      "window.autoDetectColorScheme" = true;
-      "workbench.editor.showTabs" = "multiple";
-      "window.nativeTabs" = true;
-      "editor.minimap.enabled" = false;
-
-      "editor.fontFamily" = "CommitMono Nerd Font";
-      "editor.fontLigatures" = true;
-      "editor.fontWeight" = "normal";
-      "editor.fontSize" = 14;
-      "editor.lineHeight" = 1.5;
-      "editor.accessibilitySupport" = "off";
-      "editor.inlineSuggest.enabled" = true;
-      "editor.detectIndentation" = false;
-      "editor.stickyScroll.enabled" = false;
-      "editor.linkedEditing" = true;
-      "workbench.editor.closeOnFileDelete" = true;
-      "terminal.integrated.fontSize" = 14;
-      "terminal.integrated.lineHeight" = 1.3;
-      "terminal.integrated.cursorBlinking" = true;
-      "terminal.integrated.defaultProfile.osx" = "/run/current-system/sw/bin/fish";
-      "editor.cursorSmoothCaretAnimation" = "off";
-
-      "editor.formatOnSave" = true;
-      "editor.defaultFormatter" = "esbenp.prettier-vscode";
-      "editor.tabSize" = 4;
-      "prettier.useTabs" = true;
-
-      "[python]" = {
-        "editor.formatOnType" = true;
-        "editor.defaultFormatter" = "charliermarsh.ruff";
-      };
-      "yaml.format.enable" = true;
-      "[yaml]" = {
-        "editor.tabSize" = 2;
-      };
-      "[github-actions-workflow]" = {
-        "editor.tabSize" = 2;
-      };
-      "fortran.formatting.formatter" = "fprettify";
-      "[FortranFreeForm]" = {
-        "editor.defaultFormatter" = "fortran-lang.linter-gfortran";
-      };
-      "[lua]" = {
-        "editor.defaultFormatter" = "JohnnyMorganz.stylua";
-      };
-      "[rust]" = {
-        "editor.defaultFormatter" = "rust-lang.rust-analyzer";
-        "editor.formatOnSave" = true;
-      };
-      "nix.enableLanguageServer" = true;
-      "nix.serverPath" = "nil";
-
-      "git.autofetch" = true;
-      "git.confirmSync" = false;
-      "git.suggestSmartCommit" = false;
-      "git.openRepositoryInParentFolders" = "never";
-      "diffEditor.ignoreTrimWhitespace" = false;
-
-      "files.associations" = {
-        "*.njk" = "nunjucks";
-        "*.tera" = "jinja-html";
-      };
-      "explorer.confirmDelete" = false;
-      "explorer.confirmDragAndDrop" = false;
-      "explorer.sortOrder" = "type";
-      "explorer.fileNesting.enabled" = true;
-      "explorer.fileNesting.expand" = false;
-      "typescript.updateImportsOnFileMove.enabled" = "always";
-      "security.promptForLocalFileProtocolHandling" = false;
-
-      "extensions.ignoreRecommendations" = true;
-      "vscord.status.idle.disconnectOnIdle" = true;
-    };
   };
 
   # Originally from https://github.com/ryanccn/flake/blob/3861c0442b808dc44694ce783e77f4abdcbd087b/home/apps/vscode.nix#L207-L241.
@@ -207,4 +126,6 @@ in {
       done
     '';
   };
+
+  home.file."Library/Application Support/Code/User/settings.json".source = settingsFile;
 }

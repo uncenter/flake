@@ -1,0 +1,88 @@
+{
+	"extensions.ignoreRecommendations": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"vscord.status.idle.disconnectOnIdle": true,
+
+	/* UI/Interface */
+	"catppuccin.accentColor": "mauve",
+	"workbench.colorTheme": "Catppuccin Frappé",
+	"workbench.iconTheme": "catppuccin-frappe",
+	"workbench.preferredDarkColorTheme": "Catppuccin Frappé",
+	"workbench.preferredLightColorTheme": "Catppuccin Latte",
+	"workbench.productIconTheme": "Tabler",
+	"workbench.sideBar.location": "left",
+	"window.autoDetectColorScheme": true,
+	"window.nativeTabs": true,
+	"editor.cursorSmoothCaretAnimation": "off",
+	"editor.fontFamily": "CommitMono Nerd Font",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 14,
+	"editor.fontWeight": "normal",
+	"editor.formatOnSave": true,
+	"editor.inlineSuggest.enabled": true,
+	"editor.lineHeight": 1.5,
+	"editor.linkedEditing": true,
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": false,
+
+	/* Terminal */
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.defaultProfile.osx": "/run/current-system/sw/bin/fish",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.lineHeight": 1.3,
+
+	/* Editor and Explorer */
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.expand": false,
+	"explorer.sortOrder": "type",
+	"workbench.editor.closeOnFileDelete": true,
+	"workbench.editor.showTabs": "multiple",
+	"workbench.fontAliasing": "antialiased",
+	"workbench.startupEditor": "none",
+	"diffEditor.ignoreTrimWhitespace": false,
+	"security.promptForLocalFileProtocolHandling": false,
+	"editor.accessibilitySupport": "off",
+
+	"files.associations": {
+		"*.njk": "nunjucks",
+		"*.tera": "jinja-html"
+	},
+
+	/* Git */
+	"git.autofetch": true,
+	"git.confirmSync": false,
+	"git.openRepositoryInParentFolders": "never",
+	"git.suggestSmartCommit": false,
+
+	/* Formatting/LSP */
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"[FortranFreeForm]": {
+		"editor.defaultFormatter": "fortran-lang.linter-gfortran"
+	},
+	"fortran.formatting.formatter": "fprettify",
+	"[github-actions-workflow]": {
+		"editor.tabSize": 2
+	},
+	"[lua]": {
+		"editor.defaultFormatter": "JohnnyMorganz.stylua"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnType": true
+	},
+	"[rust]": {
+		"editor.defaultFormatter": "rust-lang.rust-analyzer",
+		"editor.formatOnSave": true
+	},
+	"[yaml]": {
+		"editor.tabSize": 2
+	},
+	"yaml.format.enable": true,
+	"nix.enableLanguageServer": true,
+	"nix.serverPath": "nil"
+}
