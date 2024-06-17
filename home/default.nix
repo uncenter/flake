@@ -7,7 +7,7 @@
     ./variables.nix
     ./fonts.nix
 
-    ./apps/ghostty.nix
+    ./apps/ghostty/default.nix
     ./apps/inkscape.nix
     ./apps/vscode.nix
 
