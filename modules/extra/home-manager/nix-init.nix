@@ -11,7 +11,7 @@ in
       enable = mkEnableOption "nix-init - Generate Nix packages from URLs with hash prefetching, dependency inference, license detection, and more";
 
       settings = mkOption {
-        type = tomlFormat.type;
+        inherit (tomlFormat) type;
         default = {};
         example = lib.literalExpression ''
           {
