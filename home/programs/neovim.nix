@@ -17,15 +17,6 @@
       enableLuaLoader = true;
       useSystemClipboard = true;
 
-      autocomplete.enable = true;
-      autopairs.enable = true;
-      comments.comment-nvim.enable = true;
-      filetree.nvimTree.enable = true;
-      binds.cheatsheet.enable = true;
-      git.enable = true;
-      presence.neocord.enable = true;
-      telescope.enable = true;
-
       languages = {
         bash.enable = true;
         css.enable = true;
@@ -42,8 +33,31 @@
         formatOnSave = true;
       };
 
+      autocomplete.enable = true;
+      autopairs.enable = true;
+      git.enable = true;
+      telescope.enable = true;
+
+      comments = {
+        comment-nvim.enable = true;
+      };
+
+      filetree = {
+        nvimTree.enable = true;
+      };
+
+      binds = {
+        whichKey.enable = true;
+        cheatsheet.enable = true;
+      };
+
+      presence = {
+        neocord.enable = true;
+      };
+
       visuals = {
         enable = true;
+        fidget-nvim.enable = true;
         nvimWebDevicons.enable = true;
 
         indentBlankline = {
@@ -73,10 +87,18 @@
       };
 
       utility = {
+        ccc.enable = true;
         vim-wakatime = {
           enable = true;
           cli-package = pkgs.wakatime;
         };
+      };
+
+      ui = {
+        noice.enable = true;
+        colorizer.enable = true;
+        breadcrumbs.enable = true;
+        illuminate.enable = true;
       };
     };
   };
