@@ -39,6 +39,7 @@
     "jnoortheen.nix-ide"
     "johnnymorganz.stylua"
     "kamadorueda.alejandra"
+    "kravets.vscode-publint"
     "leonardssh.vscord"
     "mechatroner.rainbow-csv"
     "meganrogge.template-string-converter"
