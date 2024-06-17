@@ -61,6 +61,9 @@
 	"prettier.useTabs": true,
 	"editor.tabSize": 4,
 	"editor.detectIndentation": false,
+	"[fish]": {
+		"editor.defaultFormatter": "bmalehorn.vscode-fish"
+	},
 	"[FortranFreeForm]": {
 		"editor.defaultFormatter": "fortran-lang.linter-gfortran"
 	},
