@@ -118,6 +118,18 @@
             require('template-string').setup {}
           '';
         };
+
+        screenkey = {
+          package = pkgs.vimUtils.buildVimPlugin {
+            name = "screenkey.nvim";
+            src = pkgs.fetchFromGitHub {
+              owner = "NStefan002";
+              repo = "screenkey.nvim";
+              rev = "c45619aa02489cc89da459c84625fab64aca4099";
+              sha256 = "sha256-n1CB9TyYWvk6xu/iMewK0/vuTk7YknQLXc3UOQKJr7M=";
+            };
+          };
+        };
       };
     };
   };
