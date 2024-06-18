@@ -25,6 +25,7 @@
     ./programs/lazygit.nix
     ./programs/neovim.nix
     ./programs/nix-init.nix
+    ./programs/python.nix
     ./programs/rust.nix
     ./programs/starship.nix
     ./programs/yazi.nix
