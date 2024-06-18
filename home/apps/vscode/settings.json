@@ -86,6 +86,12 @@
 		"editor.tabSize": 2
 	},
 	"yaml.format.enable": true,
+	"[nix]": {
+		"editor.defaultFormatter": "jnoortheen.nix-ide"
+	},
 	"nix.enableLanguageServer": true,
-	"nix.serverPath": "nil"
+	"nix.serverPath": "nil",
+	"nix.serverSettings": {
+		"nil": { "formatting": { "command": ["alejandra", "--"] } }
+	}
 }
