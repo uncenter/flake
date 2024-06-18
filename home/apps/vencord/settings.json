@@ -143,7 +143,7 @@
 			"enabled": false
 		},
 		"EmoteCloner": {
-			"enabled": false
+			"enabled": true
 		},
 		"Experiments": {
 			"enabled": false
@@ -571,6 +571,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1718652880194
+		"settingsSyncVersion": 1718725551007
 	}
 }
