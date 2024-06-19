@@ -48,6 +48,7 @@
     fnm
     fortls
     fprettify
+    go
     jdk17
     lua
     luajitPackages.luarocks
