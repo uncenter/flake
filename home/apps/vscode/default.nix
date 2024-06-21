@@ -26,7 +26,6 @@ in {
       bierner.markdown-mermaid
       bierner.markdown-preview-github-styles
       yzhang.markdown-all-in-one
-      yahyabatulu.vscode-markdown-alert
 
       # Language/Tool Support
       astro-build.astro-vscode
@@ -46,11 +45,8 @@ in {
       griimick.vhs
       jnoortheen.nix-ide
       mechatroner.rainbow-csv
-      mrmlnc.vscode-scss
       ms-python.debugpy
       ms-python.python
-      ms-vscode.cpptools
-      oven.bun-vscode
       redhat.vscode-yaml
       rust-lang.rust-analyzer
       nefrob.vscode-just-syntax
@@ -71,7 +67,6 @@ in {
       meganrogge.template-string-converter
       fabiospampinato.vscode-open-in-github
       kravets.vscode-publint
-      leonardssh.vscord
       njpwerner.autodocstring
       ms-vscode-remote.remote-wsl
     ];
