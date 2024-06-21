@@ -20,6 +20,7 @@
     alejandra
     deadnix
     statix
+    nil
     nixfmt-rfc-style
     nixpkgs-review
     nixpkgs-using
@@ -47,13 +48,10 @@
     fnm
     fortls
     fprettify
+    go
     jdk17
     lua
     luajitPackages.luarocks
-    nil
-    poetry
-    python3
-    ruff
     shellcheck
     taplo
 

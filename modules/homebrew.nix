@@ -35,6 +35,7 @@
       "cleanshot"
       "codeedit"
       "confectionery"
+      "devtoys"
       "discord"
       "docker"
       "firefox"
