@@ -19,6 +19,8 @@
 
       languages = {
         enableTreesitter = true;
+        enableFormat = true;
+        enableLSP = true;
 
         bash.enable = true;
         css.enable = true;
@@ -33,6 +35,8 @@
 
       lsp = {
         formatOnSave = true;
+        lspkind.enable = true;
+        null-ls.enable = true;
       };
 
       autocomplete.enable = true;
