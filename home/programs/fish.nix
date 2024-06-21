@@ -10,12 +10,11 @@
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";
 
-      "gp" = "git push origin";
+      "gp" = "git push";
       "gpm" = "git push origin main";
-      "gl" = "git pull origin";
+      "gl" = "git pull";
       "glm" = "git pull origin main";
       "gc" = "git commit -m";
-      "glog" = "git log";
       "gnew" = "git checkout -b";
       "gs" = "git checkout";
       "ga" = "git add";
