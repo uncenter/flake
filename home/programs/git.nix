@@ -32,6 +32,7 @@
       diff.algorithm = "histogram";
 
       push.autoSetupRemote = true;
+      pull.rebase = true;
     };
   };
 
