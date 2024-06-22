@@ -17,9 +17,15 @@
       dock = {
         autohide = true;
         show-recents = false;
+        tilesize = 48;
+
+        # Hot Corners
+        wvous-bl-corner = 3; # Application Windows
+        wvous-tl-corner = 2; # Mission Control
       };
       finder = {
         AppleShowAllExtensions = true;
+        FXEnableExtensionChangeWarning = false;
         AppleShowAllFiles = true;
         QuitMenuItem = true;
         ShowPathbar = true;
