@@ -57,10 +57,6 @@
         cheatsheet.enable = true;
       };
 
-      presence = {
-        neocord.enable = true;
-      };
-
       visuals = {
         enable = true;
         fidget-nvim.enable = true;
@@ -100,11 +96,35 @@
         };
       };
 
+      terminal = {
+        toggleterm = {
+          enable = true;
+          lazygit.enable = true;
+
+          setupOpts.direction = "float";
+        };
+      };
+
+      tabline.nvimBufferline.enable = true;
+
       ui = {
         noice.enable = true;
         colorizer.enable = true;
         breadcrumbs.enable = true;
         illuminate.enable = true;
+      };
+
+      maps = {
+        normal = {
+          "<leader>y" = {
+            action = "\"+y";
+            desc = "Copy/yank to clipboard";
+          };
+          "<leader>p" = {
+            action = "\"+p";
+            desc = "Paste from clipboard";
+          };
+        };
       };
 
       extraPlugins = {
