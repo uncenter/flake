@@ -23,11 +23,11 @@
     },
     "catppuccin": {
       "locked": {
-        "lastModified": 1719056731,
-        "narHash": "sha256-EVlDyB4DDxulGHTGHERzvfMOkoei4Dmu+mRp+SXRC60=",
+        "lastModified": 1719059483,
+        "narHash": "sha256-JUGjp4P7Yi3ToxLW5iMSz7CI7mffprF8GsK1hkFdKzs=",
         "owner": "catppuccin",
         "repo": "nix",
-        "rev": "fed3b63f1ecd286c148a2003e82e76530d2f58de",
+        "rev": "b6c854508d8c03f3ff06bf658d12b0ae8052d7a5",
         "type": "github"
       },
       "original": {
@@ -75,11 +75,11 @@
     },
     "darwin-custom-icons": {
       "locked": {
-        "lastModified": 1693410673,
-        "narHash": "sha256-oHw98kktSorqgd73tOskTkE7AfWfNee7QTxJeMkd640=",
+        "lastModified": 1719071371,
+        "narHash": "sha256-SPazmoL3Pls4QTiZ2CRtavecNJgzpL4GeiwafTmtdJ8=",
         "owner": "ryanccn",
         "repo": "nix-darwin-custom-icons",
-        "rev": "347800c2704b4adb76aaf06fbf0be7831431785b",
+        "rev": "ad3e8cf49ef0b276ccf67410f544ff33d965d821",
         "type": "github"
       },
       "original": {
@@ -495,11 +495,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1718925534,
-        "narHash": "sha256-FCs5eY/zuYZF3v4cJ7y9sd9FBFY/FqTV5lY+tswYoZo=",
+        "lastModified": 1719099901,
+        "narHash": "sha256-dp62tISNBM7BDZj/g7quht4KgXrqgE5Q72dhNnMx8uY=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "95615ec3081946c24b4a2d12bddf7d6293af9dae",
+        "rev": "f66c40b687996cba36d3b20996948b9b2f138196",
         "type": "github"
       },
       "original": {
