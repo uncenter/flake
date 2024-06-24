@@ -35,6 +35,7 @@
         nix.enable = true;
         tailwind.enable = true;
         ts.enable = true;
+        ts.extensions.ts-error-translator.enable = true;
         python.enable = true;
         markdown.enable = true;
         html.enable = true;
