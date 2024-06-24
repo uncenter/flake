@@ -52,6 +52,7 @@
         "https://robinmalfait.com/feed.xml"
         "https://this-week-in-rust.org/atom.xml"
         "https://twobithistory.org/feed.xml"
+        "https://ruudvanasseldonk.com/feed.xml"
       ];
     };
   };
