@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719040996,
-        "narHash": "sha256-Wro5SO0ieEjjdliserLscMR6HY5teXpPB83XeImYYnM=",
+        "lastModified": 1719189404,
+        "narHash": "sha256-Qh5AQzO7fQzLtpEbWhuJpqxglUHKtn0iTNqgigrGbPQ=",
         "owner": "isabelroses",
         "repo": "beapkgs",
-        "rev": "92bd51ad364bffd073b5c310cd9178666b678b37",
+        "rev": "60401cc3987ea906fc78c593909926cbec5e6393",
         "type": "github"
       },
       "original": {
@@ -482,6 +482,7 @@
         "plugin-toggleterm-nvim": "plugin-toggleterm-nvim",
         "plugin-tokyonight": "plugin-tokyonight",
         "plugin-trouble": "plugin-trouble",
+        "plugin-ts-error-translator": "plugin-ts-error-translator",
         "plugin-vim-dirtytalk": "plugin-vim-dirtytalk",
         "plugin-vim-fugitive": "plugin-vim-fugitive",
         "plugin-vim-illuminate": "plugin-vim-illuminate",
@@ -495,11 +496,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1719162304,
-        "narHash": "sha256-9OIAABTyAmamO671MZnTx+mAuaoyrZI2oQJQO/Selbo=",
+        "lastModified": 1719250806,
+        "narHash": "sha256-lNm/11UEyXlazCOGlwBIYF4qLMDHAJpBZPNBSlbAgPI=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "2759b9caae4f078b3e86fc697c56490a5a72d7ef",
+        "rev": "7b719d00445228bbf10f513884f63b6de3070018",
         "type": "github"
       },
       "original": {
@@ -1917,6 +1918,22 @@
         "type": "github"
       }
     },
+    "plugin-ts-error-translator": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1712269172,
+        "narHash": "sha256-NJ0qfKvkwZ/0GolAeATlQLyQ7nGN6Z6q3uRqI+73wPk=",
+        "owner": "dmmulroy",
+        "repo": "ts-error-translator.nvim",
+        "rev": "11ae55b28bde02663b5f983f59b0e3fd9c4e845b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dmmulroy",
+        "repo": "ts-error-translator.nvim",
+        "type": "github"
+      }
+    },
     "plugin-vim-dirtytalk": {
       "flake": false,
       "locked": {
@@ -2135,11 +2152,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1719109180,
-        "narHash": "sha256-96dwGCV2yQxDozDATqbsM3YU0ft3Isw3cwVDO/eNCv8=",
+        "lastModified": 1719195554,
+        "narHash": "sha256-bFXHMjpYlEERexzXa1gLGJO/1l8dxaAtSNE56YALuTg=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "5fc5f3a0d7eabf7db86851e6423f9d7fbceaf89d",
+        "rev": "577ee84c69ba89894ac622d71a678a14d746b2f7",
         "type": "github"
       },
       "original": {
