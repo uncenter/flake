@@ -17,6 +17,13 @@
       enableLuaLoader = true;
       useSystemClipboard = true;
 
+      theme = {
+        enable = true;
+        name = "catppuccin";
+        style = "frappe";
+        transparent = true;
+      };
+
       languages = {
         enableTreesitter = true;
         enableFormat = true;
@@ -52,11 +59,6 @@
         nvimTree.enable = true;
       };
 
-      binds = {
-        whichKey.enable = true;
-        cheatsheet.enable = true;
-      };
-
       visuals = {
         enable = true;
         fidget-nvim.enable = true;
@@ -75,13 +77,6 @@
           enable = true;
           theme = "catppuccin";
         };
-      };
-
-      theme = {
-        enable = true;
-        name = "catppuccin";
-        style = "frappe";
-        transparent = true;
       };
 
       notify = {
@@ -114,6 +109,11 @@
         illuminate.enable = true;
       };
 
+      binds = {
+        whichKey.enable = true;
+        cheatsheet.enable = true;
+      };
+
       maps = {
         normal = {
           "<leader>y" = {
@@ -123,6 +123,23 @@
           "<leader>p" = {
             action = "\"+p";
             desc = "Paste from clipboard";
+          };
+          "<leader>x" = {
+            action = "\"+d";
+            desc = "Cut to clipboard";
+          };
+
+          "<leader>q" = {
+            action = "<cmd>qall<cr>";
+            desc = "Quit all";
+          };
+          "<C-s>" = {
+            action = "<cmd>w<cr>";
+            desc = "Save file";
+          };
+          "<C-a>" = {
+            action = "<cmd>%y+<cr>";
+            desc = "Copy all buffer contents";
           };
         };
       };
