@@ -69,6 +69,7 @@
     fastfetch
     fd
     gh
+    gitoxide
     gum
     hexyl
     hyperfine
