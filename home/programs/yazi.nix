@@ -57,6 +57,15 @@ in {
           run = "plugin --sync max-preview";
           desc = "Maximize or shrink preview";
         }
+
+        {
+          on = [
+            "c"
+            "m"
+          ];
+          run = "plugin chmod";
+          desc = "Chmod on selected files";
+        }
       ];
     };
   };
@@ -73,5 +82,6 @@ in {
     };
     "yazi/plugins/hide-preview.yazi".source = "${yazi-plugins}/hide-preview.yazi";
     "yazi/plugins/max-preview.yazi".source = "${yazi-plugins}/max-preview.yazi";
+    "yazi/plugins/chmod.yazi".source = "${yazi-plugins}/chmod.yazi";
   };
 }
