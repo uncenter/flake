@@ -88,6 +88,7 @@
     ripgrep
     scc
     sd
+    serpl
     spicetify-cli
     terminal-notifier
     tokei
