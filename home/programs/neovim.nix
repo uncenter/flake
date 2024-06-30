@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  config,
   ...
 }: {
   imports = [inputs.nvf.homeManagerModules.default];
@@ -20,7 +21,7 @@
       theme = {
         enable = true;
         name = "catppuccin";
-        style = "frappe";
+        style = config.catppuccin.flavor;
         transparent = true;
       };
 

@@ -3,7 +3,7 @@
 	"autoUpdateNotification": true,
 	"useQuickCss": true,
 	"themeLinks": [
-		"https://catppuccin.github.io/discord/dist/catppuccin-frappe.theme.css"
+		"https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css"
 	],
 	"enabledThemes": [],
 	"enableReactDevtools": true,

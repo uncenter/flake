@@ -4,10 +4,10 @@
 	"vscord.status.idle.disconnectOnIdle": true,
 
 	/* UI/Interface */
-	"catppuccin.accentColor": "mauve",
-	"workbench.colorTheme": "Catppuccin Frappé",
-	"workbench.iconTheme": "catppuccin-frappe",
-	"workbench.preferredDarkColorTheme": "Catppuccin Frappé",
+	"catppuccin.accentColor": "blue",
+	"workbench.colorTheme": "Catppuccin Macchiato",
+	"workbench.iconTheme": "catppuccin-macchiato",
+	"workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
 	"workbench.preferredLightColorTheme": "Catppuccin Latte",
 	"workbench.productIconTheme": "Tabler",
 	"workbench.sideBar.location": "left",

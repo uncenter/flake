@@ -37,8 +37,8 @@
 
   fonts.fontconfig.enable = true;
 
-  catppuccin.flavor = "frappe";
-  catppuccin.accent = "mauve";
+  catppuccin.flavor = "macchiato";
+  catppuccin.accent = "blue";
 
   home.stateVersion = "23.05";
 }
