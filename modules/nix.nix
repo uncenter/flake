@@ -6,7 +6,7 @@
 }: {
   services.nix-daemon.enable = true;
   nix = {
-    package = pkgs.nixVersions.latest;
+    package = pkgs.nixVersions.nix_2_18;
 
     registry = {
       n.flake = inputs.nixpkgs;
