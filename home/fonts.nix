@@ -4,7 +4,6 @@
       fonts = [
         "CommitMono"
         "0xProto"
-        "CascadiaCode"
       ];
     })
   ];
