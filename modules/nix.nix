@@ -23,7 +23,7 @@
 
       build-users-group = "nixbld";
       trusted-users = ["uncenter"];
-      sandbox = true;
+      sandbox = false;
       use-xdg-base-directories = true;
 
       substituters = [
