@@ -68,20 +68,21 @@ in {
         }
       ];
     };
-  };
 
-  xdg.configFile = {
-    "yazi/init.lua".text = ''
+    plugins = {
+      "starship" = pkgs.fetchFromGitHub {
+        owner = "Rolv-Apneseth";
+        repo = "starship.yazi";
+        rev = "6197e4cca4caed0121654079151632f6abcdcae9";
+        sha256 = "sha256-oHoBq7BESjGeKsaBnDt0TXV78ggGCdYndLpcwwQ8Zts=";
+      };
+      "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
+      "max-preview" = "${yazi-plugins}/max-preview.yazi";
+      "chmod" = "${yazi-plugins}/chmod.yazi";
+    };
+
+    initLua = ''
       require("starship"):setup()
     '';
-    "yazi/plugins/starship.yazi".source = pkgs.fetchFromGitHub {
-      owner = "Rolv-Apneseth";
-      repo = "starship.yazi";
-      rev = "6197e4cca4caed0121654079151632f6abcdcae9";
-      sha256 = "sha256-oHoBq7BESjGeKsaBnDt0TXV78ggGCdYndLpcwwQ8Zts=";
-    };
-    "yazi/plugins/hide-preview.yazi".source = "${yazi-plugins}/hide-preview.yazi";
-    "yazi/plugins/max-preview.yazi".source = "${yazi-plugins}/max-preview.yazi";
-    "yazi/plugins/chmod.yazi".source = "${yazi-plugins}/chmod.yazi";
   };
 }
