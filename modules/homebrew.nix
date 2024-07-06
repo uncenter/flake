@@ -38,6 +38,7 @@
       "devtoys"
       "discord"
       "docker"
+      "figma"
       "firefox"
       "firefox@developer-edition"
       "fontforge"

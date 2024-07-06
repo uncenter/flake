@@ -68,6 +68,10 @@
         icon = ./icons/devfolder.icns;
       }
       {
+        path = "/Applications/Figma.app/";
+        icon = ./icons/figma.icns;
+      }
+      {
         path = "/Applications/Ghostty.app";
         icon = ./icons/term.icns;
       }
