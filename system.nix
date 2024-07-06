@@ -109,7 +109,7 @@
       }
       {
         path = "/Applications/Zed.app";
-        icon = ./icons/zed-blue.icns;
+        icon = ./icons/zed.icns;
       }
     ];
   };
