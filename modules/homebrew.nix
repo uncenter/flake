@@ -48,6 +48,7 @@
       "inkscape"
       "jordanbaird-ice"
       "loungy"
+      "markedit"
       "obsidian"
       "raycast"
       "sf-symbols"
