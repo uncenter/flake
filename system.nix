@@ -104,7 +104,7 @@
         icon = ./icons/vscode.icns;
       }
       {
-        path = "/Applications/Zoom.app";
+        path = "/Applications/zoom.us.app";
         icon = ./icons/zoom.icns;
       }
       {
