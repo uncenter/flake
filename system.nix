@@ -73,7 +73,7 @@
       }
       {
         path = "/Applications/Ghostty.app";
-        icon = ./icons/term.icns;
+        icon = ./icons/ghostty.icns;
       }
       {
         path = "/Applications/Gramps.app";
