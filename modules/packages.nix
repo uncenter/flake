@@ -54,6 +54,7 @@
     luajitPackages.luarocks
     shellcheck
     taplo
+    zig
 
     # Tools and TUIs #
     cmatrix
