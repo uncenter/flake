@@ -3,7 +3,7 @@
 	"autoUpdateNotification": true,
 	"useQuickCss": true,
 	"themeLinks": [
-		"https://catppuccin.github.io/discord/dist/catppuccin-macchiato.theme.css"
+		"https://raw.githubusercontent.com/uncenter/ctp-midnight/main/themes/macchiato-mauve.css"
 	],
 	"enabledThemes": [],
 	"enableReactDevtools": true,
@@ -565,6 +565,9 @@
 		},
 		"ShowAllRoles": {
 			"enabled": false
+		},
+		"ConsoleJanitor": {
+			"enabled": false
 		}
 	},
 	"notifications": {
@@ -577,6 +580,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1720033677032
+		"settingsSyncVersion": 1720316457710
 	}
 }
