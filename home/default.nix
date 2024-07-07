@@ -27,6 +27,7 @@
     ./programs/nix-init.nix
     ./programs/python.nix
     ./programs/rust.nix
+    ./programs/spicetify.nix
     ./programs/starship.nix
     ./programs/yazi.nix
 

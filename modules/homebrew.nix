@@ -52,7 +52,6 @@
       "obsidian"
       "raycast"
       "sf-symbols"
-      "spotify"
       "visual-studio-code"
       "zed"
       "zoom"
