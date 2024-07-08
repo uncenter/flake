@@ -24,6 +24,7 @@
     nixfmt-rfc-style
     nixpkgs-review
     nixpkgs-using
+    nix-init
     nix-inspect
     nix-melt
     nix-output-monitor
@@ -82,7 +83,6 @@
     license-go
     lolcat
     meower
-    neovim
     nrr
     ouch
     pastel
@@ -90,8 +90,6 @@
     scc
     sd
     serpl
-    spicetify-cli
-    terminal-notifier
     tokei
     typos
     vhs

@@ -54,7 +54,9 @@
       inputs.beapkgs.overlays.default
     ];
 
-    config.allowUnfree = true;
-    hostPlatform = "aarch64-darwin";
+    config = {
+      allowUnfree = true;
+      # showDerivationWarnings = ["maintainerless"];
+    };
   };
 }
