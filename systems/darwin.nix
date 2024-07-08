@@ -6,6 +6,8 @@
           inputs.home-manager.darwinModules.home-manager
           inputs.darwin-custom-icons.darwinModules.default
           ./katara
+          ../modules/shared
+          ../modules/darwin
         ];
       };
     };

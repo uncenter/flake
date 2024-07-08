@@ -5,7 +5,7 @@
 }: let
   mkLink = config.lib.file.mkOutOfStoreSymlink;
 
-  settingsFile = mkLink "/Users/uncenter/.config/flake/home/apps/vscode/settings.json";
+  settingsFile = mkLink "${config.xdg.configHome}/flake/home/apps/vscode/settings.json";
 in {
   programs.vscode = {
     enable = true;

@@ -7,6 +7,8 @@
     ./variables.nix
     ./fonts.nix
 
+    ./apps
+
     ./programs/atuin.nix
     ./programs/bat.nix
     ./programs/bottom.nix

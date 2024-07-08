@@ -55,7 +55,6 @@
       "visual-studio-code"
       "zed"
       "zoom"
-      "zulip"
     ];
   };
 
