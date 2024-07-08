@@ -1,7 +1,7 @@
 {
 	"extensions.ignoreRecommendations": true,
+	"extensions.autoUpdate": false,
 	"typescript.updateImportsOnFileMove.enabled": "always",
-	"vscord.status.idle.disconnectOnIdle": true,
 
 	/* UI/Interface */
 	"catppuccin.accentColor": "blue",
