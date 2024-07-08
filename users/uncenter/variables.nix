@@ -1,6 +1,6 @@
 {config, ...}: {
   home.sessionVariables = {
-    FLAKE = "${config.xdg.configHome}/flake";
+    FLAKE = "/Users/uncenter/.config/flake";
 
     EDITOR = "nvim";
     VISUAL = "code";

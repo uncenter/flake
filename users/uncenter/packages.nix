@@ -24,6 +24,7 @@
     nixfmt-rfc-style
     nixpkgs-review
     nixpkgs-using
+    nix-init
     nix-inspect
     nix-melt
     nix-output-monitor

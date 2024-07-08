@@ -55,7 +55,6 @@
 
       imports = [
         ./systems
-        ./users
       ];
 
       perSystem = {pkgs, ...}: {

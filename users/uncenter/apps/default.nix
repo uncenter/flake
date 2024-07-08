@@ -1,8 +1,8 @@
 {
   imports = [
-    ./apps/ghostty
-    ./apps/vencord
-    ./apps/vscode
-    ./apps/inkscape.nix
+    ./ghostty
+    ./vencord
+    ./vscode
+    ./inkscape.nix
   ];
 }
