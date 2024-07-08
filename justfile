@@ -1,11 +1,21 @@
-switch *args:
-  darwin-rebuild switch --flake . --verbose --show-trace {{args}}
+_default:
+  @just --list --unsorted
 
-delete-old:
-  sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations old && home-manager expire-generations now 
+[macos]
+switch *args:
+  darwin-rebuild switch --flake . {{args}} |& nom
+
+[linux]
+switch *args:
+  sudo nixos-rebuild switch --flake . {{args}} |& nom
 
 update:
   nix flake update
 
-gc:
-  nix store gc
+check:
+  nix flake check
+
+clean:
+  sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations old
+  home-manager expire-generations now
+  nix-collect-garbage --delete-older-than 3d
