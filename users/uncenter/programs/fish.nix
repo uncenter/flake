@@ -1,8 +1,5 @@
+{ pkgs, config, ... }:
 {
-  pkgs,
-  config,
-  ...
-}: {
   programs.fish = {
     enable = true;
     catppuccin.enable = true;
@@ -96,14 +93,19 @@
     };
   };
 
-  xdg.configFile = let
-    symlink = fileName: {recursive ? false}: {
-      source = config.lib.file.mkOutOfStoreSymlink "${fileName}";
-      inherit recursive;
+  xdg.configFile =
+    let
+      symlink =
+        fileName:
+        {
+          recursive ? false,
+        }:
+        {
+          source = config.lib.file.mkOutOfStoreSymlink "${fileName}";
+          inherit recursive;
+        };
+    in
+    {
+      "fish/completions" = symlink "${./fish/completions}" { recursive = true; };
     };
-  in {
-    "fish/completions" = symlink "${./fish/completions}" {
-      recursive = true;
-    };
-  };
 }

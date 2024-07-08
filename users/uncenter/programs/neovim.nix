@@ -3,8 +3,9 @@
   inputs,
   config,
   ...
-}: {
-  imports = [inputs.nvf.homeManagerModules.default];
+}:
+{
+  imports = [ inputs.nvf.homeManagerModules.default ];
 
   programs.nvf = {
     enable = true;

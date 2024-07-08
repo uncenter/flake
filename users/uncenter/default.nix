@@ -1,4 +1,5 @@
-{inputs, ...}: {
+{ inputs, ... }:
+{
   programs.home-manager.enable = true;
 
   imports = [
@@ -6,7 +7,7 @@
 
     ./variables.nix
     ./fonts.nix
-	./packages.nix
+    ./packages.nix
 
     ./apps
 

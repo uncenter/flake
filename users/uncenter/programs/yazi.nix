@@ -1,11 +1,13 @@
-{pkgs, ...}: let
+{ pkgs, ... }:
+let
   yazi-plugins = pkgs.fetchFromGitHub {
     owner = "yazi-rs";
     repo = "plugins";
     rev = "a882e3828cdeee243ede2bff0524cbe7e27104cf";
     hash = "sha256-+amnL025nNHcP/gXY57FYUhUXNlPRqbQHS4EkOL/INs=";
   };
-in {
+in
+{
   programs.yazi = {
     enable = true;
     catppuccin.enable = true;
@@ -14,7 +16,11 @@ in {
 
     settings = {
       manager = {
-        ratio = [2 3 3];
+        ratio = [
+          2
+          3
+          3
+        ];
         sort_by = "alphabetical";
         sort_sensitive = true;
         sort_reverse = true;
@@ -31,29 +37,29 @@ in {
     keymap = {
       manager.prepend_keymap = [
         {
-          on = ["<Space>"];
-          run = ["select --state=none"];
+          on = [ "<Space>" ];
+          run = [ "select --state=none" ];
           desc = "Toggle the current selection state";
         }
 
         {
-          on = ["<C-w>"];
-          run = ["close"];
+          on = [ "<C-w>" ];
+          run = [ "close" ];
           desc = "Close the current tab, or quit if it is last tab";
         }
         {
-          on = ["<C-t>"];
+          on = [ "<C-t>" ];
           run = "tab_create --current";
           desc = "Create a new tab using the current path";
         }
 
         {
-          on = ["t"];
+          on = [ "t" ];
           run = "plugin --sync hide-preview";
           desc = "Hide or show preview";
         }
         {
-          on = ["T"];
+          on = [ "T" ];
           run = "plugin --sync max-preview";
           desc = "Maximize or shrink preview";
         }

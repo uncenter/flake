@@ -1,4 +1,5 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   # https://docs.brew.sh/Manpage#environment
   environment.variables = {
     HOMEBREW_NO_ANALYTICS = "1";
@@ -21,9 +22,7 @@
       "1password/tap"
     ];
 
-    brews = [
-      "coreutils"
-    ];
+    brews = [ "coreutils" ];
 
     casks = [
       "1password"
@@ -58,7 +57,5 @@
     ];
   };
 
-  environment.systemPackages = with pkgs; [
-    terminal-notifier
-  ];
+  environment.systemPackages = with pkgs; [ terminal-notifier ];
 }

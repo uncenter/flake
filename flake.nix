@@ -44,8 +44,9 @@
     };
   };
 
-  outputs = inputs:
-    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+  outputs =
+    inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; } {
       systems = [
         "x86_64-linux"
         "aarch64-linux"
@@ -53,12 +54,12 @@
         "aarch64-darwin"
       ];
 
-      imports = [
-        ./systems
-      ];
+      imports = [ ./systems ];
 
-      perSystem = {pkgs, ...}: {
-        formatter = pkgs.nixfmt-rfc-style;
-      };
+      perSystem =
+        { pkgs, ... }:
+        {
+          formatter = pkgs.nixfmt-rfc-style;
+        };
     };
 }

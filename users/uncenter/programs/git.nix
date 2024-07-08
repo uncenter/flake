@@ -3,9 +3,7 @@
     enable = true;
     difftastic.enable = true;
 
-    ignores = [
-      ".DS_Store"
-    ];
+    ignores = [ ".DS_Store" ];
 
     aliases = {
       "undo" = "reset --soft HEAD~1";

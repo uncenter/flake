@@ -3,7 +3,8 @@
   inputs,
   config,
   ...
-}: {
+}:
+{
   services.nix-daemon.enable = true;
   nix = {
     package = pkgs.lix;
@@ -12,17 +13,18 @@
       n.flake = inputs.nixpkgs;
     };
 
-    nixPath = [
-      "nixpkgs=${inputs.nixpkgs.outPath}"
-    ];
+    nixPath = [ "nixpkgs=${inputs.nixpkgs.outPath}" ];
 
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
-      extra-platforms = ["x86_64-darwin" "aarch64-darwin"];
+      extra-platforms = [
+        "x86_64-darwin"
+        "aarch64-darwin"
+      ];
 
       build-users-group = "nixbld";
-      trusted-users = ["uncenter"];
+      trusted-users = [ "uncenter" ];
       sandbox = false;
       use-xdg-base-directories = true;
 
@@ -49,9 +51,7 @@
   };
 
   nixpkgs = {
-    overlays = [
-      inputs.rust-overlay.overlays.default
-    ];
+    overlays = [ inputs.rust-overlay.overlays.default ];
 
     config = {
       allowUnfree = true;

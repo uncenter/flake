@@ -3,7 +3,8 @@
   config,
   pkgs,
   ...
-}: {
+}:
+{
   config = {
     home-manager = {
       useGlobalPkgs = true;
@@ -17,10 +18,7 @@
     };
 
     users.users.uncenter = {
-      home =
-        if pkgs.stdenv.isDarwin
-        then "/Users/uncenter"
-        else "/home/uncenter";
+      home = if pkgs.stdenv.isDarwin then "/Users/uncenter" else "/home/uncenter";
       shell = pkgs.fish;
     };
   };

@@ -1,12 +1,10 @@
-{
-  pkgs,
-  config,
-  ...
-}: let
+{ pkgs, config, ... }:
+let
   mkLink = config.lib.file.mkOutOfStoreSymlink;
 
   settingsFile = mkLink "/Users/uncenter/.config/flake/users/uncenter/apps/vscode/settings.json";
-in {
+in
+{
   programs.vscode = {
     enable = true;
     package = pkgs.vscode;

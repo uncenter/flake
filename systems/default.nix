@@ -1,5 +1,1 @@
-{
-  imports = [
-    ./darwin.nix
-  ];
-}
+{ imports = [ ./darwin.nix ]; }

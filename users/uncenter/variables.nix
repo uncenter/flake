@@ -1,4 +1,5 @@
-{config, ...}: {
+{ config, ... }:
+{
   home.sessionVariables = {
     FLAKE = "/Users/uncenter/.config/flake";
 

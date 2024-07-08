@@ -1,5 +1,6 @@
-{inputs, ...}: {
-  imports = [inputs.beapkgs.homeManagerModules.default];
+{ inputs, ... }:
+{
+  imports = [ inputs.beapkgs.homeManagerModules.default ];
 
   config.programs.izrss = {
     enable = true;

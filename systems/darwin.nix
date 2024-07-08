@@ -1,4 +1,5 @@
-{inputs, ...}: {
+{ inputs, ... }:
+{
   flake = {
     darwinConfigurations = {
       Katara = inputs.nix-darwin.lib.darwinSystem {
