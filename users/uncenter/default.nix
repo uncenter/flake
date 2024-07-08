@@ -6,6 +6,7 @@
 
     ./variables.nix
     ./fonts.nix
+	./packages.nix
 
     ./apps
 
