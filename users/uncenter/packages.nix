@@ -3,7 +3,7 @@
   inputs,
   ...
 }: {
-  environment.systemPackages = with pkgs;
+  home.packages = with pkgs;
   with inputs.home-manager.packages.${pkgs.system};
   with inputs.catppuccin-catwalk.packages.${pkgs.system};
   with inputs.catppuccin-whiskers.packages.${pkgs.system};
