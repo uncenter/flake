@@ -51,7 +51,6 @@
   nixpkgs = {
     overlays = [
       inputs.rust-overlay.overlays.default
-      inputs.beapkgs.overlays.default
     ];
 
     config = {
