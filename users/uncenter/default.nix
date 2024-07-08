@@ -7,11 +7,6 @@
     ./variables.nix
     ./fonts.nix
 
-    ./apps/ghostty/default.nix
-    ./apps/vencord/default.nix
-    ./apps/inkscape.nix
-    ./apps/vscode/default.nix
-
     ./programs/atuin.nix
     ./programs/bat.nix
     ./programs/bottom.nix
@@ -35,11 +30,12 @@
   ];
 
   xdg.enable = true;
-
   fonts.fontconfig.enable = true;
 
-  catppuccin.flavor = "macchiato";
-  catppuccin.accent = "blue";
+  catppuccin = {
+    flavor = "macchiato";
+    accent = "blue";
+  };
 
   home.stateVersion = "23.05";
 }

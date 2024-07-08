@@ -12,6 +12,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    flake-parts = {
+      url = "github:hercules-ci/flake-parts";
+      inputs.nixpkgs-lib.follows = "nixpkgs";
+    };
+
     catppuccin.url = "github:catppuccin/nix";
     catppuccin-catwalk.url = "github:catppuccin/catwalk";
     catppuccin-whiskers.url = "github:catppuccin/whiskers";
@@ -39,46 +44,22 @@
     };
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    nix-darwin,
-    home-manager,
-    darwin-custom-icons,
-    ...
-  } @ inputs: let
-    systems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
-    forAllSystems = nixpkgs.lib.genAttrs systems;
-    pkgsForEach = nixpkgs.legacyPackages;
-  in {
-    darwinConfigurations.Katara = nix-darwin.lib.darwinSystem {
-      modules = [
-        home-manager.darwinModules.home-manager
-        darwin-custom-icons.darwinModules.default
-        ./system.nix
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake {inherit inputs;} {
+      systems = [
+        "x86_64-linux"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "aarch64-darwin"
       ];
 
-      specialArgs = {
-        inherit self inputs;
+      imports = [
+        ./systems
+        ./users
+      ];
+
+      perSystem = {pkgs, ...}: {
+        formatter = pkgs.nixfmt-rfc-style;
       };
     };
-
-    homeManagerModules = {
-      nix-init = ./modules/extra/home-manager/nix-init.nix;
-
-      default = builtins.throw "No default module is provided by this flake";
-    };
-
-    formatter = forAllSystems (system: pkgsForEach.${system}.alejandra);
-
-    devShells = forAllSystems (system: {
-      default = pkgsForEach.${system}.mkShellNoCC {
-        packages = with pkgsForEach.${system}; [
-          statix
-          deadnix
-          alejandra
-        ];
-      };
-    });
-  };
 }

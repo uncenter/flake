@@ -82,7 +82,6 @@
     license-go
     lolcat
     meower
-    neovim
     nrr
     ouch
     pastel
@@ -90,8 +89,6 @@
     scc
     sd
     serpl
-    spicetify-cli
-    terminal-notifier
     tokei
     typos
     vhs
