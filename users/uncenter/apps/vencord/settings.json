@@ -352,7 +352,7 @@
 			"enabled": false
 		},
 		"petpet": {
-			"enabled": false
+			"enabled": true
 		},
 		"PictureInPicture": {
 			"enabled": false
@@ -580,6 +580,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1720316457710
+		"settingsSyncVersion": 1720549341980
 	}
 }
