@@ -14,10 +14,5 @@ in
     enable = true;
     theme = spicePkgs.themes.catppuccin;
     colorScheme = config.catppuccin.flavor;
-
-    enabledExtensions = with spicePkgs.extensions; [
-      fullAppDisplay
-      shuffle
-    ];
   };
 }
