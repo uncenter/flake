@@ -51,7 +51,6 @@
       "obsidian"
       "raycast"
       "sf-symbols"
-      "visual-studio-code"
       "zed"
       "zoom"
     ];
