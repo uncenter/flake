@@ -1,9 +1,6 @@
 { ... }:
 {
-  imports = [
-    ./packages.nix
-    ./icons.nix
-  ];
+  imports = [ ./icons.nix ];
 
   security.pam.enableSudoTouchIdAuth = true;
 }
