@@ -32,6 +32,14 @@ in
       preview = {
         tab_size = 4;
       };
+      opener = {
+        extract = [
+          {
+            run = "ouch d -y \"$@\"";
+            desc = "Extract here with ouch";
+          }
+        ];
+      };
     };
 
     keymap = {
@@ -72,19 +80,33 @@ in
           run = "plugin chmod";
           desc = "Chmod on selected files";
         }
+
+        {
+          on = [ "C" ];
+          run = "plugin ouch --args=zip";
+          desc = "Compress with ouch";
+        }
       ];
     };
 
     plugins = {
+      "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
+      "max-preview" = "${yazi-plugins}/max-preview.yazi";
+      "chmod" = "${yazi-plugins}/chmod.yazi";
+
       "starship" = pkgs.fetchFromGitHub {
         owner = "Rolv-Apneseth";
         repo = "starship.yazi";
         rev = "6197e4cca4caed0121654079151632f6abcdcae9";
         sha256 = "sha256-oHoBq7BESjGeKsaBnDt0TXV78ggGCdYndLpcwwQ8Zts=";
       };
-      "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
-      "max-preview" = "${yazi-plugins}/max-preview.yazi";
-      "chmod" = "${yazi-plugins}/chmod.yazi";
+
+      "ouch" = pkgs.fetchFromGitHub {
+        owner = "ndtoan96";
+        repo = "ouch.yazi";
+        rev = "fe6b0a60ce6b7b9a573b975fe3c0dfc79c0b2ac6";
+        hash = "sha256-Sc0TGzrdyQh61Pkc2nNUlk8jRLjVNaCJdFqZvgQ/Cp8=";
+      };
     };
 
     initLua = ''
