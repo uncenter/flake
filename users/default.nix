@@ -18,8 +18,14 @@
     };
 
     users.users.uncenter = {
-      home = if pkgs.stdenv.isDarwin then "/Users/uncenter" else "/home/uncenter";
+      home = config.home.homeDirectory;
       shell = pkgs.fish;
+    };
+
+    home = {
+      username = "uncenter";
+      homeDirectory =
+        if pkgs.stdenv.isDarwin then "/Users/${config.home.username}" else "/home/${config.home.username}";
     };
   };
 }

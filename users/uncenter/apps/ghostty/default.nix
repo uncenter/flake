@@ -1,7 +1,12 @@
-{ config, lib, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 {
   home.file."${config.xdg.configHome}/ghostty/config".text =
-    lib.generators.toINIWithGlobalSection { listsAsDuplicateKeys = true; }
+    lib.mkIf pkgs.stdenv.isDarwin lib.generators.toINIWithGlobalSection { listsAsDuplicateKeys = true; }
       {
         globalSection = {
           # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig
@@ -15,7 +20,7 @@
 
           macos-titlebar-style = "tabs";
 
-          working-directory = "/Users/uncenter/Dev";
+          working-directory = "${config.home.homeDirectory}/Dev";
           window-inherit-working-directory = false;
 
           copy-on-select = false;
