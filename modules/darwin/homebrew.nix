@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ pkgs, ... }:
 {
   # https://docs.brew.sh/Manpage#environment
   environment.variables = {
@@ -7,7 +7,7 @@
     HOMEBREW_NO_EMOJI = "1";
   };
 
-  homebrew = lib.mkIf pkgs.stdenv.isDarwin {
+  homebrew = {
     enable = true;
     onActivation = {
       autoUpdate = true;
