@@ -8,7 +8,6 @@
     ./variables.nix
     ./fonts.nix
     ./packages.nix
-    ./homebrew.nix
 
     ./apps
 
