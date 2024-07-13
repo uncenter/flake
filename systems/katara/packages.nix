@@ -22,7 +22,10 @@
       "1password/tap"
     ];
 
-    brews = [ "coreutils" ];
+    brews = [
+      "coreutils"
+      "swift-format"
+    ];
 
     casks = [
       "1password"
