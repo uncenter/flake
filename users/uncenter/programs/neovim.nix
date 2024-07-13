@@ -66,13 +66,7 @@
         enable = true;
         fidget-nvim.enable = true;
         nvimWebDevicons.enable = true;
-
-        indentBlankline = {
-          enable = true;
-          fillChar = null;
-          eolChar = null;
-          scope.enabled = true;
-        };
+        indentBlankline.enable = true;
       };
 
       statusline = {
