@@ -1,4 +1,9 @@
-{ config, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 let
   mkLink = config.lib.file.mkOutOfStoreSymlink;
 
@@ -11,7 +16,7 @@ in
     let
       common = "Library/Application Support/Vencord/settings";
     in
-    {
+    lib.mkIf pkgs.stdenv.isDarwin {
       "${common}/settings.json".source = settingsFile;
       "${common}/quickCss.css".source = cssFile;
     };
