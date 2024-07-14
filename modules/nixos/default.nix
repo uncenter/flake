@@ -1,1 +1,4 @@
-{ system.stateVersion = "24.05"; }
+{
+  imports = [ ./packages.nix ];
+  system.stateVersion = "24.05";
+}

@@ -2,7 +2,7 @@
 let
   mkLink = config.lib.file.mkOutOfStoreSymlink;
 
-  flakeDir = "/Users/uncenter/.config/flake/users/uncenter/apps/vencord";
+  flakeDir = "${config.home.homeDirectory}/.config/flake/users/uncenter/apps/vencord";
   settingsFile = mkLink "${flakeDir}/settings.json";
   cssFile = mkLink "${flakeDir}/quickCss.css";
 in
