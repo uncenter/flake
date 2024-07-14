@@ -5,7 +5,7 @@
       azula = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          nixos-wsl.nixosModules.default
+          inputs.nixos-wsl.nixosModules.default
           ./azula
           ../users
           ../modules/shared
