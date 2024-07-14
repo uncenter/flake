@@ -9,5 +9,7 @@
     enable = true;
     defaultUser = "uncenter";
     startMenuLaunchers = true;
+
+    wslConf.network.hostname = "azula";
   };
 }
