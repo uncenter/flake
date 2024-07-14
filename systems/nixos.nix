@@ -6,6 +6,7 @@
         system = "x86_64-linux";
         modules = [
           inputs.nixos-wsl.nixosModules.default
+          inputs.home-manager.nixosModules.home-manager
           ./azula
           ../users
           ../modules/shared
