@@ -16,6 +16,7 @@
       wget
 
       # Nix #
+      cachix
       deadnix
       statix
       nil

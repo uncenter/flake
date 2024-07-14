@@ -30,5 +30,10 @@ jobs:
       - name: Setup Nix
         uses: DeterminateSystems/nix-installer-action@v12
 
+      - uses: cachix/cachix-action@v14
+        with:
+          name: uncenter
+          authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
+
       - name: Build
         run: nix build -L --show-trace .#${{ matrix.path }}
