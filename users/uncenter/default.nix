@@ -1,4 +1,10 @@
-{ inputs, ... }:
+{
+  inputs,
+  lib,
+  pkgs,
+  osConfig,
+  ...
+}:
 {
   programs.home-manager.enable = true;
 
@@ -41,5 +47,9 @@
     accent = "blue";
   };
 
-  home.stateVersion = "23.05";
+  home = {
+    username = "uncenter";
+    homeDirectory = osConfig.users.users.uncenter.home;
+    stateVersion = "23.05";
+  };
 }

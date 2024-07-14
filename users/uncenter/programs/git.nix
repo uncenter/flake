@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs.git = {
     enable = true;
@@ -23,7 +24,11 @@
 
       commit.gpgsign = true;
       gpg.format = "ssh";
-      "gpg \"ssh\"".program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+      "gpg \"ssh\"".program =
+        if pkgs.stdenv.isDarwin then
+          "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+        else
+          "/mnt/c/Users/uncen/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
 
       log.date = "iso";
       merge.conflictstyle = "zdiff3";

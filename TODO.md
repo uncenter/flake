@@ -1,2 +1,0 @@
-- [ ] WSL SSH commit signing
-  - https://developer.1password.com/docs/ssh/integrations/wsl/#sign-git-commits-with-ssh
