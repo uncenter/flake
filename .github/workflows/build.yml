@@ -12,10 +12,14 @@ jobs:
       matrix:
         label:
           - katara
+          - azula
         include:
           - label: katara
             path: darwinConfigurations.katara.config.system.build.toplevel
             runner: macos-14
+          - label: azula
+            path: nixosConfigurations.azula.config.system.build.toplevel
+            runner: ubuntu-latest
 
     runs-on: ${{ matrix.runner }}
 
