@@ -11,10 +11,10 @@ jobs:
     strategy:
       matrix:
         label:
-          - Katara
+          - katara
         include:
-          - label: Katara
-            path: darwinConfigurations.Katara.config.system.build.toplevel
+          - label: katara
+            path: darwinConfigurations.katara.config.system.build.toplevel
             runner: macos-14
 
     runs-on: ${{ matrix.runner }}
