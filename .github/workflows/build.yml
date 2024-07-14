@@ -32,7 +32,7 @@ jobs:
 
       - uses: cachix/cachix-action@v14
         with:
-          name: uncenter-flake
+          name: uncenter
           authToken: "${{ secrets.CACHIX_AUTH_TOKEN }}"
 
       - name: Build
