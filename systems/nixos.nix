@@ -1,13 +1,8 @@
-{
-  inputs,
-  nixpkgs,
-  nixos-wsl,
-  ...
-}:
+{ inputs, nixos-wsl, ... }:
 {
   flake = {
     nixosConfigurations = {
-      azula = nixpkgs.lib.nixosSystem {
+      azula = inputs.nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           nixos-wsl.nixosModules.default
