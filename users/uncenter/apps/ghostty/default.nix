@@ -5,7 +5,7 @@
   ...
 }:
 {
-  home.file."${config.xdg.configHome}/ghostty/config" = lib.mkIf pkgs.stdenv.isDarwin {
+  xdg.configFile."ghostty/config" = lib.mkIf pkgs.stdenv.isDarwin {
     text = lib.generators.toINIWithGlobalSection { listsAsDuplicateKeys = true; } {
       globalSection = {
         # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig
