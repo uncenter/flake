@@ -12,6 +12,9 @@
         modules = [
           nixos-wsl.nixosModules.default
           ./azula
+          ../users
+          ../modules/shared
+          ../modules/nixos
         ];
 
         specialArgs = {

@@ -27,8 +27,6 @@
     };
   };
 
-  nix.settings.trusted-users = [ "uncenter" ];
-
   system.activationScripts = {
     # https://github.com/ryan4yin/nix-darwin-kickstarter/blob/f79b4d4cbd9c8c2ea56b6e5016131ff2179d3775/minimal/modules/system.nix#L14-L19
     postUserActivation.text = ''
@@ -36,8 +34,6 @@
       /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
     '';
   };
-
-  programs.fish.enable = true;
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 

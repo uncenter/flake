@@ -1,9 +1,4 @@
-{
-  inputs,
-  config,
-  pkgs,
-  ...
-}:
+{ inputs, pkgs, ... }:
 {
   config = {
     home-manager = {
@@ -18,14 +13,8 @@
     };
 
     users.users.uncenter = {
-      home = config.home.homeDirectory;
+      home = if pkgs.stdenv.isDarwin then "/Users/uncenter" else "/home/uncenter";
       shell = pkgs.fish;
-    };
-
-    home = {
-      username = "uncenter";
-      homeDirectory =
-        if pkgs.stdenv.isDarwin then "/Users/${config.home.username}" else "/home/${config.home.username}";
     };
   };
 }
