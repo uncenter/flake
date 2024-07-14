@@ -58,6 +58,7 @@
     ];
 
     shellInit = ''
+      ${if pkgs.stdenv.isDarwin then "/opt/homebrew/bin/brew shellenv | source" else ""}
       source ${./fish/config.fish}
     '';
 

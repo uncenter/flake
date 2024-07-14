@@ -1,5 +1,3 @@
-/opt/homebrew/bin/brew shellenv | source
-
 # https://fishshell.com/docs/current/cmds/fish_add_path.html
 
 fish_add_path -Pm /etc/profiles/per-user/$USER/bin /run/current-system/sw/bin
