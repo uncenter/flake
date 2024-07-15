@@ -1,7 +1,7 @@
 { config, ... }:
 {
   home.sessionVariables = {
-    FLAKE = config.home.homeDirectory;
+    FLAKE = "${config.home.homeDirectory}/.config/flake";
 
     EDITOR = "nvim";
     VISUAL = "code";
