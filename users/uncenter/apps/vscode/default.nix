@@ -73,7 +73,7 @@ in
         njpwerner.autodocstring
         ms-vscode-remote.remote-wsl
       ];
-      mutableExtensionsDir = false;
+      mutableExtensionsDir = true;
     };
 
     home.file."Library/Application Support/Code/User/settings.json".source = settingsFile;

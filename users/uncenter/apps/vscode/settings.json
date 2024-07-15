@@ -1,6 +1,6 @@
 {
 	"extensions.ignoreRecommendations": true,
-	"extensions.autoUpdate": false,
+	"extensions.autoUpdate": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 
 	/* UI/Interface */
@@ -55,6 +55,9 @@
 	"git.confirmSync": false,
 	"git.openRepositoryInParentFolders": "never",
 	"git.suggestSmartCommit": false,
+	"gitlens.advanced.messages": {
+		"suppressIntegrationRequestTimedOutWarning": true
+	},
 
 	/* Formatting/LSP */
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
