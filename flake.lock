@@ -446,11 +446,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1720906138,
-        "narHash": "sha256-tEY8vHDE0psT5qH1RERdZmYGVcMi4yf4WLrBuJ04EBQ=",
+        "lastModified": 1720955038,
+        "narHash": "sha256-GaliJqfFwyYxReFywxAa8orCO+EnDq2NK2F+5aSc8vo=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d55afb5fc2e24e0852c9da179fbe2a74a2687697",
+        "rev": "aa247c0c90ecf4ae7a032c54fdc21b91ca274062",
         "type": "github"
       },
       "original": {
@@ -561,6 +561,7 @@
         "plugin-mind-nvim": "plugin-mind-nvim",
         "plugin-minimap-vim": "plugin-minimap-vim",
         "plugin-modes-nvim": "plugin-modes-nvim",
+        "plugin-neo-tree-nvim": "plugin-neo-tree-nvim",
         "plugin-neocord": "plugin-neocord",
         "plugin-neodev-nvim": "plugin-neodev-nvim",
         "plugin-noice-nvim": "plugin-noice-nvim",
@@ -621,11 +622,11 @@
         "zig": "zig"
       },
       "locked": {
-        "lastModified": 1720928841,
-        "narHash": "sha256-D7Lqf6CZi4atQZ75qhVAtxOTgf7lwEP0qBaTJS/lQPU=",
+        "lastModified": 1720981812,
+        "narHash": "sha256-HaXeYREONzwa1IcaiVYKCketz+wH9EGUFUrgJOUwbDE=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "1426c83ce6951e0edca9d1c630eb522e1078c7b5",
+        "rev": "a4d35b441986f4747abc47e618810325de38d6ce",
         "type": "github"
       },
       "original": {
@@ -1319,6 +1320,22 @@
       "original": {
         "owner": "mvllow",
         "repo": "modes.nvim",
+        "type": "github"
+      }
+    },
+    "plugin-neo-tree-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1713050882,
+        "narHash": "sha256-cZwOVpdMT0NCtp6Ha592QA2RzKVS6LhXXcjfDBCQ+0k=",
+        "owner": "nvim-neo-tree",
+        "repo": "neo-tree.nvim",
+        "rev": "22e566aeb075c94f670f34077e05ba95190dfb4a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-neo-tree",
+        "repo": "neo-tree.nvim",
         "type": "github"
       }
     },
