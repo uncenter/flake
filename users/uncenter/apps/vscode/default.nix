@@ -65,7 +65,6 @@ in
 
         # Utilities
         bierner.comment-tagged-templates
-        wakatime.vscode-wakatime
         vitaliymaz.vscode-svg-previewer
         usernamehw.errorlens
         meganrogge.template-string-converter
@@ -74,7 +73,7 @@ in
         njpwerner.autodocstring
         ms-vscode-remote.remote-wsl
       ];
-      mutableExtensionsDir = true;
+      mutableExtensionsDir = false;
     };
 
     home.file."Library/Application Support/Code/User/settings.json".source = settingsFile;

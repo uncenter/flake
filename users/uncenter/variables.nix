@@ -20,7 +20,6 @@
     YARN_ENABLE_TELEMETRY = "0";
     GNUPGHOME = "${config.xdg.configHome}/gnupg";
     GOPATH = "${config.xdg.dataHome}/go";
-    WAKATIME_HOME = "${config.xdg.configHome}/wakatime";
     BUNDLE_USER_CONFIG = "${config.xdg.configHome}/bundle";
     BUNDLE_USER_CACHE = "${config.xdg.cacheHome}/bundle";
     BUNDLE_USER_PLUGIN = "${config.xdg.dataHome}/bundle";

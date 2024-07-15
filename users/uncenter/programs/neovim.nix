@@ -82,10 +82,6 @@
 
       utility = {
         ccc.enable = true;
-        vim-wakatime = {
-          enable = true;
-          cli-package = pkgs.wakatime;
-        };
       };
 
       terminal = {
