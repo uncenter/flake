@@ -74,6 +74,13 @@
         cd "$dir"
       '';
 
+      mk = ''
+        set dir (dirname $argv[1])
+        set file (basename $argv[1])
+        mkdir -p $dir
+        touch $dir/$file
+      '';
+
       # Check if a command is present in PATH.
       have = ''
         command -v $argv > /dev/null
