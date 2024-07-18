@@ -1,10 +1,4 @@
-{
-  inputs,
-  lib,
-  pkgs,
-  osConfig,
-  ...
-}:
+{ inputs, osConfig, ... }:
 {
   programs.home-manager.enable = true;
 

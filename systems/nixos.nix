@@ -1,4 +1,4 @@
-{ inputs, nixos-wsl, ... }:
+{ inputs, ... }:
 {
   flake = {
     nixosConfigurations = {
