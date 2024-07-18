@@ -46,7 +46,7 @@
 	"editor.accessibilitySupport": "off",
 
 	"files.associations": {
-		"*.njk": "nunjucks",
+		"*.njk": "html",
 		"*.tera": "jinja-html"
 	},
 
