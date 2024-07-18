@@ -38,7 +38,11 @@ case "$x" in
                 exit 1
             fi
             echo "Opening page for '$page' in the default browser..."
-            open "https://ss64.com/osx/$page.html"
+            case "$(uname -s)" in
+				Linux*)  xdg-open "$url" ;;
+				Darwin*) open "$url" ;;
+				*)       echo "git-open: unsupported operating system" ;;
+			esac
         done
         ;;
     *)

@@ -15,7 +15,6 @@ fi
 case "$(uname -s)" in
   Linux*)  xdg-open "$repo_url" ;;
   Darwin*) open "$repo_url" ;;
-  CYGWIN*) start "$repo_url" ;;
   *)       echo "git-open: unsupported operating system" ;;
 esac
 
