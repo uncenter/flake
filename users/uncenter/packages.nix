@@ -28,6 +28,7 @@
       nix-melt
       nix-output-monitor
       nix-update
+      nix-your-shell
       nurl
 
       # Catppuccin #
