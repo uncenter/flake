@@ -28,9 +28,7 @@ function reset
     command reset
 end
 
-starship init fish | source
 fnm env --use-on-cd | source
-atuin init fish | source
 luarocks path --bin | source
 nix-your-shell fish | source
 
