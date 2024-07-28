@@ -11,7 +11,7 @@
         # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig
 
         theme = "catppuccin-${config.catppuccin.flavor}";
-        font-family = "CommitMono Nerd Font";
+        font-family = "Lilex Nerd Font";
         font-size = 15;
         adjust-cell-height = 10;
         window-padding-x = 25;

@@ -5,6 +5,7 @@
       fonts = [
         "CommitMono"
         "0xProto"
+        "Lilex"
       ];
     })
   ];
