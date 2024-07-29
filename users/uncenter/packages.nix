@@ -82,6 +82,7 @@
       kittysay
       license-go
       lolcat
+      lychee
       meower
       nrr
       ouch
