@@ -38,7 +38,7 @@
 
   catppuccin = {
     flavor = "macchiato";
-    accent = "blue";
+    accent = "mauve";
   };
 
   home = {

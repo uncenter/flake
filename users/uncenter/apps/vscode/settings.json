@@ -4,7 +4,7 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 
 	/* UI/Interface */
-	"catppuccin.accentColor": "blue",
+	"catppuccin.accentColor": "mauve",
 	"workbench.colorTheme": "Catppuccin Macchiato",
 	"workbench.iconTheme": "catppuccin-macchiato",
 	"workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
