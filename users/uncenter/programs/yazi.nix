@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   yazi-plugins = pkgs.fetchFromGitHub {
     owner = "yazi-rs";
@@ -43,50 +43,51 @@ in
     };
 
     keymap = {
-      manager.prepend_keymap = [
-        {
-          on = [ "<Space>" ];
-          run = [ "select --state=none" ];
-          desc = "Toggle the current selection state";
-        }
+      manager.prepend_keymap =
+        [
+          {
+            on = [ "<Space>" ];
+            run = [ "select --state=none" ];
+            desc = "Toggle the current selection state";
+          }
 
-        {
-          on = [ "<C-w>" ];
-          run = [ "close" ];
-          desc = "Close the current tab, or quit if it is last tab";
-        }
-        {
-          on = [ "<C-t>" ];
-          run = "tab_create --current";
-          desc = "Create a new tab using the current path";
-        }
+          {
+            on = [ "m" ];
+            run = "plugin --sync hide-preview";
+            desc = "Minimize preview";
+          }
+          {
+            on = [ "M" ];
+            run = "plugin --sync max-preview";
+            desc = "Maximize preview";
+          }
 
-        {
-          on = [ "t" ];
-          run = "plugin --sync hide-preview";
-          desc = "Hide or show preview";
-        }
-        {
-          on = [ "T" ];
-          run = "plugin --sync max-preview";
-          desc = "Maximize or shrink preview";
-        }
+          {
+            on = [
+              "c"
+              "m"
+            ];
+            run = "plugin chmod";
+            desc = "Chmod on selected files";
+          }
 
-        {
-          on = [
-            "c"
-            "m"
-          ];
-          run = "plugin chmod";
-          desc = "Chmod on selected files";
-        }
-
-        {
-          on = [ "C" ];
-          run = "plugin ouch --args=zip";
-          desc = "Compress with ouch";
-        }
-      ];
+          {
+            on = [ "C" ];
+            run = "plugin ouch --args=zip";
+            desc = "Compress with ouch";
+          }
+        ]
+        ++ (map (
+          stepInt:
+          let
+            step = toString stepInt;
+          in
+          {
+            on = [ step ];
+            run = "plugin relative-motions" + (if step != "0" then " --args=" + step else "");
+            desc = "Move in relative steps";
+          }
+        ) (lib.lists.range 0 9));
     };
 
     plugins = {
@@ -107,10 +108,18 @@ in
         rev = "fe6b0a60ce6b7b9a573b975fe3c0dfc79c0b2ac6";
         hash = "sha256-Sc0TGzrdyQh61Pkc2nNUlk8jRLjVNaCJdFqZvgQ/Cp8=";
       };
+
+      "relative-motions" = pkgs.fetchFromGitHub {
+        owner = "dedukun";
+        repo = "relative-motions.yazi";
+        rev = "73f554295f4b69756597c9fe3caf3750a321acea";
+        hash = "sha256-jahJC6LXOnr974+zHEH9gqI+J1C68O+PvjSt8pelkP0=";
+      };
     };
 
     initLua = ''
-      require("starship"):setup()
+        require("starship"):setup()
+      	require("relative-motions"):setup({ show_numbers = "relative_absolute" })
     '';
   };
 }
