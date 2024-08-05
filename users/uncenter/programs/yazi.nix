@@ -52,6 +52,31 @@ in
           }
 
           {
+            on = [
+              "g"
+              "f"
+            ];
+            run = "cd ~/.config/flake";
+            desc = "[ G ]o to the system [ f ]lake directory";
+          }
+          {
+            on = [
+              "g"
+              "d"
+            ];
+            run = "cd ~/Dev";
+            desc = "[ G ]o to the [ d ]evelopment directory";
+          }
+          {
+            on = [
+              "g"
+              "D"
+            ];
+            run = "cd ~/Downloads";
+            desc = "[ G ]o to the [ d ]ownloads directory";
+          }
+
+          {
             on = [ "m" ];
             run = "plugin --sync hide-preview";
             desc = "Minimize preview";
@@ -118,8 +143,8 @@ in
     };
 
     initLua = ''
-        require("starship"):setup()
-      	require("relative-motions"):setup({ show_numbers = "relative_absolute" })
+       require("starship"):setup()
+      require("relative-motions"):setup({ show_numbers = "relative_absolute" })
     '';
   };
 }
