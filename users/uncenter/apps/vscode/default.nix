@@ -17,7 +17,13 @@ in
 
       extensions = with pkgs.vscode-extensions; [
         # Appearance
-        catppuccin.catppuccin-vsc
+        # catppuccin.catppuccin-vsc
+        (pkgs.catppuccin-vsc.override {
+          accent = config.catppuccin.accent;
+          boldKeywords = false;
+          italicComments = false;
+          italicKeywords = false;
+        })
         catppuccin.catppuccin-vsc-icons
         zguolee.tabler-icons
 

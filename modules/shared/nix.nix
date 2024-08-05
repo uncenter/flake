@@ -54,7 +54,10 @@
   };
 
   nixpkgs = {
-    overlays = [ inputs.rust-overlay.overlays.default ];
+    overlays = [
+      inputs.rust-overlay.overlays.default
+      inputs.catppuccin-vsc.overlays.default
+    ];
 
     config = {
       allowUnfree = true;

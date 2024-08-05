@@ -22,6 +22,7 @@
     catppuccin.url = "github:catppuccin/nix";
     catppuccin-catwalk.url = "github:catppuccin/catwalk";
     catppuccin-whiskers.url = "github:catppuccin/whiskers";
+    catppuccin-vsc.url = "https://flakehub.com/f/catppuccin/vscode/*.tar.gz";
 
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
