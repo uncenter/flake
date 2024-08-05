@@ -70,8 +70,10 @@
       eza
       fastfetch
       fd
+      gfold
       gh
       gitoxide
+      grex
       gum
       hexyl
       hyperfine
