@@ -35,7 +35,7 @@
         css.enable = true;
         rust.enable = true;
         nix.enable = true;
-        tailwind.enable = true;
+        nix.format.package = pkgs.nixfmt-rfc-style;
         ts.enable = true;
         ts.extensions.ts-error-translator.enable = true;
         python.enable = true;
