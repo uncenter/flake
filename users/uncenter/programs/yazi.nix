@@ -33,6 +33,18 @@ in
         tab_size = 4;
       };
       opener = {
+        edit = [
+          {
+            run = "\${EDITOR:-vi} \"$@\"";
+            desc = "$EDITOR";
+            block = true;
+          }
+          {
+            run = "\${VISUAL:-code} \"$@\"";
+            desc = "$VISUAL";
+            orphan = true;
+          }
+        ];
         extract = [
           {
             run = "ouch d -y \"$@\"";
