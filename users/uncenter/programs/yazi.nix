@@ -21,7 +21,7 @@ in
           2
           4
         ];
-        sort_by = "alphabetical";
+        sort_by = "natural";
         sort_sensitive = true;
         sort_reverse = true;
         sort_dir_first = true;
