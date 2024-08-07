@@ -12,9 +12,11 @@
       "gl" = "git pull";
       "glm" = "git pull origin main";
       "gc" = "git commit -m";
-      "gnew" = "git checkout -b";
+      "gn" = "git checkout -b";
       "gs" = "git checkout";
       "ga" = "git add";
+
+      "gg" = "lazygit";
     };
 
     shellAliases = {
