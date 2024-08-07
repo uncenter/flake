@@ -22,6 +22,7 @@
       nil
       nixfmt-rfc-style
       nixpkgs-review
+      nixpkgs-track
       nixpkgs-using
       nix-init
       nix-inspect
