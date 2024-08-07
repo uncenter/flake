@@ -60,9 +60,9 @@
       };
 
       hostname = {
-		style = "green";
-		ssh_only = false;
-	  };
+        style = "green";
+        ssh_only = false;
+      };
 
       directory = {
         truncation_length = 5;
