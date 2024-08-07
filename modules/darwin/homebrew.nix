@@ -34,6 +34,7 @@
       "affinity-publisher"
       "arc"
       "calibre"
+      "chatgpt"
       "cleanshot"
       "codeedit"
       "confectionery"
