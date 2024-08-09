@@ -8,6 +8,7 @@
 
     aliases = {
       "undo" = "reset --soft HEAD~1";
+      "reword" = "commit --amend -C HEAD --edit";
     };
 
     userName = "uncenter";
