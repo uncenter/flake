@@ -89,7 +89,7 @@
       '';
 
       # Convert all PNG files in the CWD to WebP.
-      pngtowebp = ''
+      png_to_webp = ''
         for file in *.png
           set output (basename $file .png).webp
           cwebp -lossless $file -o $output
