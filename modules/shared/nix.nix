@@ -17,6 +17,7 @@
     settings = {
       experimental-features = "nix-command flakes";
       auto-optimise-store = true;
+      warn-dirty = false;
       extra-platforms = [
         "x86_64-darwin"
         "aarch64-darwin"
