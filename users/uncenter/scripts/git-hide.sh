@@ -21,7 +21,7 @@ EOF
         cat "$file"
         ;;
     *)
-		[ -n "$(tail -c 1 < file.txt)" ] && echo >> "$file"
+		[ -n "$(tail -c 1 < $file)" ] && echo >> "$file"
 		for arg in "$@"; do
 			echo "$arg" >> "$file"
 		done
