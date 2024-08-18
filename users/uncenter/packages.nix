@@ -26,7 +26,6 @@
       nixpkgs-using
       nix-init
       nix-inspect
-      nix-melt
       nix-output-monitor
       nix-update
       nix-your-shell
