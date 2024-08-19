@@ -23,6 +23,7 @@
 	"editor.linkedEditing": true,
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
+	"window.newWindowDimensions": "maximized",
 
 	/* Terminal */
 	"terminal.integrated.cursorBlinking": true,
