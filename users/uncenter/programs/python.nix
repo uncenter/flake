@@ -4,5 +4,6 @@
     python312
     poetry
     ruff
+	uv
   ];
 }
