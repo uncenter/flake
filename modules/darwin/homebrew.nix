@@ -50,6 +50,7 @@
       "gramps"
       "inkscape"
       "jordanbaird-ice"
+	  "keka"
       "loop"
       "obsidian"
       "raycast"
