@@ -55,6 +55,7 @@
       "obsidian"
       "raycast"
       "sf-symbols"
+	  "yaak"
       "zed"
       "zoom"
     ];
