@@ -28,6 +28,7 @@
     ./programs/rust.nix
     ./programs/spicetify.nix
     ./programs/starship.nix
+	./programs/taskwarrior.nix
     ./programs/yazi.nix
 
     ./scripts.nix
