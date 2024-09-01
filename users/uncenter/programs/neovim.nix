@@ -42,6 +42,7 @@
         markdown.enable = true;
         html.enable = true;
       };
+	  treesitter.addDefaultGrammars = false;
 
       lsp = {
         formatOnSave = true;
