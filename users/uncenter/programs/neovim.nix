@@ -139,21 +139,6 @@
       };
 
       extraPlugins = {
-        template-string = {
-          package = pkgs.vimUtils.buildVimPlugin {
-            name = "template-string.nvim";
-            src = pkgs.fetchFromGitHub {
-              owner = "axelvc";
-              repo = "template-string.nvim";
-              rev = "419bfb2e4d5f0e6ddd0d4435f85b69da0d88d524";
-              sha256 = "sha256-whpIzym2rHE6BGqVqJz/5xfuGTOJb8W5AWhuYQbmYoQ=";
-            };
-          };
-          setup = ''
-            require('template-string').setup {}
-          '';
-        };
-
         screenkey = {
           package = pkgs.vimUtils.buildVimPlugin {
             name = "screenkey.nvim";
