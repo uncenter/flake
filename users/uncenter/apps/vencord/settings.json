@@ -558,9 +558,6 @@
 		"UserSettingsAPI": {
 			"enabled": true
 		},
-		"ShowAllRoles": {
-			"enabled": false
-		},
 		"ConsoleJanitor": {
 			"enabled": false
 		},
@@ -568,6 +565,9 @@
 			"enabled": false
 		},
 		"MentionAvatars": {
+			"enabled": false
+		},
+		"AlwaysExpandRoles": {
 			"enabled": false
 		}
 	},
@@ -581,6 +581,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1723208248994
+		"settingsSyncVersion": 1725216269098
 	}
 }
