@@ -53,6 +53,7 @@
       "keka"
       "loop"
       "obs"
+      "mediamate"
       "obsidian"
       "raycast"
       "sf-symbols"
