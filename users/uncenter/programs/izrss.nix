@@ -54,7 +54,7 @@
         "https://this-week-in-rust.org/atom.xml"
         "https://twobithistory.org/feed.xml"
         "https://ruudvanasseldonk.com/feed.xml"
-		"https://blog.rust-lang.org/feed.xml"
+        "https://blog.rust-lang.org/feed.xml"
       ];
     };
   };
