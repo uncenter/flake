@@ -11,6 +11,10 @@
         # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig
 
         theme = "catppuccin-${config.catppuccin.flavor}";
+        cursor-color =
+          lib.strings.removePrefix "#"
+            config.palette.${config.catppuccin.flavor}.colors.overlay1.hex;
+
         font-family = "Lilex Nerd Font";
         font-size = 15;
         adjust-cell-height = 10;
@@ -24,6 +28,7 @@
 
         copy-on-select = false;
         shell-integration = "detect";
+        shell-integration-features = "no-cursor";
         macos-option-as-alt = true;
 
         keybind = [

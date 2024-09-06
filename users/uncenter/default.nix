@@ -1,9 +1,16 @@
-{ inputs, osConfig, ... }:
+{
+  pkgs,
+  config,
+  inputs,
+  osConfig,
+  ...
+}:
 {
   programs.home-manager.enable = true;
 
   imports = [
     inputs.catppuccin.homeManagerModules.catppuccin
+    ./options.nix
 
     ./variables.nix
     ./fonts.nix
@@ -41,6 +48,7 @@
     flavor = "macchiato";
     accent = "mauve";
   };
+  palette = (pkgs.lib.importJSON (config.catppuccin.sources.palette + "/palette.json"));
 
   home = {
     username = "uncenter";
