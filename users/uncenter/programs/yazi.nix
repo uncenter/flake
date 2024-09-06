@@ -18,8 +18,8 @@ in
       manager = {
         ratio = [
           2
-          2
-          4
+          3
+          3
         ];
         sort_by = "natural";
         sort_sensitive = true;
