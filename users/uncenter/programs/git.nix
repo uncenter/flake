@@ -20,7 +20,7 @@
     };
 
     extraConfig = {
-      core.editor = "nvim";
+      core.editor = "hx";
 
       user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJqPy3W/cnefiuTlqtY6gQsIimz25sYZ6GglXOASK8A4";
       commit.gpgsign = true;

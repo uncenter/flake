@@ -3,7 +3,7 @@
   home.sessionVariables = {
     FLAKE = "${config.home.homeDirectory}/.config/flake";
 
-    EDITOR = "nvim";
+    EDITOR = "hx";
     VISUAL = "code";
 
     # https://github.com/b3nj5m1n/xdg-ninja

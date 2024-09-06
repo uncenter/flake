@@ -20,9 +20,9 @@
     ./programs/fzf.nix
     ./programs/git.nix
     ./programs/glamour.nix
+    ./programs/helix.nix
     ./programs/izrss.nix
     ./programs/lazygit.nix
-    ./programs/neovim.nix
     ./programs/nix-init.nix
     ./programs/python.nix
     ./programs/rust.nix
