@@ -6,7 +6,14 @@
 }:
 {
   home = {
-    sessionPath = [ "${config.home.homeDirectory}/.local/bin" ];
+    sessionPath = [
+      "$GOPATH/bin"
+      "$CARGO_HOME/bin"
+      "$PNPM_HOME"
+      "$GHOSTTY_BIN_DIR"
+
+      "${config.home.homeDirectory}/.local/bin"
+    ];
 
     file = builtins.listToAttrs (
       builtins.map (name: {

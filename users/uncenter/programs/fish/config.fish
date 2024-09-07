@@ -1,9 +1,6 @@
 # https://fishshell.com/docs/current/cmds/fish_add_path.html
 
 fish_add_path -Pm /etc/profiles/per-user/$USER/bin /run/wrappers/bin /run/current-system/sw/bin
-fish_add_path $GOPATH/bin
-fish_add_path $CARGO_HOME/bin
-fish_add_path $PNPM_HOME
 
 # Ghostty supports auto-injection but nix-darwin hard overwrites XDG_DATA_DIRS
 # which make it so that we can't use the auto-injection. We have to source
