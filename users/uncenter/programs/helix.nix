@@ -5,9 +5,12 @@
     catppuccin.enable = true;
 
     settings = {
-      editor.whitespace.render = {
-        space = "all";
-        tab = "all";
+      editor = {
+        soft-wrap.enable = true;
+        whitespace.render = {
+          space = "all";
+          tab = "all";
+        };
       };
     };
 
