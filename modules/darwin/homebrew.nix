@@ -24,7 +24,6 @@
 
     brews = [
       "coreutils"
-      "swift-format"
     ];
 
     casks = [
