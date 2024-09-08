@@ -25,5 +25,7 @@
         }
       ];
     };
+
+    extraPackages = with pkgs; [ nodePackages.typescript-language-server ];
   };
 }
