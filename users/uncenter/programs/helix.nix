@@ -52,6 +52,25 @@
             };
             auto-format = true;
           }
+          {
+            name = "swift";
+            formatter = {
+              command = "swift-format";
+              args = [ "format" ];
+            };
+            auto-format = true;
+          }
+          {
+            name = "toml";
+            formatter = {
+              command = "taplo";
+              args = [
+                "format"
+                "-"
+              ];
+            };
+            auto-format = true;
+          }
         ]
         ++ (lib.attrsets.mapAttrsToList (lang: ext: {
           auto-format = true;
@@ -106,6 +125,9 @@
             };
           };
         };
+      };
+      rust-analyzer = {
+        config.check.command = "clippy";
       };
     };
 
