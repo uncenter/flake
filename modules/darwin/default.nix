@@ -35,6 +35,10 @@
     '';
   };
 
+  security.sudo.extraConfig = ''
+    Defaults    env_keep += "TERMINFO"
+  '';
+
   nixpkgs.hostPlatform = "aarch64-darwin";
 
   services.nix-daemon.enable = true;
