@@ -31,6 +31,7 @@ in
       };
       preview = {
         tab_size = 4;
+        wrap = "yes";
       };
       opener = {
         edit = [
