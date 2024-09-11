@@ -16,7 +16,7 @@
 
     settings = {
       experimental-features = "nix-command flakes";
-      auto-optimise-store = true;
+      auto-optimise-store = !pkgs.stdenv.isDarwin;
       warn-dirty = false;
       extra-platforms = [
         "x86_64-darwin"
