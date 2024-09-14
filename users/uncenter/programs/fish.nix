@@ -1,4 +1,9 @@
-{ pkgs, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 {
   programs.fish = {
     enable = true;
@@ -63,6 +68,23 @@
       ${if pkgs.stdenv.isDarwin then "/opt/homebrew/bin/brew shellenv | source" else ""}
       source ${./fish/config.fish}
     '';
+
+    # Addresses $PATH re-ordering by Apple's `path_helper` tool, prioritising Apple’s tools over Nix ones.
+    # https://github.com/LnL7/nix-darwin/issues/122
+    loginShellInit =
+      let
+        profiles = [
+          "/etc/profiles/per-user/$USER"
+          "/run/wrappers"
+          "/run/current-system/sw"
+        ];
+
+        makeBinSearchPath = lib.concatMapStringsSep " " (path: ("\"" + "${path}/bin" + "\""));
+      in
+      ''
+        fish_add_path --move --prepend --path ${makeBinSearchPath profiles}
+        set fish_user_paths $fish_user_paths
+      '';
 
     functions = {
       # Recursively create and enter a directory path.
