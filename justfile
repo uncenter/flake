@@ -1,6 +1,17 @@
 _default:
   @just --list --unsorted
 
+
+[macos]
+build *args:
+  darwin-rebuild build --flake . {{args}} |& nom
+  nvd diff /run/current-system ./result
+
+[linux]
+build *args:
+  sudo nixos-rebuild build --flake . {{args}} |& nom
+  nvd diff /run/current-system ./result
+
 [macos]
 switch *args:
   darwin-rebuild switch --flake . {{args}} |& nom

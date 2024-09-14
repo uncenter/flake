@@ -30,6 +30,7 @@
       nix-update
       nix-your-shell
       nurl
+      nvd
 
       # Catppuccin #
       whiskers
