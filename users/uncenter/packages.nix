@@ -54,8 +54,6 @@
       lua
       luajitPackages.luarocks
       shellcheck
-      swift
-      swift-format
       sourcekit-lsp
       taplo
       zig
