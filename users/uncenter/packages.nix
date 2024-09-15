@@ -77,6 +77,7 @@
       gitoxide
       grex
       gum
+      hael
       hexyl
       hyperfine
       ito
