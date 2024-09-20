@@ -169,7 +169,7 @@
 			"enabled": false
 		},
 		"FavoriteGifSearch": {
-			"enabled": true
+			"enabled": false
 		},
 		"FixCodeblockGap": {
 			"enabled": true
@@ -403,9 +403,6 @@
 		"RoleColorEverywhere": {
 			"enabled": false
 		},
-		"SearchReply": {
-			"enabled": false
-		},
 		"SecretRingToneEnabler": {
 			"enabled": false
 		},
@@ -569,6 +566,9 @@
 		},
 		"AlwaysExpandRoles": {
 			"enabled": false
+		},
+		"FullSearchContext": {
+			"enabled": false
 		}
 	},
 	"notifications": {
@@ -581,6 +581,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1725216269098
+		"settingsSyncVersion": 1726841116205
 	}
 }
