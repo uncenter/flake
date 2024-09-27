@@ -122,6 +122,7 @@
     extraPackages = with pkgs; [
       nodePackages.typescript-language-server
       nodePackages.vscode-langservers-extracted
+      jdt-language-server
     ];
   };
 }
