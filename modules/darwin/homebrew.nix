@@ -49,6 +49,7 @@
       "google-chrome"
       "gramps"
       "inkscape"
+      "intellij-idea"
       "jordanbaird-ice"
       "keka"
       "loop"

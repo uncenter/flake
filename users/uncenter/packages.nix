@@ -52,6 +52,7 @@
       fprettify
       go
       jdk17
+      maven
       lua
       luajitPackages.luarocks
       shellcheck
