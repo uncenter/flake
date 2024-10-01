@@ -16,7 +16,6 @@
         "https://uncenter.dev/feed.xml"
         "https://ryanccn.dev/feed/rss.xml"
         "https://shivjm.blog/feed.xml"
-        "https://sandroroth.com/feeds/blog.xml"
         "https://binyam.in/feeds/blog.xml"
         "https://tonsky.me/blog/atom.xml"
         "https://tty1.blog/feed/"
@@ -39,7 +38,6 @@
         "https://boehs.org/in/blog.xml"
         "https://huonw.github.io/blog/atom.xml"
         "https://nixpkgs.news/rss.xml"
-        "https://maia.crimew.gay/feed.xml"
         "https://rbluethl.com/rss"
         "https://lucumr.pocoo.org/feed.atom"
         "https://yorickpeterse.com/feed.xml"
@@ -47,14 +45,13 @@
         "https://kettanaito.com/blog/rss.xml"
         "https://kilo.bytesize.xyz/feed/"
         "https://bytesize.xyz/feed/"
-        "https://piccalil.li/feed.xml"
         "https://zed.dev/blog.rss"
         "https://www.sophiajt.com/atom.xml"
         "https://robinmalfait.com/feed.xml"
-        "https://this-week-in-rust.org/atom.xml"
         "https://twobithistory.org/feed.xml"
         "https://ruudvanasseldonk.com/feed.xml"
         "https://blog.rust-lang.org/feed.xml"
+        "https://nolanlawson.com/feed/"
       ];
     };
   };
