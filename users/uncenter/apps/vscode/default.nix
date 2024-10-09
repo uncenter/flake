@@ -38,6 +38,7 @@ let
     "esbenp.prettier-vscode"
     "fortran-lang.linter-gfortran"
     "github.vscode-github-actions"
+    "gleam.gleam"
     "golang.go"
     "graphql.vscode-graphql-syntax"
     "griimick.vhs"

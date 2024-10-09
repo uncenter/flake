@@ -27,6 +27,7 @@
     ./programs/fzf.nix
     ./programs/git.nix
     ./programs/glamour.nix
+    ./programs/gleam.nix
     ./programs/helix.nix
     ./programs/izrss.nix
     ./programs/lazygit.nix
