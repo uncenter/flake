@@ -48,16 +48,11 @@
       bun
       deno
       fnm
-      fortls
-      fprettify
       go
       jdk17
       maven
       lua
       luajitPackages.luarocks
-      shellcheck
-      sourcekit-lsp
-      taplo
       zig
 
       # Tools and TUIs #

@@ -120,9 +120,26 @@
     };
 
     extraPackages = with pkgs; [
+      # Web Development
       nodePackages.typescript-language-server
       nodePackages.vscode-langservers-extracted
+      superhtml
+
+      # Java
       jdt-language-server
+
+      # Swift
+      sourcekit-lsp
+
+      # Fortran
+      fortls
+      fprettify
+
+      # Shell
+      shellcheck
+
+      # TOML
+      taplo
     ];
   };
 }
