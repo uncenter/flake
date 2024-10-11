@@ -3,8 +3,8 @@ let
   yazi-plugins = pkgs.fetchFromGitHub {
     owner = "yazi-rs";
     repo = "plugins";
-    rev = "06e5fe1c7a2a4009c483b28b298700590e7b6784";
-    hash = "sha256-jg8+GDsHOSIh8QPYxCvMde1c1D9M78El0PljSerkLQc=";
+    rev = "932b9311a810423659dae172ff8e215366bfc631";
+    hash = "sha256-tAccywz2yPtyWGMe8Ff2VAiFFjtTn34qBP2J39H2PdA=";
   };
 in
 {
@@ -62,6 +62,15 @@ in
             on = [ "<Space>" ];
             run = [ "select --state=none" ];
             desc = "Toggle the current selection state";
+          }
+          {
+            desc = "Open shell here";
+            on = "!";
+            run = "shell \"$SHELL\" --block --confirm";
+          }
+          {
+            on = "<C-p>";
+            run = ''shell 'qlmanage -p "$@"' --confirm'';
           }
 
           {
@@ -132,6 +141,8 @@ in
       "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
       "max-preview" = "${yazi-plugins}/max-preview.yazi";
       "chmod" = "${yazi-plugins}/chmod.yazi";
+      "full-border" = "${yazi-plugins}/full-border.yazi";
+      "no-status" = "${yazi-plugins}/no-status.yazi";
 
       "starship" = pkgs.fetchFromGitHub {
         owner = "Rolv-Apneseth";
@@ -156,8 +167,10 @@ in
     };
 
     initLua = ''
-       require("starship"):setup()
+      require("starship"):setup()
       require("relative-motions"):setup({ show_numbers = "relative_absolute" })
+      require("full-border"):setup()
+      require("no-status"):setup()
     '';
   };
 }
