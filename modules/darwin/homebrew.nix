@@ -32,6 +32,7 @@
       "affinity-designer"
       "affinity-photo"
       "affinity-publisher"
+      "alt-tab"
       "arc"
       "calibre"
       "chatgpt"
