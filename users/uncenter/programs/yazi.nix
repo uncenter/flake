@@ -1,12 +1,4 @@
 { pkgs, lib, ... }:
-let
-  yazi-plugins = pkgs.fetchFromGitHub {
-    owner = "yazi-rs";
-    repo = "plugins";
-    rev = "932b9311a810423659dae172ff8e215366bfc631";
-    hash = "sha256-tAccywz2yPtyWGMe8Ff2VAiFFjtTn34qBP2J39H2PdA=";
-  };
-in
 {
   programs.yazi = {
     enable = true;
@@ -137,34 +129,43 @@ in
         ) (lib.lists.range 0 9));
     };
 
-    plugins = {
-      "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
-      "max-preview" = "${yazi-plugins}/max-preview.yazi";
-      "chmod" = "${yazi-plugins}/chmod.yazi";
-      "full-border" = "${yazi-plugins}/full-border.yazi";
-      "no-status" = "${yazi-plugins}/no-status.yazi";
+    plugins =
+      let
+        yazi-plugins = pkgs.fetchFromGitHub {
+          owner = "yazi-rs";
+          repo = "plugins";
+          rev = "932b9311a810423659dae172ff8e215366bfc631";
+          hash = "sha256-tAccywz2yPtyWGMe8Ff2VAiFFjtTn34qBP2J39H2PdA=";
+        };
+      in
+      {
+        "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
+        "max-preview" = "${yazi-plugins}/max-preview.yazi";
+        "chmod" = "${yazi-plugins}/chmod.yazi";
+        "full-border" = "${yazi-plugins}/full-border.yazi";
+        "no-status" = "${yazi-plugins}/no-status.yazi";
 
-      "starship" = pkgs.fetchFromGitHub {
-        owner = "Rolv-Apneseth";
-        repo = "starship.yazi";
-        rev = "5abe29e7750eb98d5a3554925a7d8c242bd9f96d";
-        hash = "sha256-jFqMD2GZm3rjLdCL4Wl0xuG5AnaiBgusBYKt5AopQGE=";
-      };
+        "starship" = pkgs.fetchFromGitHub {
+          owner = "Rolv-Apneseth";
+          repo = "starship.yazi";
+          rev = "5abe29e7750eb98d5a3554925a7d8c242bd9f96d";
+          hash = "sha256-jFqMD2GZm3rjLdCL4Wl0xuG5AnaiBgusBYKt5AopQGE=";
+        };
 
-      "ouch" = pkgs.fetchFromGitHub {
-        owner = "ndtoan96";
-        repo = "ouch.yazi";
-        rev = "fe6b0a60ce6b7b9a573b975fe3c0dfc79c0b2ac6";
-        hash = "sha256-Sc0TGzrdyQh61Pkc2nNUlk8jRLjVNaCJdFqZvgQ/Cp8=";
-      };
+        "ouch" = pkgs.fetchFromGitHub {
+          owner = "ndtoan96";
+          repo = "ouch.yazi";
+          rev = "fe6b0a60ce6b7b9a573b975fe3c0dfc79c0b2ac6";
+          hash = "sha256-Sc0TGzrdyQh61Pkc2nNUlk8jRLjVNaCJdFqZvgQ/Cp8=";
+        };
 
-      "relative-motions" = pkgs.fetchFromGitHub {
-        owner = "dedukun";
-        repo = "relative-motions.yazi";
-        rev = "73f554295f4b69756597c9fe3caf3750a321acea";
-        hash = "sha256-jahJC6LXOnr974+zHEH9gqI+J1C68O+PvjSt8pelkP0=";
+        "relative-motions" = pkgs.fetchFromGitHub {
+          owner = "dedukun";
+          repo = "relative-motions.yazi";
+          rev = "73f554295f4b69756597c9fe3caf3750a321acea";
+          hash = "sha256-jahJC6LXOnr974+zHEH9gqI+J1C68O+PvjSt8pelkP0=";
+        };
       };
-    };
 
     initLua = ''
       require("starship"):setup()
