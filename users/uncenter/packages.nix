@@ -14,6 +14,7 @@
       git-lfs
       gnupg
       wget
+      mommy
 
       # Nix #
       cachix

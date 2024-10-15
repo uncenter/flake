@@ -8,7 +8,7 @@
     settings = {
       add_newline = false;
       continuation_prompt = "[](yellow) ";
-      right_format = "$cmd_duration";
+      right_format = "\${custom.foo}";
       format = builtins.concatStringsSep "" [
         "$username"
         "$hostname"
@@ -120,6 +120,13 @@
         style = "yellow";
         format = "[via $symbol $version]($style) ";
         version_format = "v\${raw}";
+      };
+
+      custom.foo = {
+        command = "mommy -1 -s $status";
+        when = ''
+          test ! "$MOMMY_DISABLE" = "1"
+        '';
       };
     };
   };

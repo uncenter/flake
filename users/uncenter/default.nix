@@ -31,6 +31,7 @@
     ./programs/helix.nix
     ./programs/izrss.nix
     ./programs/lazygit.nix
+    ./programs/mommy.nix
     ./programs/nix-init.nix
     ./programs/python.nix
     ./programs/rust.nix
