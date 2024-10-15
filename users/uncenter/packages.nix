@@ -48,6 +48,7 @@
       # Language Tools & Runtimes #
       bun
       deno
+      emscripten
       fnm
       go
       jdk17
