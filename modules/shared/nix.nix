@@ -25,7 +25,7 @@
 
       build-users-group = "nixbld";
       trusted-users = [ "uncenter" ];
-      sandbox = true;
+      sandbox = "relaxed";
       use-xdg-base-directories = true;
 
       substituters = [
