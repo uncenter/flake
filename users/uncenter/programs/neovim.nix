@@ -15,6 +15,16 @@ in
   programs.nixvim = {
     enable = true;
 
+    luaLoader.enable = true;
+
+    clipboard.register = "unnamedplus";
+
+    opts = {
+      tabstop = 4;
+      nu = true;
+      relativenumber = false;
+    };
+
     colorschemes.catppuccin = {
       enable = true;
 
@@ -25,6 +35,18 @@ in
 
     plugins = {
       lualine.enable = true;
+      nvim-autopairs.enable = true;
+
+      cmp.enable = true;
+      cmp-path.enable = true;
+
+      gitsigns = {
+        enable = true;
+        settings.signs = {
+          add.text = "+";
+          change.text = "~";
+        };
+      };
 
       treesitter = {
         enable = true;
@@ -36,6 +58,18 @@ in
         grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars ++ [
           tree-sitter-tera
         ];
+      };
+
+      rustaceanvim = {
+        enable = true;
+        settings.server.default_settings.rust-analyzer = {
+          checkOnSave = true;
+          check = {
+            command = "clippy";
+            features = "all";
+          };
+          rustc.source = "discover";
+        };
       };
     };
 
