@@ -10,6 +10,7 @@
 
   imports = [
     inputs.catppuccin.homeManagerModules.catppuccin
+    inputs.nixvim.homeManagerModules.nixvim
     ./options.nix
 
     ./variables.nix
@@ -32,6 +33,7 @@
     ./programs/izrss.nix
     ./programs/lazygit.nix
     ./programs/mommy.nix
+    ./programs/neovim.nix
     ./programs/nix-init.nix
     ./programs/python.nix
     ./programs/rust.nix
