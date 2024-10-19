@@ -72,6 +72,41 @@
             }
           ];
         }
+
+        {
+          name = "tera";
+          scope = "source.tera";
+          injection-regex = "tera";
+          file-types = [ "tera" ];
+          grammar = "tera";
+          block-comment-tokens = [
+            {
+              start = "{#";
+              end = "#}";
+            }
+            {
+              start = "{#-";
+              end = "-#}";
+            }
+            {
+              start = "{#";
+              end = "-#}";
+            }
+            {
+              start = "{#-";
+              end = "#}";
+            }
+          ];
+          auto-pairs = {
+            "(" = ")";
+            "[" = "]";
+            "\"" = "\"";
+            "'" = "'";
+            "`" = "`";
+            "{" = "}";
+            "%" = "%";
+          };
+        }
       ];
 
       language-server = {
@@ -117,6 +152,15 @@
           args = [ "lsp" ];
         };
       };
+
+      grammar = [
+        {
+          name = "tera";
+          source = {
+            path = "/Users/uncenter/Dev/Projects/tree-sitter-tera";
+          };
+        }
+      ];
     };
 
     extraPackages = with pkgs; [
