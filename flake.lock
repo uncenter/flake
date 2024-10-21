@@ -583,7 +583,8 @@
         "nixpkgs": "nixpkgs_5",
         "nixvim": "nixvim",
         "rust-overlay": "rust-overlay_2",
-        "spicetify-nix": "spicetify-nix"
+        "spicetify-nix": "spicetify-nix",
+        "tree-sitter-tera": "tree-sitter-tera"
       }
     },
     "rust-overlay": {
@@ -691,6 +692,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tree-sitter-tera": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729510825,
+        "narHash": "sha256-N7hzABpqrfQgYyJVVJ0/R37+UoQgxDUyjzq6SLgJYJg=",
+        "owner": "uncenter",
+        "repo": "tree-sitter-tera",
+        "rev": "1b5d711b6b20264e3cb865ab3059be8922978e41",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uncenter",
+        "repo": "tree-sitter-tera",
         "type": "github"
       }
     },

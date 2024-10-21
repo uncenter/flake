@@ -45,6 +45,11 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    tree-sitter-tera = {
+      url = "github:uncenter/tree-sitter-tera";
+      flake = false;
+    };
   };
 
   outputs =

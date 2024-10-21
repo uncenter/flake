@@ -1,14 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   tree-sitter-tera = pkgs.tree-sitter.buildGrammar {
     language = "tera";
-    version = "0.1.0+rev=758641b";
-    src = pkgs.fetchFromGitHub {
-      owner = "uncenter";
-      repo = "tree-sitter-tera";
-      rev = "758641bcb9e8784b3b436aea2f5b976ea889a50e";
-      hash = "sha256-agEIZgR/gvSZnaK2uuNZaOtHX0L9yoASHUmgrImE1oc=";
-    };
+    version = "0.1.0";
+    src = inputs.tree-sitter-tera;
   };
 in
 {
