@@ -52,6 +52,7 @@ let
     "svelte.svelte-vscode"
     "tamasfe.even-better-toml"
     "timonwong.shellcheck"
+    "uncenter.better-tera"
     "unifiedjs.vscode-mdx"
     "visualstudioexptteam.intellicode-api-usage-examples"
     "visualstudioexptteam.vscodeintellicode"

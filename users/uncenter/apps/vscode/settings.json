@@ -47,8 +47,7 @@
 	"editor.accessibilitySupport": "off",
 
 	"files.associations": {
-		"*.njk": "html",
-		"*.tera": "jinja-html"
+		"*.njk": "html"
 	},
 
 	/* Git */
