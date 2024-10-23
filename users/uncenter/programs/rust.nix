@@ -22,6 +22,7 @@ in
 
     cargo-sort
     cargo-bloat
+    cargo-watch
     cargo-shear
   ];
 }
