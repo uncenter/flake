@@ -24,5 +24,7 @@ in
     cargo-bloat
     cargo-watch
     cargo-shear
+
+    bacon
   ];
 }
