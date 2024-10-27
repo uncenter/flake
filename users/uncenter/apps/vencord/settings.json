@@ -68,7 +68,7 @@
 			"enabled": false
 		},
 		"BetterGifPicker": {
-			"enabled": true
+			"enabled": false
 		},
 		"BetterNotesBox": {
 			"enabled": false
@@ -169,7 +169,7 @@
 			"enabled": false
 		},
 		"FavoriteGifSearch": {
-			"enabled": false
+			"enabled": true
 		},
 		"FixCodeblockGap": {
 			"enabled": true
@@ -236,7 +236,7 @@
 			"enabled": false
 		},
 		"MessageClickActions": {
-			"enabled": true,
+			"enabled": false,
 			"requireModifier": false,
 			"enableDoubleClickToReply": true,
 			"enableDoubleClickToEdit": true
@@ -416,7 +416,12 @@
 			"enabled": false
 		},
 		"ShikiCodeblocks": {
-			"enabled": false
+			"enabled": true,
+			"theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/github-dark-dimmed.json",
+			"tryHljs": "SECONDARY",
+			"useDevIcon": "GREYSCALE",
+			"bgOpacity": 100,
+			"customTheme": "https://unpkg.com/@catppuccin/vscode@3.15.2/themes/macchiato.json"
 		},
 		"ShowAllMessageButtons": {
 			"enabled": false
@@ -569,6 +574,24 @@
 		},
 		"UserMessagesPronouns": {
 			"enabled": false
+		},
+		"DynamicImageModalAPI": {
+			"enabled": false
+		},
+		"AccountPanelServerProfile": {
+			"enabled": false
+		},
+		"CopyFileContents": {
+			"enabled": true
+		},
+		"FixImagesQuality": {
+			"enabled": false
+		},
+		"NoMaskedUrlPaste": {
+			"enabled": true
+		},
+		"StickerPaste": {
+			"enabled": false
 		}
 	},
 	"notifications": {
@@ -581,6 +604,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1729689623202
+		"settingsSyncVersion": 1730034140728
 	}
 }
