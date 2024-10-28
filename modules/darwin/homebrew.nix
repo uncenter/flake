@@ -61,6 +61,7 @@
       "sf-symbols"
       "yaak"
       "zed"
+      "zen-browser"
       "zoom"
     ];
   };
