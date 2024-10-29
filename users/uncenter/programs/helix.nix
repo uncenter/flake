@@ -184,6 +184,9 @@
 
       # TOML
       taplo
+
+      # Markdown
+      marksman
     ];
   };
 }
