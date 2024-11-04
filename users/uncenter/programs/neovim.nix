@@ -125,6 +125,15 @@ in
 
     extraPlugins = [
       tree-sitter-tera
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "bullets";
+        src = pkgs.fetchFromGitHub {
+          owner = "bullets-vim";
+          repo = "bullets.vim";
+          rev = "2253f970e54320dbd76fd6bb4f5a0bf2436ce232";
+          hash = "sha256-bPnLlaKphp9d25SoKdt1wFa+t51HYeZ3o5uc40keiHs=";
+        };
+      })
     ];
   };
 }
