@@ -18,6 +18,7 @@ in
       tabstop = 4;
       nu = true;
       relativenumber = false;
+      signcolumn = "yes";
     };
 
     colorschemes.catppuccin = {
@@ -31,6 +32,7 @@ in
     plugins = {
       lualine.enable = true;
       nvim-autopairs.enable = true;
+      ts-autotag.enable = true;
 
       cmp.enable = true;
       cmp-path.enable = true;
@@ -53,6 +55,38 @@ in
         grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars ++ [
           tree-sitter-tera
         ];
+      };
+
+      lsp = {
+        enable = true;
+        servers = {
+          ts_ls.enable = true; # TS/JS
+          cssls.enable = true; # CSS
+          superhtml = {
+            enable = true;
+            package = pkgs.superhtml;
+          };
+          eslint.enable = true; # Web
+          tailwindcss.enable = true; # TailwindCSS
+          html.enable = true; # HTML
+          astro.enable = true; # AstroJS
+          svelte.enable = false; # Svelte
+          vuels.enable = false; # Vue
+          marksman.enable = true; # Markdown
+          nil_ls.enable = true; # Nix
+          bashls.enable = true; # Bash
+          clangd.enable = true; # C/C++
+          csharp_ls.enable = true; # C#
+          yamlls.enable = true; # YAML
+          gleam.enable = true;
+          ruff.enable = true;
+          statix.enable = true;
+          gopls = {
+            # Golang
+            enable = true;
+            autostart = true;
+          };
+        };
       };
 
       rustaceanvim = {
