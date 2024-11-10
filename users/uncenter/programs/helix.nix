@@ -167,7 +167,7 @@
       # Web Development
       nodePackages.typescript-language-server
       nodePackages.vscode-langservers-extracted
-      superhtml
+      # superhtml
 
       # Java
       jdt-language-server
