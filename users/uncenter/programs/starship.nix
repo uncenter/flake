@@ -27,6 +27,7 @@
         "$os"
         "$character"
       ];
+      command_timeout = 1000;
 
       fill.symbol = " ";
 
