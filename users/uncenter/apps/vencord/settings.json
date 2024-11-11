@@ -245,7 +245,10 @@
 			"enabled": false
 		},
 		"MessageLinkEmbeds": {
-			"enabled": true
+			"enabled": true,
+			"listMode": "blacklist",
+			"idList": "",
+			"automodEmbeds": "never"
 		},
 		"MessageLogger": {
 			"enabled": false
@@ -604,6 +607,6 @@
 		"authenticated": false,
 		"url": "https://api.vencord.dev/",
 		"settingsSync": false,
-		"settingsSyncVersion": 1730034140728
+		"settingsSyncVersion": 1731303048298
 	}
 }
