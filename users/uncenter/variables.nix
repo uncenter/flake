@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
   home.sessionVariables = {
     FLAKE = "${config.home.homeDirectory}/.config/flake";
@@ -25,5 +25,9 @@
     BUNDLE_USER_PLUGIN = "${config.xdg.dataHome}/bundle";
     LESSHISTFILE = "${config.xdg.stateHome}/less/history";
     DOCKER_CONFIG = "${config.xdg.configHome}/docker";
+
+    ${
+      if pkgs.stdenv.isDarwin then "SSH_AUTH_SOCK" else null
+    } = "${config.home.homeDirectory}/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock";
   };
 }
