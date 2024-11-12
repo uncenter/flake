@@ -3,8 +3,6 @@
   home.packages =
     with pkgs;
     with inputs.home-manager.packages.${pkgs.system};
-    with inputs.catppuccin-catwalk.packages.${pkgs.system};
-    with inputs.catppuccin-whiskers.packages.${pkgs.system};
     with inputs.beapkgs.packages.${pkgs.system};
     [
       home-manager
@@ -34,8 +32,8 @@
       nvd
 
       # Catppuccin #
-      whiskers
-      catwalk
+      inputs.catppuccin-whiskers.packages.${pkgs.system}.whiskers
+      inputs.catppuccin-catwalk.packages.${pkgs.system}.catwalk
       purr
 
       # Image & Video #
