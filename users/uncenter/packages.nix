@@ -95,6 +95,7 @@
       tokei
       typos
       vhs
+      wakatime-cli
       xdg-ninja
       xsv
     ];
