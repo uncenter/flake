@@ -68,6 +68,7 @@ let
     "kravets.vscode-publint"
     "njpwerner.autodocstring"
     "ms-vscode-remote.remote-wsl"
+    "wakatime.vscode-wakatime"
   ];
 in
 {
