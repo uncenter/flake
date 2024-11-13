@@ -59,6 +59,7 @@
       "obsidian"
       "raycast"
       "sf-symbols"
+      "slack"
       "webstorm"
       "yaak"
       "zed"
