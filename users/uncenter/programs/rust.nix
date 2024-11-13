@@ -26,5 +26,6 @@ in
     cargo-shear
 
     bacon
+    mdbook
   ];
 }
