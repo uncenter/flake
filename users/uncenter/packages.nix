@@ -68,6 +68,7 @@
       eza
       fastfetch
       fd
+      flyctl
       gfold
       gh
       gitoxide
