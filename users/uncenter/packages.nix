@@ -53,6 +53,7 @@
       maven
       lua
       luajitPackages.luarocks
+      tree-sitter
       zig
 
       # Tools and TUIs #
@@ -86,6 +87,7 @@
       lolcat
       lychee
       meower
+      miniserve
       nrr
       ouch
       pastel
@@ -93,6 +95,7 @@
       scc
       sd
       serpl
+      star-history
       tokei
       typos
       vhs

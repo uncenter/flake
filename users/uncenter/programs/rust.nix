@@ -24,6 +24,7 @@ in
     cargo-bloat
     cargo-watch
     cargo-shear
+    cargo-tally
 
     bacon
     mdbook
