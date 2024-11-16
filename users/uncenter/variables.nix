@@ -25,6 +25,8 @@
     BUNDLE_USER_PLUGIN = "${config.xdg.dataHome}/bundle";
     LESSHISTFILE = "${config.xdg.stateHome}/less/history";
     DOCKER_CONFIG = "${config.xdg.configHome}/docker";
+    FLY_CONFIG_DIR = "${config.xdg.stateHome}/fly";
+    GRADLE_USER_HOME = "${config.xdg.dataHome}/gradle";
 
     ${
       if pkgs.stdenv.isDarwin then "SSH_AUTH_SOCK" else null
