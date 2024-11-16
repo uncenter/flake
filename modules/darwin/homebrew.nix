@@ -62,7 +62,6 @@
       "slack"
       "webstorm"
       "yaak"
-      "zed"
       "zen-browser"
       "zoom"
     ];
