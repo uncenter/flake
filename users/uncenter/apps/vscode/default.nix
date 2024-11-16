@@ -5,10 +5,6 @@
   ...
 }:
 let
-  mkLink = config.lib.file.mkOutOfStoreSymlink;
-
-  settingsFile = mkLink "${config.home.homeDirectory}/.config/flake/users/uncenter/apps/vscode/settings.json";
-
   extensions = [
     # Appearance
     "catppuccin.catppuccin-vsc"
@@ -75,45 +71,50 @@ in
   config = lib.mkIf pkgs.stdenv.isDarwin {
     programs.vscode = {
       enable = true;
-      package = pkgs.vscode;
     };
 
-    home = {
-      file."Library/Application Support/Code/User/settings.json".source = settingsFile;
+    home =
+      let
+        mkLink = config.lib.file.mkOutOfStoreSymlink;
 
-      # Originally adapted from https://github.com/ryanccn/flake/blob/b9832c59cf9d0362c2d20f838220bed434a0b45a/home/apps/vscode.nix#L214-L244.
-      # Copyright 2023 Ryan Cao
-      activation = {
-        vscodeExtensions = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-          code_cmd="${lib.getExe pkgs.vscode}"
+        settingsFile = mkLink "${config.home.homeDirectory}/.config/flake/users/uncenter/apps/vscode/settings.json";
+      in
+      {
+        file."Library/Application Support/Code/User/settings.json".source = settingsFile;
 
-          if ! command -v "$code_cmd" &> /dev/null; then
-            echo "`code` command not found at $code_cmd"
-            exit 1
-          fi
+        # Originally adapted from https://github.com/ryanccn/flake/blob/b9832c59cf9d0362c2d20f838220bed434a0b45a/home/apps/vscode.nix#L214-L244.
+        # Copyright 2023 Ryan Cao
+        activation = {
+          vscodeExtensions = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+            code_cmd="${lib.getExe pkgs.vscode}"
 
-          declare -A currentExtensions
-          for extension in $("$code_cmd" --list-extensions); do
-            currentExtensions["$extension"]=1;
-          done
+            if ! command -v "$code_cmd" &> /dev/null; then
+              echo "`code` command not found at $code_cmd"
+              exit 1
+            fi
 
-          ${builtins.concatStringsSep "\n" (
-            builtins.map (ext: ''
-              if [[ -z "''${currentExtensions[${ext}]+unset}" ]]; then
-                echo "Installing ${ext}..."
-                $DRY_RUN_CMD "$code_cmd" --install-extension ${ext} &> /dev/null
-              fi
-              unset 'currentExtensions[${ext}]'
-            '') extensions
-          )}
+            declare -A currentExtensions
+            for extension in $("$code_cmd" --list-extensions); do
+              currentExtensions["$extension"]=1;
+            done
 
-          for ext in "''${!currentExtensions[@]}"; do
-            echo "Uninstalling $ext..."
-            $DRY_RUN_CMD "$code_cmd" --uninstall-extension $ext &> /dev/null
-            unset 'currentExtensions[$ext]'
-          done
-        '';
+            ${builtins.concatStringsSep "\n" (
+              builtins.map (ext: ''
+                if [[ -z "''${currentExtensions[${ext}]+unset}" ]]; then
+                  echo "Installing ${ext}..."
+                  $DRY_RUN_CMD "$code_cmd" --install-extension ${ext} &> /dev/null
+                fi
+                unset 'currentExtensions[${ext}]'
+              '') extensions
+            )}
+
+            for ext in "''${!currentExtensions[@]}"; do
+              echo "Uninstalling $ext..."
+              $DRY_RUN_CMD "$code_cmd" --uninstall-extension $ext &> /dev/null
+              unset 'currentExtensions[$ext]'
+            done
+          '';
+        };
       };
-    };
   };
 }
