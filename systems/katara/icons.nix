@@ -28,6 +28,10 @@
         icon = ./icons/screenshotsfolder.icns;
       }
       {
+        path = "/Applications/Zed.app";
+        icon = ./icons/zed.icns;
+      }
+      {
         path = "/Applications/zoom.us.app";
         icon = ./icons/zoom.icns;
       }
