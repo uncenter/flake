@@ -85,6 +85,13 @@
         format = "[via $symbol $version]($style) ";
         version_format = "v\${raw}";
       };
+
+      rust = {
+        symbol = "";
+        style = "red";
+        format = "[via $symbol $version]($style) ";
+        version_format = "v\${raw}";
+      };
     };
   };
 }
