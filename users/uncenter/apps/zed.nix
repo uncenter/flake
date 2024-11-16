@@ -25,7 +25,7 @@
       ];
 
       userSettings = {
-        buffer_font_family = "CommitMono Nerd Font";
+        buffer_font_family = "Lilex Nerd Font";
         theme = {
           mode = "system";
           light = "Catppuccin Latte";
