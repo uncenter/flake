@@ -46,6 +46,7 @@
       # Language Tools & Runtimes #
       bun
       deno
+      dprint
       emscripten
       fnm
       go
