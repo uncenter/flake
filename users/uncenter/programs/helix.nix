@@ -11,6 +11,7 @@
           space = "all";
           tab = "all";
         };
+        true-color = true;
       };
     };
 
