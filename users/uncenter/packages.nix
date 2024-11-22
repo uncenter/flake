@@ -90,7 +90,6 @@
       gitoxide
       git-lfs
       jujutsu
-      koji
       lazyjj
 
       # Misc #
