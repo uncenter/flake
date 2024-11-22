@@ -8,11 +8,7 @@
       home-manager
 
       # Essentials #
-      curl
-      git-lfs
       gnupg
-      wget
-      mommy
 
       # Nix #
       cachix
@@ -43,7 +39,7 @@
       libwebp
       poppler_utils
 
-      # Language Tools & Runtimes #
+      # Languages and Tooling #
       bun
       deno
       dprint
@@ -57,49 +53,64 @@
       tree-sitter
       zig
 
-      # Tools and TUIs #
-      cmatrix
-      cmd-wrapped
-      cowsay
+      # Data #
+      jnv
+      jq
       yq
+
+      # Networking #
+      curl
       xh
       doggo
+      miniserve
+      wget
+
+      # Filesystem #
       du-dust
       entr
       exiftool
       eza
-      fastfetch
+      ouch
+
+      # Search #
       fd
-      flyctl
+      grex
+      ripgrep
+      sd
+      serpl
+      lychee
+
+      # Tasks #
+      nrr
+      just
+
+      # Git #
       gfold
       gh
       gitoxide
-      grex
+      git-lfs
+
+      # Misc #
+      flyctl
       gum
-      hael
       hexyl
       hyperfine
       ito
-      jnv
-      jq
-      just
-      kittysay
       license-go
-      lolcat
-      lychee
-      meower
-      miniserve
-      nrr
-      ouch
       pastel
-      ripgrep
-      scc
-      sd
-      serpl
       star-history
-      tokei
       vhs
       wakatime-cli
-      xdg-ninja
+
+      # Fun #
+      cmatrix
+      cmd-wrapped
+      cowsay
+      fastfetch
+      kittysay
+      meower
+      lolcat
+      scc
+      tokei
     ];
 }
