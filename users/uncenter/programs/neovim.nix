@@ -62,10 +62,10 @@ in
         servers = {
           ts_ls.enable = true; # TS/JS
           cssls.enable = true; # CSS
-          # superhtml = {
-          #   enable = true;
-          #   package = pkgs.superhtml;
-          # };
+          superhtml = {
+            enable = true;
+            package = pkgs.superhtml;
+          };
           eslint.enable = true; # Web
           tailwindcss.enable = true; # TailwindCSS
           html.enable = true; # HTML
