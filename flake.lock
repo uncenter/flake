@@ -316,6 +316,27 @@
         "type": "github"
       }
     },
+    "gitignore_2": {
+      "inputs": {
+        "nixpkgs": [
+          "wakatime-ls",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1709087332,
+        "narHash": "sha256-HG2cCnktfHsKV0s4XW83gU3F57gaTljL9KNSuG6bnQs=",
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "rev": "637db329424fd7e46cf4185293b9cc8c88c95394",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hercules-ci",
+        "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -594,7 +615,8 @@
         "nixvim": "nixvim",
         "rust-overlay": "rust-overlay",
         "spicetify-nix": "spicetify-nix",
-        "tree-sitter-tera": "tree-sitter-tera"
+        "tree-sitter-tera": "tree-sitter-tera",
+        "wakatime-ls": "wakatime-ls"
       }
     },
     "rust-overlay": {
@@ -609,6 +631,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "ed8aa5b64f7d36d9338eb1d0a3bb60cf52069a72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "wakatime-ls",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1732156292,
+        "narHash": "sha256-XuTCME5ZausokOJ28AsIoayBVD1soscdoiKweT4VY50=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "2d484c7a0db32f2700e253160bcd2aaa6cdca3ba",
         "type": "github"
       },
       "original": {
@@ -702,6 +745,28 @@
       "original": {
         "owner": "numtide",
         "repo": "treefmt-nix",
+        "type": "github"
+      }
+    },
+    "wakatime-ls": {
+      "inputs": {
+        "gitignore": "gitignore_2",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_2"
+      },
+      "locked": {
+        "lastModified": 1732208238,
+        "narHash": "sha256-06SFScBBqOtFBg5VYbQXsa8E7HOKEOnBMdsnEJ5lL1A=",
+        "owner": "mrnossiom",
+        "repo": "wakatime-ls",
+        "rev": "546c1fb08d833176db190b2530ca84fb8c2e5640",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrnossiom",
+        "repo": "wakatime-ls",
         "type": "github"
       }
     }

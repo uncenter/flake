@@ -1,4 +1,9 @@
-{ lib, pkgs, ... }:
+{
+  lib,
+  pkgs,
+  inputs,
+  ...
+}:
 {
   programs.helix = {
     enable = true;
@@ -108,6 +113,22 @@
             "%" = "%";
           };
         }
+
+        # Wakatime
+        {
+          name = "rust";
+          language-servers = [
+            "rust-analyzer"
+            "wakatime"
+          ];
+        }
+        {
+          name = "javascript";
+          language-servers = [
+            "typescript-language-server"
+            "wakatime"
+          ];
+        }
       ];
 
       language-server = {
@@ -152,6 +173,9 @@
           command = "superhtml";
           args = [ "lsp" ];
         };
+        wakatime = {
+          command = "wakatime-ls";
+        };
       };
 
       grammar = [
@@ -188,6 +212,8 @@
 
       # Markdown
       marksman
+
+      inputs.wakatime-ls.packages.${pkgs.system}.wakatime-ls
     ];
   };
 }

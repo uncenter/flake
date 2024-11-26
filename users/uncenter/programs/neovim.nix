@@ -37,6 +37,8 @@ in
       cmp.enable = true;
       cmp-path.enable = true;
 
+      wakatime.enable = true;
+
       gitsigns = {
         enable = true;
         settings.signs = {
