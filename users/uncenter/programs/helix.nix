@@ -123,6 +123,13 @@
           ];
         }
         {
+          name = "c";
+          language-servers = [
+            "clangd"
+            "wakatime"
+          ];
+        }
+        {
           name = "javascript";
           language-servers = [
             "typescript-language-server"
