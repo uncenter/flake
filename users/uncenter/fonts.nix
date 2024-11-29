@@ -2,13 +2,8 @@
 {
   home.packages = with pkgs; [
     departure-mono
-
-    (nerdfonts.override {
-      fonts = [
-        "CommitMono"
-        "0xProto"
-        "Lilex"
-      ];
-    })
+    nerd-fonts.commit-mono
+    nerd-fonts._0xproto
+    nerd-fonts.lilex
   ];
 }
