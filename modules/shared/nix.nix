@@ -6,8 +6,6 @@
 }:
 {
   nix = {
-    package = pkgs.lix;
-
     registry = {
       n.flake = inputs.nixpkgs;
     };
