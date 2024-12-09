@@ -21,7 +21,7 @@
         window-padding-x = 25;
         window-padding-y = 25;
 
-        macos-titlebar-style = "tabs";
+        macos-titlebar-style = "native";
 
         working-directory = "${config.home.homeDirectory}/Dev";
         window-inherit-working-directory = false;
