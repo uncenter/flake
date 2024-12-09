@@ -31,6 +31,20 @@
           light = "Catppuccin Latte";
           dark = "Catppuccin Macchiato";
         };
+        format_on_save = "on";
+        languages = {
+          Nix = {
+            language_servers = [
+              "nil"
+              "!nixd"
+            ];
+            formatter = {
+              external = {
+                command = "nixfmt";
+              };
+            };
+          };
+        };
       };
     };
   };
