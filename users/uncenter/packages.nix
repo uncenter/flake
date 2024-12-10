@@ -50,7 +50,9 @@
       maven
       lua
       luajitPackages.luarocks
-      tree-sitter
+      (tree-sitter.override {
+        webUISupport = true;
+      })
       zig
 
       # Data #
