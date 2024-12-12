@@ -17,7 +17,9 @@ in
   };
 
   home.packages = with pkgs; [
-    (rust-bin.stable.latest.default.override { extensions = [ "rust-src" ]; })
+    ((rust-bin.selectLatestNightlyWith (toolchain: toolchain.default)).override {
+      extensions = [ "rust-src" ];
+    })
     rust-analyzer-unwrapped
 
     cargo-sort
