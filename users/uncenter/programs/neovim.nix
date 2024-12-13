@@ -39,6 +39,8 @@ in
 
       wakatime.enable = true;
 
+      direnv.enable = true;
+
       gitsigns = {
         enable = true;
         settings.signs = {

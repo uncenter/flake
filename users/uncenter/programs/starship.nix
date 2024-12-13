@@ -4,6 +4,7 @@
     catppuccin.enable = true;
 
     enableFishIntegration = true;
+    enableBashIntegration = true;
 
     settings = {
       add_newline = false;

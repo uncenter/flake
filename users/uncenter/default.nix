@@ -22,6 +22,7 @@
     ./programs/atuin.nix
     ./programs/bat.nix
     ./programs/bottom.nix
+    ./programs/direnv.nix
     ./programs/eza.nix
     ./programs/fd.nix
     ./programs/fish.nix

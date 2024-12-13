@@ -40,6 +40,7 @@ let
     "griimick.vhs"
     "jnoortheen.nix-ide"
     "mechatroner.rainbow-csv"
+    "mkhl.direnv"
     "ms-python.debugpy"
     "ms-python.python"
     "redhat.vscode-yaml"

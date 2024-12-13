@@ -5,6 +5,7 @@
     catppuccin.enable = true;
 
     enableFishIntegration = true;
+    enableBashIntegration = true;
 
     settings = {
       manager = {
