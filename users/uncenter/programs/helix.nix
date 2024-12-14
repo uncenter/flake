@@ -16,6 +16,7 @@
           space = "all";
           tab = "all";
         };
+        bufferline = "multiple";
         true-color = true;
       };
     };
