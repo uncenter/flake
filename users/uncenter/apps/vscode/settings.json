@@ -2,6 +2,7 @@
 	"extensions.ignoreRecommendations": true,
 	"extensions.autoUpdate": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
+	"editor.inlayHints.enabled": "offUnlessPressed",
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
@@ -55,9 +56,7 @@
 	"git.confirmSync": false,
 	"git.openRepositoryInParentFolders": "never",
 	"git.suggestSmartCommit": false,
-	"gitlens.advanced.messages": {
-		"suppressIntegrationRequestTimedOutWarning": true
-	},
+	"git.blame.editorDecoration.enabled": true,
 
 	/* Formatting/LSP */
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
