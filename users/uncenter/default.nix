@@ -40,6 +40,7 @@
     ./programs/spicetify.nix
     ./programs/starship.nix
     ./programs/taskwarrior.nix
+    ./programs/television.nix
     ./programs/yazi.nix
 
     ./scripts.nix

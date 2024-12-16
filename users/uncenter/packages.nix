@@ -81,7 +81,6 @@
       sd
       serpl
       lychee
-      television
 
       # Tasks #
       nrr
