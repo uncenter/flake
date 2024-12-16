@@ -25,6 +25,8 @@
       preview = {
         tab_size = 4;
         wrap = "yes";
+        max_width = 1200;
+        max_height = 1800;
       };
       opener = {
         edit = [
@@ -53,7 +55,7 @@
         [
           {
             on = [ "<Space>" ];
-            run = [ "select --state=none" ];
+            run = [ "toggle --state=none" ];
             desc = "Toggle the current selection state";
           }
           {
