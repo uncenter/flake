@@ -50,7 +50,7 @@
   fonts.fontconfig.enable = true;
 
   catppuccin = {
-    flavor = "macchiato";
+    flavor = "mocha";
     accent = "mauve";
   };
   palette = (pkgs.lib.importJSON (config.catppuccin.sources.palette + "/palette.json"));
