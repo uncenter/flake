@@ -140,6 +140,9 @@
       ];
 
       language-server = {
+        taplo = {
+          config = {};
+        };
         deno-lsp = {
           command = "deno";
           args = [ "lsp" ];
@@ -214,9 +217,6 @@
 
       # Shell
       shellcheck
-
-      # TOML
-      taplo
 
       # Markdown
       marksman

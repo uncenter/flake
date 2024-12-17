@@ -50,6 +50,7 @@
       maven
       lua
       luajitPackages.luarocks
+      (taplo.override { withLsp = true; })
       (tree-sitter.override {
         webUISupport = true;
       })
