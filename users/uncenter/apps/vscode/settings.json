@@ -6,8 +6,8 @@
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
-	"workbench.iconTheme": "catppuccin-macchiato",
-	"workbench.preferredDarkColorTheme": "Catppuccin Macchiato",
+	"workbench.iconTheme": "catppuccin-mocha",
+	"workbench.preferredDarkColorTheme": "Catppuccin Mocha",
 	"workbench.preferredLightColorTheme": "Catppuccin Latte",
 	"workbench.productIconTheme": "Tabler",
 	"workbench.sideBar.location": "left",
