@@ -424,7 +424,7 @@
 			"tryHljs": "SECONDARY",
 			"useDevIcon": "GREYSCALE",
 			"bgOpacity": 100,
-			"customTheme": "https://unpkg.com/@catppuccin/vscode@3.15.2/themes/macchiato.json"
+			"customTheme": "https://unpkg.com/@catppuccin/vscode@3.15.2/themes/mocha.json"
 		},
 		"ShowAllMessageButtons": {
 			"enabled": false

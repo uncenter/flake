@@ -1,7 +1,7 @@
 {
-  config,
   lib,
   pkgs,
+  config,
   ...
 }:
 let
@@ -9,7 +9,6 @@ let
 
   flakeDir = "${config.home.homeDirectory}/.config/flake/users/uncenter/apps/vencord";
   settingsFile = mkLink "${flakeDir}/settings.json";
-  cssFile = mkLink "${flakeDir}/quickCss.css";
 in
 {
   home.file =
@@ -18,6 +17,9 @@ in
     in
     lib.mkIf pkgs.stdenv.isDarwin {
       "${common}/settings.json".source = settingsFile;
-      "${common}/quickCss.css".source = cssFile;
+      "${common}/quickCss.css".text = ''
+        @import url("https://catppuccin.github.io/discord/dist/catppuccin-${config.catppuccin.flavor}.theme.css") (prefers-color-scheme: dark);
+        @import url("https://catppuccin.github.io/discord/dist/catppuccin-latte.theme.css") (prefers-color-scheme: light);
+      '';
     };
 }
