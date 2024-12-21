@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}:
 let
   tree-sitter-tera = pkgs.tree-sitter.buildGrammar {
     language = "tera";
@@ -25,7 +30,7 @@ in
       enable = true;
 
       settings = {
-        flavour = "macchiato";
+        flavour = config.catppuccin.flavor;
       };
     };
 
