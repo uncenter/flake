@@ -2,7 +2,7 @@
 let
   palettes = pkgs.fetchzip {
     url = "https://github.com/catppuccin/palette/releases/download/v1.7.1/catppuccin.zip";
-    sha256 = "";
+    sha256 = "sha256-yj8jX4k2MMoHgBP3j4ptL3nZmsoYdkesXDJqgyZwN08=";
     stripRoot = false;
   };
 in
