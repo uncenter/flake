@@ -1,14 +1,19 @@
-{ lib, pkgs, ... }:
+{ pkgs, lib, ... }:
+let
+  palettes = pkgs.fetchzip {
+    url = "https://github.com/catppuccin/palette/releases/download/v1.7.1/catppuccin.zip";
+    sha256 = "";
+    stripRoot = false;
+  };
+in
 {
   home.file = lib.mkIf pkgs.stdenv.isDarwin {
     "Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes" = {
-      source = "${
-        pkgs.fetchzip {
-          url = "https://github.com/catppuccin/palette/releases/download/v1.1.1/catppuccin.zip";
-          sha256 = "jLwJfUy38An7JsieXKOvTcmMYaY2nrjvJovkjofi9zs=";
-          stripRoot = false;
-        }
-      }/gimp";
+      source = "${palettes}/gimp";
+      recursive = true;
+    };
+    "Library/Colors" = {
+      source = "${palettes}/clr";
       recursive = true;
     };
   };
