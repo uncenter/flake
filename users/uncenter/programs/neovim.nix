@@ -10,6 +10,12 @@ let
     version = "0.1.0";
     src = inputs.tree-sitter-tera;
   };
+  catppuccin-nvim-fork = pkgs.fetchFromGitHub {
+    owner = "uncenter";
+    repo = "ctp-nvim";
+    rev = "ee1620453f62d6a0a262bfd63963934ecf862f2b"; # patch-1 branch
+    hash = "sha256-lgeYab1S2uzF84DY2cENubiP53/TeKN4Fp+RI28iL2U=";
+  };
 in
 {
   programs.nixvim = {
@@ -28,6 +34,7 @@ in
 
     colorschemes.catppuccin = {
       enable = true;
+      package = catppuccin-nvim-fork;
 
       settings = {
         flavour = config.catppuccin.flavor;
