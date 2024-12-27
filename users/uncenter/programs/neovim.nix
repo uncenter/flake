@@ -13,8 +13,8 @@ let
   catppuccin-nvim-fork = pkgs.fetchFromGitHub {
     owner = "uncenter";
     repo = "ctp-nvim";
-    rev = "ee1620453f62d6a0a262bfd63963934ecf862f2b"; # patch-1 branch
-    hash = "sha256-lgeYab1S2uzF84DY2cENubiP53/TeKN4Fp+RI28iL2U=";
+    rev = "patch-1";
+    hash = "sha256-bzao1zviV7DLoJyJx+Q57ElowXpZwOtIjnTc1v7GUX0=";
   };
 in
 {
