@@ -69,11 +69,11 @@
       wget
 
       # Filesystem #
-      du-dust
       entr
       exiftool
       eza
       ouch
+      parallel-disk-usage
 
       # Search #
       fd
