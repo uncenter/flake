@@ -46,6 +46,7 @@
       "firefox"
       "firefox@developer-edition"
       "fontforge"
+      "ghostty"
       "gimp"
       "google-chrome"
       "gramps"
