@@ -55,7 +55,6 @@
       "keka"
       "loop"
       "mediamate"
-      "mimestream"
       "obs"
       "obsidian"
       "raycast"
