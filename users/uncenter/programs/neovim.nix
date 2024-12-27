@@ -92,7 +92,6 @@ in
           nil_ls.enable = true; # Nix
           bashls.enable = true; # Bash
           clangd.enable = true; # C/C++
-          csharp_ls.enable = true; # C#
           yamlls.enable = true; # YAML
           gleam.enable = true;
           ruff.enable = true;
