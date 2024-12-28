@@ -22,6 +22,7 @@ let
     "yzhang.markdown-all-in-one"
 
     # Language/Tool Support
+    "antfu.unocss"
     "astro-build.astro-vscode"
     "biomejs.biome"
     "bmalehorn.vscode-fish"
