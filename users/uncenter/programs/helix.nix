@@ -18,6 +18,11 @@
         };
         bufferline = "multiple";
         true-color = true;
+        line-number = "relative";
+        lsp = {
+          display-messages = true;
+          display-inlay-hints = true;
+        };
       };
     };
 
