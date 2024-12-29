@@ -29,6 +29,9 @@
             command = lib.getExe pkgs.nixfmt-rfc-style;
           };
           auto-format = true;
+          language-servers = [
+            "nixd"
+          ];
         }
         {
           name = "python";
@@ -141,7 +144,7 @@
 
       language-server = {
         taplo = {
-          config = {};
+          config = { };
         };
         deno-lsp = {
           command = "deno";
@@ -186,6 +189,9 @@
         };
         wakatime = {
           command = "wakatime-ls";
+        };
+        nixd = {
+          command = "nixd";
         };
       };
 

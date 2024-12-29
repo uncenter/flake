@@ -89,7 +89,7 @@ in
           svelte.enable = false; # Svelte
           vuels.enable = false; # Vue
           marksman.enable = true; # Markdown
-          nil_ls.enable = true; # Nix
+          nixd.enable = true; # Nix
           bashls.enable = true; # Bash
           clangd.enable = true; # C/C++
           yamlls.enable = true; # YAML

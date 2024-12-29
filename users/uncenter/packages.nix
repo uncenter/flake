@@ -14,7 +14,7 @@
       cachix
       deadnix
       statix
-      nil
+      nixd
       nixfmt-rfc-style
       nixpkgs-review
       nixpkgs-track
