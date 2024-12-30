@@ -910,11 +910,11 @@
     "tree-sitter-tera": {
       "flake": false,
       "locked": {
-        "lastModified": 1733959570,
-        "narHash": "sha256-LZvGmQXMxDnjihP9lU1m6p2aiQQToWJP193wrpcrMnA=",
+        "lastModified": 1735514178,
+        "narHash": "sha256-R8IeM7VA9ndKcpDXVfaPQKBzSpOmB4ECo1Pm1Lzo5lM=",
         "owner": "uncenter",
         "repo": "tree-sitter-tera",
-        "rev": "9de18724fbcc4cf8b67c4797ecd024b6c670f122",
+        "rev": "e8d679a29c03e64656463a892a30da626e19ed8e",
         "type": "github"
       },
       "original": {
