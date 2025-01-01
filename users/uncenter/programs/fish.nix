@@ -20,6 +20,7 @@
       "gn" = "git checkout -b";
       "gs" = "git checkout";
       "ga" = "git add";
+      "glog" = "git --no-pager log --oneline --graph --decorate --all -n 10";
 
       "gg" = "lazygit";
     };
