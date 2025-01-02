@@ -1,9 +1,9 @@
-{ pkgs, inputs, ... }:
+{ pkgs, inputs', ... }:
 {
   home.packages =
     with pkgs;
-    with inputs.home-manager.packages.${pkgs.system};
-    with inputs.beapkgs.packages.${pkgs.system};
+    with inputs'.home-manager.packages;
+    with inputs'.beapkgs.packages;
     [
       home-manager
 
@@ -28,8 +28,8 @@
       nvd
 
       # Catppuccin #
-      inputs.catppuccin-whiskers.packages.${pkgs.system}.whiskers
-      inputs.catppuccin-catwalk.packages.${pkgs.system}.catwalk
+      inputs'.catppuccin.packages.whiskers
+      inputs'.catppuccin.packages.catwalk
       purr
 
       # Image & Video #

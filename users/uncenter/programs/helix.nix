@@ -1,7 +1,7 @@
 {
   lib,
   pkgs,
-  inputs,
+  inputs',
   ...
 }:
 {
@@ -231,7 +231,7 @@
       # Markdown
       marksman
 
-      inputs.wakatime-ls.packages.${pkgs.system}.wakatime-ls
+      inputs'.wakatime-ls.packages.wakatime-ls
     ];
   };
 }
