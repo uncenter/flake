@@ -7,7 +7,7 @@ let
   };
 in
 {
-  home.file = lib.mkIf pkgs.stdenv.isDarwin {
+  home.file = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
     "Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes" = {
       source = "${palettes}/gimp";
       recursive = true;

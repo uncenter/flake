@@ -10,7 +10,7 @@ let
     (lib.toUpper (builtins.substring 0 1 str)) + (builtins.substring 1 (builtins.stringLength str) str);
 in
 {
-  programs.zed-editor = lib.mkIf pkgs.stdenv.isDarwin {
+  programs.zed-editor = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
     enable = true;
 
     extensions = [

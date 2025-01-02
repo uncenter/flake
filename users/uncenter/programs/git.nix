@@ -26,7 +26,7 @@
       commit.gpgsign = true;
       gpg.format = "ssh";
       "gpg \"ssh\"".program =
-        if pkgs.stdenv.isDarwin then
+        if pkgs.stdenv.hostPlatform.isDarwin then
           "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
         else
           "/mnt/c/Users/uncen/AppData/Local/1Password/app/8/op-ssh-sign-wsl";

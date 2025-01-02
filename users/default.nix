@@ -13,7 +13,7 @@
     };
 
     users.users.uncenter = {
-      home = if pkgs.stdenv.isDarwin then "/Users/uncenter" else "/home/uncenter";
+      home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
       shell = pkgs.fish;
     };
   };
