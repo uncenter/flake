@@ -162,6 +162,21 @@
         "type": "github"
       }
     },
+    "easy-hosts": {
+      "locked": {
+        "lastModified": 1735853362,
+        "narHash": "sha256-yIZW5dNV/BwYPoJOJjbiKiw/XWhd/b0pz0nmSXckJfY=",
+        "owner": "isabelroses",
+        "repo": "easy-hosts",
+        "rev": "0c3586e81444a32841d92db8cf5a14393236880f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "isabelroses",
+        "repo": "easy-hosts",
+        "type": "github"
+      }
+    },
     "flake-compat": {
       "flake": false,
       "locked": {
@@ -788,6 +803,7 @@
         "catppuccin-vsc": "catppuccin-vsc",
         "catppuccin-whiskers": "catppuccin-whiskers",
         "darwin-custom-icons": "darwin-custom-icons",
+        "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",
         "home-manager": "home-manager_2",
         "nix-darwin": "nix-darwin",

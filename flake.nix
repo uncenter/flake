@@ -22,6 +22,8 @@
     catppuccin.url = "github:catppuccin/nix";
     catppuccin-catwalk.url = "github:catppuccin/catwalk";
     catppuccin-whiskers.url = "github:catppuccin/whiskers";
+    easy-hosts.url = "github:isabelroses/easy-hosts";
+
     catppuccin-vsc.url = "https://flakehub.com/f/catppuccin/vscode/*.tar.gz";
 
     rust-overlay = {
@@ -67,7 +69,10 @@
         "aarch64-darwin"
       ];
 
-      imports = [ ./systems ];
+      imports = [
+        inputs.easy-hosts.flakeModule
+        ./systems
+      ];
 
       perSystem =
         { pkgs, ... }:
