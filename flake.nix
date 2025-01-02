@@ -19,10 +19,20 @@
       inputs.nixpkgs-lib.follows = "nixpkgs";
     };
 
-    catppuccin.url = "github:catppuccin/nix";
-    catppuccin-catwalk.url = "github:catppuccin/catwalk";
-    catppuccin-whiskers.url = "github:catppuccin/whiskers";
     easy-hosts.url = "github:isabelroses/easy-hosts";
+
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        nixpkgs-stable.follows = "";
+        home-manager.follows = "";
+        home-manager-stable.follows = "";
+        nuscht-search.follows = "";
+        catppuccin-v1_1.follows = "";
+        catppuccin-v1_2.follows = "";
+      };
+    };
 
     catppuccin-vsc.url = "https://flakehub.com/f/catppuccin/vscode/*.tar.gz";
 
