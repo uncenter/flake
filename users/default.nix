@@ -1,4 +1,11 @@
-{ inputs, pkgs, ... }:
+{
+  pkgs,
+  self,
+  self',
+  inputs,
+  inputs',
+  ...
+}:
 {
   config = {
     home-manager = {
@@ -6,7 +13,12 @@
       useUserPackages = true;
 
       extraSpecialArgs = {
-        inherit inputs;
+        inherit
+          self
+          self'
+          inputs
+          inputs'
+          ;
       };
 
       users.uncenter = import ./uncenter;
