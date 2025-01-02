@@ -1,5 +1,5 @@
 {
-  pkgs,
+  lib,
   config,
   inputs,
   osConfig,
@@ -52,8 +52,10 @@
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
+    enable = true;
   };
-  palette = (pkgs.lib.importJSON (config.catppuccin.sources.palette + "/palette.json"));
+
+  palette = lib.importJSON (config.catppuccin.sources.palette + "/palette.json");
 
   home = {
     username = "uncenter";

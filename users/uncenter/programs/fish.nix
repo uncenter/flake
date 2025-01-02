@@ -7,7 +7,6 @@
 {
   programs.fish = {
     enable = true;
-    catppuccin.enable = true;
 
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";

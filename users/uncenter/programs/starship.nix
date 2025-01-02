@@ -1,7 +1,6 @@
 {
   programs.starship = {
     enable = true;
-    catppuccin.enable = true;
 
     enableFishIntegration = true;
     enableBashIntegration = true;
