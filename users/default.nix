@@ -21,7 +21,7 @@
           ;
       };
 
-      users.uncenter = import ./uncenter;
+      users.uncenter = ./uncenter;
     };
 
     users.users.uncenter = {

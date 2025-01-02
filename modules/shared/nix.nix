@@ -1,7 +1,6 @@
 {
   pkgs,
   inputs,
-  config,
   ...
 }:
 {
@@ -13,7 +12,10 @@
     nixPath = [ "nixpkgs=${inputs.nixpkgs.outPath}" ];
 
     settings = {
-      experimental-features = "nix-command flakes";
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
       auto-optimise-store = !pkgs.stdenv.hostPlatform.isDarwin;
       warn-dirty = false;
       extra-platforms = [
@@ -47,8 +49,6 @@
         "catppuccin.cachix.org-1:noG/4HkbhJb+lUAdKrph6LaozJvAeEEZj4N732IysmU="
         "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
       ];
-
-      nix-path = config.nix.nixPath;
     };
   };
 
