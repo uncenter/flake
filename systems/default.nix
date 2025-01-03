@@ -11,12 +11,15 @@
       ../modules/shared
     ];
 
+    additionalClasses = {
+      wsl = "nixos";
+    };
+
     perClass = class: {
       modules = [
         "${self}/modules/${class}"
 
-        (lib.optionals (class == "nixos") [
-          inputs.nixos-wsl.nixosModules.default
+        (lib.optionals (class == "nixos" || class == "wsl") [
           inputs.home-manager.nixosModules.home-manager
         ])
 
@@ -24,14 +27,17 @@
           inputs.home-manager.darwinModules.home-manager
           inputs.darwin-custom-icons.darwinModules.default
         ])
-      ];
 
+        (lib.optionals (class == "wsl") [
+          inputs.nixos-wsl.nixosModules.default
+        ])
+      ];
     };
 
     hosts = {
       azula = {
         arch = "x86_64";
-        class = "nixos";
+        class = "wsl";
       };
 
       katara = {
