@@ -1,5 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.eza = {
+  programs.eza = lib.mkIf osConfig.glade.cli.enable {
     enable = true;
     icons = "auto";
 

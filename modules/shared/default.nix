@@ -1,4 +1,7 @@
 {
-  imports = [ ./nix.nix ];
+  imports = [
+    ./nix.nix
+    ./options.nix
+  ];
   programs.fish.enable = true;
 }

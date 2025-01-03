@@ -1,8 +1,13 @@
-{ inputs, ... }:
+{
+  lib,
+  inputs,
+  osConfig,
+  ...
+}:
 {
   imports = [ inputs.beapkgs.homeManagerModules.default ];
 
-  config.programs.izrss = {
+  programs.izrss = lib.mkIf osConfig.glade.tui.enable {
     enable = true;
 
     settings = {

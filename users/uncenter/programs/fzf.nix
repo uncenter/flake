@@ -1,6 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.fzf = {
+  programs.fzf = lib.mkIf osConfig.glade.cli.enable {
     enable = true;
-    catppuccin.enable = true;
   };
 }

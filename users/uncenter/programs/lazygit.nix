@@ -1,6 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.lazygit = {
+  programs.lazygit = lib.mkIf osConfig.glade.tui.enable {
     enable = true;
-    catppuccin.enable = true;
   };
 }
