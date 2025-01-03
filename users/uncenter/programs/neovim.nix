@@ -18,7 +18,11 @@ let
   };
 in
 {
-  programs.nixvim = {
+  imports = [
+    inputs.nixvim.homeManagerModules.nixvim
+  ];
+
+  config.programs.nixvim = {
     enable = true;
 
     luaLoader.enable = true;

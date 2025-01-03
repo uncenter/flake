@@ -1,5 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.bottom = {
+  programs.bottom = lib.mkIf osConfig.glade.cli.enable {
     enable = true;
   };
 }

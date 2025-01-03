@@ -21,6 +21,10 @@
           ;
       };
 
+      sharedModules = [
+        { home.stateVersion = "23.05"; }
+      ];
+
       users.uncenter = ./uncenter;
     };
 

@@ -1,7 +1,9 @@
 {
+  lib,
   config,
   inputs,
   inputs',
+  osConfig,
   ...
 }:
 let
@@ -10,7 +12,7 @@ in
 {
   imports = [ inputs.spicetify-nix.homeManagerModules.default ];
 
-  programs.spicetify = {
+  programs.spicetify = lib.mkIf osConfig.glade.media.enable {
     enable = true;
     theme = spicePkgs.themes.catppuccin;
     colorScheme = config.catppuccin.flavor;

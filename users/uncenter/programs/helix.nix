@@ -2,10 +2,11 @@
   lib,
   pkgs,
   inputs',
+  osConfig,
   ...
 }:
 {
-  programs.helix = {
+  programs.helix = lib.mkIf osConfig.glade.gui.enable {
     enable = true;
 
     settings = {

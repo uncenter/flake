@@ -1,4 +1,9 @@
-{ pkgs, lib, ... }:
+{
+  lib,
+  pkgs,
+  osConfig,
+  ...
+}:
 let
   palettes = pkgs.fetchzip {
     url = "https://github.com/catppuccin/palette/releases/download/v1.7.1/catppuccin.zip";
@@ -7,7 +12,7 @@ let
   };
 in
 {
-  home.file = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
+  home.file = lib.mkIf (pkgs.stdenv.hostPlatform.isDarwin && osConfig.glade.gui.enable) {
     "Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes" = {
       source = "${palettes}/gimp";
       recursive = true;

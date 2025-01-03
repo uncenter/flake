@@ -1,5 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.atuin = {
+  programs.atuin = lib.mkIf osConfig.glade.cli.enable {
     enable = true;
 
     enableFishIntegration = true;

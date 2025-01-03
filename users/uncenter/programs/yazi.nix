@@ -1,6 +1,11 @@
-{ pkgs, lib, ... }:
 {
-  programs.yazi = {
+  lib,
+  pkgs,
+  osConfig,
+  ...
+}:
+{
+  programs.yazi = lib.mkIf osConfig.glade.cli.enable {
     enable = true;
 
     enableFishIntegration = true;

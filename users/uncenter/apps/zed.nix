@@ -1,10 +1,10 @@
 {
   lib,
-  pkgs,
+  osConfig,
   ...
 }:
 {
-  programs.zed-editor = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
+  programs.zed-editor = lib.mkIf osConfig.glade.gui.enable {
     enable = true;
 
     extensions = [
