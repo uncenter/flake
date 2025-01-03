@@ -11,7 +11,7 @@
       url = "github:nix-community/NixOS-WSL/main";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-compact.follows = "";
+        flake-compat.follows = "";
       };
     };
 
@@ -53,7 +53,7 @@
       url = "github:isabelroses/beapkgs";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-compact.follows = "";
+        flake-compat.follows = "";
       };
     };
 
@@ -61,7 +61,7 @@
       url = "github:Gerg-L/spicetify-nix";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-compact.follows = "";
+        flake-compat.follows = "";
       };
     };
 

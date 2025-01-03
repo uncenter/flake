@@ -2,7 +2,7 @@
   "nodes": {
     "beapkgs": {
       "inputs": {
-        "flake-compat": "flake-compat",
+        "flake-compat": [],
         "nixpkgs": [
           "nixpkgs"
         ]
@@ -81,64 +81,16 @@
     },
     "easy-hosts": {
       "locked": {
-        "lastModified": 1735853362,
-        "narHash": "sha256-yIZW5dNV/BwYPoJOJjbiKiw/XWhd/b0pz0nmSXckJfY=",
+        "lastModified": 1735945981,
+        "narHash": "sha256-bNosnq5CmycKP3+oTvjBsYqXkBTtUA1BC4ARcctoh3A=",
         "owner": "isabelroses",
         "repo": "easy-hosts",
-        "rev": "0c3586e81444a32841d92db8cf5a14393236880f",
+        "rev": "0e6d4f90bcbe77a8ce1235d35053f5f1f80a1b49",
         "type": "github"
       },
       "original": {
         "owner": "isabelroses",
         "repo": "easy-hosts",
-        "type": "github"
-      }
-    },
-    "flake-compat": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1733328505,
-        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
-    "flake-compat_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1733328505,
-        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "type": "github"
-      }
-    },
-    "flake-compat_3": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1733328505,
-        "narHash": "sha256-NeCCThCEP3eCl2l/+27kNNK7QrwZB1IJCrXfrbv5oqU=",
-        "owner": "edolstra",
-        "repo": "flake-compat",
-        "rev": "ff81ac966bb2cae68946d5ed5fc4994f96d0ffec",
-        "type": "github"
-      },
-      "original": {
-        "owner": "edolstra",
-        "repo": "flake-compat",
         "type": "github"
       }
     },
@@ -289,7 +241,7 @@
     },
     "nixos-wsl": {
       "inputs": {
-        "flake-compat": "flake-compat_2",
+        "flake-compat": [],
         "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
@@ -457,7 +409,7 @@
     },
     "spicetify-nix": {
       "inputs": {
-        "flake-compat": "flake-compat_3",
+        "flake-compat": [],
         "nixpkgs": [
           "nixpkgs"
         ]
