@@ -1,22 +1,13 @@
 {
   lib,
-  pkgs,
-  config,
+  osConfig,
   ...
 }:
-let
-  mkUpper =
-    str:
-    (lib.toUpper (builtins.substring 0 1 str)) + (builtins.substring 1 (builtins.stringLength str) str);
-in
 {
-  programs.zed-editor = lib.mkIf pkgs.stdenv.isDarwin {
+  programs.zed-editor = lib.mkIf osConfig.glade.apps.enable {
     enable = true;
 
     extensions = [
-      # Appearance
-      "catppuccin"
-
       # Language/Tool Support
       "html"
       "superhtml"
@@ -33,9 +24,9 @@ in
       buffer_font_family = "Lilex Nerd Font";
       theme = {
         mode = "system";
-        light = "Catppuccin Latte";
-        dark = "Catppuccin ${mkUpper config.catppuccin.flavor}";
+        light = lib.mkForce "Catppuccin Latte";
       };
+
       format_on_save = "on";
       languages = {
         Nix = {

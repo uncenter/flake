@@ -1,6 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.bat = {
+  programs.bat = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
-    catppuccin.enable = true;
   };
 }

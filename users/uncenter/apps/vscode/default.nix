@@ -1,7 +1,8 @@
 {
+  lib,
   pkgs,
   config,
-  lib,
+  osConfig,
   ...
 }:
 let
@@ -71,7 +72,7 @@ let
   ];
 in
 {
-  config = lib.mkIf pkgs.stdenv.isDarwin {
+  config = lib.mkIf osConfig.glade.apps.enable {
     programs.vscode = {
       enable = true;
     };

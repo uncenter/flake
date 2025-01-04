@@ -1,5 +1,3 @@
 {
-  programs.glamour = {
-    catppuccin.enable = true;
-  };
+  catppuccin.glamour.enable = true;
 }

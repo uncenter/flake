@@ -1,4 +1,11 @@
-{ inputs, pkgs, ... }:
+{
+  pkgs,
+  self,
+  self',
+  inputs,
+  inputs',
+  ...
+}:
 {
   config = {
     home-manager = {
@@ -6,14 +13,23 @@
       useUserPackages = true;
 
       extraSpecialArgs = {
-        inherit inputs;
+        inherit
+          self
+          self'
+          inputs
+          inputs'
+          ;
       };
 
-      users.uncenter = import ./uncenter;
+      sharedModules = [
+        { home.stateVersion = "23.05"; }
+      ];
+
+      users.uncenter = ./uncenter;
     };
 
     users.users.uncenter = {
-      home = if pkgs.stdenv.isDarwin then "/Users/uncenter" else "/home/uncenter";
+      home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
       shell = pkgs.fish;
     };
   };

@@ -2,6 +2,12 @@
 {
   imports = [ ./icons.nix ];
 
+  glade = {
+    apps.enable = true;
+    programs.enable = true;
+    tooling.enable = true;
+  };
+
   networking = {
     computerName = "Katara";
     hostName = "katara";

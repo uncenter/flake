@@ -7,7 +7,6 @@
 {
   programs.fish = {
     enable = true;
-    catppuccin.enable = true;
 
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";
@@ -66,7 +65,7 @@
     ];
 
     shellInit = ''
-      ${if pkgs.stdenv.isDarwin then "/opt/homebrew/bin/brew shellenv | source" else ""}
+      ${lib.optionalString pkgs.stdenv.hostPlatform.isDarwin "/opt/homebrew/bin/brew shellenv | source"}
       source ${./fish/config.fish}
     '';
 

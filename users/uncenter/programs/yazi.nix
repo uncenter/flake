@@ -1,8 +1,12 @@
-{ pkgs, lib, ... }:
 {
-  programs.yazi = {
+  lib,
+  pkgs,
+  osConfig,
+  ...
+}:
+{
+  programs.yazi = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
-    catppuccin.enable = true;
 
     enableFishIntegration = true;
     enableBashIntegration = true;

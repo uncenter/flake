@@ -1,6 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  programs.bottom = {
+  programs.bottom = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
-    catppuccin.enable = true;
   };
 }

@@ -15,7 +15,7 @@ in
     let
       common = "Library/Application Support/Vencord/settings";
     in
-    lib.mkIf pkgs.stdenv.isDarwin {
+    lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
       "${common}/settings.json".source = settingsFile;
       "${common}/quickCss.css".text = ''
         @import url("https://catppuccin.github.io/discord/dist/catppuccin-${config.catppuccin.flavor}.theme.css") (prefers-color-scheme: dark);

@@ -1,0 +1,27 @@
+{
+  imports = [
+    ./atuin.nix
+    ./bat.nix
+    ./bottom.nix
+    ./direnv.nix
+    ./eza.nix
+    ./fd.nix
+    ./fish.nix
+    ./fzf.nix
+    ./git.nix
+    ./glamour.nix
+    ./gleam.nix
+    ./helix.nix
+    ./izrss.nix
+    ./lazygit.nix
+    ./neovim.nix
+    ./nix.nix
+    ./python.nix
+    ./rust.nix
+    ./spicetify.nix
+    ./starship.nix
+    ./taskwarrior.nix
+    ./television.nix
+    ./yazi.nix
+  ];
+}

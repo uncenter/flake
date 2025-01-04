@@ -1,7 +1,7 @@
+{ lib, osConfig, ... }:
 {
-  programs.starship = {
+  programs.starship = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
-    catppuccin.enable = true;
 
     enableFishIntegration = true;
     enableBashIntegration = true;

@@ -1,11 +1,11 @@
 {
-  config,
   lib,
-  pkgs,
+  config,
+  osConfig,
   ...
 }:
 {
-  xdg.configFile."ghostty/config" = lib.mkIf pkgs.stdenv.isDarwin {
+  xdg.configFile."ghostty/config" = lib.mkIf osConfig.glade.apps.enable {
     text = lib.generators.toINIWithGlobalSection { listsAsDuplicateKeys = true; } {
       globalSection = {
         # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig

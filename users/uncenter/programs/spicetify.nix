@@ -1,16 +1,18 @@
 {
-  pkgs,
+  lib,
   config,
   inputs,
+  inputs',
+  osConfig,
   ...
 }:
 let
-  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.system};
+  spicePkgs = inputs'.spicetify-nix.legacyPackages;
 in
 {
   imports = [ inputs.spicetify-nix.homeManagerModules.default ];
 
-  programs.spicetify = {
+  programs.spicetify = lib.mkIf osConfig.glade.apps.enable {
     enable = true;
     theme = spicePkgs.themes.catppuccin;
     colorScheme = config.catppuccin.flavor;

@@ -1,13 +1,13 @@
 {
   lib,
   pkgs,
-  inputs,
+  inputs',
+  osConfig,
   ...
 }:
 {
-  programs.helix = {
+  programs.helix = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
-    catppuccin.enable = true;
 
     settings = {
       editor = {
@@ -232,7 +232,7 @@
       # Markdown
       marksman
 
-      inputs.wakatime-ls.packages.${pkgs.system}.wakatime-ls
+      inputs'.wakatime-ls.packages.wakatime-ls
     ];
   };
 }
