@@ -5,7 +5,7 @@
 
     programs = {
       enable = true;
-      media.enable = false;
+      fun = false;
     };
 
     tooling.enable = true;
