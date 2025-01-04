@@ -63,7 +63,9 @@
           gfold
           gitoxide
           jujutsu
-          lazyjj
+          (lazyjj.overrideAttrs (_: {
+            doCheck = false;
+          }))
         ];
       })
     ]

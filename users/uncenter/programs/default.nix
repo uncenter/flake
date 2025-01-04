@@ -13,7 +13,6 @@
     ./gleam.nix
     ./helix.nix
     ./izrss.nix
-    ./lazygit.nix
     ./neovim.nix
     ./nix.nix
     ./python.nix
