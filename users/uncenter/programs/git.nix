@@ -5,7 +5,7 @@
   ...
 }:
 {
-  config = lib.mkIf osConfig.glade.git.enable {
+  config = lib.mkIf osConfig.glade.tooling.git.enable {
     home.packages = with pkgs; [
       gfold
       gitoxide

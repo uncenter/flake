@@ -6,7 +6,7 @@
   ...
 }:
 {
-  programs.helix = lib.mkIf osConfig.glade.gui.enable {
+  programs.helix = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
 
     settings = {

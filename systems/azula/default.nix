@@ -1,20 +1,14 @@
 { pkgs, ... }:
 {
   glade = {
-    cli.enable = true;
-    tui.enable = true;
-    gui.enable = false;
+    apps.enable = false;
 
-    media.enable = false;
-    data.enable = true;
-    networking.enable = true;
-    filesystem.enable = true;
-    search.enable = true;
-    tasks.enable = true;
-    misc.enable = true;
-    fun.enable = true;
+    programs = {
+      enable = true;
+      media.enable = false;
+    };
 
-    development.enable = true;
+    tooling.enable = true;
   };
 
   programs.nix-ld = {

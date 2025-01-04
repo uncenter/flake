@@ -5,6 +5,8 @@
   ...
 }:
 {
+  imports = [ inputs.easy-hosts.flakeModule ];
+
   easyHosts = {
     shared.modules = [
       ../users

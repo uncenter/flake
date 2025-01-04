@@ -1,6 +1,6 @@
 { lib, osConfig, ... }:
 {
-  programs.direnv = lib.mkIf osConfig.glade.cli.enable {
+  programs.direnv = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
     nix-direnv.enable = true;
 

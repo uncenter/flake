@@ -1,6 +1,6 @@
 { lib, osConfig, ... }:
 {
-  programs.starship = lib.mkIf osConfig.glade.cli.enable {
+  programs.starship = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
 
     enableFishIntegration = true;

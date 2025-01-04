@@ -7,7 +7,7 @@
 {
   imports = [ inputs.beapkgs.homeManagerModules.default ];
 
-  programs.izrss = lib.mkIf osConfig.glade.tui.enable {
+  programs.izrss = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
 
     settings = {

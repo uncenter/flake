@@ -5,7 +5,7 @@
   ...
 }:
 {
-  config = lib.mkIf osConfig.glade.gleam.enable {
+  config = lib.mkIf osConfig.glade.tooling.gleam.enable {
     home.packages =
       with pkgs;
       [

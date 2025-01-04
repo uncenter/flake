@@ -5,7 +5,7 @@
   ...
 }:
 {
-  xdg.configFile."ghostty/config" = lib.mkIf osConfig.glade.gui.enable {
+  xdg.configFile."ghostty/config" = lib.mkIf osConfig.glade.apps.enable {
     text = lib.generators.toINIWithGlobalSection { listsAsDuplicateKeys = true; } {
       globalSection = {
         # https://github.com/mitchellh/ghostty/blob/main/src/config/Config.zig

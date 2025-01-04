@@ -4,7 +4,7 @@
   ...
 }:
 {
-  programs.zed-editor = lib.mkIf osConfig.glade.gui.enable {
+  programs.zed-editor = lib.mkIf osConfig.glade.apps.enable {
     enable = true;
 
     extensions = [

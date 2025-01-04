@@ -12,7 +12,7 @@ let
   };
 in
 {
-  home.file = lib.mkIf (pkgs.stdenv.hostPlatform.isDarwin && osConfig.glade.gui.enable) {
+  home.file = lib.mkIf (pkgs.stdenv.hostPlatform.isDarwin && osConfig.glade.apps.enable) {
     "Library/Application Support/org.inkscape.Inkscape/config/inkscape/palettes" = {
       source = "${palettes}/gimp";
       recursive = true;

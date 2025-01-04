@@ -6,43 +6,69 @@ let
 in
 {
   options.glade = {
-    cli.enable = mkEnableOption "Enable cli packages" // {
-      default = true;
+    programs = {
+      enable = mkEnableOption "Enable cli/tui packages" // {
+        default = true;
+      };
+
+      media.enable = mkEnableOption "Enable media" // {
+        default = cfg.programs.enable;
+      };
+
+      data.enable = mkEnableOption "Enable data" // {
+        default = cfg.programs.enable;
+      };
+
+      networking.enable = mkEnableOption "Enable networking" // {
+        default = cfg.programs.enable;
+      };
+
+      filesystem.enable = mkEnableOption "Enable filesystem" // {
+        default = cfg.programs.enable;
+      };
+
+      search.enable = mkEnableOption "Enable search" // {
+        default = cfg.programs.enable;
+      };
+
+      tasks.enable = mkEnableOption "Enable tasks" // {
+        default = cfg.programs.enable;
+      };
+
+      misc.enable = mkEnableOption "Enable misc" // {
+        default = cfg.programs.enable;
+      };
+
+      fun.enable = mkEnableOption "Enable fun" // {
+        default = cfg.programs.enable;
+      };
     };
 
-    tui.enable = mkEnableOption "Enable tui packages";
-    gui.enable = mkEnableOption "Enable gui packages";
-
-    media.enable = mkEnableOption "Enable media";
-    data.enable = mkEnableOption "Enable data";
-    networking.enable = mkEnableOption "Enable networking package";
-    filesystem.enable = mkEnableOption "Enable filesystem";
-    search.enable = mkEnableOption "Enable search";
-    tasks.enable = mkEnableOption "Enable tasks";
-    misc.enable = mkEnableOption "Enable misc";
-    fun.enable = mkEnableOption "Enable fun";
+    apps.enable = mkEnableOption "Enable gui packages";
 
     # development stuff
-    development.enable = mkEnableOption "Enable development";
+    tooling = {
+      enable = mkEnableOption "Enable development tooling";
 
-    git.enable = mkEnableOption "Enable git tooling" // {
-      default = cfg.development.enable;
-    };
+      git.enable = mkEnableOption "Enable git tooling" // {
+        default = cfg.tooling.enable;
+      };
 
-    nix.enable = mkEnableOption "Enable nix tooling" // {
-      default = cfg.development.enable;
-    };
+      nix.enable = mkEnableOption "Enable nix tooling" // {
+        default = cfg.tooling.enable;
+      };
 
-    rust.enable = mkEnableOption "Enable rust tooling" // {
-      default = cfg.development.enable;
-    };
+      rust.enable = mkEnableOption "Enable rust tooling" // {
+        default = cfg.tooling.enable;
+      };
 
-    gleam.enable = mkEnableOption "Enable gleam tooling" // {
-      default = cfg.development.enable;
-    };
+      gleam.enable = mkEnableOption "Enable gleam tooling" // {
+        default = cfg.tooling.enable;
+      };
 
-    python.enable = mkEnableOption "Enable python tooling" // {
-      default = cfg.development.enable;
+      python.enable = mkEnableOption "Enable python tooling" // {
+        default = cfg.tooling.enable;
+      };
     };
   };
 }

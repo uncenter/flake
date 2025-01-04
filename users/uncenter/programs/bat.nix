@@ -1,6 +1,6 @@
 { lib, osConfig, ... }:
 {
-  programs.bat = lib.mkIf osConfig.glade.cli.enable {
+  programs.bat = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
   };
 }

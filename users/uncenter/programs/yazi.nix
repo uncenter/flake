@@ -5,7 +5,7 @@
   ...
 }:
 {
-  programs.yazi = lib.mkIf osConfig.glade.cli.enable {
+  programs.yazi = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
 
     enableFishIntegration = true;

@@ -100,10 +100,7 @@
         "aarch64-darwin"
       ];
 
-      imports = [
-        inputs.easy-hosts.flakeModule
-        ./systems
-      ];
+      imports = [ ./systems ];
 
       perSystem =
         { pkgs, ... }:

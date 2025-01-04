@@ -72,7 +72,7 @@ let
   ];
 in
 {
-  config = lib.mkIf osConfig.glade.gui.enable {
+  config = lib.mkIf osConfig.glade.apps.enable {
     programs.vscode = {
       enable = true;
     };

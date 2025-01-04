@@ -5,7 +5,7 @@
   ...
 }:
 {
-  config = lib.mkIf osConfig.glade.python.enable {
+  config = lib.mkIf osConfig.glade.tooling.python.enable {
     home.packages = with pkgs; [
       python312
       poetry

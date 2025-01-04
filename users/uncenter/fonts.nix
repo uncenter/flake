@@ -5,7 +5,7 @@
   ...
 }:
 {
-  config = lib.mkIf osConfig.glade.gui.enable {
+  config = lib.mkIf osConfig.glade.apps.enable {
     home.packages = with pkgs; [
       departure-mono
       nerd-fonts.commit-mono

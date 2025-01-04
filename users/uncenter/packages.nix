@@ -21,7 +21,7 @@ in
       ]
 
       # Image & Video #
-      (optionals cfg.media.enable [
+      (optionals cfg.programs.media.enable [
         ffmpeg
         icnsify
         imagemagick
@@ -30,7 +30,7 @@ in
       ])
 
       # Languages and Tooling #
-      (optionals cfg.development.enable [
+      (optionals cfg.tooling.enable [
         bun
         deno
         dprint
@@ -49,14 +49,14 @@ in
       ])
 
       # Data #
-      (optionals cfg.data.enable [
+      (optionals cfg.programs.data.enable [
         jnv
         jq
         yq
       ])
 
       # Networking #
-      (optionals cfg.networking.enable [
+      (optionals cfg.programs.networking.enable [
         curl
         xh
         doggo
@@ -65,7 +65,7 @@ in
       ])
 
       # Filesystem #
-      (optionals cfg.filesystem.enable [
+      (optionals cfg.programs.filesystem.enable [
         entr
         exiftool
         eza
@@ -74,7 +74,7 @@ in
       ])
 
       # Search #
-      (optionals cfg.search.enable [
+      (optionals cfg.programs.search.enable [
         fd
         grex
         ripgrep
@@ -84,13 +84,13 @@ in
       ])
 
       # Tasks #
-      (optionals cfg.tasks.enable [
+      (optionals cfg.programs.tasks.enable [
         nrr
         just
       ])
 
       # Misc #
-      (optionals cfg.misc.enable [
+      (optionals cfg.programs.misc.enable [
         flyctl
         gum
         hexyl
@@ -104,7 +104,7 @@ in
       ])
 
       # Fun #
-      (optionals cfg.fun.enable [
+      (optionals cfg.programs.fun.enable [
         cmatrix
         cmd-wrapped
         cowsay

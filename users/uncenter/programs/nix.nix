@@ -6,7 +6,7 @@
   ...
 }:
 {
-  config = lib.mkIf osConfig.glade.nix.enable {
+  config = lib.mkIf osConfig.glade.tooling.nix.enable {
     home.packages =
       (with pkgs; [
         cachix
