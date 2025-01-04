@@ -14,7 +14,7 @@ let
     owner = "uncenter";
     repo = "ctp-nvim";
     rev = "patch-1";
-    hash = "sha256-bzao1zviV7DLoJyJx+Q57ElowXpZwOtIjnTc1v7GUX0=";
+    hash = "sha256-9XsoJ0WXxSP9ppyceNAkR8NPwMgoDixGAKbAnKdEIfM=";
   };
 in
 {
