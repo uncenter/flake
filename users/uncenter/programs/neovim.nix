@@ -117,26 +117,30 @@ in
       };
     };
 
-    extraConfigLua = ''
-      do
-        vim.filetype.add({ extension = { tera = "tera" } })
+    extraConfigLua = # lua
+      ''
+        do
+          -- Bug in Neovim v0.10.3 - https://github.com/neovim/neovim/issues/31675#issuecomment-2558405042.
+          vim.hl = vim.highlight
 
-        vim.api.nvim_create_autocmd("FileType", {
-          pattern = "tera",
-          callback = function(event)
-            vim.bo[event.buf].commentstring = "{# %s #}"
-          end,
-        })
+          vim.filetype.add({ extension = { tera = "tera" } })
 
-        require("nvim-treesitter.parsers").get_parser_configs().tera = {
-          install_info = {
-            url = "${tree-sitter-tera}",
-            files = { "src/parser.c" },
-          },
-          filetype = "tera",
-        }
-      end
-    '';
+          vim.api.nvim_create_autocmd("FileType", {
+            pattern = "tera",
+            callback = function(event)
+              vim.bo[event.buf].commentstring = "{# %s #}"
+            end,
+          })
+
+          require("nvim-treesitter.parsers").get_parser_configs().tera = {
+            install_info = {
+              url = "${tree-sitter-tera}",
+              files = { "src/parser.c" },
+            },
+            filetype = "tera",
+          }
+        end
+      '';
 
     extraPlugins = [
       tree-sitter-tera
