@@ -18,6 +18,11 @@
       "nix"
       "just"
       "scheme"
+      "vento"
+      "marksman"
+      "svelte"
+
+      "wakatime"
     ];
 
     userSettings = {
