@@ -10,12 +10,6 @@ let
     version = "0.1.0";
     src = inputs.tree-sitter-tera;
   };
-  catppuccin-nvim-fork = pkgs.fetchFromGitHub {
-    owner = "uncenter";
-    repo = "ctp-nvim";
-    rev = "patch-1";
-    hash = "sha256-9XsoJ0WXxSP9ppyceNAkR8NPwMgoDixGAKbAnKdEIfM=";
-  };
 in
 {
   imports = [
@@ -38,7 +32,18 @@ in
 
     colorschemes.catppuccin = {
       enable = true;
-      package = catppuccin-nvim-fork;
+      package = (
+        pkgs.vimUtils.buildVimPlugin {
+          pname = "catppuccin-nvim";
+          version = "0.0.1";
+          src = inputs.ctp-nvim;
+          nvimSkipModule = [
+            "catppuccin.groups.integrations.noice"
+            "catppuccin.groups.integrations.feline"
+            "catppuccin.lib.vim.init"
+          ];
+        }
+      );
 
       settings = {
         flavour = config.catppuccin.flavor;

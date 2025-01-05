@@ -64,6 +64,23 @@
         "url": "https://flakehub.com/f/catppuccin/vscode/%2A.tar.gz"
       }
     },
+    "ctp-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736102105,
+        "narHash": "sha256-Fql4eDsXMkuwJFs5jUHhIgSek9FD0vr88fKDiwW/p8I=",
+        "owner": "uncenter",
+        "repo": "ctp-nvim",
+        "rev": "85b63d974c4c9dc15f931bae7fdd048c42f2fccf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uncenter",
+        "ref": "patch-1",
+        "repo": "ctp-nvim",
+        "type": "github"
+      }
+    },
     "darwin-custom-icons": {
       "locked": {
         "lastModified": 1719071371,
@@ -352,6 +369,7 @@
         "beapkgs": "beapkgs",
         "catppuccin": "catppuccin",
         "catppuccin-vsc": "catppuccin-vsc",
+        "ctp-nvim": "ctp-nvim",
         "darwin-custom-icons": "darwin-custom-icons",
         "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",
