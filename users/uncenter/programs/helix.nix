@@ -21,8 +21,10 @@
         line-number = "relative";
         lsp = {
           display-messages = true;
-          display-inlay-hints = true;
+          display-inlay-hints = false;
         };
+        end-of-line-diagnostics = "hint";
+        inline-diagnostics.cursor-line = "error";
       };
     };
 
@@ -188,15 +190,8 @@
             }
           ];
         };
-        superhtml-lsp = {
-          command = "superhtml";
-          args = [ "lsp" ];
-        };
         wakatime = {
           command = "wakatime-ls";
-        };
-        nixd = {
-          command = "nixd";
         };
       };
 
