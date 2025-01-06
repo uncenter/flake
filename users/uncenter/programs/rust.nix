@@ -27,6 +27,7 @@ in
       cargo-watch
       cargo-shear
       cargo-tally
+      cargo-modules
 
       bacon
       mdbook
