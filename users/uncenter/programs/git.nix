@@ -1,6 +1,7 @@
 {
   lib,
   pkgs,
+  inputs',
   osConfig,
   ...
 }:
@@ -74,6 +75,7 @@
           (lazyjj.overrideAttrs (_: {
             doCheck = false;
           }))
+          inputs'.patchy.packages.default
         ];
       })
     ]

@@ -85,12 +85,17 @@
     };
 
     ctp-nvim = {
-      url = "github:uncenter/ctp-nvim?ref=patch-1";
+      url = "github:uncenter/ctp-nvim/patch-1";
       flake = false;
     };
 
     wakatime-ls = {
       url = "github:mrnossiom/wakatime-ls";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    patchy = {
+      url = "github:NikitaRevenco/patchy";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

@@ -345,6 +345,26 @@
         "type": "github"
       }
     },
+    "patchy": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1735866454,
+        "narHash": "sha256-v3wRiMLDWamHE/KS8irGa/e+VVWdIT+D47V5d/tr31o=",
+        "owner": "NikitaRevenco",
+        "repo": "patchy",
+        "rev": "24508ddf603c22b63aa657f9eaa9ad68740fdb72",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NikitaRevenco",
+        "repo": "patchy",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "beapkgs": "beapkgs",
@@ -359,6 +379,7 @@
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs_2",
         "nixvim": "nixvim",
+        "patchy": "patchy",
         "rust-overlay": "rust-overlay",
         "spicetify-nix": "spicetify-nix",
         "tree-sitter-tera": "tree-sitter-tera",
