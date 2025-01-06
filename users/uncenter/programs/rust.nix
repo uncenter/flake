@@ -28,6 +28,7 @@ in
       cargo-shear
       cargo-tally
       cargo-modules
+      cargo-flamegraph
 
       bacon
       mdbook
