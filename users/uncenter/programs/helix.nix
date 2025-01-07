@@ -8,6 +8,7 @@
 {
   programs.helix = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
+    package = inputs'.helix.packages.helix;
 
     settings = {
       editor = {

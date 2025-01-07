@@ -64,6 +64,21 @@
         "url": "https://flakehub.com/f/catppuccin/vscode/%2A.tar.gz"
       }
     },
+    "crane": {
+      "locked": {
+        "lastModified": 1727974419,
+        "narHash": "sha256-WD0//20h+2/yPGkO88d2nYbb23WMWYvnRyDQ9Dx4UHg=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "37e4f9f0976cb9281cd3f0c70081e5e0ecaee93f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "ctp-nvim": {
       "flake": false,
       "locked": {
@@ -149,6 +164,24 @@
         "type": "github"
       }
     },
+    "flake-utils_2": {
+      "inputs": {
+        "systems": "systems_2"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "gitignore": {
       "inputs": {
         "nixpkgs": [
@@ -167,6 +200,32 @@
       "original": {
         "owner": "hercules-ci",
         "repo": "gitignore.nix",
+        "type": "github"
+      }
+    },
+    "helix": {
+      "inputs": {
+        "crane": "crane",
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": [
+          "rust-overlay"
+        ]
+      },
+      "locked": {
+        "lastModified": 1736249338,
+        "narHash": "sha256-8btsegQdIJ+r2VSi/PCt+QZO+zdXIuscKFiSAk4xQeY=",
+        "owner": "uncenter",
+        "repo": "helix",
+        "rev": "3f2e5522688b2be0f15df40250ad80106d4f1575",
+        "type": "github"
+      },
+      "original": {
+        "owner": "uncenter",
+        "ref": "patchy",
+        "repo": "helix",
         "type": "github"
       }
     },
@@ -324,7 +383,7 @@
     },
     "nuschtosSearch": {
       "inputs": {
-        "flake-utils": "flake-utils",
+        "flake-utils": "flake-utils_2",
         "ixx": "ixx",
         "nixpkgs": [
           "nixvim",
@@ -374,6 +433,7 @@
         "darwin-custom-icons": "darwin-custom-icons",
         "easy-hosts": "easy-hosts",
         "flake-parts": "flake-parts",
+        "helix": "helix",
         "home-manager": "home-manager",
         "nix-darwin": "nix-darwin",
         "nixos-wsl": "nixos-wsl",
@@ -449,6 +509,21 @@
       }
     },
     "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "systems_2": {
       "locked": {
         "lastModified": 1681028828,
         "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",

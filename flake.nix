@@ -98,6 +98,12 @@
       url = "github:NikitaRevenco/patchy";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    helix = {
+      url = "github:uncenter/helix/patchy";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
   };
 
   outputs =
