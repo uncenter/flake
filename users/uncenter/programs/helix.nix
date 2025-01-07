@@ -8,6 +8,9 @@
 {
   programs.helix = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
+    # Custom fork of Helix which includes my favorite pull requests and custom patches on the latest branch.
+    # https://github.com/uncenter/helix/tree/patchy
+    # Created using https://github.com/NikitaRevenco/patchy.
     package = inputs'.helix.packages.helix;
 
     settings = {
