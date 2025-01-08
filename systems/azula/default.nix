@@ -5,7 +5,7 @@
 
     programs = {
       enable = true;
-      fun = false;
+      fun.enable = false;
     };
 
     tooling.enable = true;
