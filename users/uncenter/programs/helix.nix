@@ -214,6 +214,7 @@
       nodePackages.typescript-language-server
       nodePackages.vscode-langservers-extracted
       superhtml
+      vue-language-server
 
       # Java
       jdt-language-server
