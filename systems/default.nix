@@ -4,6 +4,13 @@
   inputs,
   ...
 }:
+let
+  additionalClasses = {
+    wsl = "nixos";
+  };
+
+  normaliseClass = class: additionalClasses.${class} or class;
+in
 {
   imports = [ inputs.easy-hosts.flakeModule ];
 
@@ -13,28 +20,31 @@
       ../modules/shared
     ];
 
-    additionalClasses = {
-      wsl = "nixos";
-    };
+    inherit additionalClasses;
 
-    perClass = class: {
-      modules = [
-        "${self}/modules/${class}"
+    perClass =
+      class:
+      let
+        normalisedClass = normaliseClass class;
+      in
+      {
+        modules = [
+          "${self}/modules/${normalisedClass}"
 
-        (lib.optionals (class == "nixos" || class == "wsl") [
-          inputs.home-manager.nixosModules.home-manager
-        ])
+          (lib.optionals (normalisedClass == "nixos") [
+            inputs.home-manager.nixosModules.home-manager
+          ])
 
-        (lib.optionals (class == "darwin") [
-          inputs.home-manager.darwinModules.home-manager
-          inputs.darwin-custom-icons.darwinModules.default
-        ])
+          (lib.optionals (class == "darwin") [
+            inputs.home-manager.darwinModules.home-manager
+            inputs.darwin-custom-icons.darwinModules.default
+          ])
 
-        (lib.optionals (class == "wsl") [
-          inputs.nixos-wsl.nixosModules.default
-        ])
-      ];
-    };
+          (lib.optionals (class == "wsl") [
+            inputs.nixos-wsl.nixosModules.default
+          ])
+        ];
+      };
 
     hosts = {
       azula = {
