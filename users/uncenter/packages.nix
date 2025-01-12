@@ -15,9 +15,15 @@ in
     with pkgs;
     with inputs'.beapkgs.packages;
     concatLists [
+      [
+        home-manager
+      ]
+
       # Essentials #
       [
         gnupg
+        jq
+        curl
       ]
 
       # Image & Video #
@@ -51,13 +57,11 @@ in
       # Data #
       (optionals cfg.programs.data.enable [
         jnv
-        jq
         yq
       ])
 
       # Networking #
       (optionals cfg.programs.networking.enable [
-        curl
         xh
         doggo
         miniserve
