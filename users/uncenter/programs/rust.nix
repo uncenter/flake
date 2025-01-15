@@ -29,6 +29,7 @@ in
       cargo-tally
       cargo-modules
       cargo-flamegraph
+      cargo-edit
 
       bacon
       mdbook
