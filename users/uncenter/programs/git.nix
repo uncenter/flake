@@ -47,6 +47,8 @@
             init.defaultBranch = "main";
             push.autoSetupRemote = true;
             pull.rebase = true;
+
+            help.autocorrect = "prompt";
           };
         };
       }
