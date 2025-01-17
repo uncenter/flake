@@ -53,7 +53,6 @@
       url = "github:isabelroses/beapkgs";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        flake-compat.follows = "";
       };
     };
 
