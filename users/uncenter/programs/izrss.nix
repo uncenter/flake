@@ -58,6 +58,7 @@
         "https://blog.rust-lang.org/feed.xml"
         "https://nolanlawson.com/feed/"
         "https://matklad.github.io/feed.xml"
+        "https://www.ntietz.com/atom.xml"
       ];
     };
   };
