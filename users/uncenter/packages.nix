@@ -45,8 +45,6 @@ in
         go
         jdk17
         maven
-        lua
-        luajitPackages.luarocks
         (taplo.override { withLsp = true; })
         (tree-sitter.override {
           webUISupport = true;

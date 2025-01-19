@@ -53,19 +53,23 @@ in
         default = cfg.tooling.enable;
       };
 
-      nix.enable = mkEnableOption "Enable Nix tooling" // {
-        default = cfg.tooling.enable;
-      };
-
-      rust.enable = mkEnableOption "Enable Rust tooling" // {
-        default = cfg.tooling.enable;
-      };
-
       gleam.enable = mkEnableOption "Enable Gleam tooling" // {
         default = cfg.tooling.enable;
       };
 
+      lua.enable = mkEnableOption "Enable Lua/Luau tooling" // {
+        default = cfg.tooling.enable;
+      };
+
+      nix.enable = mkEnableOption "Enable Nix tooling" // {
+        default = cfg.tooling.enable;
+      };
+
       python.enable = mkEnableOption "Enable Python tooling" // {
+        default = cfg.tooling.enable;
+      };
+
+      rust.enable = mkEnableOption "Enable Rust tooling" // {
         default = cfg.tooling.enable;
       };
     };

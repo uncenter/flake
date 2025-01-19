@@ -10,13 +10,9 @@
     ./fzf.nix
     ./git.nix
     ./glamour.nix
-    ./gleam.nix
     ./helix.nix
     ./izrss.nix
     ./neovim.nix
-    ./nix.nix
-    ./python.nix
-    ./rust.nix
     ./spicetify.nix
     ./starship.nix
     ./taskwarrior.nix
