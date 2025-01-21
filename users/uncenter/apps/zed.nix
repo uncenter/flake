@@ -36,8 +36,8 @@
       languages = {
         Nix = {
           language_servers = [
-            "!nil"
-            "nixd"
+            "nil"
+            "!nixd"
           ];
           formatter = {
             external = {

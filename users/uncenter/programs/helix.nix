@@ -40,9 +40,6 @@
             command = lib.getExe pkgs.nixfmt-rfc-style;
           };
           auto-format = true;
-          language-servers = [
-            "nixd"
-          ];
         }
         {
           name = "python";
