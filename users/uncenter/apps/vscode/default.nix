@@ -41,6 +41,7 @@ let
     "graphql.vscode-graphql-syntax"
     "griimick.vhs"
     "jnoortheen.nix-ide"
+    "kdl-org.kdl"
     "mechatroner.rainbow-csv"
     "mkhl.direnv"
     "ms-python.debugpy"
