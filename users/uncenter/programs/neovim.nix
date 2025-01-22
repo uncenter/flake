@@ -91,25 +91,11 @@ in
             enable = true;
             package = pkgs.superhtml;
           };
-          eslint.enable = true; # Web
-          tailwindcss.enable = true; # TailwindCSS
           html.enable = true; # HTML
-          astro.enable = true; # AstroJS
-          svelte.enable = false; # Svelte
-          vuels.enable = false; # Vue
           marksman.enable = true; # Markdown
-          nil_ls.enable = true; # Nix
-          bashls.enable = true; # Bash
-          clangd.enable = true; # C/C++
           yamlls.enable = true; # YAML
-          gleam.enable = true;
-          ruff.enable = true;
+          nil_ls.enable = true; # Nix
           statix.enable = true;
-          gopls = {
-            # Golang
-            enable = true;
-            autostart = true;
-          };
         };
       };
 
