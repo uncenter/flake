@@ -6,14 +6,17 @@
 }:
 {
   config = lib.mkIf osConfig.glade.tooling.lua.enable {
-    home.packages = with pkgs; [
-      lua
-      luajitPackages.luarocks
+    home.packages =
+      with pkgs;
+      [
+        lua
+        stylua
 
-      # Luau
-      luau
-      lune
-      selene
-    ];
+        # Luau
+        luau
+        lune
+        selene
+      ]
+      ++ (with pkgs.luajitPackages; [ luarocks ]);
   };
 }
