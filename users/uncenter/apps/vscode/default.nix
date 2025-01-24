@@ -44,6 +44,7 @@ let
     "kdl-org.kdl"
     "mechatroner.rainbow-csv"
     "mkhl.direnv"
+    "ms-vscode.cpptools" # Required dependency extension for "fortran-lang.linter-gfortran".
     "ms-python.debugpy"
     "ms-python.python"
     "redhat.vscode-yaml"
