@@ -71,6 +71,7 @@ let
     "njpwerner.autodocstring"
     "ms-vscode-remote.remote-wsl"
     "wakatime.vscode-wakatime"
+    "leonardssh.vscord"
   ];
 in
 {

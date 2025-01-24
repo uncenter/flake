@@ -95,5 +95,19 @@
 	"nix.serverPath": "nil",
 	"nix.serverSettings": {
 		"nil": { "formatting": { "command": ["nixfmt"] } }
-	}
+    },
+
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.idle.disconnectOnIdle": true,
+    "vscord.status.problems.enabled": false,
+    "vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+    "vscord.status.image.large.editing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+    "vscord.status.image.large.idle.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+    "vscord.status.image.large.notInFile.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+    "vscord.status.image.large.viewing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+    "vscord.status.image.small.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+    "vscord.status.image.small.editing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
+    "vscord.status.image.small.idle.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+    "vscord.status.image.small.notInFile.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+    "vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp"
 }
