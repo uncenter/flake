@@ -16,6 +16,7 @@
       HISTFILE = "${config.xdg.stateHome}/bash/history";
       NPM_CONFIG_USERCONFIG = "${config.xdg.configHome}/npm/npmrc";
       NODE_REPL_HISTORY = "${config.xdg.dataHome}/nodejs/history";
+      NODE_OPTIONS = "--disable-warning=ExperimentalWarning";
       PNPM_HOME = "${config.xdg.cacheHome}/pnpm";
       CARGO_HOME = "${config.xdg.dataHome}/cargo";
       RUSTUP_HOME = "${config.xdg.dataHome}/rustup";
