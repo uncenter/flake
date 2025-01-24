@@ -38,6 +38,7 @@ in
       # Languages and Tooling #
       (optionals cfg.tooling.enable [
         bun
+        cabinpkg
         deno
         dprint
         emscripten
