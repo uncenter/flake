@@ -20,7 +20,6 @@
         nix-inspect
         nix-output-monitor
         nix-update
-        nix-your-shell
         nurl
         nvd
       ])
@@ -28,6 +27,12 @@
         nixpkgs-track
         nixpkgs-using
       ]);
+
+    programs.nix-your-shell = {
+      enable = true;
+
+      enableFishIntegration = true;
+    };
 
     xdg.configFile."nix-init/config.toml" = {
       source = (pkgs.formats.toml { }).generate "config.toml" { maintainers = [ "uncenter" ]; };
