@@ -13,7 +13,6 @@
         deadnix
         statix
         nil
-        nixd
         nixfmt-rfc-style
         nixpkgs-review
         nix-init
