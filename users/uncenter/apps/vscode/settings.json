@@ -3,6 +3,7 @@
 	"extensions.autoUpdate": true,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"editor.inlayHints.enabled": "offUnlessPressed",
+	"editor.renderWhitespace": "boundary",
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
