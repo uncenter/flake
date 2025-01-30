@@ -59,6 +59,7 @@
       "raycast"
       "sf-symbols"
       "slack"
+      "sublime-text"
       "yaak"
       "zen-browser"
       "zoom"
