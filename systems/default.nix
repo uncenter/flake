@@ -14,7 +14,7 @@ in
 {
   imports = [ inputs.easy-hosts.flakeModule ];
 
-  easyHosts = {
+  easy-hosts = {
     shared.modules = [
       ../users
       ../modules/shared
@@ -28,8 +28,10 @@ in
         normalisedClass = normaliseClass class;
       in
       {
-        modules = [
-          "${self}/modules/${normalisedClass}"
+        modules = builtins.concatLists [
+          [
+            "${self}/modules/${normalisedClass}"
+          ]
 
           (lib.optionals (normalisedClass == "nixos") [
             inputs.home-manager.nixosModules.home-manager
