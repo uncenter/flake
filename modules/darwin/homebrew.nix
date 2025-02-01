@@ -52,6 +52,7 @@
       "intellij-idea"
       "jordanbaird-ice"
       "keka"
+      "localsend"
       "mediamate"
       "netnewswire"
       "obs"
