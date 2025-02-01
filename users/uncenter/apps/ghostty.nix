@@ -10,16 +10,7 @@
     enable = true;
 
     # Ghostty package is broken on darwin.
-    package =
-      let
-        ghostty-mock = pkgs.writeShellScriptBin "ghostty-mock" ''
-          true
-        '';
-      in
-      ghostty-mock;
-    # Creates (invalid) symlink to file from the Ghostty package (which is mocked) in the store, bat fails to launch when it can't properly read the file.
-    installBatSyntax = false;
-
+    package = null;
     enableFishIntegration = true;
 
     settings = {
