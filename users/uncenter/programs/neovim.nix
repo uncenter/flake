@@ -5,11 +5,7 @@
   ...
 }:
 let
-  tree-sitter-tera = pkgs.tree-sitter.buildGrammar {
-    language = "tera";
-    version = "0.1.0";
-    src = inputs.tree-sitter-tera;
-  };
+  tree-sitter-tera = pkgs.tree-sitter-grammars.tree-sitter-tera;
 in
 {
   imports = [
