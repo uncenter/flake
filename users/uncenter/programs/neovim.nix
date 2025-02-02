@@ -111,9 +111,6 @@ in
     extraConfigLua = # lua
       ''
         do
-          -- Bug in Neovim v0.10.3 - https://github.com/neovim/neovim/issues/31675#issuecomment-2558405042.
-          vim.hl = vim.highlight
-
           vim.filetype.add({ extension = { tera = "tera" } })
 
           vim.api.nvim_create_autocmd("FileType", {
