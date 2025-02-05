@@ -99,7 +99,6 @@
 	},
 
 	"vscord.app.name": "Visual Studio Code",
-	"vscord.status.idle.disconnectOnIdle": true,
 	"vscord.status.problems.enabled": false,
 	"vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
 	"vscord.status.image.large.editing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
