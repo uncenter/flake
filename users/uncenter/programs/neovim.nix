@@ -54,8 +54,6 @@ in
       cmp.enable = true;
       cmp-path.enable = true;
 
-      wakatime.enable = true;
-
       direnv.enable = true;
 
       gitsigns = {

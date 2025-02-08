@@ -127,29 +127,6 @@
               "%" = "%";
             };
           }
-
-          # Wakatime
-          {
-            name = "rust";
-            language-servers = [
-              "rust-analyzer"
-              "wakatime"
-            ];
-          }
-          {
-            name = "c";
-            language-servers = [
-              "clangd"
-              "wakatime"
-            ];
-          }
-          {
-            name = "javascript";
-            language-servers = [
-              "typescript-language-server"
-              "wakatime"
-            ];
-          }
         ];
 
         language-server = {
@@ -193,9 +170,6 @@
               }
             ];
           };
-          wakatime = {
-            command = "wakatime-ls";
-          };
         };
 
         grammar = [
@@ -230,8 +204,6 @@
 
         # Markdown
         marksman
-
-        inputs'.wakatime-ls.packages.wakatime-ls
       ];
     };
 

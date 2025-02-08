@@ -78,11 +78,6 @@
       flake = false;
     };
 
-    wakatime-ls = {
-      url = "github:mrnossiom/wakatime-ls";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     patchy = {
       url = "github:NikitaRevenco/patchy";
       inputs.nixpkgs.follows = "nixpkgs";

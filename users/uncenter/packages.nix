@@ -103,7 +103,9 @@ in
         pastel
         star-history
         vhs
-        wakatime-cli
+        (wakatime-cli.overrideAttrs (_: {
+          doCheck = false;
+        }))
       ])
 
       # Fun #
