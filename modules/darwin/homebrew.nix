@@ -59,6 +59,7 @@
       "obsidian"
       "raycast"
       "sf-symbols"
+      "signal"
       "slack"
       "sublime-text"
       "yaak"
