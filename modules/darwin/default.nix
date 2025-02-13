@@ -41,5 +41,5 @@
 
   nixpkgs.hostPlatform = "aarch64-darwin";
 
-  system.stateVersion = 4;
+  system.stateVersion = 5;
 }
