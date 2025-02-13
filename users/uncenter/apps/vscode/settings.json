@@ -4,7 +4,7 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.renderWhitespace": "boundary",
-	"editor.experimental.preferTreeSitter": true,
+	"editor.experimental.preferTreeSitter": ["typescript"],
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
