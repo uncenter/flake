@@ -50,7 +50,6 @@
       "gramps"
       "inkscape"
       "intellij-idea"
-      "jordanbaird-ice"
       "keka"
       "localsend"
       "mediamate"
