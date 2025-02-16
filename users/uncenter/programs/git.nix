@@ -28,17 +28,22 @@
             skipSmudge = true;
           };
 
-          extraConfig = {
-            core.editor = "hx";
-
-            user.signingkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJqPy3W/cnefiuTlqtY6gQsIimz25sYZ6GglXOASK8A4";
-            commit.gpgsign = true;
-            gpg.format = "ssh";
-            "gpg \"ssh\"".program =
+          signing = {
+            format = "ssh";
+            key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJqPy3W/cnefiuTlqtY6gQsIimz25sYZ6GglXOASK8A4";
+            signer =
               if pkgs.stdenv.hostPlatform.isDarwin then
                 "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
               else
                 "/mnt/c/Users/uncen/AppData/Local/1Password/app/8/op-ssh-sign-wsl";
+            signByDefault = true;
+          };
+
+          extraConfig = {
+            core.editor = "hx";
+
+            commit.gpgsign = true;
+            gpg.format = "ssh";
 
             log.date = "iso";
             merge.conflictstyle = "zdiff3";
