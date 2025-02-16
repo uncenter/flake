@@ -21,7 +21,7 @@
           };
 
           userName = "uncenter";
-          userEmail = "47499684+uncenter@users.noreply.github.com";
+          userEmail = "uncenter@uncenter.dev";
 
           lfs = {
             enable = true;
