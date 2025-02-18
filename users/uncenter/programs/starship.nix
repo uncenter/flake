@@ -10,6 +10,7 @@
       add_newline = false;
       continuation_prompt = "[](yellow) ";
       format = builtins.concatStringsSep "" [
+        "\\[$username$hostname\\] "
         "$directory"
         "$git_branch"
         "$git_commit"
@@ -35,6 +36,16 @@
       character = {
         success_symbol = "[\\$](green)";
         error_symbol = "[\\$](red)";
+      };
+
+      username = {
+        show_always = true;
+        format = "[$user](pink)[@](lavender)";
+      };
+      hostname = {
+        ssh_only = false;
+        style = "mauve";
+        format = "[$hostname]($style)";
       };
 
       directory = {
