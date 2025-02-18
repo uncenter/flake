@@ -61,6 +61,7 @@
       "signal"
       "slack"
       "sublime-text"
+      "tailscale"
       "yaak"
       "zen-browser"
       "zoom"
