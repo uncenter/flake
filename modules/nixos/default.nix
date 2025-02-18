@@ -1,4 +1,7 @@
 {
-  imports = [ ./packages.nix ];
+  imports = [
+    ./packages.nix
+    ./services.nix
+  ];
   system.stateVersion = "24.05";
 }

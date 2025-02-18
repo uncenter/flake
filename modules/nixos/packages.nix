@@ -4,5 +4,6 @@
     xdg-utils
     gcc
     openssl
+    tailscale
   ];
 }
