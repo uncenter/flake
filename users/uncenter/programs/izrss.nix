@@ -59,6 +59,7 @@
         "https://nolanlawson.com/feed/"
         "https://matklad.github.io/feed.xml"
         "https://www.ntietz.com/atom.xml"
+        "https://2ality.com/feeds/posts.atom"
       ];
     };
   };
