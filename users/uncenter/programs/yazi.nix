@@ -141,8 +141,8 @@
         yazi-plugins = pkgs.fetchFromGitHub {
           owner = "yazi-rs";
           repo = "plugins";
-          rev = "ec97f8847feeb0307d240e7dc0f11d2d41ebd99d";
-          hash = "sha256-By8XuqVJvS841u+8Dfm6R8GqRAs0mO2WapK6r2g7WI8=";
+          rev = "5186af7984aa8cb0550358aefe751201d7a6b5a8";
+          hash = "sha256-Cw5iMljJJkxOzAGjWGIlCa7gnItvBln60laFMf6PSPM=";
         };
       in
       {
@@ -155,8 +155,8 @@
         "starship" = pkgs.fetchFromGitHub {
           owner = "Rolv-Apneseth";
           repo = "starship.yazi";
-          rev = "247f49da1c408235202848c0897289ed51b69343";
-          hash = "sha256-0J6hxcdDX9b63adVlNVWysRR5htwAtP5WhIJ2AK2+Gs=";
+          rev = "f6939fbdbc3fdfcdc2a80251841e429e0cd5cf3c";
+          hash = "sha256-5QQsFozbulgLY/Gl6QuKSOTtygULveoRD49V00e0WOw=";
         };
 
         "ouch" = pkgs.fetchFromGitHub {
@@ -169,8 +169,8 @@
         "relative-motions" = pkgs.fetchFromGitHub {
           owner = "dedukun";
           repo = "relative-motions.yazi";
-          rev = "df97039a04595a40a11024f321a865b3e9af5092";
-          hash = "sha256-csX8T2a5f7k6g2mlR+08rm0qBeWdI4ABuja+klIvwqw=";
+          rev = "a1466a90a256a8c1e0754a9a1a02c192a8b82c19";
+          hash = "sha256-RJSDwH9J9y74pfKmXqUNCEsN19JJNS1aQaxbt8T6TcY=";
         };
       };
 
