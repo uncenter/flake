@@ -43,7 +43,6 @@
             core.editor = "hx";
 
             log.date = "iso";
-            merge.conflictstyle = "zdiff3";
             diff.algorithm = "histogram";
 
             init.defaultBranch = "main";
