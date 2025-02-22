@@ -41,15 +41,29 @@
 
           extraConfig = {
             core.editor = "hx";
+            init.defaultBranch = "main";
+
+            diff.algorithm = "histogram";
+            diff.colorMoved = "plain"; # show code movement in different colors than added and removed lines.
+            diff.mnemonicPrefix = true; # replace a/ and b/ in diff header output with where the diff is coming from; i/ (index), w/ (working directory) or c/ commit.
+
+            push.autoSetupRemote = true;
+
+            fetch.prune = true;
+            fetch.pruneTags = true;
+            fetch.all = true;
+
+            pull.rebase = true;
+            rebase.autostash = true;
+
+            rerere.enabled = true; # record before and after states of rebase conflicts.
+            rerere.autoupdate = true; # automatically re-apply discovered resolutions.
 
             log.date = "iso";
-            diff.algorithm = "histogram";
-
-            init.defaultBranch = "main";
-            push.autoSetupRemote = true;
-            pull.rebase = true;
-
+            branch.sort = "-committerdate";
+            tag.sort = "version:refname";
             help.autocorrect = "prompt";
+            commit.verbose = true; # display diff output in commit editor for reference.
           };
         };
       }
