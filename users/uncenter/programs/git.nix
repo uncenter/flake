@@ -42,9 +42,6 @@
           extraConfig = {
             core.editor = "hx";
 
-            commit.gpgsign = true;
-            gpg.format = "ssh";
-
             log.date = "iso";
             merge.conflictstyle = "zdiff3";
             diff.algorithm = "histogram";
