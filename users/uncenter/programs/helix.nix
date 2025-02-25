@@ -92,41 +92,6 @@
               }
             ];
           }
-
-          {
-            name = "tera";
-            scope = "source.tera";
-            injection-regex = "tera";
-            file-types = [ "tera" ];
-            grammar = "tera";
-            block-comment-tokens = [
-              {
-                start = "{#";
-                end = "#}";
-              }
-              {
-                start = "{#-";
-                end = "-#}";
-              }
-              {
-                start = "{#";
-                end = "-#}";
-              }
-              {
-                start = "{#-";
-                end = "#}";
-              }
-            ];
-            auto-pairs = {
-              "(" = ")";
-              "[" = "]";
-              "\"" = "\"";
-              "'" = "'";
-              "`" = "`";
-              "{" = "}";
-              "%" = "%";
-            };
-          }
         ];
 
         language-server = {
@@ -171,15 +136,6 @@
             ];
           };
         };
-
-        grammar = [
-          {
-            name = "tera";
-            source = {
-              path = "${inputs.tree-sitter-tera}";
-            };
-          }
-        ];
       };
 
       extraPackages = with pkgs; [
@@ -206,7 +162,5 @@
         marksman
       ];
     };
-
-    xdg.configFile."helix/runtime/queries/tera".source = "${inputs.tree-sitter-tera}/helix-queries";
   };
 }
