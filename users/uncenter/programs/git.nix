@@ -75,23 +75,13 @@
         };
         programs.lazygit = {
           enable = true;
-          package = pkgs.lazygit.overrideAttrs (_: {
-            src = pkgs.fetchFromGitHub {
-              owner = "jesseduffield";
-              repo = "lazygit";
-              rev = "ef718f3386df3db4c062103266c007a3fca46c61";
-              hash = "sha256-Z5BmVLdtXyCdSILypfq+W3Ezn9Qn+aSG9KxgQggN6xE=";
-            };
-          });
         };
 
         home.packages = with pkgs; [
           gfold
           gitoxide
           jujutsu
-          (lazyjj.overrideAttrs (_: {
-            doCheck = false;
-          }))
+          lazyjj
           inputs'.patchy.packages.default
         ];
       })
