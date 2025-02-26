@@ -45,7 +45,7 @@
       "firefox@developer-edition"
       "ghostty"
       "gimp"
-      # "google-chrome"
+      "google-chrome"
       "google-chrome@beta"
       "gramps"
       "inkscape"
