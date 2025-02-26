@@ -1,25 +1,5 @@
 {
   "nodes": {
-    "beapkgs": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1740444061,
-        "narHash": "sha256-rYcsPNwjdJd76vD1uOyDhCmX6k7FsmcznHgJZD8azGk=",
-        "owner": "isabelroses",
-        "repo": "beapkgs",
-        "rev": "60226151d8d6311d3656bcfde85f06d827295e88",
-        "type": "github"
-      },
-      "original": {
-        "owner": "isabelroses",
-        "repo": "beapkgs",
-        "type": "github"
-      }
-    },
     "catppuccin": {
       "inputs": {
         "nixpkgs": [
@@ -392,7 +372,6 @@
     },
     "root": {
       "inputs": {
-        "beapkgs": "beapkgs",
         "catppuccin": "catppuccin",
         "catppuccin-vsc": "catppuccin-vsc",
         "ctp-nvim": "ctp-nvim",
@@ -408,6 +387,7 @@
         "patchy": "patchy",
         "rust-overlay": "rust-overlay",
         "spicetify-nix": "spicetify-nix",
+        "tgirlpkgs": "tgirlpkgs",
         "tree-sitter-tera": "tree-sitter-tera"
       }
     },
@@ -494,6 +474,26 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "tgirlpkgs": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1740571126,
+        "narHash": "sha256-L5DKA3eKDkQp1WJyj8jGhOQtWHnyh/tJJn9EdE+aJbY=",
+        "owner": "tgirlcloud",
+        "repo": "pkgs",
+        "rev": "f466332d6af9c1d32bfa8c0d0a39e15223c50bcb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tgirlcloud",
+        "repo": "pkgs",
         "type": "github"
       }
     },

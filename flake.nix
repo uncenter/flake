@@ -41,8 +41,8 @@
 
     darwin-custom-icons.url = "github:ryanccn/nix-darwin-custom-icons";
 
-    beapkgs = {
-      url = "github:isabelroses/beapkgs";
+    tgirlpkgs = {
+      url = "github:tgirlcloud/pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

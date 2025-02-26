@@ -25,7 +25,7 @@ in
     };
 
     home.packages = mkIf config.catppuccin.enable [
-      inputs'.beapkgs.packages.purr
+      inputs'.tgirlpkgs.packages.purr
       inputs'.catppuccin.packages.whiskers
       inputs'.catppuccin.packages.catwalk
     ];

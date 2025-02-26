@@ -13,7 +13,7 @@ in
 {
   config.home.packages =
     with pkgs;
-    with inputs'.beapkgs.packages;
+    with inputs'.tgirlpkgs.packages;
     concatLists [
       [
         home-manager

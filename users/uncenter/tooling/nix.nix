@@ -22,7 +22,7 @@
         nurl
         nvd
       ])
-      ++ (with inputs'.beapkgs.packages; [
+      ++ (with inputs'.tgirlpkgs.packages; [
         nixpkgs-track
         nixpkgs-using
       ]);
