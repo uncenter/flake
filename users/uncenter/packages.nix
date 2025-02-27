@@ -117,7 +117,6 @@ in
         kittysay
         meower
         lolcat
-        scc
         tokei
       ])
     ];
