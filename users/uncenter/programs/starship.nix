@@ -16,7 +16,7 @@ in
     enableNushellIntegration = cfg.shells.nushell.enable;
 
     settings = {
-      add_newline = false;
+      add_newline = true;
       continuation_prompt = "[](yellow) ";
       format = builtins.concatStringsSep "" [
         "$username"
