@@ -37,10 +37,7 @@ in
 
       # Languages and Tooling #
       (optionals cfg.tooling.enable [
-        bun
         cabinpkg
-        deno
-        fnm
         go
         jdk17
         maven

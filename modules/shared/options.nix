@@ -71,6 +71,10 @@ in
         default = cfg.tooling.enable;
       };
 
+      javascript.enable = mkEnableOption "Enable JavaScript tooling" // {
+        default = cfg.tooling.enable;
+      };
+
       lua.enable = mkEnableOption "Enable Lua/Luau tooling" // {
         default = cfg.tooling.enable;
       };
