@@ -32,9 +32,6 @@ in
 
     programs.nix-your-shell = {
       enable = true;
-
-      enableFishIntegration = true;
-      enableNushellIntegration = cfg.shells.nushell.enable;
     };
 
     xdg.configFile."nix-init/config.toml" = {

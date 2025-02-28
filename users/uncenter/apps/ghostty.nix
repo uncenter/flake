@@ -10,7 +10,6 @@
 
     # Ghostty package is broken on darwin.
     package = null;
-    enableFishIntegration = true;
 
     settings = {
       theme = "catppuccin-${config.catppuccin.flavor}";
