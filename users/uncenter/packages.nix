@@ -40,8 +40,6 @@ in
         bun
         cabinpkg
         deno
-        dprint
-        emscripten
         fnm
         go
         jdk17
@@ -71,18 +69,13 @@ in
       (optionals cfg.programs.filesystem.enable [
         entr
         exiftool
-        eza
         ouch
-        parallel-disk-usage
       ])
 
       # Search #
       (optionals cfg.programs.search.enable [
         fd
-        grex
         ripgrep
-        sd
-        serpl
         lychee
       ])
 
@@ -100,7 +93,6 @@ in
         hyperfine
         ito
         license-go
-        pastel
         star-history
         vhs
         (wakatime-cli.overrideAttrs (_: {
