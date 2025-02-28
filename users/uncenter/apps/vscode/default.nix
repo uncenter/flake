@@ -52,6 +52,7 @@ let
     "nefrob.vscode-just-syntax"
     "svelte.svelte-vscode"
     "tamasfe.even-better-toml"
+    "thenuprojectcontributors.vscode-nushell-lang"
     "timonwong.shellcheck"
     "uncenter.better-tera"
     "unifiedjs.vscode-mdx"
