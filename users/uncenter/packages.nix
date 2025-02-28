@@ -33,19 +33,18 @@ in
         imagemagick
         libwebp
         poppler_utils
+        vhs
       ])
 
       # Languages and Tooling #
       (optionals cfg.tooling.enable [
-        cabinpkg
-        go
+        cabinpkg # C
+        go # Go
+        # Java
         jdk17
         maven
-        (taplo.override { withLsp = true; })
-        (tree-sitter.override {
-          webUISupport = true;
-        })
-        zig
+        (taplo.override { withLsp = true; }) # TOML
+        zig # Zig
       ])
 
       # Data #
@@ -91,7 +90,9 @@ in
         ito
         license-go
         star-history
-        vhs
+        (tree-sitter.override {
+          webUISupport = true;
+        })
         (wakatime-cli.overrideAttrs (_: {
           doCheck = false;
         }))
