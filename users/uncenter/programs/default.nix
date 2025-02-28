@@ -8,7 +8,6 @@
     ./eza.nix
     ./fd.nix
     ./fish.nix
-    ./fzf.nix
     ./git.nix
     ./glamour.nix
     ./helix.nix
@@ -17,7 +16,6 @@
     ./nushell.nix
     ./spicetify.nix
     ./starship.nix
-    ./taskwarrior.nix
     ./television.nix
     ./yazi.nix
   ];
