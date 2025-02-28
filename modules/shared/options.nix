@@ -44,6 +44,20 @@ in
       };
     };
 
+    shells = {
+      enable = mkEnableOption "Enable (other) shell programs" // {
+        default = true;
+      };
+
+      bash.enable = mkEnableOption "Enable Bash" // {
+        default = cfg.shells.enable;
+      };
+
+      nushell.enable = mkEnableOption "Enable Nushell" // {
+        default = cfg.shells.enable;
+      };
+    };
+
     apps.enable = mkEnableOption "Enable GUI apps";
 
     tooling = {

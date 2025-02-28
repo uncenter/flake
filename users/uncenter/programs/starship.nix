@@ -1,10 +1,19 @@
-{ lib, osConfig, ... }:
 {
-  programs.starship = lib.mkIf osConfig.glade.programs.enable {
+  lib,
+  osConfig,
+  ...
+}:
+let
+  cfg = osConfig.glade;
+in
+
+{
+  programs.starship = lib.mkIf cfg.programs.enable {
     enable = true;
 
     enableFishIntegration = true;
-    enableBashIntegration = true;
+    enableBashIntegration = cfg.shells.bash.enable;
+    enableNushellIntegration = cfg.shells.nushell.enable;
 
     settings = {
       add_newline = false;
@@ -53,6 +62,15 @@
         style = "blue";
         read_only = " ";
         read_only_style = "red";
+      };
+
+      shell = {
+        disabled = false;
+        style = "sky";
+        format = "[$indicator]($style)";
+        fish_indicator = ""; # default shell
+        nu_indicator = "\\[[nu](green)\\]";
+        bash_indicator = "\\[[bash](red)\\]";
       };
 
       git_branch = {

@@ -5,8 +5,11 @@
   osConfig,
   ...
 }:
+let
+  cfg = osConfig.glade;
+in
 {
-  config = lib.mkIf osConfig.glade.tooling.nix.enable {
+  config = lib.mkIf cfg.tooling.nix.enable {
     home.packages =
       (with pkgs; [
         cachix
@@ -31,6 +34,7 @@
       enable = true;
 
       enableFishIntegration = true;
+      enableNushellIntegration = cfg.shells.nushell.enable;
     };
 
     xdg.configFile."nix-init/config.toml" = {

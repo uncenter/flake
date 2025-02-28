@@ -1,6 +1,7 @@
 {
   imports = [
     ./atuin.nix
+    ./bash.nix
     ./bat.nix
     ./bottom.nix
     ./direnv.nix
@@ -13,6 +14,7 @@
     ./helix.nix
     ./izrss.nix
     ./neovim.nix
+    ./nushell.nix
     ./spicetify.nix
     ./starship.nix
     ./taskwarrior.nix
