@@ -5,7 +5,7 @@
   ...
 }:
 let
-  tree-sitter-tera = pkgs.tree-sitter-grammars.tree-sitter-tera;
+  inherit (pkgs.tree-sitter-grammars) tree-sitter-tera;
 in
 {
   imports = [
@@ -28,8 +28,7 @@ in
 
     colorschemes.catppuccin = {
       enable = true;
-      package = (
-        pkgs.vimUtils.buildVimPlugin {
+      package = pkgs.vimUtils.buildVimPlugin {
           pname = "catppuccin-nvim";
           version = "0.0.1";
           src = inputs.ctp-nvim;
@@ -38,8 +37,7 @@ in
             "catppuccin.groups.integrations.feline"
             "catppuccin.lib.vim.init"
           ];
-        }
-      );
+        };
 
       settings = {
         flavour = config.catppuccin.flavor;
