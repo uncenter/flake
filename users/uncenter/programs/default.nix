@@ -1,19 +1,16 @@
 {
   imports = [
     ./atuin.nix
-    ./bash.nix
     ./bat.nix
     ./bottom.nix
     ./direnv.nix
     ./eza.nix
     ./fd.nix
-    ./fish.nix
     ./git.nix
     ./glamour.nix
     ./helix.nix
     ./izrss.nix
     ./neovim.nix
-    ./nushell.nix
     ./spicetify.nix
     ./starship.nix
     ./television.nix

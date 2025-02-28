@@ -11,6 +11,7 @@
     ./apps
     ./programs
     ./tooling
+    ./shells
   ];
 
   xdg.enable = true;
