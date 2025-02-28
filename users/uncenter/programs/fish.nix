@@ -65,7 +65,6 @@
     ];
 
     shellInit = ''
-      ${lib.optionalString pkgs.stdenv.hostPlatform.isDarwin "/opt/homebrew/bin/brew shellenv | source"}
       source ${./fish/config.fish}
     '';
 
