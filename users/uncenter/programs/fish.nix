@@ -65,7 +65,6 @@
     ];
 
     shellInit = ''
-      fnm env --use-on-cd | source
       luarocks path --bin | source
 
       # https://fishshell.com/docs/current/cmds/fish_greeting.html
