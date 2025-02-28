@@ -65,7 +65,11 @@
     ];
 
     shellInit = ''
-      source ${./fish/config.fish}
+      fnm env --use-on-cd | source
+      luarocks path --bin | source
+
+      # https://fishshell.com/docs/current/cmds/fish_greeting.html
+      set fish_greeting
     '';
 
     # Addresses $PATH re-ordering by Apple's `path_helper` tool, prioritising Apple’s tools over Nix ones.
