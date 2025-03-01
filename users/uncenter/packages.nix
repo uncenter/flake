@@ -15,10 +15,6 @@ in
     with pkgs;
     with inputs'.tgirlpkgs.packages;
     concatLists [
-      [
-        home-manager
-      ]
-
       # Essentials #
       [
         gnupg

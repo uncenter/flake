@@ -28,5 +28,4 @@ check:
 
 clean:
   sudo nix-env --profile /nix/var/nix/profiles/system --delete-generations old
-  home-manager expire-generations now
   sudo nix-collect-garbage --delete-older-than 3d
