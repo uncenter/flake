@@ -56,6 +56,10 @@ in
       nushell.enable = mkEnableOption "Enable Nushell" // {
         default = cfg.shells.enable;
       };
+
+      zsh.enable = mkEnableOption "Enable Zsh" // {
+        default = cfg.shells.enable;
+      };
     };
 
     apps.enable = mkEnableOption "Enable GUI apps";

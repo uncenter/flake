@@ -67,6 +67,7 @@ in
         fish_indicator = ""; # default shell
         nu_indicator = "\\[[nu](green)\\]";
         bash_indicator = "\\[[bash](red)\\]";
+        zsh_indicator = "\\[[zsh](yellow)\\]";
       };
 
       git_branch = {
