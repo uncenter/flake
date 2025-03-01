@@ -10,37 +10,19 @@
 
     shellAbbrs = {
       "puil" = "pnpm update --interactive --latest";
+      "cx" = "chmod +x";
 
       "gp" = "git push";
-      "gpm" = "git push origin main";
       "gl" = "git pull";
-      "glm" = "git pull origin main";
       "gc" = "git commit -m";
       "gn" = "git checkout -b";
       "gs" = "git checkout";
       "ga" = "git add";
-      "glog" = "git --no-pager log --oneline --graph --decorate --all -n 10";
-
-      "gg" = "lazygit";
     };
 
     shellAliases = {
       "ls" = "eza";
       "ll" = "ls -la";
-
-      "cat" = "bat";
-      "dig" = "doggo";
-
-      # Yes, I really am this lazy.
-      "cx" = "chmod +x";
-
-      # Open the Rust Documentation locally (standard library reference, the book, Rust By Example, etc).
-      "rustdocs" = "open \"$(rustc --print sysroot)/share/doc/rust/html/index.html\"";
-
-      # Create a new branch for a pull request with a random name.
-      # 'There are only two hard things in Computer Science: cache invalidation and **naming things**.'
-      # - (supposedly) Phil Karlton
-      "gpr" = "git checkout -b \"pr-$(openssl rand -hex 4)\"";
     };
 
     plugins = [
