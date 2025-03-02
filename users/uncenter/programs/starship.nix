@@ -29,10 +29,8 @@ in
         "$rust"
         "$sudo"
         "$fill"
-        "$shell"
         "$line_break"
-        "$status"
-        "$os"
+        "$shell"
         "$character"
       ];
       command_timeout = 1000;
@@ -65,9 +63,9 @@ in
         style = "sky";
         format = "[$indicator]($style)";
         fish_indicator = ""; # default shell
-        nu_indicator = "\\[[nu](green)\\]";
-        bash_indicator = "\\[[bash](red)\\]";
-        zsh_indicator = "\\[[zsh](yellow)\\]";
+        nu_indicator = "\\[[nu](green)\\] ";
+        bash_indicator = "\\[[bash](red)\\] ";
+        zsh_indicator = "\\[[zsh](yellow)\\] ";
       };
 
       git_branch = {
