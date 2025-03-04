@@ -51,6 +51,7 @@
       "google-chrome"
       "google-chrome@beta"
       "gramps"
+      "halloy"
       "inkscape"
       "intellij-idea"
       "keka"
