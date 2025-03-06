@@ -1,5 +1,6 @@
 {
   lib,
+  config,
   osConfig,
   ...
 }:
@@ -9,5 +10,9 @@
 
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
+    history.path = "${config.xdg.dataHome}/zsh/zsh_history";
+    dotDir =
+      (lib.strings.removePrefix (config.home.homeDirectory + "/") config.xdg.configHome) + "/zsh";
   };
 }
