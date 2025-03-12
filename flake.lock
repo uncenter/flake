@@ -37,21 +37,6 @@
         "url": "https://flakehub.com/f/catppuccin/vscode/%2A.tar.gz"
       }
     },
-    "crane": {
-      "locked": {
-        "lastModified": 1737563566,
-        "narHash": "sha256-GLJvkOG29XCynQm8XWPyykMRqIhxKcBARVu7Ydrz02M=",
-        "owner": "ipetkov",
-        "repo": "crane",
-        "rev": "849376434956794ebc7a6b487d31aace395392ba",
-        "type": "github"
-      },
-      "original": {
-        "owner": "ipetkov",
-        "repo": "crane",
-        "type": "github"
-      }
-    },
     "ctp-nvim": {
       "flake": false,
       "locked": {
@@ -157,7 +142,6 @@
     },
     "helix": {
       "inputs": {
-        "crane": "crane",
         "flake-utils": "flake-utils",
         "nixpkgs": [
           "nixpkgs"
@@ -167,11 +151,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1740497347,
-        "narHash": "sha256-s6GPx9GsWGUcIzlk6JIhRZdoDEhS8o3wCaBmaTuUZO0=",
+        "lastModified": 1741749114,
+        "narHash": "sha256-0UpDGON5/1V8cu2ehKksYNCoGvk8v2RjRLm/SLIyZxw=",
         "owner": "uncenter",
         "repo": "helix",
-        "rev": "3dbf07fbab1aac90bb5570932d285f93ff29073a",
+        "rev": "83376cb0b3ed5d1f89df7ff85fb85b05d86bb6bd",
         "type": "github"
       },
       "original": {
