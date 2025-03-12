@@ -4,7 +4,8 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"editor.inlayHints.enabled": "offUnlessPressed",
 	"editor.renderWhitespace": "boundary",
-	"editor.experimental.preferTreeSitter": ["typescript"],
+	"editor.experimental.preferTreeSitter.ini": true,
+	"editor.experimental.preferTreeSitter.typescript": true,
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
@@ -118,5 +119,7 @@
 			"fileMatch": ["package.json", "tsup.config.json"]
 		}
 	],
-	"workbench.editorAssociations": { "*.svg": "default" }
+	"workbench.editorAssociations": {
+		"*.svg": "default"
+	}
 }
