@@ -167,6 +167,9 @@
         # Markdown
         marksman
         harper
+
+        # Tree-sitter Query
+        ts_query_ls
       ];
     };
   };
