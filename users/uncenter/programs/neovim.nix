@@ -74,22 +74,22 @@ in
         ];
       };
 
-      lsp = {
-        enable = true;
-        servers = {
-          ts_ls.enable = true; # TS/JS
-          cssls.enable = true; # CSS
-          superhtml = {
-            enable = true;
-            package = pkgs.superhtml;
-          };
-          html.enable = true; # HTML
-          marksman.enable = true; # Markdown
-          yamlls.enable = true; # YAML
-          nil_ls.enable = true; # Nix
-          statix.enable = true;
-        };
-      };
+      # lsp = {
+      #   enable = true;
+      #   servers = {
+      #     ts_ls.enable = true; # TS/JS
+      #     cssls.enable = true; # CSS
+      #     superhtml = {
+      #       enable = true;
+      #       package = pkgs.superhtml;
+      #     };
+      #     html.enable = true; # HTML
+      #     marksman.enable = true; # Markdown
+      #     yamlls.enable = true; # YAML
+      #     nil_ls.enable = true; # Nix
+      #     statix.enable = true;
+      #   };
+      # };
 
       rustaceanvim = {
         enable = true;
