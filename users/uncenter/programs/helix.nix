@@ -81,9 +81,6 @@
           }
           {
             name = "html";
-            scope = "source.html";
-            roots = [ ];
-            file-types = [ "html" ];
             language-servers = [
               {
                 name = "superhtml-lsp";
