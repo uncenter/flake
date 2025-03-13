@@ -30,6 +30,7 @@ in
       cargo-modules
       cargo-flamegraph
       cargo-edit
+      cargo-expand
 
       bacon
       mdbook
