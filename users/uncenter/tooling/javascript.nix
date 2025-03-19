@@ -10,6 +10,7 @@
       nodejs_23
       bun
       deno
+      pnpm
     ];
   };
 }
