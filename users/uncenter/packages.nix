@@ -86,9 +86,9 @@ in
         ito
         license-go
         star-history
-        (tree-sitter.override {
-          webUISupport = true;
-        })
+        # (tree-sitter.override {
+        #   webUISupport = true;
+        # })
         (wakatime-cli.overrideAttrs (_: {
           doCheck = false;
         }))
