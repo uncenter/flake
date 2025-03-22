@@ -82,7 +82,9 @@
           gitoxide
           jujutsu
           lazyjj
-          inputs'.patchy.packages.default
+          (inputs'.patchy.packages.default.overrideAttrs (oa: {
+            doCheck = false;
+          }))
         ];
       })
     ]
