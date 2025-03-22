@@ -81,6 +81,8 @@ in
       enable = true;
     };
 
+    catppuccin.vscode.enable = false;
+
     home =
       let
         mkLink = config.lib.file.mkOutOfStoreSymlink;
