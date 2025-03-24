@@ -1,15 +1,16 @@
 {
+	/* Extensions */
 	"extensions.ignoreRecommendations": true,
 	"extensions.autoUpdate": true,
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"editor.inlayHints.enabled": "offUnlessPressed",
-	"editor.renderWhitespace": "boundary",
+
+	/* Experimental */
 	"editor.experimental.preferTreeSitter.ini": true,
 	"editor.experimental.preferTreeSitter.typescript": true,
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
 	"workbench.iconTheme": "catppuccin-mocha",
+
 	"workbench.preferredDarkColorTheme": "Catppuccin Mocha",
 	"workbench.preferredLightColorTheme": "Catppuccin Latte",
 	"workbench.productIconTheme": "Tabler",
@@ -28,6 +29,7 @@
 	"editor.minimap.enabled": false,
 	"editor.stickyScroll.enabled": false,
 	"window.newWindowDimensions": "maximized",
+	"editor.renderWhitespace": "boundary",
 
 	/* Terminal */
 	"terminal.integrated.cursorBlinking": true,
@@ -35,6 +37,7 @@
 	"terminal.integrated.fontSize": 14,
 	"terminal.integrated.lineHeight": 1.3,
 	"terminal.integrated.enableImages": true,
+	"terminal.integrated.minimumContrastRatio": 1,
 
 	/* Editor and Explorer */
 	"explorer.confirmDelete": false,
@@ -49,10 +52,7 @@
 	"diffEditor.ignoreTrimWhitespace": false,
 	"security.promptForLocalFileProtocolHandling": false,
 	"editor.accessibilitySupport": "off",
-
-	"files.associations": {
-		"*.njk": "html"
-	},
+	"typescript.updateImportsOnFileMove.enabled": "always",
 
 	/* Git */
 	"git.autofetch": true,
@@ -75,9 +75,6 @@
 	"fortran.formatting.formatter": "fprettify",
 	"[github-actions-workflow]": {
 		"editor.tabSize": 2
-	},
-	"[lua]": {
-		"editor.defaultFormatter": "JohnnyMorganz.stylua"
 	},
 	"[python]": {
 		"editor.defaultFormatter": "charliermarsh.ruff",
