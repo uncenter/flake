@@ -31,7 +31,6 @@ let
     "charliermarsh.ruff"
     "dbaeumer.vscode-eslint"
     "denoland.vscode-deno"
-    "eamodio.gitlens"
     "editorconfig.editorconfig"
     "esbenp.prettier-vscode"
     "fortran-lang.linter-gfortran"
