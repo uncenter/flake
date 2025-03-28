@@ -18,6 +18,7 @@ in
         nil
         nixfmt-rfc-style
         nixpkgs-review
+        nixpkgs-track
         nix-init
         nix-inspect
         nix-output-monitor
@@ -26,7 +27,6 @@ in
         nvd
       ])
       ++ (with inputs'.tgirlpkgs.packages; [
-        nixpkgs-track
         nixpkgs-using
       ]);
 
