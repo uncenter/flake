@@ -61,11 +61,6 @@
       };
     };
 
-    tree-sitter-tera = {
-      url = "github:uncenter/tree-sitter-tera";
-      flake = false;
-    };
-
     ctp-nvim = {
       url = "github:uncenter/ctp-nvim/patch-1";
       flake = false;
