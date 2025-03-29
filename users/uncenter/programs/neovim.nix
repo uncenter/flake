@@ -4,9 +4,6 @@
   config,
   ...
 }:
-let
-  inherit (pkgs.tree-sitter-grammars) tree-sitter-tera;
-in
 {
   imports = [
     inputs.nixvim.homeManagerModules.nixvim
@@ -68,10 +65,6 @@ in
         settings = {
           highlight.enable = true;
         };
-
-        grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars ++ [
-          tree-sitter-tera
-        ];
       };
 
       # lsp = {
@@ -107,27 +100,10 @@ in
     extraConfigLua = # lua
       ''
         do
-          vim.filetype.add({ extension = { tera = "tera" } })
-
-          vim.api.nvim_create_autocmd("FileType", {
-            pattern = "tera",
-            callback = function(event)
-              vim.bo[event.buf].commentstring = "{# %s #}"
-            end,
-          })
-
-          require("nvim-treesitter.parsers").get_parser_configs().tera = {
-            install_info = {
-              url = "${tree-sitter-tera}",
-              files = { "src/parser.c" },
-            },
-            filetype = "tera",
-          }
         end
       '';
 
     extraPlugins = [
-      tree-sitter-tera
       (pkgs.vimUtils.buildVimPlugin {
         name = "bullets";
         src = pkgs.fetchFromGitHub {
