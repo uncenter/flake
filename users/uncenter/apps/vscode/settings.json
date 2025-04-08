@@ -6,6 +6,8 @@
 	/* Experimental */
 	"editor.experimental.preferTreeSitter.ini": true,
 	"editor.experimental.preferTreeSitter.typescript": true,
+	"editor.experimental.preferTreeSitter.css": true,
+	"editor.experimental.preferTreeSitter.regex": true,
 
 	/* UI/Interface */
 	"workbench.colorTheme": "Catppuccin Macchiato",
