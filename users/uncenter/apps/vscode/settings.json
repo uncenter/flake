@@ -55,6 +55,7 @@
 	"security.promptForLocalFileProtocolHandling": false,
 	"editor.accessibilitySupport": "off",
 	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
 
 	/* Git */
 	"git.autofetch": true,
