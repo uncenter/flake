@@ -31,6 +31,8 @@ in
       cargo-flamegraph
       cargo-edit
       cargo-expand
+      cargo-binstall
+      cargo-insta
 
       bacon
       mdbook
