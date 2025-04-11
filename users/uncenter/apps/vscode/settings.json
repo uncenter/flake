@@ -65,8 +65,7 @@
 	"git.blame.editorDecoration.enabled": true,
 
 	/* Formatting/LSP */
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"prettier.useTabs": true,
+    "prettier.enable": false,
 	"editor.tabSize": 4,
 	"editor.detectIndentation": false,
 	"[fish]": {
