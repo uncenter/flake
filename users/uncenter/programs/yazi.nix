@@ -100,13 +100,13 @@ in
 
           {
             on = [ "m" ];
-            run = "plugin --sync hide-preview";
-            desc = "Minimize preview";
+            run = "plugin toggle-pane min-preview";
+            desc = "Show or hide preview pane";
           }
           {
             on = [ "M" ];
-            run = "plugin --sync max-preview";
-            desc = "Maximize preview";
+            run = "plugin toggle-pane max-preview";
+            desc = "Maximize preview pane";
           }
 
           {
@@ -137,43 +137,15 @@ in
         ) (lib.lists.range 0 9));
     };
 
-    plugins =
-      let
-        yazi-plugins = pkgs.fetchFromGitHub {
-          owner = "yazi-rs";
-          repo = "plugins";
-          rev = "5186af7984aa8cb0550358aefe751201d7a6b5a8";
-          hash = "sha256-Cw5iMljJJkxOzAGjWGIlCa7gnItvBln60laFMf6PSPM=";
-        };
-      in
-      {
-        "hide-preview" = "${yazi-plugins}/hide-preview.yazi";
-        "max-preview" = "${yazi-plugins}/max-preview.yazi";
-        "chmod" = "${yazi-plugins}/chmod.yazi";
-        "full-border" = "${yazi-plugins}/full-border.yazi";
-        "no-status" = "${yazi-plugins}/no-status.yazi";
-
-        "starship" = pkgs.fetchFromGitHub {
-          owner = "Rolv-Apneseth";
-          repo = "starship.yazi";
-          rev = "f6939fbdbc3fdfcdc2a80251841e429e0cd5cf3c";
-          hash = "sha256-5QQsFozbulgLY/Gl6QuKSOTtygULveoRD49V00e0WOw=";
-        };
-
-        "ouch" = pkgs.fetchFromGitHub {
-          owner = "ndtoan96";
-          repo = "ouch.yazi";
-          rev = "b8698865a0b1c7c1b65b91bcadf18441498768e6";
-          hash = "sha256-eRjdcBJY5RHbbggnMHkcIXUF8Sj2nhD/o7+K3vD3hHY=";
-        };
-
-        "relative-motions" = pkgs.fetchFromGitHub {
-          owner = "dedukun";
-          repo = "relative-motions.yazi";
-          rev = "a1466a90a256a8c1e0754a9a1a02c192a8b82c19";
-          hash = "sha256-RJSDwH9J9y74pfKmXqUNCEsN19JJNS1aQaxbt8T6TcY=";
-        };
-      };
+    plugins = lib.genAttrs [
+      "toggle-pane"
+      "chmod"
+      "full-border"
+      "no-status"
+      "starship"
+      "ouch"
+      "relative-motions"
+    ] (name: pkgs.yaziPlugins.${name});
 
     initLua = ''
       require("starship"):setup()
