@@ -11,6 +11,24 @@ let
   cfg = osConfig.glade;
 in
 {
+  imports = [
+    ./atuin.nix
+    ./bat.nix
+    ./bottom.nix
+    ./direnv.nix
+    ./eza.nix
+    ./fd.nix
+    ./git.nix
+    ./glamour.nix
+    ./helix.nix
+    ./izrss.nix
+    ./neovim.nix
+    ./spicetify.nix
+    ./starship.nix
+    ./television.nix
+    ./yazi.nix
+  ];
+
   config.home.packages =
     with pkgs;
     with inputs'.tgirlpkgs.packages;

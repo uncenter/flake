@@ -25,7 +25,7 @@
         { home.stateVersion = "23.05"; }
       ];
 
-      users.uncenter = ./uncenter;
+      users.uncenter = ./home.nix;
     };
 
     users.users.uncenter = {
