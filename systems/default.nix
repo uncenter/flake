@@ -60,6 +60,11 @@ in
         arch = "aarch64";
         class = "darwin";
       };
+
+      zuko = {
+        arch = "aarch64";
+        class = "nixos";
+      };
     };
   };
 }
