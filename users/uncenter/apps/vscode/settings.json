@@ -1,124 +1,130 @@
 {
-	/* Extensions */
-	"extensions.ignoreRecommendations": true,
-	"extensions.autoUpdate": true,
+    /* Extensions */
+    "extensions.ignoreRecommendations": true,
+    "extensions.autoUpdate": true,
 
-	/* Experimental */
-	"editor.experimental.preferTreeSitter.ini": true,
-	"editor.experimental.preferTreeSitter.typescript": true,
-	"editor.experimental.preferTreeSitter.css": true,
-	"editor.experimental.preferTreeSitter.regex": true,
+    /* Experimental */
+    "editor.experimental.preferTreeSitter.ini": true,
+    "editor.experimental.preferTreeSitter.typescript": true,
+    "editor.experimental.preferTreeSitter.css": true,
+    "editor.experimental.preferTreeSitter.regex": true,
 
-	/* UI/Interface */
-	"workbench.colorTheme": "Catppuccin Macchiato",
-	"workbench.iconTheme": "catppuccin-mocha",
+    /* UI/Interface */
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+    "workbench.preferredLightColorTheme": "Catppuccin Latte",
+    "workbench.productIconTheme": "Tabler",
+    "workbench.sideBar.location": "left",
+    "window.autoDetectColorScheme": true,
+    "window.nativeTabs": true,
+    "editor.cursorSmoothCaretAnimation": "off",
+    "editor.fontFamily": "Lilex Nerd Font",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "normal",
+    "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
+    "editor.lineHeight": 1.5,
+    "editor.linkedEditing": true,
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "window.newWindowDimensions": "maximized",
+    "editor.renderWhitespace": "boundary",
 
-	"workbench.preferredDarkColorTheme": "Catppuccin Mocha",
-	"workbench.preferredLightColorTheme": "Catppuccin Latte",
-	"workbench.productIconTheme": "Tabler",
-	"workbench.sideBar.location": "left",
-	"window.autoDetectColorScheme": true,
-	"window.nativeTabs": true,
-	"editor.cursorSmoothCaretAnimation": "off",
-	"editor.fontFamily": "Lilex Nerd Font",
-	"editor.fontLigatures": true,
-	"editor.fontSize": 14,
-	"editor.fontWeight": "normal",
-	"editor.formatOnSave": true,
-	"editor.inlineSuggest.enabled": true,
-	"editor.lineHeight": 1.5,
-	"editor.linkedEditing": true,
-	"editor.minimap.enabled": false,
-	"editor.stickyScroll.enabled": false,
-	"window.newWindowDimensions": "maximized",
-	"editor.renderWhitespace": "boundary",
+    /* Terminal */
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.3,
+    "terminal.integrated.enableImages": true,
+    "terminal.integrated.minimumContrastRatio": 1,
 
-	/* Terminal */
-	"terminal.integrated.cursorBlinking": true,
-	"terminal.integrated.defaultProfile.osx": "fish",
-	"terminal.integrated.fontSize": 14,
-	"terminal.integrated.lineHeight": 1.3,
-	"terminal.integrated.enableImages": true,
-	"terminal.integrated.minimumContrastRatio": 1,
+    /* Editor and Explorer */
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "explorer.sortOrder": "type",
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.showTabs": "multiple",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.startupEditor": "none",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "security.promptForLocalFileProtocolHandling": false,
+    "editor.accessibilitySupport": "off",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "javascript.updateImportsOnFileMove.enabled": "always",
 
-	/* Editor and Explorer */
-	"explorer.confirmDelete": false,
-	"explorer.confirmDragAndDrop": false,
-	"explorer.fileNesting.enabled": true,
-	"explorer.fileNesting.expand": false,
-	"explorer.sortOrder": "type",
-	"workbench.editor.closeOnFileDelete": true,
-	"workbench.editor.showTabs": "multiple",
-	"workbench.fontAliasing": "antialiased",
-	"workbench.startupEditor": "none",
-	"diffEditor.ignoreTrimWhitespace": false,
-	"security.promptForLocalFileProtocolHandling": false,
-	"editor.accessibilitySupport": "off",
-	"typescript.updateImportsOnFileMove.enabled": "always",
-	"javascript.updateImportsOnFileMove.enabled": "always",
+    /* Git */
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.openRepositoryInParentFolders": "never",
+    "git.suggestSmartCommit": false,
+    "git.blame.editorDecoration.enabled": true,
 
-	/* Git */
-	"git.autofetch": true,
-	"git.confirmSync": false,
-	"git.openRepositoryInParentFolders": "never",
-	"git.suggestSmartCommit": false,
-	"git.blame.editorDecoration.enabled": true,
-
-	/* Formatting/LSP */
+    /* Formatting/LSP */
     "prettier.enable": false,
-	"editor.tabSize": 4,
-	"editor.detectIndentation": false,
-	"[fish]": {
-		"editor.defaultFormatter": "bmalehorn.vscode-fish"
-	},
-	"[FortranFreeForm]": {
-		"editor.defaultFormatter": "fortran-lang.linter-gfortran"
-	},
-	"fortran.formatting.formatter": "fprettify",
-	"[github-actions-workflow]": {
-		"editor.tabSize": 2
-	},
-	"[python]": {
-		"editor.defaultFormatter": "charliermarsh.ruff",
-		"editor.formatOnType": true
-	},
-	"[rust]": {
-		"editor.defaultFormatter": "rust-lang.rust-analyzer",
-		"editor.formatOnSave": true
-	},
-	"[yaml]": {
-		"editor.tabSize": 2
-	},
-	"yaml.format.enable": true,
-	"[nix]": {
-		"editor.defaultFormatter": "jnoortheen.nix-ide"
-	},
-	"nix.enableLanguageServer": true,
-	"nix.serverPath": "nil",
-	"nix.serverSettings": {
-		"nil": { "formatting": { "command": ["nixfmt"] } }
-	},
-
-	"vscord.app.name": "Visual Studio Code",
-	"vscord.status.problems.enabled": false,
-	"vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
-	"vscord.status.image.large.editing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
-	"vscord.status.image.large.idle.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
-	"vscord.status.image.large.notInFile.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
-	"vscord.status.image.large.viewing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
-	"vscord.status.image.small.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
-	"vscord.status.image.small.editing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
-	"vscord.status.image.small.idle.key": "https://vscord.catppuccin.com/mocha/idle.webp",
-	"vscord.status.image.small.notInFile.key": "https://vscord.catppuccin.com/mocha/idle.webp",
-	"vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
-
-	"json.schemas": [
-		{
-			"url": "https://cdn.jsdelivr.net/npm/tsup/schema.json",
-			"fileMatch": ["package.json", "tsup.config.json"]
-		}
-	],
-	"workbench.editorAssociations": {
-		"*.svg": "default"
-	}
+    "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "[fish]": {
+        "editor.defaultFormatter": "bmalehorn.vscode-fish"
+    },
+    "[FortranFreeForm]": {
+        "editor.defaultFormatter": "fortran-lang.linter-gfortran"
+    },
+    "fortran.formatting.formatter": "fprettify",
+    "[github-actions-workflow]": {
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnType": true
+    },
+    "[rust]": {
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
+        "editor.formatOnSave": true
+    },
+    "[yaml]": {
+        "editor.tabSize": 2
+    },
+    "yaml.format.enable": true,
+    "[nix]": {
+        "editor.defaultFormatter": "jnoortheen.nix-ide"
+    },
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "nil",
+    "nix.serverSettings": {
+        "nil": {
+            "formatting": {
+                "command": [
+                    "nixfmt"
+                ]
+            }
+        }
+    },
+    "vscord.app.name": "Visual Studio Code",
+    "vscord.status.problems.enabled": false,
+    "vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+    "vscord.status.image.large.editing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+    "vscord.status.image.large.idle.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+    "vscord.status.image.large.notInFile.key": "https://vscord.catppuccin.com/mocha/idle-{app_id}.webp",
+    "vscord.status.image.large.viewing.key": "https://vscord.catppuccin.com/mocha/{lang}.webp",
+    "vscord.status.image.small.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
+    "vscord.status.image.small.editing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
+    "vscord.status.image.small.idle.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+    "vscord.status.image.small.notInFile.key": "https://vscord.catppuccin.com/mocha/idle.webp",
+    "vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
+    "json.schemas": [
+        {
+            "url": "https://cdn.jsdelivr.net/npm/tsup/schema.json",
+            "fileMatch": [
+                "package.json",
+                "tsup.config.json"
+            ]
+        }
+    ],
+    "workbench.editorAssociations": {
+        "*.svg": "default"
+    }
 }

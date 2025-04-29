@@ -150,7 +150,7 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": true,
+            "enabled": false,
             "enableEmojiBypass": true,
             "enableStickerBypass": true,
             "enableStreamQualityBypass": true,
@@ -635,7 +635,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1744799489436
+        "settingsSyncVersion": 1745337842050
     },
     "eagerPatches": false
 }
