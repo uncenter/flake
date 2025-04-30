@@ -13,7 +13,7 @@ in
   imports = [ inputs.spicetify-nix.homeManagerModules.default ];
 
   programs.spicetify = lib.mkIf osConfig.glade.apps.enable {
-    enable = false;
+    enable = true;
     theme = spicePkgs.themes.catppuccin;
     colorScheme = config.catppuccin.flavor;
     enabledExtensions = with spicePkgs.extensions; [
