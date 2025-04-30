@@ -1,15 +1,11 @@
 {
   homebrew = {
-    taps = [
-      "homebrew/services"
-      "homebrew/bundle"
-
-      "1password/tap"
-    ];
+    taps = [ ];
 
     brews = [
       "coreutils"
       "swift-format"
+      "terminal-notifier"
     ];
 
     casks = [
@@ -47,7 +43,6 @@
       "signal"
       "slack"
       "sublime-text"
-      "terminal-notifier"
       "yaak"
       "zen-browser"
       "zoom"
