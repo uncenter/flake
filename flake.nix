@@ -88,7 +88,7 @@
         "aarch64-darwin"
       ];
 
-      imports = [ ./systems ];
+      imports = [ ./hosts ];
 
       perSystem =
         { pkgs, ... }:

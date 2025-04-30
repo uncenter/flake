@@ -22,7 +22,7 @@
           source = lib.getExe (
             pkgs.writeShellApplication {
               name = builtins.baseNameOf name;
-              text = builtins.readFile ./scripts/${name};
+              text = builtins.readFile ./${name};
 
               bashOptions = [
                 "errexit"
@@ -31,7 +31,7 @@
             }
           );
         };
-      }) (builtins.attrNames (builtins.readDir ./scripts))
+      }) (builtins.filter (n: !lib.hasSuffix ".nix" n) (builtins.attrNames (builtins.readDir ./.)))
     );
   };
 }

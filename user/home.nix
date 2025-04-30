@@ -3,15 +3,13 @@
 
   imports = [
     ./catppuccin.nix
-    ./variables.nix
-    ./fonts.nix
-    ./packages.nix
-    ./scripts.nix
 
     ./apps
     ./programs
-    ./tooling
+    ./scripts
     ./shells
+    ./system
+    ./tooling
   ];
 
   xdg.enable = true;

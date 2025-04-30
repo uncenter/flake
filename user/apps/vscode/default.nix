@@ -86,7 +86,7 @@ in
       let
         mkLink = config.lib.file.mkOutOfStoreSymlink;
 
-        settingsFile = mkLink "${config.home.homeDirectory}/.config/flake/users/uncenter/apps/vscode/settings.json";
+        settingsFile = mkLink "${config.home.homeDirectory}/.config/flake/user/apps/vscode/settings.json";
       in
       {
         file."Library/Application Support/Code/User/settings.json".source = settingsFile;

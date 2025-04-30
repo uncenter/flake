@@ -16,7 +16,7 @@ in
 
   easy-hosts = {
     shared.modules = [
-      ../users
+      ../user
       ../modules/shared
     ];
 
