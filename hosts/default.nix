@@ -7,6 +7,7 @@
 let
   additionalClasses = {
     wsl = "nixos";
+    raspberry-pi = "nixos";
   };
 
   normaliseClass = class: additionalClasses.${class} or class;
@@ -63,7 +64,7 @@ in
 
       zuko = {
         arch = "aarch64";
-        class = "nixos";
+        class = "raspberry-pi";
       };
     };
   };
