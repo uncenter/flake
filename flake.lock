@@ -419,11 +419,11 @@
         "systems": "systems_3"
       },
       "locked": {
-        "lastModified": 1745832939,
-        "narHash": "sha256-uyb3vhSAD8G0gnX5dsnvoEncnm4tvK7kvC0vT+kOYT8=",
+        "lastModified": 1745983288,
+        "narHash": "sha256-XUNZDucHnw5SpTG3iJ8xrc6vGdVaP/5jlWErVjOdl/4=",
         "owner": "Gerg-L",
         "repo": "spicetify-nix",
-        "rev": "d9ca0f8a3d97b94a7a8225152fafb1805477df52",
+        "rev": "96d7adda80b8bfc06fc0669b68a40feb2339fa95",
         "type": "github"
       },
       "original": {
