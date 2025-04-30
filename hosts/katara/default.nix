@@ -1,6 +1,9 @@
 { ... }:
 {
-  imports = [ ./icons.nix ];
+  imports = [
+    ./icons.nix
+    ./homebrew.nix
+  ];
 
   glade = {
     apps.enable = true;
