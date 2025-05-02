@@ -7,13 +7,13 @@
 let
   mkLink = config.lib.file.mkOutOfStoreSymlink;
 
-  flakeDir = "${config.home.homeDirectory}/.config/flake/user/apps/vencord";
+  flakeDir = "${config.home.homeDirectory}/.config/flake/user/apps/vesktop";
   settingsFile = mkLink "${flakeDir}/settings.json";
 in
 {
   home.file =
     let
-      common = "Library/Application Support/Vencord/settings";
+      common = "Library/Application Support/vesktop/settings";
     in
     lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
       "${common}/settings.json".source = settingsFile;

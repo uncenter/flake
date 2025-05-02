@@ -43,6 +43,7 @@
       "signal"
       "slack"
       "sublime-text"
+      "vesktop"
       "yaak"
       "zen-browser"
       "zoom"

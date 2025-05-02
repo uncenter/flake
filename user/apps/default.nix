@@ -1,6 +1,6 @@
 {
   imports = [
-    ./vencord
+    ./vesktop
     ./vscode
     ./ghostty.nix
     ./inkscape.nix
