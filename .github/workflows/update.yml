@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Nix
-        uses: DeterminateSystems/nix-installer-action@v13
+        uses: DeterminateSystems/nix-installer-action@v17
 
       - name: Update lockfile
         run: nix flake update
