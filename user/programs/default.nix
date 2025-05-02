@@ -77,6 +77,7 @@ in
 
       # Filesystem #
       (optionals cfg.programs.filesystem.enable [
+        dust
         entr
         exiftool
         ouch
