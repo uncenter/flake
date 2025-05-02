@@ -30,6 +30,7 @@
 
     users.users.uncenter = {
       home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
+      openssh.authorizedKeys.keys = [ (builtins.readFile ../keys/ssh.pub) ];
       shell = pkgs.fish;
     };
   };
