@@ -63,6 +63,7 @@ in
 
       # Data #
       (optionals cfg.programs.data.enable [
+        jless
         jnv
         yq
       ])
