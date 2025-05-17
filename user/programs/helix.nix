@@ -30,6 +30,10 @@
           };
           end-of-line-diagnostics = "hint";
           inline-diagnostics.cursor-line = "error";
+          inline-blame = {
+            behaviour = "cursor-line";
+            compute = "background";
+          };
         };
       };
 
