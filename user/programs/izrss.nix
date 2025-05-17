@@ -5,7 +5,7 @@
   ...
 }:
 {
-  imports = [ inputs.tgirlpkgs.homeManagerModules.default ];
+  imports = [ inputs.tgirlpkgs.homeModules.default ];
 
   programs.izrss = lib.mkIf osConfig.glade.programs.enable {
     enable = true;
