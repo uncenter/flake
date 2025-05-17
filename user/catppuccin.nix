@@ -19,12 +19,9 @@ in
 
   config = {
     catppuccin = {
-      enable = true;
-
       flavor = "mocha";
       accent = "mauve";
-
-      cache.enable = true;
+      enable = true;
     };
 
     home.packages = mkIf config.catppuccin.enable [
