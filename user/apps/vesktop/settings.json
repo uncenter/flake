@@ -150,7 +150,7 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": false,
+            "enabled": true,
             "enableEmojiBypass": true,
             "enableStickerBypass": true,
             "enableStreamQualityBypass": true,
@@ -623,6 +623,21 @@
         },
         "BadgeAPI": {
             "enabled": true
+        },
+        "WebRichPresence (arRPC)": {
+            "enabled": false
+        },
+        "WebKeybinds": {
+            "enabled": true
+        },
+        "WebScreenShareFixes": {
+            "enabled": true
+        },
+        "DisableDeepLinks": {
+            "enabled": true
+        },
+        "WebContextMenus": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -635,7 +650,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1745337842050
+        "settingsSyncVersion": 1748194803053
     },
     "eagerPatches": false
 }
