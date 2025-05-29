@@ -112,6 +112,7 @@ in
         (wakatime-cli.overrideAttrs (_: {
           doCheck = false;
         }))
+        ratchet
       ])
 
       # Fun #
