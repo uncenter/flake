@@ -36,6 +36,7 @@
       "localsend"
       "mediamate"
       "netnewswire"
+      "notion"
       "obs"
       "obsidian"
       "raycast"
@@ -45,7 +46,7 @@
       "sublime-text"
       "vesktop"
       "yaak"
-      "zen-browser"
+      "zen"
       "zoom"
     ];
   };
