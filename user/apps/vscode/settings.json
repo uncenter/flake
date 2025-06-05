@@ -62,6 +62,7 @@
     "git.openRepositoryInParentFolders": "never",
     "git.suggestSmartCommit": false,
     "git.blame.editorDecoration.enabled": true,
+    "git.branchRandomName.enable": true,
 
     /* Formatting/LSP */
     "prettier.enable": false,
