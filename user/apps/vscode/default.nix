@@ -76,9 +76,8 @@ let
 in
 {
   config = lib.mkIf osConfig.glade.apps.enable {
-    programs.vscode = {
-      enable = true;
-    };
+    # Installed via Homebrew.
+    programs.vscode.enable = false;
 
     catppuccin.vscode.enable = false;
 

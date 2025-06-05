@@ -1,11 +1,13 @@
 {
   lib,
+  pkgs,
   osConfig,
   ...
 }:
 {
   programs.zed-editor = lib.mkIf osConfig.glade.apps.enable {
     enable = true;
+    package = pkgs.emptyDirectory;
 
     extensions = [
       # Language/Tool Support

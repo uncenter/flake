@@ -45,7 +45,10 @@
       "slack"
       "sublime-text"
       "vesktop"
+      "visual-studio-code"
       "yaak"
+      "zed"
+      "zed@preview"
       "zen"
       "zoom"
     ];
