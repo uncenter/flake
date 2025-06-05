@@ -4,7 +4,7 @@ _default:
 
 [macos]
 build *args:
-  darwin-rebuild build --flake . {{args}} |& nom
+  sudo darwin-rebuild build --flake . {{args}} |& nom
   nvd diff /run/current-system ./result
 
 [linux]
@@ -14,7 +14,7 @@ build *args:
 
 [macos]
 switch *args:
-  darwin-rebuild switch --flake . {{args}} |& nom
+  sudo darwin-rebuild switch --flake . {{args}} |& nom
 
 [linux]
 switch *args:
