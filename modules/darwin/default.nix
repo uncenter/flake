@@ -9,13 +9,12 @@
     };
   };
 
-  # https://daiderd.com/nix-darwin/manual/index.html#sec-options
   system = {
     defaults = {
       dock = {
         autohide = true;
         show-recents = false;
-        tilesize = 80;
+        tilesize = 60; # default = 64
 
         # Hot Corners
         wvous-bl-corner = 3; # Application Windows
@@ -27,12 +26,20 @@
         AppleShowAllFiles = true;
         QuitMenuItem = true;
         ShowPathbar = true;
+        FXRemoveOldTrashItems = true;
       };
       menuExtraClock = {
         Show24Hour = true;
         ShowDate = 0;
       };
+      NSGlobalDomain = {
+        NSAutomaticCapitalizationEnabled = false;
+        # https://macos-defaults.com/keyboard/applekeyboarduimode.html
+        AppleKeyboardUIMode = 2;
+      };
     };
+
+    keyboard.remapCapsLockToEscape = true;
   };
 
   # https://github.com/ryan4yin/nix-darwin-kickstarter/blob/f79b4d4cbd9c8c2ea56b6e5016131ff2179d3775/minimal/modules/system.nix#L14-L19
