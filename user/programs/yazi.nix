@@ -13,7 +13,7 @@ in
     enable = true;
 
     settings = {
-      manager = {
+      mgr = {
         ratio = [
           2
           3
