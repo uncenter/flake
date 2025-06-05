@@ -19,7 +19,6 @@
       "cleanshot"
       # "confectionery"
       "devtoys"
-      "discord"
       "docker"
       "figma"
       # "firefox"
