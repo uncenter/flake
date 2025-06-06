@@ -104,6 +104,8 @@
             }
         }
     },
+
+    /* VSCord */
     "vscord.app.name": "Visual Studio Code",
     "vscord.status.problems.enabled": false,
     "vscord.status.image.large.debugging.key": "https://vscord.catppuccin.com/mocha/debugging.webp",
@@ -116,16 +118,7 @@
     "vscord.status.image.small.idle.key": "https://vscord.catppuccin.com/mocha/idle.webp",
     "vscord.status.image.small.notInFile.key": "https://vscord.catppuccin.com/mocha/idle.webp",
     "vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
-    "json.schemas": [
-        {
-            "url": "https://cdn.jsdelivr.net/npm/tsup/schema.json",
-            "fileMatch": [
-                "package.json",
-                "tsup.config.json"
-            ]
-        }
-    ],
-    "workbench.editorAssociations": {
-        "*.svg": "default"
-    }
+    "vscord.status.idle.disconnectOnIdle": true,
+    "vscord.status.idle.enabled": true,
+    "vscord.status.details.idle.enabled": true
 }
