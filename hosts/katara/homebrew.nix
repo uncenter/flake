@@ -9,47 +9,58 @@
     ];
 
     casks = [
-      "1password"
-      "affinity-designer"
-      "affinity-photo"
-      "affinity-publisher"
-      "arc"
-      "calibre"
-      "chatgpt"
-      "cleanshot"
-      # "confectionery"
-      "devtoys"
-      "docker"
-      "figma"
-      # "firefox"
-      "firefox@developer-edition"
-      "ghostty"
-      "gimp"
+      # Browsers
+      "arc" # TODO: remove
       "google-chrome"
       "google-chrome@beta"
-      "gramps"
-      "halloy"
-      "inkscape"
+      # "firefox"
+      "firefox@developer-edition"
+      "zen"
+
+      # Developer Tooling
+      "devtoys"
+      "docker"
+      "ghostty"
       "intellij-idea"
-      "keka"
-      "localsend"
-      "mediamate"
-      "netnewswire"
-      "notion"
-      "obs"
-      "obsidian"
-      "raycast"
-      "sf-symbols"
-      "signal"
-      "slack"
       "sublime-text"
-      "vesktop"
       "visual-studio-code"
       "yaak"
       "zed"
       "zed@preview"
-      "zen"
+
+      # Communication
+      "halloy"
+      "signal"
+      "slack"
+      "vesktop"
       "zoom"
+
+      # Media Editing
+      "affinity-designer"
+      "affinity-photo"
+      "affinity-publisher"
+      "cleanshot"
+      "figma"
+      "gimp"
+      "inkscape"
+
+      # Utilities
+      "keka"
+      "localsend"
+      "mediamate"
+
+      # Productivity
+      "1password"
+      "notion"
+      "obsidian"
+      "raycast"
+
+      # Other
+      "calibre"
+      "gramps"
+      "netnewswire"
+      "obs"
+      "sf-symbols"
     ];
   };
 }
