@@ -31,9 +31,10 @@
           end-of-line-diagnostics = "hint";
           inline-diagnostics.cursor-line = "error";
           inline-blame = {
-            behaviour = "cursor-line";
-            compute = "background";
+            show = "cursor-line";
+            auto-fetch = true;
           };
+          rainbow-brackets = true;
         };
       };
 
