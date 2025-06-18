@@ -39,6 +39,13 @@
             signByDefault = true;
           };
 
+          includes = [
+            {
+              path = "work.config";
+              condition = "gitdir:~/Dev/Work/";
+            }
+          ];
+
           extraConfig = {
             core.editor = "hx";
             init.defaultBranch = "main";
