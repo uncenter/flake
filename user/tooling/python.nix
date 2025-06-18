@@ -11,6 +11,8 @@
       poetry
       ruff
       uv
+      pyright
+      basedpyright
     ];
   };
 }

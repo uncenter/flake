@@ -56,6 +56,7 @@
                 "-"
               ];
             };
+            language-servers = [ "basedpyright" ];
             auto-format = true;
           }
           {
