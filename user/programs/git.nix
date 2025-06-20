@@ -78,8 +78,26 @@
       (lib.mkIf osConfig.glade.programs.enable {
         programs.gh = {
           enable = true;
-          gitCredentialHelper.enable = true;
+          # gitCredentialHelper.enable = true;
+          gitCredentialHelper.enable = false;
         };
+        programs.git.includes = [
+          {
+            path = "gh-credential-helper.config";
+          }
+        ];
+        xdg.configFile."git/gh-credential-helper.config" = {
+          text = ''
+            [credential "https://gist.github.com"]
+              helper =
+              helper = "${pkgs.gh}/bin/gh auth git-credential"
+
+            [credential "https://github.com"]
+              helper =
+              helper = "${pkgs.gh}/bin/gh auth git-credential"
+          '';
+        };
+
         programs.lazygit = {
           enable = true;
           settings = {
