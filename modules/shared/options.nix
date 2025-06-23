@@ -94,6 +94,10 @@ in
       rust.enable = mkEnableOption "Enable Rust tooling" // {
         default = cfg.tooling.enable;
       };
+
+      typst.enable = mkEnableOption "Enable Typst tooling" // {
+        default = cfg.tooling.enable;
+      };
     };
   };
 }

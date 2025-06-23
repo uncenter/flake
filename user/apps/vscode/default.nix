@@ -46,6 +46,7 @@ let
     "ms-vscode.cpptools" # Required dependency extension for "fortran-lang.linter-gfortran".
     "ms-python.debugpy"
     "ms-python.python"
+    "myriad-dreamin.tinymist"
     "redhat.vscode-yaml"
     "rust-lang.rust-analyzer"
     "nefrob.vscode-just-syntax"

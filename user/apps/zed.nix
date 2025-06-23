@@ -23,6 +23,7 @@
       "marksman"
       "svelte"
       "nu"
+      "typst"
 
       "wakatime"
     ];
