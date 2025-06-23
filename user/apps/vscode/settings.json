@@ -104,6 +104,8 @@
             }
         }
     },
+    "emmet.showAbbreviationSuggestions": false,
+    "emmet.showExpandedAbbreviation": "never",
 
     /* VSCord */
     "vscord.app.name": "Visual Studio Code",
