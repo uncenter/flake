@@ -15,8 +15,8 @@
       "gp" = "git push";
       "gl" = "git pull";
       "gc" = "git commit -m";
-      "gn" = "git checkout -b";
-      "gs" = "git checkout";
+      "gn" = "git switch -c";
+      "gs" = "git switch";
       "ga" = "git add";
     };
 
