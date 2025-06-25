@@ -31,6 +31,7 @@ let
     "charliermarsh.ruff"
     "dbaeumer.vscode-eslint"
     "denoland.vscode-deno"
+    "detachhead.basedpyright"
     "editorconfig.editorconfig"
     "esbenp.prettier-vscode"
     "fortran-lang.linter-gfortran"
@@ -46,7 +47,6 @@ let
     "ms-vscode.cpptools" # Required dependency extension for "fortran-lang.linter-gfortran".
     "ms-python.debugpy"
     "ms-python.python"
-    "ms-python.vscode-pylance"
     "myriad-dreamin.tinymist"
     "redhat.vscode-yaml"
     "rust-lang.rust-analyzer"
