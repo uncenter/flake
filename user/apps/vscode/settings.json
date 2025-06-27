@@ -55,6 +55,9 @@
     "editor.accessibilitySupport": "off",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.exclude": {
+        "**/__pycache__": true
+    },
 
     /* Git */
     "git.autofetch": true,
