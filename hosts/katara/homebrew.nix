@@ -19,7 +19,6 @@
 
       # Developer Tooling
       "devtoys"
-      "docker"
       "ghostty"
       "intellij-idea"
       "sublime-text"
