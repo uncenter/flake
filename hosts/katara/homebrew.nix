@@ -10,8 +10,7 @@
 
     casks = [
       # Browsers
-      "arc" # TODO: remove
-      "google-chrome"
+      # "google-chrome"
       "google-chrome@beta"
       # "firefox"
       "firefox@developer-edition"
