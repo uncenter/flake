@@ -96,7 +96,7 @@ in
         # Copyright 2023 Ryan Cao
         activation = {
           vscodeExtensions = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-            code_cmd="${lib.getExe pkgs.vscode}"
+            code_cmd="/opt/homebrew/bin/code"
 
             if ! command -v "$code_cmd" &> /dev/null; then
               echo "`code` command not found at $code_cmd"
