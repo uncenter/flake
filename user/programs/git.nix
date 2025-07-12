@@ -63,6 +63,9 @@
             pull.rebase = true;
             rebase.autostash = true;
 
+            stash.showPatch = true;
+            stash.showIncludeUntracked = true;
+
             rerere.enabled = true; # record before and after states of rebase conflicts.
             rerere.autoupdate = true; # automatically re-apply discovered resolutions.
 
