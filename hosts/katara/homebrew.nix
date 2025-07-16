@@ -55,6 +55,7 @@
 
       # Other
       "calibre"
+      "cloudflare-warp"
       "gramps"
       "netnewswire"
       "obs"
