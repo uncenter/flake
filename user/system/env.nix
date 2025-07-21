@@ -33,7 +33,7 @@
       DOCKER_CONFIG = "${config.xdg.configHome}/docker";
       FLY_CONFIG_DIR = "${config.xdg.stateHome}/fly";
       GRADLE_USER_HOME = "${config.xdg.dataHome}/gradle";
-
+      IBM_TELEMETRY_DISABLED = "true"; # https://github.com/ibm-telemetry/telemetry-js#opting-out-of-ibm-telemetry-data-collection
     }
     // lib.optionalAttrs pkgs.stdenv.hostPlatform.isDarwin {
       SSH_AUTH_SOCK = "${config.home.homeDirectory}/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock";
