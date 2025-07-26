@@ -93,6 +93,7 @@
                 except-features = [ "format" ];
               }
             ];
+            rainbow-brackets = false;
           }
           {
             name = "markdown";
