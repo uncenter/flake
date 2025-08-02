@@ -33,10 +33,13 @@
       shell-integration-features = "no-cursor";
       macos-option-as-alt = true;
 
+      quick-terminal-position = "bottom";
+
       keybind = [
         "super+backspace=text:\x15"
         "cmd+shift+d=new_split:down"
         "cmd+shift+r=new_split:right"
+        "global:cmd+grave_accent=toggle_quick_terminal"
       ];
     };
   };
