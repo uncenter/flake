@@ -67,22 +67,7 @@
         };
       };
 
-      # lsp = {
-      #   enable = true;
-      #   servers = {
-      #     ts_ls.enable = true; # TS/JS
-      #     cssls.enable = true; # CSS
-      #     superhtml = {
-      #       enable = true;
-      #       package = pkgs.superhtml;
-      #     };
-      #     html.enable = true; # HTML
-      #     marksman.enable = true; # Markdown
-      #     yamlls.enable = true; # YAML
-      #     nil_ls.enable = true; # Nix
-      #     statix.enable = true;
-      #   };
-      # };
+      lspconfig.enable = true;
 
       rustaceanvim = {
         enable = true;
@@ -94,6 +79,19 @@
           };
           rustc.source = "discover";
         };
+      };
+    };
+
+    lsp = {
+      servers = {
+        ts_ls.enable = true; # TS/JS
+        cssls.enable = true; # CSS
+        superhtml.enable = true;
+        html.enable = true; # HTML
+        marksman.enable = true; # Markdown
+        yamlls.enable = true; # YAML
+        nil_ls.enable = true; # Nix
+        statix.enable = true;
       };
     };
 
