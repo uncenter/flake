@@ -13,7 +13,6 @@ let
     "zguolee.tabler-icons"
 
     # Markdown
-    "bierner.emojisense"
     "bierner.github-markdown-preview"
     "bierner.markdown-checkbox"
     "bierner.markdown-emoji"
