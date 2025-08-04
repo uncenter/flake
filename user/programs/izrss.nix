@@ -61,6 +61,7 @@
         "https://www.ntietz.com/atom.xml"
         "https://2ality.com/feeds/posts.atom"
         "https://dbushell.com/rss.xml"
+        "https://soatok.blog/feed/"
       ];
     };
   };
