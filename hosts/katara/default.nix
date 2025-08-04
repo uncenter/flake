@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
     ./icons.nix
@@ -10,6 +10,8 @@
     programs.enable = true;
     tooling.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [ _1password-cli ];
 
   networking = {
     computerName = "Katara";

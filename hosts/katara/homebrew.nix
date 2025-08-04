@@ -27,7 +27,6 @@
       "zed@preview"
 
       # Communication
-      "halloy"
       "signal"
       "slack"
       "vesktop"
