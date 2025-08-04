@@ -82,7 +82,7 @@ in
     # Installed via Homebrew.
     programs.vscode.enable = false;
 
-    catppuccin.vscode.enable = false;
+    catppuccin.vscode.profiles.default.enable = false;
 
     home =
       let
