@@ -23,6 +23,9 @@
     shellAliases = {
       "ls" = "eza";
       "ll" = "ls -la";
+
+      "purr" = "with_gh_token purr";
+      "nixpkgs-using" = "with_gh_token nixpkgs-using";
     };
 
     plugins = [
@@ -105,6 +108,11 @@
       # Like https://github.com/nix-community/comma, but who needs a whole CLI tool for it.
       "," = ''
         nix run "nixpkgs#$argv[1]" -- $argv[2..-1]
+      '';
+
+      with_gh_token = ''
+        set -lx GITHUB_TOKEN op://Private/ke2dwwtzs6ffrcehxq7gny3voe/credential
+        op run -- command $argv
       '';
     };
   };
