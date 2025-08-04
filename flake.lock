@@ -40,16 +40,15 @@
     "ctp-nvim": {
       "flake": false,
       "locked": {
-        "lastModified": 1754013869,
-        "narHash": "sha256-X7rVKDEasueFkMXyrX/rbfhNd6cJYCTECTdz2SQhLc0=",
+        "lastModified": 1754293552,
+        "narHash": "sha256-rY9BbLDwevr/zCvcSo7sOvyS/oXyIXFhU8H8Dzvgffc=",
         "owner": "uncenter",
         "repo": "ctp-nvim",
-        "rev": "d7fd0662a85ed2d1e22b77e5ad42cf5a49640ad7",
+        "rev": "8fd0915ec0a2ad6376bfe895e6c4b3ffb5a5bad2",
         "type": "github"
       },
       "original": {
         "owner": "uncenter",
-        "ref": "patch-1",
         "repo": "ctp-nvim",
         "type": "github"
       }

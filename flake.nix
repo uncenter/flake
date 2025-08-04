@@ -64,7 +64,7 @@
     };
 
     ctp-nvim = {
-      url = "github:uncenter/ctp-nvim/patch-1";
+      url = "github:uncenter/ctp-nvim";
       flake = false;
     };
 
