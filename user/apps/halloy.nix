@@ -10,14 +10,18 @@
 
     settings = {
       servers.liberachat = {
+        server = "irc.libera.chat";
         channels = [
           "#halloy"
           "#pico.sh"
           "#tangled"
         ];
+
         nickname = "uncenter";
-        nick_password_command = "${pkgs._1password-cli}/bin/op read op://Private/Libera.Chat/password";
-        server = "irc.libera.chat";
+        sasl.plain = {
+          username = "uncenter";
+          password_command = "${pkgs._1password-cli}/bin/op read op://Private/Libera.Chat/password";
+        };
       };
 
       buffer.channel.topic.enabled = true; # show topic banner
