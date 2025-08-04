@@ -39,7 +39,7 @@
         "https://www.11ty.dev/blog/feed.xml"
         "https://thorstenball.com/atom.xml"
         "https://registerspill.thorstenball.com/feed"
-        "https://isabelroses.com/rss.xml"
+        "https://isabelroses.com/feed.xml"
         "https://boehs.org/in/blog.xml"
         "https://huonw.github.io/blog/atom.xml"
         "https://nixpkgs.news/rss.xml"
