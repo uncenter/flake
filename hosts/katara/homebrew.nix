@@ -10,7 +10,7 @@
 
     casks = [
       # Browsers
-      # "google-chrome"
+      "google-chrome"
       "google-chrome@beta"
       # "firefox"
       "firefox@developer-edition"
