@@ -109,6 +109,7 @@
     },
     "emmet.showAbbreviationSuggestions": false,
     "emmet.showExpandedAbbreviation": "never",
+    "svelte.enable-ts-plugin": true,
 
     /* VSCord */
     "vscord.app.name": "Visual Studio Code",
