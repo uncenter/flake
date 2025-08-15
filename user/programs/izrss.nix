@@ -62,6 +62,7 @@
         "https://2ality.com/feeds/posts.atom"
         "https://dbushell.com/rss.xml"
         "https://soatok.blog/feed/"
+        "https://ishadeed.com/feed.xml"
       ];
     };
   };
