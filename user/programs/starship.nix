@@ -15,6 +15,8 @@ in
       add_newline = true;
       continuation_prompt = "[](yellow) ";
       format = builtins.concatStringsSep "" [
+        "┌ "
+
         "$username"
         "$hostname"
         "$directory"
@@ -29,7 +31,10 @@ in
         "$rust"
         "$sudo"
         "$fill"
+
         "$line_break"
+        "└ "
+
         "$shell"
         "$character"
       ];
