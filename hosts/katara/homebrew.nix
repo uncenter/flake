@@ -19,6 +19,7 @@
       # Developer Tooling
       "devtoys"
       "ghostty"
+      "github" # GitHub Desktop
       "intellij-idea"
       "sublime-text"
       "visual-studio-code"
