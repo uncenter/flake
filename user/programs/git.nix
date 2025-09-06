@@ -47,8 +47,12 @@ in
 
           includes = [
             {
-              path = "work.config";
+              path = "private.config";
               condition = "gitdir:~/Dev/Work/";
+            }
+            {
+              path = "private.config";
+              condition = "gitdir:~/Dev/School/";
             }
           ];
 
