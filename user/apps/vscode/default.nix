@@ -60,6 +60,15 @@ let
     "oscarotero.vento-syntax"
     "visualstudioexptteam.intellicode-api-usage-examples"
     "visualstudioexptteam.vscodeintellicode"
+
+    # "vscjava.vscode-java-pack":
+    "vscjava.vscode-java-debug"
+    "vscjava.vscode-java-test"
+    "vscjava.vscode-maven"
+    "vscjava.vscode-gradle"
+    "vscjava.vscode-java-dependency"
+    "redhat.java"
+
     "vue.volar"
     "yoavbls.pretty-ts-errors"
 
