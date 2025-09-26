@@ -105,6 +105,7 @@ in
         hyperfine
         ito
         license-go
+        monolith
         star-history
         (tree-sitter.override {
           webUISupport = true;
