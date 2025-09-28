@@ -16,6 +16,7 @@ in
     ./bat.nix
     ./bottom.nix
     ./direnv.nix
+    ./espanso.nix
     ./eza.nix
     ./fd.nix
     ./git.nix
