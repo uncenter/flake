@@ -55,6 +55,7 @@ let
     "tombi-toml.tombi"
     "thenuprojectcontributors.vscode-nushell-lang"
     "timonwong.shellcheck"
+    "typespec.typespec-vscode"
     "uncenter.better-tera"
     "unifiedjs.vscode-mdx"
     "oscarotero.vento-syntax"
