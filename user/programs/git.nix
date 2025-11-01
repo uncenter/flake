@@ -21,42 +21,18 @@ in
       {
         programs.git = {
           enable = true;
-          difftastic.enable = true;
 
           ignores = [ ".DS_Store" ];
 
-          aliases = {
-            "undo" = "reset --soft HEAD~1";
-            "reword" = "commit --amend -C HEAD --edit";
-          };
+          settings = {
+            aliases = {
+              "undo" = "reset --soft HEAD~1";
+              "reword" = "commit --amend -C HEAD --edit";
+            };
 
-          userName = committerName;
-          userEmail = committerEmail;
+            user.name = committerName;
+            user.email = committerEmail;
 
-          lfs = {
-            enable = true;
-            skipSmudge = true;
-          };
-
-          signing = {
-            format = "ssh";
-            key = signingKey;
-            signer = signingProgram;
-            signByDefault = true;
-          };
-
-          includes = [
-            {
-              path = "private.config";
-              condition = "gitdir:~/Dev/Work/";
-            }
-            {
-              path = "private.config";
-              condition = "gitdir:~/Dev/School/";
-            }
-          ];
-
-          extraConfig = {
             core.editor = "hx";
             init.defaultBranch = "main";
 
@@ -85,10 +61,35 @@ in
             help.autocorrect = "prompt";
             commit.verbose = true; # display diff output in commit editor for reference.
           };
+
+          lfs = {
+            enable = true;
+            skipSmudge = true;
+          };
+
+          signing = {
+            format = "ssh";
+            key = signingKey;
+            signer = signingProgram;
+            signByDefault = true;
+          };
+
+          includes = [
+            {
+              path = "private.config";
+              condition = "gitdir:~/Dev/Work/";
+            }
+            {
+              path = "private.config";
+              condition = "gitdir:~/Dev/School/";
+            }
+          ];
         };
       }
 
       (lib.mkIf osConfig.glade.programs.enable {
+        programs.difftastic.git.enable = true;
+
         programs.gh = {
           enable = true;
           gitCredentialHelper.enable = true;

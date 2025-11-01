@@ -26,7 +26,6 @@ in
     ./neovim.nix
     ./spicetify.nix
     ./starship.nix
-    ./television.nix
     ./yazi.nix
   ];
 
