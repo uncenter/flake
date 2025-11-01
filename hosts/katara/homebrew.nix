@@ -34,6 +34,7 @@
       "zoom"
 
       # Media Editing
+      "affinity"
       "affinity-designer"
       "affinity-photo"
       "affinity-publisher"
@@ -52,6 +53,7 @@
       "notion"
       "obsidian"
       "raycast"
+      "ticktick"
 
       # Other
       "gramps"
