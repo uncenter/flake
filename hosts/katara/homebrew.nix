@@ -14,7 +14,6 @@
       "google-chrome@beta"
       # "firefox"
       "firefox@developer-edition"
-      "zen"
 
       # Developer Tooling
       "devtoys"

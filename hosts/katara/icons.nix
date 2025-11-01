@@ -27,10 +27,6 @@
         path = "/Applications/Zed.app";
         icon = ./icons/zed.icns;
       }
-      {
-        path = "/Applications/Zen.app";
-        icon = ./icons/zen.icns;
-      }
     ];
   };
 }
