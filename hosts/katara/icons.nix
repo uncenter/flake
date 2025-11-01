@@ -4,10 +4,6 @@
     enable = true;
     icons = [
       {
-        path = "/Applications/Vesktop.app";
-        icon = ./icons/discord.icns;
-      }
-      {
         path = "/Applications/Ghostty.app";
         icon = ./icons/ghostty.icns;
       }
