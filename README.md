@@ -13,6 +13,7 @@ Declarative system configurations for my macOS (Darwin) and Windows (WSL) machin
 - **Katara**: My primary device, an M3 MacBook Pro.
 - **Azula**: A NixOS WSL instance running on my Windows desktop PC ("Iroh").
 - **Zuko** \[WIP\]: A NixOS instance running on a Raspberry Pi 3 Model B+.
+- **Sokka** \[WIP\]: NixOS on a Raspberry Pi 4 Model B (8GB).
 
 ## Credits
 

@@ -66,6 +66,11 @@ in
         arch = "aarch64";
         class = "raspberry-pi";
       };
+
+      sokka = {
+        arch = "aarch64";
+        class = "raspberry-pi";
+      };
     };
   };
 }
