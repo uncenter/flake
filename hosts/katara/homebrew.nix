@@ -31,6 +31,7 @@
       "slack"
       "vesktop"
       "zoom"
+      "whatsapp"
 
       # Media Editing
       "affinity"
@@ -46,6 +47,7 @@
       "keka"
       "localsend"
       "mediamate"
+      "balenaetcher"
 
       # Productivity
       "1password"
