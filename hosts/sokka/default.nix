@@ -2,7 +2,7 @@
 {
   glade = {
     apps.enable = false;
-    programs.enable = false;
+    programs.enable = true;
     tooling.enable = false;
   };
 
