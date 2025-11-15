@@ -127,5 +127,7 @@
     "vscord.status.image.small.viewing.key": "https://vscord.catppuccin.com/mocha/{app_id}.webp",
     "vscord.status.idle.disconnectOnIdle": true,
     "vscord.status.idle.enabled": true,
-    "vscord.status.details.idle.enabled": true
+    "vscord.status.details.idle.enabled": true,
+
+    "chat.disableAIFeatures": true
 }

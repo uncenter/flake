@@ -33,7 +33,7 @@ let
     "detachhead.basedpyright"
     "editorconfig.editorconfig"
     "esbenp.prettier-vscode"
-    "fortran-lang.linter-gfortran"
+    # "fortran-lang.linter-gfortran" # Currently broken with extension signing.
     "github.vscode-github-actions"
     "gleam.gleam"
     "golang.go"
@@ -82,7 +82,6 @@ let
     "kravets.vscode-publint"
     "njpwerner.autodocstring"
     "ms-vscode-remote.remote-wsl"
-    "wakatime.vscode-wakatime"
     "leonardssh.vscord"
   ];
 in
