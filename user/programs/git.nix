@@ -25,7 +25,7 @@ in
           ignores = [ ".DS_Store" ];
 
           settings = {
-            aliases = {
+            alias = {
               "undo" = "reset --soft HEAD~1";
               "reword" = "commit --amend -C HEAD --edit";
             };
