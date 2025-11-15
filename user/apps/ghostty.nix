@@ -30,7 +30,7 @@
 
       copy-on-select = false;
       shell-integration = "detect";
-      shell-integration-features = "no-cursor";
+      shell-integration-features = "no-cursor,ssh-env";
       macos-option-as-alt = true;
 
       quick-terminal-position = "bottom";
