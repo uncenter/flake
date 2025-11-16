@@ -59,8 +59,6 @@ let
     "uncenter.better-tera"
     "unifiedjs.vscode-mdx"
     "oscarotero.vento-syntax"
-    "visualstudioexptteam.intellicode-api-usage-examples"
-    "visualstudioexptteam.vscodeintellicode"
 
     # "vscjava.vscode-java-pack":
     "vscjava.vscode-java-debug"
