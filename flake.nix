@@ -42,6 +42,7 @@
     };
 
     darwin-custom-icons.url = "github:ryanccn/nix-darwin-custom-icons";
+    darwin-login-items.url = "github:uncenter/nix-darwin-login-items";
 
     tgirlpkgs = {
       url = "github:tgirlcloud/pkgs";

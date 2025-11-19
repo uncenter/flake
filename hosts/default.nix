@@ -43,6 +43,7 @@ in
             inputs.home-manager.darwinModules.home-manager
             inputs.tgirlpkgs.darwinModules.default
             inputs.darwin-custom-icons.darwinModules.default
+            inputs.darwin-login-items.darwinModules.default
           ])
 
           (lib.optionals (class == "wsl") [
