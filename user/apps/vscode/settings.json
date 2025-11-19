@@ -39,6 +39,7 @@
     "terminal.integrated.lineHeight": 1.3,
     "terminal.integrated.enableImages": true,
     "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.stickyScroll.enabled": false,
 
     /* Editor and Explorer */
     "explorer.confirmDelete": false,
