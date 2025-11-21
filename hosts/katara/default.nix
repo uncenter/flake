@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
   imports = [
+    ../user
+
     ./apps.nix
   ];
 
