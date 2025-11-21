@@ -8,7 +8,7 @@
 let
   committerName = "uncenter";
   committerEmail = "uncenter@uncenter.dev";
-  signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJqPy3W/cnefiuTlqtY6gQsIimz25sYZ6GglXOASK8A4";
+  signingKey = builtins.readFile ../keys/ssh.pub;
   signingProgram =
     if pkgs.stdenv.hostPlatform.isDarwin then
       "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
