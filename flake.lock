@@ -20,23 +20,6 @@
         "type": "github"
       }
     },
-    "catppuccin-vsc": {
-      "inputs": {
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1731106889,
-        "narHash": "sha256-acq5Rbg2swreKyZDswqd9c9X1NtTNexMkKZNws/l4s8=",
-        "rev": "39e26a0e1bd5a84899c2b786b9119d6e9174297f",
-        "revCount": 523,
-        "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/catppuccin/vscode/3.16.0/01931044-41cd-79d3-882f-dd68e6ebfa38/source.tar.gz"
-      },
-      "original": {
-        "type": "tarball",
-        "url": "https://flakehub.com/f/catppuccin/vscode/%2A.tar.gz"
-      }
-    },
     "ctp-nvim": {
       "flake": false,
       "locked": {
@@ -286,22 +269,6 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1712963716,
-        "narHash": "sha256-WKm9CvgCldeIVvRz87iOMi8CFVB1apJlkUT4GGvA0iM=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "cfd6b5fc90b15709b780a5a1619695a88505a176",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
-      "locked": {
         "lastModified": 1759632233,
         "narHash": "sha256-krgZxGAIIIKFJS+UB0l8do3sYUDWJc75M72tepmVMzE=",
         "owner": "NixOS",
@@ -389,7 +356,6 @@
     "root": {
       "inputs": {
         "catppuccin": "catppuccin",
-        "catppuccin-vsc": "catppuccin-vsc",
         "ctp-nvim": "ctp-nvim",
         "darwin-custom-icons": "darwin-custom-icons",
         "darwin-login-items": "darwin-login-items",
@@ -400,7 +366,7 @@
         "nix-darwin": "nix-darwin",
         "nixos-hardware": "nixos-hardware",
         "nixos-wsl": "nixos-wsl",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "patchy": "patchy",
         "rust-overlay": "rust-overlay_2",
