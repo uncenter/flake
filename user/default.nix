@@ -32,10 +32,6 @@
     users.users.uncenter = {
       home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
       shell = pkgs.fish;
-    }
-    // (lib.optionalAttrs (!pkgs.stdenv.hostPlatform.isDarwin) {
-      isNormalUser = true;
-      extraGroups = [ "wheel" ];
-    });
+    };
   };
 }

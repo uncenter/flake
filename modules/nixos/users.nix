@@ -5,6 +5,8 @@
     in
     {
       uncenter = {
+        isNormalUser = true;
+        extraGroups = [ "wheel" ];
         inherit hashedPassword;
       };
       root = {
