@@ -3,7 +3,7 @@
     ./nix.nix
     ./substituters.nix
     ./options.nix
-    ./tailscale.nix
+    ./services
   ];
   programs.fish.enable = true;
 }
