@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  imports = [ ./users.nix ];
+
   glade = {
     apps.enable = false;
     programs.enable = false;
