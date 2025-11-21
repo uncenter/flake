@@ -79,6 +79,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
+
+    sops-nix = {
+      url = "github:mic92/sops-nix/pull/779/merge";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =

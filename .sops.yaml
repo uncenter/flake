@@ -1,0 +1,13 @@
+keys:
+  - &uncenter ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJqPy3W/cnefiuTlqtY6gQsIimz25sYZ6GglXOASK8A4
+
+creation_rules:
+  - path_regex: secrets/uncenter\.yaml
+    key_groups:
+      - age:
+        - *uncenter
+
+  - path_regex: secrets/services/[^/]+\.(yaml|json|env|ini)$
+    key_groups:
+      - age:
+        - *uncenter

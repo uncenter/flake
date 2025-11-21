@@ -37,6 +37,7 @@ in
           (lib.optionals (normalisedClass == "nixos") [
             inputs.home-manager.nixosModules.home-manager
             inputs.tgirlpkgs.nixosModules.default
+            inputs.sops-nix.nixosModules.sops
           ])
 
           (lib.optionals (class == "darwin") [
@@ -44,6 +45,7 @@ in
             inputs.tgirlpkgs.darwinModules.default
             inputs.darwin-custom-icons.darwinModules.default
             inputs.darwin-login-items.darwinModules.default
+            inputs.sops-nix.darwinModules.sops
           ])
 
           (lib.optionals (class == "wsl") [

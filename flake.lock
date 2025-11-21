@@ -388,6 +388,7 @@
         "nixvim": "nixvim",
         "patchy": "patchy",
         "rust-overlay": "rust-overlay_2",
+        "sops-nix": "sops-nix",
         "spicetify-nix": "spicetify-nix",
         "tgirlpkgs": "tgirlpkgs"
       }
@@ -430,6 +431,27 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sops-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1763418337,
+        "narHash": "sha256-+jQr8FCp3tPHkj3XRpNcTQTpgfqsYCkeEQEw0uoS5L0=",
+        "owner": "mic92",
+        "repo": "sops-nix",
+        "rev": "6619f60bda391c0a46316fe1dd3b77e7e7745ec1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mic92",
+        "ref": "pull/779/merge",
+        "repo": "sops-nix",
         "type": "github"
       }
     },
