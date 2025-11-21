@@ -1,8 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ./icons.nix
-    ./homebrew.nix
+    ./apps.nix
   ];
 
   glade = {
