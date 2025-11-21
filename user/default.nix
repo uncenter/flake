@@ -29,15 +29,13 @@
       users.uncenter = ./home.nix;
     };
 
-    users.users.uncenter =
-      {
-        home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
-        openssh.authorizedKeys.keys = [ (builtins.readFile ../keys/ssh.pub) ];
-        shell = pkgs.fish;
-      }
-      // (lib.optionalAttrs (!pkgs.stdenv.hostPlatform.isDarwin) {
-        isNormalUser = true;
-        extraGroups = [ "wheel" ];
-      });
+    users.users.uncenter = {
+      home = if pkgs.stdenv.hostPlatform.isDarwin then "/Users/uncenter" else "/home/uncenter";
+      shell = pkgs.fish;
+    }
+    // (lib.optionalAttrs (!pkgs.stdenv.hostPlatform.isDarwin) {
+      isNormalUser = true;
+      extraGroups = [ "wheel" ];
+    });
   };
 }
