@@ -1,5 +1,7 @@
 { pkgs, ... }:
 {
+  imports = [ ../../user ];
+
   glade = {
     apps.enable = false;
 
