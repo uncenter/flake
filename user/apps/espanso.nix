@@ -1,5 +1,6 @@
+{ lib, osConfig, ... }:
 {
-  services.espanso = {
+  services.espanso = lib.mkIf osConfig.glade.apps.enable {
     enable = true;
 
     matches = {
