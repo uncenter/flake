@@ -45,7 +45,7 @@ in
         icnsify
         imagemagick
         libwebp
-        poppler_utils
+        poppler-utils
         vhs
       ])
 
