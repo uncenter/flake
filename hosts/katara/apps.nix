@@ -55,6 +55,8 @@
       "obsidian"
       "raycast"
       "ticktick"
+      "fantastical"
+      "cardhop"
 
       # Other
       "gramps"
