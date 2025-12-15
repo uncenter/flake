@@ -26,8 +26,9 @@ in
 
           settings = {
             alias = {
-              "undo" = "reset --soft HEAD~1";
-              "reword" = "commit --amend -C HEAD --edit";
+              undo = "reset --soft HEAD~1";
+              reword = "commit --amend -C HEAD --edit";
+              root = "rev-parse --show-toplevel";
             };
 
             user.name = committerName;
