@@ -159,7 +159,7 @@
         jdt-language-server
 
         # Swift
-        sourcekit-lsp
+        # sourcekit-lsp
 
         # Fortran
         fortls
