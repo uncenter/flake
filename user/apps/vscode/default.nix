@@ -78,8 +78,12 @@ let
     "fabiospampinato.vscode-open-in-github"
     "kravets.vscode-publint"
     "njpwerner.autodocstring"
-    "ms-vscode-remote.remote-wsl"
     "leonardssh.vscord"
+
+    "ms-vscode-remote.remote-ssh"
+    "ms-vscode-remote.remote-ssh-edit"
+    "ms-vscode.remote-explorer"
+    "ms-vscode-remote.remote-wsl"
   ];
 in
 {
