@@ -52,10 +52,10 @@
       # Productivity
       "1password"
       "notion"
+      "notion-calendar"
       "obsidian"
       "raycast"
       "ticktick"
-      "fantastical"
       "cardhop"
 
       # Other
