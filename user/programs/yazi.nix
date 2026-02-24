@@ -58,85 +58,84 @@ in
     };
 
     keymap = {
-      mgr.prepend_keymap =
-        [
-          {
-            on = [ "<Space>" ];
-            run = [ "toggle --state=none" ];
-            desc = "Toggle the current selection state";
-          }
-          {
-            desc = "Open shell here";
-            on = "!";
-            run = "shell \"$SHELL\" --block --confirm";
-          }
-          {
-            on = "<C-p>";
-            run = ''shell 'qlmanage -p "$@"' --confirm'';
-          }
+      mgr.prepend_keymap = [
+        {
+          on = [ "<Space>" ];
+          run = [ "toggle --state=none" ];
+          desc = "Toggle the current selection state";
+        }
+        {
+          desc = "Open shell here";
+          on = "!";
+          run = "shell \"$SHELL\" --block --confirm";
+        }
+        {
+          on = "<C-p>";
+          run = ''shell 'qlmanage -p "$@"' --confirm'';
+        }
 
-          {
-            on = [
-              "g"
-              "f"
-            ];
-            run = "cd ~/.config/flake";
-            desc = "[ G ]o to the system [ f ]lake directory";
-          }
-          {
-            on = [
-              "g"
-              "d"
-            ];
-            run = "cd ~/Dev";
-            desc = "[ G ]o to the [ d ]evelopment directory";
-          }
-          {
-            on = [
-              "g"
-              "D"
-            ];
-            run = "cd ~/Downloads";
-            desc = "[ G ]o to the [ d ]ownloads directory";
-          }
+        {
+          on = [
+            "g"
+            "f"
+          ];
+          run = "cd ~/.config/flake";
+          desc = "[ G ]o to the system [ f ]lake directory";
+        }
+        {
+          on = [
+            "g"
+            "d"
+          ];
+          run = "cd ~/Dev";
+          desc = "[ G ]o to the [ d ]evelopment directory";
+        }
+        {
+          on = [
+            "g"
+            "D"
+          ];
+          run = "cd ~/Downloads";
+          desc = "[ G ]o to the [ d ]ownloads directory";
+        }
 
-          {
-            on = [ "m" ];
-            run = "plugin toggle-pane min-preview";
-            desc = "Show or hide preview pane";
-          }
-          {
-            on = [ "M" ];
-            run = "plugin toggle-pane max-preview";
-            desc = "Maximize preview pane";
-          }
+        {
+          on = [ "m" ];
+          run = "plugin toggle-pane min-preview";
+          desc = "Show or hide preview pane";
+        }
+        {
+          on = [ "M" ];
+          run = "plugin toggle-pane max-preview";
+          desc = "Maximize preview pane";
+        }
 
-          {
-            on = [
-              "c"
-              "m"
-            ];
-            run = "plugin chmod";
-            desc = "Chmod on selected files";
-          }
+        {
+          on = [
+            "c"
+            "m"
+          ];
+          run = "plugin chmod";
+          desc = "Chmod on selected files";
+        }
 
-          {
-            on = [ "C" ];
-            run = "plugin ouch --args=zip";
-            desc = "Compress with ouch";
-          }
-        ]
-        ++ (map (
-          stepInt:
-          let
-            step = toString stepInt;
-          in
-          {
-            on = [ step ];
-            run = "plugin relative-motions" + (if step != "0" then " --args=" + step else "");
-            desc = "Move in relative steps";
-          }
-        ) (lib.lists.range 0 9));
+        {
+          on = [ "C" ];
+          run = "plugin ouch --args=zip";
+          desc = "Compress with ouch";
+        }
+      ]
+      ++ (map (
+        stepInt:
+        let
+          step = toString stepInt;
+        in
+        {
+          on = [ step ];
+          run = "plugin relative-motions" + (if step != "0" then " --args=" + step else "");
+          desc = "Move in relative steps";
+        }
+      ) (lib.lists.range 0 9));
     };
 
     plugins = lib.genAttrs [
