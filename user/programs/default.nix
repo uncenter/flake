@@ -21,7 +21,6 @@ in
     ./git.nix
     ./glamour.nix
     ./helix.nix
-    ./izrss.nix
     ./neovim.nix
     ./spicetify.nix
     ./starship.nix
