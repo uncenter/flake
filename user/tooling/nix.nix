@@ -16,7 +16,7 @@ in
         deadnix
         statix
         nil
-        nixfmt-rfc-style
+        nixfmt
         nixpkgs-review
         nixpkgs-track
         nix-init

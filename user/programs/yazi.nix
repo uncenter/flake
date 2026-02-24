@@ -12,6 +12,8 @@ in
   programs.yazi = lib.mkIf cfg.programs.enable {
     enable = true;
 
+    shellWrapperName = "y";
+
     settings = {
       mgr = {
         ratio = [

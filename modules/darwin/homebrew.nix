@@ -7,7 +7,7 @@
       HOMEBREW_NO_INSECURE_REDIRECT = "1";
       HOMEBREW_NO_EMOJI = "1";
     };
-    systemPath = [ config.homebrew.brewPrefix ];
+    systemPath = [ config.homebrew.prefix ];
   };
 
   homebrew = {
