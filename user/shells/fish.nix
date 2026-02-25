@@ -114,6 +114,17 @@
         set -lx GITHUB_TOKEN op://Private/ke2dwwtzs6ffrcehxq7gny3voe/credential
         op run -- command $argv
       '';
+
+      gh = ''
+        set user $(git config user.name)
+        if command gh auth status --json hosts --jq '.hosts["github.com"].[].login' | grep -Fqx "$user"
+          command gh auth switch -u "$user" >/dev/null 2>&1
+        else
+          echo "gh: matching gh user for git user '$user' not found"
+        end
+
+        command gh $argv
+      '';
     };
   };
 
