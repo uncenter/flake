@@ -48,6 +48,9 @@
       "localsend"
       "mediamate"
       "balenaetcher"
+      "yubico-authenticator"
+      "protonvpn"
+      "confectionery"
 
       # Productivity
       "1password"
