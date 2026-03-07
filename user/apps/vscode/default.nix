@@ -58,6 +58,7 @@ let
     "uncenter.better-tera"
     "unifiedjs.vscode-mdx"
     "oscarotero.vento-syntax"
+    "13xforever.language-x86-64-assembly"
 
     # "vscjava.vscode-java-pack":
     "vscjava.vscode-java-debug"
