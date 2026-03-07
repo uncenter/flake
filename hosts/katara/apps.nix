@@ -12,7 +12,7 @@
       # Browsers
       "google-chrome"
       "google-chrome@beta"
-      # "firefox"
+      "firefox"
       "firefox@developer-edition"
 
       # Developer Tooling
