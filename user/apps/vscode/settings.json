@@ -72,7 +72,7 @@
     /* Formatting/LSP */
     "prettier.enable": false,
     "editor.tabSize": 4,
-    "editor.detectIndentation": false,
+    "editor.detectIndentation": true,
     "[fish]": {
         "editor.defaultFormatter": "bmalehorn.vscode-fish"
     },
