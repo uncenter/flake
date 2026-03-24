@@ -5,7 +5,6 @@
     brews = [
       "coreutils"
       "swift-format"
-      "terminal-notifier"
     ];
 
     casks = [

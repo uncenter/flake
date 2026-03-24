@@ -27,6 +27,11 @@
 
       working-directory = "${config.home.homeDirectory}/Dev";
       window-inherit-working-directory = false;
+      tab-inherit-working-directory = false;
+      split-inherit-working-directory = true;
+
+      notify-on-command-finish = "unfocused";
+      notify-on-command-finish-action = "no-bell,notify";
 
       copy-on-select = false;
       shell-integration = "detect";
