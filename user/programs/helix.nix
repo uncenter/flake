@@ -150,8 +150,8 @@
 
       extraPackages = with pkgs; [
         # Web Development
-        nodePackages.typescript-language-server
-        nodePackages.vscode-langservers-extracted
+        typescript-language-server
+        vscode-langservers-extracted
         superhtml
         vue-language-server
 
