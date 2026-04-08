@@ -9,6 +9,8 @@
       n.flake = inputs.nixpkgs;
     };
 
+    package = pkgs.lixPackageSets.stable.lix;
+
     nixPath = [ "nixpkgs=${inputs.nixpkgs.outPath}" ];
 
     gc = {
