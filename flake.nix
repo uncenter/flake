@@ -73,7 +73,7 @@
     };
 
     helix = {
-      url = "github:uncenter/helix/patchy";
+      url = "github:uncenter/helix/custom";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
