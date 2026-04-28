@@ -9,7 +9,6 @@
     home.packages =
       with pkgs;
       [
-        erlang_26
         gleam
         rebar3
       ]
