@@ -18,6 +18,7 @@
       "devtoys"
       "ghostty"
       "github" # GitHub Desktop
+      "godot"
       "intellij-idea"
       "sublime-text"
       "visual-studio-code"
