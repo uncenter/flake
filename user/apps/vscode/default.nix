@@ -78,8 +78,10 @@ let
     "meganrogge.template-string-converter"
     "fabiospampinato.vscode-open-in-github"
     "kravets.vscode-publint"
+    "npmx-dev.vscode-npmx"
     "njpwerner.autodocstring"
     "leonardssh.vscord"
+    "zizmor.zizmor-vscode"
 
     "ms-vscode-remote.remote-ssh"
     "ms-vscode-remote.remote-ssh-edit"
