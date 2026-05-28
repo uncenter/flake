@@ -42,6 +42,7 @@
       "figma"
       "gimp"
       "inkscape"
+      "krita"
 
       # Utilities
       "keka"
@@ -76,6 +77,7 @@
       "/Applications/Raycast.app"
       "/Applications/Ghostty.app"
       "/Applications/Dato.app"
+      "/Applications/Velja.app"
       "/Applications/Hyperduck.app"
       "/Applications/Color Picker.app"
       "/Applications/1Password.app"
