@@ -1,6 +1,7 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs-tree-sitter-webui.url = "github:bglgwyng/nixpkgs/tree-sitter-webui-loader-path";
 
     nix-darwin = {
       url = "github:nix-darwin/nix-darwin";

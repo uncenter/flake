@@ -40,6 +40,12 @@
   nixpkgs = {
     overlays = [
       inputs.rust-overlay.overlays.default
+
+      (final: prev: {
+        inherit (inputs.nixpkgs-tree-sitter-webui.legacyPackages.${prev.system})
+          tree-sitter
+          ;
+      })
     ];
 
     config = {

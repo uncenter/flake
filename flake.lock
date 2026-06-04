@@ -237,6 +237,22 @@
         "type": "github"
       }
     },
+    "nixpkgs-tree-sitter-webui": {
+      "locked": {
+        "lastModified": 1780054836,
+        "narHash": "sha256-M0vmJYHKAfNrPnDIuHLgve05s/2LYJ9Li/gSEeBh09g=",
+        "owner": "bglgwyng",
+        "repo": "nixpkgs",
+        "rev": "dc929d57f3fc8058ae149201c889d5891afa20af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "bglgwyng",
+        "ref": "tree-sitter-webui-loader-path",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixvim": {
       "inputs": {
         "flake-parts": [
@@ -297,6 +313,7 @@
         "nixos-hardware": "nixos-hardware",
         "nixos-wsl": "nixos-wsl",
         "nixpkgs": "nixpkgs",
+        "nixpkgs-tree-sitter-webui": "nixpkgs-tree-sitter-webui",
         "nixvim": "nixvim",
         "patchy": "patchy",
         "rust-overlay": "rust-overlay_2",
