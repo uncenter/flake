@@ -1,5 +1,9 @@
 {
   homebrew = {
+    onActivation.extraFlags = [
+      "--force-cleanup"
+    ]; # TODO: Temporary fix for https://github.com/nix-darwin/nix-darwin/issues/1787.
+
     taps = [ ];
 
     brews = [
