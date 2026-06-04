@@ -99,6 +99,7 @@ in
       # Misc #
       (optionals cfg.programs.misc.enable [
         flyctl
+        google-cloud-sdk
         gum
         hexyl
         hyperfine
