@@ -247,9 +247,6 @@
         "MessageLogger": {
             "enabled": false
         },
-        "MessageTags": {
-            "enabled": false
-        },
         "MoreCommands": {
             "enabled": false
         },
@@ -471,19 +468,22 @@
                 {
                     "find": "https://bsky.app",
                     "replace": "https://fxbsky.app",
-                    "onlyIfIncludes": ""
+                    "onlyIfIncludes": "",
+                    "id": "d34fde2c-f832-484f-976f-22821789ada2"
                 },
                 {
                     "find": "",
                     "replace": "",
-                    "onlyIfIncludes": ""
+                    "onlyIfIncludes": "",
+                    "id": "e2da4913-9542-479f-9848-74b6b66ea689"
                 }
             ],
             "regexRules": [
                 {
                     "find": "",
                     "replace": "",
-                    "onlyIfIncludes": ""
+                    "onlyIfIncludes": "",
+                    "id": "3580d0eb-d077-4f62-b401-50efb1b86699"
                 }
             ]
         },
@@ -638,6 +638,18 @@
         },
         "ExpressionCloner": {
             "enabled": true
+        },
+        "CustomCommands": {
+            "enabled": false
+        },
+        "CopyStickerLinks": {
+            "enabled": false
+        },
+        "ImageFilename": {
+            "enabled": false
+        },
+        "MoreQuickReactions": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -650,7 +662,11 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1748879732284
+        "settingsSyncVersion": 1773430237390
     },
-    "eagerPatches": false
+    "eagerPatches": false,
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
+    }
 }
