@@ -72,7 +72,7 @@ in
         doggo
         miniserve
         wget
-        goat # atproto
+        atproto-goat
       ])
 
       # Filesystem #
