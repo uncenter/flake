@@ -48,6 +48,7 @@
     "explorer.fileNesting.enabled": true,
     "explorer.fileNesting.expand": false,
     "explorer.sortOrder": "type",
+    "workbench.browser.openLocalhostLinks": false,
     "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.showTabs": "multiple",
     "workbench.fontAliasing": "antialiased",
