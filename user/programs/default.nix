@@ -29,7 +29,7 @@ in
 
   config.home.packages =
     with pkgs;
-    with inputs'.tgirlpkgs.packages;
+    with inputs'.extersia.packages;
     concatLists [
       # Essentials #
       [
@@ -108,7 +108,7 @@ in
         monolith
         star-history
         (tree-sitter.override {
-          webUISupport = true;
+          # webUISupport = true;
         })
         (wakatime-cli.overrideAttrs (_: {
           doCheck = false;

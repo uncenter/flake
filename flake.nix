@@ -43,8 +43,8 @@
     darwin-custom-icons.url = "github:ryanccn/nix-darwin-custom-icons";
     darwin-login-items.url = "github:uncenter/nix-darwin-login-items";
 
-    tgirlpkgs = {
-      url = "github:tgirlcloud/pkgs";
+    extersia = {
+      url = "github:extersia-org/pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

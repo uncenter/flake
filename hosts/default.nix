@@ -35,13 +35,13 @@ in
 
           (lib.optionals (normalisedClass == "nixos") [
             inputs.home-manager.nixosModules.home-manager
-            inputs.tgirlpkgs.nixosModules.default
+            inputs.extersia.nixosModules.default
             inputs.sops-nix.nixosModules.sops
           ])
 
           (lib.optionals (class == "darwin") [
             inputs.home-manager.darwinModules.home-manager
-            inputs.tgirlpkgs.darwinModules.default
+            inputs.extersia.darwinModules.default
             inputs.darwin-custom-icons.darwinModules.default
             inputs.darwin-login-items.darwinModules.default
             inputs.sops-nix.darwinModules.sops

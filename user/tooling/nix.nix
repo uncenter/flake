@@ -26,7 +26,7 @@ in
         nurl
         nvd
       ])
-      ++ (with inputs'.tgirlpkgs.packages; [
+      ++ (with inputs'.extersia.packages; [
         nixpkgs-using
       ]);
 

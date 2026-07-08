@@ -1,5 +1,5 @@
 {
-  tgirlpkgs.cache.enable = true;
+  extersia.cache.enable = true;
 
   nix.settings = {
     substituters = [

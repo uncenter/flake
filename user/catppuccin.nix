@@ -25,7 +25,7 @@ in
     };
 
     home.packages = mkIf config.catppuccin.enable [
-      inputs'.tgirlpkgs.packages.purr
+      inputs'.extersia.packages.purr
       inputs'.catppuccin.packages.whiskers
       inputs'.catppuccin.packages.catwalk
     ];

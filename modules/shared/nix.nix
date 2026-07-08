@@ -43,7 +43,7 @@
 
       (final: prev: {
         inherit (inputs.nixpkgs-tree-sitter-webui.legacyPackages.${prev.system})
-          tree-sitter
+          # tree-sitter
           ;
       })
     ];
