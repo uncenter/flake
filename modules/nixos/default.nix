@@ -1,7 +1,8 @@
+{ lib, ... }:
 {
   imports = [
     ./packages.nix
     ./users.nix
   ];
-  system.stateVersion = "24.05";
+  system.stateVersion = lib.mkDefault "24.05";
 }
