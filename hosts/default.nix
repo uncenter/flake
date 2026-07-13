@@ -73,6 +73,11 @@ in
         arch = "aarch64";
         class = "raspberry-pi";
       };
+
+      iroh = {
+        arch = "x86_64";
+        class = "nixos";
+      };
     };
   };
 }
