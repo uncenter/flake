@@ -153,7 +153,7 @@
         typescript-language-server
         vscode-langservers-extracted
         superhtml
-        vue-language-server
+        # vue-language-server
 
         # Java
         jdt-language-server
