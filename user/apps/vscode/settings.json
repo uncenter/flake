@@ -1,7 +1,7 @@
 {
     /* Extensions */
     "extensions.ignoreRecommendations": true,
-    "extensions.autoUpdate": true,
+    "extensions.autoUpdate": "on",
 
     /* Experimental */
     "editor.experimental.preferTreeSitter.ini": true,
@@ -132,6 +132,7 @@
     "vscord.status.idle.enabled": true,
     "vscord.status.details.idle.enabled": true,
 
+    "update.mode": "none",
     "chat.disableAIFeatures": true,
 
     "json.schemaDownload.trustedDomains": {
