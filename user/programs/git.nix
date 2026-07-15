@@ -13,7 +13,9 @@ let
     if pkgs.stdenv.hostPlatform.isDarwin then
       "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
     else
-      "/mnt/c/Program Files/1Password/app/8/op-ssh-sign-wsl";
+      # TODO: Use WSL signing path when isWsl.
+      # "/mnt/c/Program Files/1Password/app/8/op-ssh-sign-wsl";
+      "/opt/1Password/op-ssh-sign";
 in
 {
   config = lib.mkIf osConfig.glade.tooling.git.enable (
