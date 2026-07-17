@@ -153,6 +153,7 @@
         typescript-language-server
         vscode-langservers-extracted
         superhtml
+        # TODO: Temporarily disabled b/c broken.
         # vue-language-server
 
         # Java
