@@ -12,7 +12,8 @@
 
       cargo-sort
       cargo-bloat
-      cargo-watch
+      # TODO: Broken darwin build.
+      # cargo-watch
       cargo-shear
       cargo-tally
       cargo-modules
