@@ -4,7 +4,9 @@
       "--force-cleanup"
     ]; # TODO: Temporary fix for https://github.com/nix-darwin/nix-darwin/issues/1787.
 
-    taps = [ ];
+    taps = [
+      "abue-ammar/tinycast"
+    ];
 
     brews = [
       "coreutils"
@@ -17,18 +19,21 @@
       "google-chrome@beta"
       "firefox"
       "firefox@developer-edition"
+      "confectionery" # (minimal, for screenshots)
 
       # Developer Tooling
-      "devtoys"
-      "ghostty"
-      "github" # GitHub Desktop
-      "godot"
+      ## Editors
       "intellij-idea"
       "sublime-text"
       "visual-studio-code"
-      "yaak"
       "zed"
       "zed@preview"
+      ## Other
+      "devtoys" # Powertoys-like
+      "ghostty"
+      "github" # GitHub Desktop
+      "godot"
+      "yaak"
 
       # Communication
       "signal"
@@ -37,7 +42,7 @@
       "zoom"
       "whatsapp"
 
-      # Media Editing
+      # Media Viewing & Editing
       "affinity"
       "affinity-designer"
       "affinity-photo"
@@ -47,27 +52,34 @@
       "gimp"
       "inkscape"
       "krita"
+      "iina"
+      "subtitle-edit"
+
+      # Productivity & Note Taking
+      "anki"
+      "notion"
+      "notion-calendar"
+      "obsidian"
+      # "raycast"
+      "tinycast"
+      "microsoft-word"
+
+      # Auth/Passwords
+      "1password"
+      "yubico-authenticator"
+      "protonvpn"
 
       # Utilities
       "keka"
       "localsend"
       "mediamate"
+      "handy" # speech to text
       "balenaetcher"
-      "yubico-authenticator"
-      "protonvpn"
-      "confectionery"
-
-      # Productivity
-      "1password"
-      "notion"
-      "notion-calendar"
-      "obsidian"
-      "raycast"
-      "ticktick"
-      "cardhop"
+      "calibre"
 
       # Other
       "gramps"
+      "cardhop"
       "netnewswire"
       "obs"
       "sf-symbols"
@@ -78,7 +90,8 @@
   environment.loginItems = {
     enable = true;
     items = [
-      "/Applications/Raycast.app"
+      # "/Applications/Raycast.app"
+      "/Applications/Tinycast.app"
       "/Applications/Ghostty.app"
       "/Applications/Dato.app"
       "/Applications/Velja.app"
