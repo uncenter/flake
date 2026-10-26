@@ -188,7 +188,8 @@
         },
         "GameActivityToggle": {
             "enabled": true,
-            "oldIcon": false
+            "oldIcon": false,
+            "location": "PANEL"
         },
         "GifPaste": {
             "enabled": false
@@ -409,10 +410,10 @@
         "ShikiCodeblocks": {
             "enabled": true,
             "theme": "https://raw.githubusercontent.com/shikijs/shiki/0b28ad8ccfbf2615f2d9d38ea8255416b8ac3043/packages/shiki/themes/github-dark-dimmed.json",
-            "tryHljs": "SECONDARY",
             "useDevIcon": "GREYSCALE",
             "bgOpacity": 100,
-            "customTheme": "https://unpkg.com/@catppuccin/vscode@3.15.2/themes/mocha.json"
+            "customTheme": "https://unpkg.com/@catppuccin/vscode@3.15.2/themes/mocha.json",
+            "tryDiscordHighlighter": "SECONDARY"
         },
         "ShowAllMessageButtons": {
             "enabled": false
@@ -466,13 +467,15 @@
                     "find": "https://bsky.app",
                     "replace": "https://fxbsky.app",
                     "onlyIfIncludes": "",
-                    "id": "d34fde2c-f832-484f-976f-22821789ada2"
+                    "id": "d34fde2c-f832-484f-976f-22821789ada2",
+                    "name": ""
                 },
                 {
                     "find": "",
                     "replace": "",
                     "onlyIfIncludes": "",
-                    "id": "e2da4913-9542-479f-9848-74b6b66ea689"
+                    "id": "e2da4913-9542-479f-9848-74b6b66ea689",
+                    "name": ""
                 }
             ],
             "regexRules": [
@@ -480,7 +483,8 @@
                     "find": "",
                     "replace": "",
                     "onlyIfIncludes": "",
-                    "id": "3580d0eb-d077-4f62-b401-50efb1b86699"
+                    "id": "3580d0eb-d077-4f62-b401-50efb1b86699",
+                    "name": ""
                 }
             ]
         },
@@ -622,7 +626,9 @@
             "enabled": false
         },
         "WebKeybinds": {
-            "enabled": true
+            "enabled": true,
+            "showNavigationButtons": true,
+            "overrideCommonKeybinds": true
         },
         "WebScreenShareFixes": {
             "enabled": true
@@ -650,6 +656,18 @@
         },
         "MusicRichPresence": {
             "enabled": false
+        },
+        "AddAttachments": {
+            "enabled": false
+        },
+        "CharacterCounter": {
+            "enabled": false
+        },
+        "NoMiddleClickPaste": {
+            "enabled": false
+        },
+        "GifProviderSwitcher": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -662,12 +680,13 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1784223332005
+        "settingsSyncVersion": 1793039437236
     },
     "eagerPatches": false,
     "uiElements": {
         "chatBarButtons": {},
         "messagePopoverButtons": {}
     },
-    "windowsMaterial": "none"
+    "windowsMaterial": "none",
+    "nativeTitleBar": false
 }
