@@ -80,7 +80,7 @@
     };
 
     sops-nix = {
-      url = "github:mic92/sops-nix/pull/779/merge";
+      url = "github:mic92/sops-nix/pull/970/merge";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
