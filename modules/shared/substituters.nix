@@ -10,7 +10,6 @@
       "https://nixpkgs-unfree.cachix.org"
       "https://numtide.cachix.org"
       "https://catppuccin.cachix.org"
-      "https://cache.garnix.io"
     ];
 
     trusted-public-keys = [
@@ -21,7 +20,6 @@
       "nixpkgs-unfree.cachix.org-1:hqvoInulhbV4nJ9yJOEr+4wxhDV4xq2d1DK7S6Nj6rs="
       "numtide.cachix.org-1:2ps1kLBUWjxIneOy1Ik6cQjb41X0iXVXeHigGmycPPE="
       "catppuccin.cachix.org-1:noG/4HkbhJb+lUAdKrph6LaozJvAeEEZj4N732IysmU="
-      "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
     ];
   };
 }
