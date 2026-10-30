@@ -1,12 +1,6 @@
 {
   homebrew = {
-    onActivation.extraFlags = [
-      "--force-cleanup"
-    ]; # TODO: Temporary fix for https://github.com/nix-darwin/nix-darwin/issues/1787.
-
-    taps = [
-      "abue-ammar/tinycast"
-    ];
+    taps = [ ];
 
     brews = [
       "coreutils"
@@ -20,6 +14,7 @@
       "firefox"
       "firefox@developer-edition"
       "confectionery" # (minimal, for screenshots)
+      "zen"
 
       # Developer Tooling
       ## Editors
@@ -61,7 +56,10 @@
       "notion-calendar"
       "obsidian"
       # "raycast"
-      "tinycast"
+      {
+        name = "abue-ammar/tinycast/tinycast";
+        trusted = true;
+      }
       "microsoft-word"
 
       # Auth/Passwords
