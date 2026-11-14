@@ -56,10 +56,7 @@
       "notion-calendar"
       "obsidian"
       # "raycast"
-      {
-        name = "abue-ammar/tinycast/tinycast";
-        trusted = true;
-      }
+      "tinycast"
       "microsoft-word"
 
       # Auth/Passwords
