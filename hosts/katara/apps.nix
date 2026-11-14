@@ -18,7 +18,7 @@
 
       # Developer Tooling
       ## Editors
-      "intellij-idea"
+      # "intellij-idea"
       "sublime-text"
       "visual-studio-code"
       "zed"
@@ -26,7 +26,7 @@
       ## Other
       "devtoys" # Powertoys-like
       "ghostty"
-      "github" # GitHub Desktop
+      # "github" # GitHub Desktop
       "godot"
       "yaak"
 
