@@ -639,9 +639,6 @@
         "WebContextMenus": {
             "enabled": true
         },
-        "ExpressionCloner": {
-            "enabled": true
-        },
         "CustomCommands": {
             "enabled": false
         },
@@ -668,6 +665,9 @@
         },
         "GifProviderSwitcher": {
             "enabled": false
+        },
+        "ExpressionManager": {
+            "enabled": true
         }
     },
     "notifications": {
@@ -680,7 +680,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1793039437236
+        "settingsSyncVersion": 1793512272682
     },
     "eagerPatches": false,
     "uiElements": {
