@@ -160,7 +160,7 @@
         jdt-language-server
 
         # Swift
-        sourcekit-lsp
+        # sourcekit-lsp # Included in Xcode Command Line Tools (/usr/bin/sourcekit-lsp).
 
         # Fortran
         fortls
