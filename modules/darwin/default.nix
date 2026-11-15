@@ -7,6 +7,9 @@
       Hour = 3;
       Minute = 15;
     };
+
+    # Periodically deduplicate the store via hard links.
+    optimise.automatic = true;
   };
 
   system = {
