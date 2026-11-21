@@ -36,21 +36,9 @@ in
         max_height = 1800;
       };
       opener = {
-        edit = [
-          {
-            run = "\${EDITOR:-vi} \"$@\"";
-            desc = "$EDITOR";
-            block = true;
-          }
-          {
-            run = "\${VISUAL:-code} \"$@\"";
-            desc = "$VISUAL";
-            orphan = true;
-          }
-        ];
         extract = [
           {
-            run = "ouch d -y \"$@\"";
+            run = "ouch d -y %s";
             desc = "Extract here with ouch";
           }
         ];
